@@ -1154,5 +1154,10 @@ def main(page: ft.Page):
     show_welcome()
 
 
-port = int(os.environ.get("PORT", 8080))
-ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=port, host="0.0.0.0")
+if "PORT" in os.environ:
+    # Chạy trên Railway → web server cho điện thoại
+    port = int(os.environ["PORT"])
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=port, host="0.0.0.0")
+else:
+    # Chạy local → cửa sổ Flet desktop
+    ft.app(target=main)
