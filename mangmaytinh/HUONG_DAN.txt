@@ -1,0 +1,88 @@
+================================================================
+HƯỚNG DẪN THÊM BỘ ĐỀ MỚI
+================================================================
+
+Bước 1: Tạo file mới trong thư mục này (questions/)
+Bước 2: Đặt tên file bất kỳ, dùng đuôi .pdf / .txt / .json
+Bước 3: Chạy lại app — bộ đề tự động xuất hiện
+
+Yêu cầu để đọc PDF:  pip install pdfplumber
+
+================================================================
+ĐỊNH DẠNG 1: FILE .TXT (dễ viết tay nhất)
+================================================================
+
+Dòng đầu tiên = Tên bộ đề hiển thị trên app
+
+Viết từng câu hỏi theo mẫu:
+  - Gõ nội dung câu hỏi (có thể bắt đầu bằng "Câu 1:" hoặc không)
+  - Các đáp án bắt đầu bằng a. / b. / c. / d.
+  - Đáp án đúng ghi trên dòng "=> <chữ cái>"
+  - Dòng trống để phân cách giữa các câu (không bắt buộc)
+
+VÍ DỤ FILE .TXT:
+─────────────────────────────────────────────────────────────
+Bộ đề C - Ôn thi cuối kỳ
+
+Câu 1: Giao thức nào hoạt động ở tầng Transport?
+a. IP
+b. TCP
+c. HTTP
+d. ARP
+=> b
+
+Câu 2: DNS dùng để làm gì?
+a. Cấp phát địa chỉ IP động
+b. Phân giải tên miền thành địa chỉ IP
+c. Mã hóa dữ liệu
+d. Định tuyến gói tin
+=> b
+
+Câu 3: IPv4 có bao nhiêu bit?
+a. 16
+b. 64
+c. 32
+d. 128
+=> c
+─────────────────────────────────────────────────────────────
+
+LƯU Ý FILE .TXT:
+  • Đáp án "=> " có thể là chữ cái (=> a) hoặc nội dung đầy đủ (=> TCP)
+  • Câu Đúng/Sai chỉ cần 2 đáp án: a. Đúng  b. Sai
+  • Dòng bắt đầu bằng === hoặc --- sẽ bị bỏ qua (dùng làm trang trí)
+  • Encoding: lưu file UTF-8
+
+================================================================
+ĐỊNH DẠNG 2: FILE .JSON (chính xác hơn, dành cho nhiều câu)
+================================================================
+
+{
+  "section": "Tên bộ đề hiển thị trên app",
+  "description": "Mô tả tùy chọn",
+  "questions": [
+    {
+      "question": "Nội dung câu hỏi?",
+      "options": ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
+      "answer": "Đáp án A"
+    },
+    {
+      "question": "Câu hỏi Đúng/Sai?",
+      "options": ["Đúng (True)", "Sai (False)"],
+      "answer": "Đúng (True)"
+    }
+  ]
+}
+
+LƯU Ý FILE .JSON:
+  • "answer" phải khớp CHÍNH XÁC với một giá trị trong "options"
+  • Có thể có 2, 3 hoặc 4 options
+  • Encoding: UTF-8
+
+================================================================
+SO SÁNH 2 ĐỊNH DẠNG
+================================================================
+
+  .txt  → Dễ viết tay, copy từ Word/PDF vào, thêm câu nhanh
+  .json → Chính xác tuyệt đối, phù hợp khi có nhiều câu hỏi
+
+================================================================

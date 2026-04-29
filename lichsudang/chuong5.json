@@ -1,0 +1,412 @@
+[
+  {
+    "question": "Hội nghị hợp nhất các tổ chức cộng sản thành lập Đảng Cộng sản Việt Nam diễn ra từ ngày nào đến ngày nào?",
+    "options": [
+      "A. Từ 3/2 đến 24/2/1930",
+      "B. Từ 6/1 đến 7/2/1930",
+      "C. Từ 23/12/1929 đến 6/1/1930",
+      "D. Từ 1/2 đến 3/2/1930"
+    ],
+    "answer": "B. Từ 6/1 đến 7/2/1930"
+  },
+  {
+    "question": "Hội nghị thành lập Đảng (đầu 1930) diễn ra ở đâu và do ai chủ trì?",
+    "options": [
+      "A. Bà Điểm (Hóc Môn) – Trần Phú chủ trì",
+      "B. Hà Nội – Trường Chinh chủ trì",
+      "C. Cửu Long, Hương Cảng – Nguyễn Ái Quốc chủ trì",
+      "D. Quảng Châu – Lê Hồng Phong chủ trì"
+    ],
+    "answer": "C. Cửu Long, Hương Cảng – Nguyễn Ái Quốc chủ trì"
+  },
+  {
+    "question": "Nguyễn Ái Quốc tham dự Hội nghị thành lập Đảng với tư cách gì?",
+    "options": [
+      "A. Đại biểu của Đông Dương Cộng sản Đảng",
+      "B. Phái viên của Quốc tế Cộng sản",
+      "C. Đại biểu của Hội VNCMTN",
+      "D. Đại diện của An Nam Cộng sản Đảng"
+    ],
+    "answer": "B. Phái viên của Quốc tế Cộng sản"
+  },
+  {
+    "question": "Hội nghị thành lập Đảng (6/1 – 7/2/1930) đã thông qua văn kiện nào làm Cương lĩnh chính trị đầu tiên?",
+    "options": [
+      "A. Luận cương chính trị",
+      "B. Chương trình hành động",
+      "C. Cương lĩnh chính trị đầu tiên (do Nguyễn Ái Quốc soạn thảo)",
+      "D. Chỉ thị Kháng chiến kiến quốc"
+    ],
+    "answer": "C. Cương lĩnh chính trị đầu tiên (do Nguyễn Ái Quốc soạn thảo)"
+  },
+  {
+    "question": "Ngày 24/2/1930 có sự kiện lịch sử nào liên quan đến sự thống nhất Đảng?",
+    "options": [
+      "A. Đại hội I của Đảng khai mạc tại Ma Cao",
+      "B. Ban Thường vụ TW Đảng ra quyết nghị chấp nhận Đông Dương Cộng sản Liên đoàn gia nhập Đảng",
+      "C. Đảng đổi tên thành Đảng Cộng sản Đông Dương",
+      "D. Trần Phú được bầu làm Tổng Bí thư"
+    ],
+    "answer": "B. Ban Thường vụ TW Đảng ra quyết nghị chấp nhận Đông Dương Cộng sản Liên đoàn gia nhập Đảng"
+  },
+  {
+    "question": "Ngày 1/5/1930 có ý nghĩa gì trong lịch sử Việt Nam?",
+    "options": [
+      "A. Thành lập Đảng Cộng sản Việt Nam",
+      "B. Lần đầu tiên nhân dân Việt Nam kỷ niệm Ngày Quốc tế Lao động dưới hình thức míttinh, biểu tình",
+      "C. Phát động phong trào Xô viết Nghệ-Tĩnh",
+      "D. Thành lập Mặt trận Phản đế đồng minh"
+    ],
+    "answer": "B. Lần đầu tiên nhân dân Việt Nam kỷ niệm Ngày Quốc tế Lao động dưới hình thức míttinh, biểu tình"
+  },
+  {
+    "question": "Ngày 12/9/1930, sự kiện bi thảm nào xảy ra tại Nghệ An?",
+    "options": [
+      "A. Pháp bắt giam Tổng Bí thư Trần Phú",
+      "B. Cuộc biểu tình của nông dân Hưng Nguyên bị Pháp ném bom, chết 171 người",
+      "C. Đảng Cộng sản Đông Dương bị đặt ra ngoài vòng pháp luật",
+      "D. Khởi nghĩa Bắc Sơn bùng nổ"
+    ],
+    "answer": "B. Cuộc biểu tình của nông dân Hưng Nguyên bị Pháp ném bom, chết 171 người"
+  },
+  {
+    "question": "Chính quyền Xô viết Nghệ-Tĩnh ra đời vào thời gian nào?",
+    "options": [
+      "A. Tháng 5/1930",
+      "B. Tháng 9/1930",
+      "C. Tháng 10/1930",
+      "D. Tháng 11/1930"
+    ],
+    "answer": "B. Tháng 9/1930"
+  },
+  {
+    "question": "Hội nghị lần thứ nhất Ban Chấp hành Trung ương (10/1930) tại Hương Cảng đã quyết định đổi tên Đảng thành gì?",
+    "options": [
+      "A. Đảng Lao động Việt Nam",
+      "B. Đảng Cộng sản Việt Nam",
+      "C. Đảng Cộng sản Đông Dương",
+      "D. Đảng Nhân dân Việt Nam"
+    ],
+    "answer": "C. Đảng Cộng sản Đông Dương"
+  },
+  {
+    "question": "Ai được bầu làm Tổng Bí thư tại Hội nghị TW lần thứ nhất (10/1930) và thông qua văn kiện nào?",
+    "options": [
+      "A. Nguyễn Ái Quốc – Cương lĩnh chính trị",
+      "B. Trần Phú – Luận cương chính trị",
+      "C. Lê Hồng Phong – Chương trình hành động",
+      "D. Trường Chinh – Chỉ thị Kháng chiến kiến quốc"
+    ],
+    "answer": "B. Trần Phú – Luận cương chính trị"
+  },
+  {
+    "question": "Ngày 18/11/1930, Thường vụ TW Đảng ban hành chỉ thị thành lập tổ chức mặt trận đầu tiên là gì?",
+    "options": [
+      "A. Mặt trận Dân chủ Đông Dương",
+      "B. Mặt trận Việt Minh",
+      "C. Hội Phản đế đồng minh",
+      "D. Mặt trận nhân dân phản đế Đông Dương"
+    ],
+    "answer": "C. Hội Phản đế đồng minh"
+  },
+  {
+    "question": "Tổng Bí thư Trần Phú hy sinh vào ngày nào, ở đâu?",
+    "options": [
+      "A. 12/9/1930 tại Nghệ An",
+      "B. 6/9/1931 tại Nhà thương Chợ Quán (Sài Gòn)",
+      "C. 15/6/1932 tại Hà Nội",
+      "D. 3/2/1930 tại Hương Cảng"
+    ],
+    "answer": "B. 6/9/1931 tại Nhà thương Chợ Quán (Sài Gòn)"
+  },
+  {
+    "question": "Tháng 4/1931, điều gì xảy ra với hệ thống tổ chức Đảng?",
+    "options": [
+      "A. Đảng tổ chức Đại hội I thành công",
+      "B. Toàn bộ Ban Chấp hành TW bị địch bắt, hệ thống tổ chức tan rã",
+      "C. Đảng đổi tên thành Đảng Lao động Việt Nam",
+      "D. Đảng công bố Chương trình hành động mới"
+    ],
+    "answer": "B. Toàn bộ Ban Chấp hành TW bị địch bắt, hệ thống tổ chức tan rã"
+  },
+  {
+    "question": "Đại hội đại biểu lần thứ I của Đảng (3/1935) họp ở đâu và bầu ai làm Tổng Bí thư?",
+    "options": [
+      "A. Hương Cảng – Trần Phú",
+      "B. Hà Nội – Trường Chinh",
+      "C. Ma Cao (Trung Quốc) – Lê Hồng Phong",
+      "D. Quảng Châu – Nguyễn Ái Quốc"
+    ],
+    "answer": "C. Ma Cao (Trung Quốc) – Lê Hồng Phong"
+  },
+  {
+    "question": "Ý nghĩa của Đại hội I Đảng (3/1935) là gì?",
+    "options": [
+      "A. Thống nhất ba tổ chức cộng sản",
+      "B. Đánh dấu sự phục hồi hệ thống tổ chức của Đảng",
+      "C. Thông qua Luận cương chính trị",
+      "D. Quyết định phát động Tổng khởi nghĩa"
+    ],
+    "answer": "B. Đánh dấu sự phục hồi hệ thống tổ chức của Đảng"
+  },
+  {
+    "question": "Hội nghị TW Đảng họp tại Thượng Hải (26/7/1936) do ai chủ trì và quyết định thành lập mặt trận nào?",
+    "options": [
+      "A. Nguyễn Ái Quốc – Mặt trận Việt Minh",
+      "B. Lê Hồng Phong – Mặt trận nhân dân phản đế Đông Dương",
+      "C. Trường Chinh – Mặt trận Dân chủ Đông Dương",
+      "D. Nguyễn Văn Cừ – Hội Phản đế đồng minh"
+    ],
+    "answer": "B. Lê Hồng Phong – Mặt trận nhân dân phản đế Đông Dương"
+  },
+  {
+    "question": "Hội nghị TW tháng 3/1938 bầu ai làm Tổng Bí thư và thành lập mặt trận nào?",
+    "options": [
+      "A. Lê Hồng Phong – Mặt trận nhân dân phản đế Đông Dương",
+      "B. Trường Chinh – Mặt trận Việt Minh",
+      "C. Nguyễn Văn Cừ – Mặt trận Dân chủ Đông Dương",
+      "D. Trần Phú – Hội Phản đế đồng minh"
+    ],
+    "answer": "C. Nguyễn Văn Cừ – Mặt trận Dân chủ Đông Dương"
+  },
+  {
+    "question": "Tổng Bí thư Nguyễn Văn Cừ xuất bản cuốn sách nào vào tháng 7/1939?",
+    "options": [
+      "A. Đường Kách mệnh",
+      "B. Tự chỉ trích",
+      "C. Chung quanh vấn đề chiến sách mới",
+      "D. Kháng chiến nhất định thắng lợi"
+    ],
+    "answer": "B. Tự chỉ trích"
+  },
+  {
+    "question": "Ngày 28/9/1939, Toàn quyền Đông Dương ra nghị định làm gì đối với Đảng Cộng sản?",
+    "options": [
+      "A. Đặt Đảng dưới sự quản lý của chính quyền thực dân",
+      "B. Cấm tuyên truyền cộng sản, đặt Đảng ra ngoài vòng pháp luật",
+      "C. Cho phép Đảng hoạt động công khai có kiểm soát",
+      "D. Giải tán toàn bộ tổ chức Đảng"
+    ],
+    "answer": "B. Cấm tuyên truyền cộng sản, đặt Đảng ra ngoài vòng pháp luật"
+  },
+  {
+    "question": "Hội nghị TW 6 (11/1939) họp ở đâu và quyết định chuyển hướng chiến lược như thế nào?",
+    "options": [
+      "A. Pắc Bó (Cao Bằng) – Đặt nhiệm vụ dân chủ lên hàng đầu",
+      "B. Bà Điểm (Hóc Môn) – Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu",
+      "C. Đình Bảng (Bắc Ninh) – Quyết định tổng khởi nghĩa",
+      "D. Vạn Phúc (Hà Đông) – Phát động kháng chiến toàn quốc"
+    ],
+    "answer": "B. Bà Điểm (Hóc Môn) – Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu"
+  },
+  {
+    "question": "Khởi nghĩa Bắc Sơn nổ ra vào ngày nào và đội du kích nào được thành lập?",
+    "options": [
+      "A. 23/11/1940 – Đội Việt Nam tuyên truyền giải phóng quân",
+      "B. 27/9/1940 – Đội du kích Bắc Sơn",
+      "C. 13/1/1941 – Đội Cứu quốc quân",
+      "D. 9/3/1945 – Đội Giải phóng quân"
+    ],
+    "answer": "B. 27/9/1940 – Đội du kích Bắc Sơn"
+  },
+  {
+    "question": "Hội nghị TW 7 (11/1940) họp ở đâu và quyết định điều gì về khởi nghĩa Nam Kỳ?",
+    "options": [
+      "A. Bà Điểm (Hóc Môn) – Phát động khởi nghĩa Nam Kỳ",
+      "B. Đình Bảng (Bắc Ninh) – Đình chỉ khởi nghĩa Nam Kỳ",
+      "C. Pắc Bó (Cao Bằng) – Hoãn khởi nghĩa toàn quốc",
+      "D. Hương Cảng – Hủy bỏ kế hoạch khởi nghĩa"
+    ],
+    "answer": "B. Đình Bảng (Bắc Ninh) – Đình chỉ khởi nghĩa Nam Kỳ"
+  },
+  {
+    "question": "Khởi nghĩa Nam Kỳ nổ ra vào ngày nào?",
+    "options": [
+      "A. 27/9/1940",
+      "B. 13/1/1941",
+      "C. 23/11/1940",
+      "D. 28/1/1941"
+    ],
+    "answer": "C. 23/11/1940"
+  },
+  {
+    "question": "Binh biến Đô Lương (13/1/1941) do ai chỉ huy?",
+    "options": [
+      "A. Hoàng Hoa Thám",
+      "B. Nguyễn Ái Quốc",
+      "C. Đội Cung",
+      "D. Trường Chinh"
+    ],
+    "answer": "C. Đội Cung"
+  },
+  {
+    "question": "Lãnh tụ Nguyễn Ái Quốc về nước vào ngày nào, sau bao nhiêu năm hoạt động ở nước ngoài?",
+    "options": [
+      "A. 27/9/1940 – sau 20 năm",
+      "B. 28/1/1941 – sau 30 năm",
+      "C. 13/1/1941 – sau 25 năm",
+      "D. 19/5/1941 – sau 30 năm"
+    ],
+    "answer": "B. 28/1/1941 – sau 30 năm"
+  },
+  {
+    "question": "Hội nghị TW 8 (5/1941) họp ở đâu, bầu ai làm Tổng Bí thư và quyết định thành lập mặt trận nào?",
+    "options": [
+      "A. Bà Điểm (Hóc Môn) – Nguyễn Văn Cừ – Mặt trận Dân chủ",
+      "B. Pắc Bó (Cao Bằng) – Trường Chinh – Mặt trận Việt Minh",
+      "C. Đình Bảng (Bắc Ninh) – Lê Hồng Phong – Hội Phản đế",
+      "D. Tân Trào (Tuyên Quang) – Trường Chinh – Mặt trận Việt Minh"
+    ],
+    "answer": "B. Pắc Bó (Cao Bằng) – Trường Chinh – Mặt trận Việt Minh"
+  },
+  {
+    "question": "Tuyên ngôn của Mặt trận Việt Minh được công bố vào ngày nào?",
+    "options": [
+      "A. 19/5/1941",
+      "B. 25/10/1941",
+      "C. 22/12/1944",
+      "D. 9/3/1945"
+    ],
+    "answer": "B. 25/10/1941"
+  },
+  {
+    "question": "Đội Việt Nam tuyên truyền giải phóng quân được thành lập vào ngày nào, ở đâu?",
+    "options": [
+      "A. 27/9/1940 tại Bắc Sơn (Lạng Sơn)",
+      "B. 15/5/1945 tại Hiệp Hòa (Bắc Giang)",
+      "C. 22/12/1944 tại Cao Bằng",
+      "D. 4/6/1945 tại Việt Bắc"
+    ],
+    "answer": "C. 22/12/1944 tại Cao Bằng"
+  },
+  {
+    "question": "Đội Việt Nam tuyên truyền giải phóng quân lập chiến công đầu tiên ở đâu, vào những ngày nào?",
+    "options": [
+      "A. Bắc Sơn (27/9) và Đô Lương (13/1)",
+      "B. Phai Khắt (25/12) và Nà Ngần (26/12/1944)",
+      "C. Điện Biên Phủ (13/3) và Đồng Xoài (1/5)",
+      "D. Hưng Nguyên (12/9) và Hương Khê (1/1)"
+    ],
+    "answer": "B. Phai Khắt (25/12) và Nà Ngần (26/12/1944)"
+  },
+  {
+    "question": "Ngày 9/3/1945 xảy ra sự kiện gì?",
+    "options": [
+      "A. Thành lập Khu giải phóng Việt Bắc",
+      "B. Nhật nổ súng đảo chính Pháp, độc chiếm Đông Dương",
+      "C. Phát động Tổng khởi nghĩa tháng Tám",
+      "D. Thành lập Ủy ban Khởi nghĩa toàn quốc"
+    ],
+    "answer": "B. Nhật nổ súng đảo chính Pháp, độc chiếm Đông Dương"
+  },
+  {
+    "question": "Chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" (12/3/1945) đổi khẩu hiệu cách mạng thành gì?",
+    "options": [
+      "A. \"Đánh đuổi thực dân Pháp\"",
+      "B. \"Đánh đuổi phát xít Nhật\"",
+      "C. \"Dân tộc trên hết, Tổ quốc trên hết\"",
+      "D. \"Đánh đuổi Nhật – Pháp, giành độc lập\""
+    ],
+    "answer": "B. \"Đánh đuổi phát xít Nhật\""
+  },
+  {
+    "question": "Khu giải phóng Việt Bắc thành lập ngày 4/6/1945 gồm những tỉnh nào?",
+    "options": [
+      "A. Cao – Bắc – Lạng – Thái – Tuyên – Hà",
+      "B. Cao – Bắc – Lạng – Hà – Bắc – Vĩnh",
+      "C. Thái – Tuyên – Hà – Bắc – Lạng – Yên",
+      "D. Cao – Bắc – Lạng – Thái – Hà – Vĩnh"
+    ],
+    "answer": "A. Cao – Bắc – Lạng – Thái – Tuyên – Hà"
+  },
+  {
+    "question": "Ủy ban Khởi nghĩa toàn quốc thành lập ngày 13/8/1945 và ban bố văn kiện gì vào 23 giờ cùng ngày?",
+    "options": [
+      "A. Lời kêu gọi toàn quốc kháng chiến",
+      "B. Quân lệnh số 1",
+      "C. Tuyên ngôn độc lập",
+      "D. Chỉ thị Nhật – Pháp bắn nhau"
+    ],
+    "answer": "B. Quân lệnh số 1"
+  },
+  {
+    "question": "Hội nghị toàn quốc của Đảng quyết định phát động Tổng khởi nghĩa họp ở đâu, ngày nào?",
+    "options": [
+      "A. Pắc Bó (Cao Bằng) – 9/3/1945",
+      "B. Tân Trào (Tuyên Quang) – 14 và 15/8/1945",
+      "C. Vạn Phúc (Hà Đông) – 18/12/1946",
+      "D. Hiệp Hòa (Bắc Giang) – 15/5/1945"
+    ],
+    "answer": "B. Tân Trào (Tuyên Quang) – 14 và 15/8/1945"
+  },
+  {
+    "question": "Nhật tuyên bố đầu hàng Đồng minh không điều kiện vào ngày nào?",
+    "options": [
+      "A. 13/8/1945",
+      "B. 14/8/1945",
+      "C. 15/8/1945",
+      "D. 16/8/1945"
+    ],
+    "answer": "C. 15/8/1945"
+  },
+  {
+    "question": "Đại hội quốc dân họp tại Tân Trào (16/8/1945) bầu ai làm Chủ tịch Ủy ban dân tộc giải phóng Việt Nam?",
+    "options": [
+      "A. Trường Chinh",
+      "B. Võ Nguyên Giáp",
+      "C. Hồ Chí Minh",
+      "D. Nguyễn Ái Quốc (chưa đổi tên)"
+    ],
+    "answer": "C. Hồ Chí Minh"
+  },
+  {
+    "question": "Bốn tỉnh giành chính quyền sớm nhất cả nước (từ 14–18/8/1945) là những tỉnh nào?",
+    "options": [
+      "A. Hà Nội, Huế, Sài Gòn, Đà Nẵng",
+      "B. Hải Dương, Bắc Giang, Hà Tĩnh, Quảng Nam",
+      "C. Cao Bằng, Bắc Kạn, Lạng Sơn, Thái Nguyên",
+      "D. Nghệ An, Hà Tĩnh, Thanh Hóa, Ninh Bình"
+    ],
+    "answer": "B. Hải Dương, Bắc Giang, Hà Tĩnh, Quảng Nam"
+  },
+  {
+    "question": "Quần chúng cách mạng giành chính quyền ở Hà Nội vào ngày nào?",
+    "options": [
+      "A. 14/8/1945",
+      "B. 16/8/1945",
+      "C. 19/8/1945",
+      "D. 23/8/1945"
+    ],
+    "answer": "C. 19/8/1945"
+  },
+  {
+    "question": "Thứ tự giành chính quyền tại 3 thành phố lớn trong Tổng khởi nghĩa tháng 8/1945 là gì?",
+    "options": [
+      "A. Hà Nội (19/8) → Sài Gòn (23/8) → Huế (25/8)",
+      "B. Hà Nội (19/8) → Huế (23/8) → Sài Gòn (25/8)",
+      "C. Huế (19/8) → Hà Nội (23/8) → Sài Gòn (25/8)",
+      "D. Sài Gòn (19/8) → Hà Nội (23/8) → Huế (25/8)"
+    ],
+    "answer": "B. Hà Nội (19/8) → Huế (23/8) → Sài Gòn (25/8)"
+  },
+  {
+    "question": "Vua Bảo Đại thoái vị vào ngày nào và ở đâu, chấm dứt chế độ phong kiến Việt Nam?",
+    "options": [
+      "A. 25/8/1945 tại Sài Gòn",
+      "B. 28/8/1945 tại Hà Nội",
+      "C. 30/8/1945 tại Ngọ Môn (Huế)",
+      "D. 2/9/1945 tại Ba Đình (Hà Nội)"
+    ],
+    "answer": "C. 30/8/1945 tại Ngọ Môn (Huế)"
+  },
+  {
+    "question": "Ngày 2/9/1945, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn độc lập tại đâu, khai sinh nhà nước nào?",
+    "options": [
+      "A. Quảng trường Đông Kinh Nghĩa Thục – Việt Nam Dân chủ Cộng hòa",
+      "B. Quảng trường Ba Đình – Việt Nam Dân chủ Cộng hòa",
+      "C. Ngọ Môn (Huế) – Việt Nam Độc lập",
+      "D. Dinh Độc Lập – Cộng hòa xã hội chủ nghĩa Việt Nam"
+    ],
+    "answer": "B. Quảng trường Ba Đình – Việt Nam Dân chủ Cộng hòa"
+  }
+]

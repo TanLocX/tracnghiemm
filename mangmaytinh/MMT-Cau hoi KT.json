@@ -1,0 +1,1294 @@
+{
+  "section": "MMT-Cau hoi KT",
+  "questions": [
+    {
+      "question": "ÔN TẬP MẠNG MÁY TÍNH (các bài kiểm tra)\nTầng nào trong mô hình OSI chịu trách nhiệm mã hóa dữ liệu?",
+      "options": [
+        "Transport",
+        "Presentation",
+        "Session",
+        "Application"
+      ],
+      "answer": "Presentation"
+    },
+    {
+      "question": "Các xu hướng nào để phát triển dịch vụ mạng máy tính?",
+      "options": [
+        "Phát triển các dịch vụ giải trí trực tuyến hiện đại",
+        "Phát triển phần mềm hệ thống quản lý dịch vụ",
+        "Phát triển các dịch vụ tương tác trên phạm vi diện rộng",
+        "Tất cả trừ B (quản lý dịch vụ)"
+      ],
+      "answer": "Tất cả trừ B (quản lý dịch vụ)"
+    },
+    {
+      "question": "Cáp quang có thể  kết nối tối đa bao nhiêu mét?",
+      "options": [
+        "<1000",
+        "2000",
+        "1000",
+        "> 2000"
+      ],
+      "answer": "2000"
+    },
+    {
+      "question": "Tìm số lượng Collistion domain trong mô hình mạng LAN sau đây gồm 1 Router, 1 Switch, 1 Hub và 6 PC? (có hình)",
+      "options": [
+        "8 Collision domain",
+        "4 Collision domain",
+        "3 Collision domain",
+        "5 Collision domain"
+      ],
+      "answer": "5 Collision domain"
+    },
+    {
+      "question": "Giao thức nào để phân giải địa chỉ IP thành địa chỉ MAC?",
+      "options": [
+        "RARP",
+        "ARP",
+        "DHCP",
+        "ICMP"
+      ],
+      "answer": "ARP"
+    },
+    {
+      "question": "Giao thức mạng (network protocol) quy định gì?",
+      "options": [
+        "Hành vi sẽ thực hiện khi nhận được bản tin",
+        "Format của bản tin (message) gửi và nhận",
+        "Thứ tự gửi và nhận bản tin",
+        "Kích cỡ của bản tin",
+        "Tất cả trừ D"
+      ],
+      "answer": "Tất cả trừ D"
+    },
+    {
+      "question": "Switch1 vừa Restart. Host A gửi Frame dữ liệu đến Host B thì địa chỉ nào được thêm vào bảng Switching (có hình)",
+      "options": [
+        "Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching",
+        "Switch1 sẽ thêm 000B.DB95.2EE9 vào bảng switching",
+        "Switch1 sẽ thêm 192.168.23.4 vào bảng switching",
+        "Switch1 sẽ thêm 192.168.23.12 vào bảng switching"
+      ],
+      "answer": "Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching"
+    },
+    {
+      "question": "Địa chỉ IP nào sau đây là địa chỉ MAC?",
+      "options": [
+        "0000.0c12.3456",
+        "00-00-0c-12-34-255",
+        "0000.0c12.3456.255",
+        "00-00-0c-12-34-45-20-25"
+      ],
+      "answer": "0000.0c12.3456"
+    },
+    {
+      "question": "Trường Ack (Acknowledgement) trong tiêu đề của gói tin TCP dùng để làm gì?",
+      "options": [
+        "Bên nhận thông báo số byte có thể nhận tiếp cho bên gửi",
+        "Bên nhận thông báo số byte đã nhận đúng cho bên gửi",
+        "Bên nhận thông báo số hiệu byte có thể nhận tiếp cho bên gửi",
+        "Bên nhận thông báo số hiệu byte đã nhận đúng cho bên gửi"
+      ],
+      "answer": "Bên nhận thông báo số hiệu byte đã nhận đúng cho bên gửi"
+    },
+    {
+      "question": "Tầng Network trong mô hình OSI có nhiệm vụ là:",
+      "options": [
+        "Chia nhỏ packet thành các frame",
+        "Nén và giải nén gói tin",
+        "Chọn đường đi cho các gói tin trong mạng",
+        "Phát hiện packets bị mất và cho phép gởi lại packets"
+      ],
+      "answer": "Chọn đường đi cho các gói tin trong mạng"
+    },
+    {
+      "question": "Mô hình mạng ngang hàng tối thiểu gồm:",
+      "options": [
+        "mạng máy tính, máy in, hub, cáp ethernet",
+        "2 laptop, wifi",
+        "2 máy tính, cáp thẳng",
+        "2 máy tính, modem"
+      ],
+      "answer": "2 máy tính, modem"
+    },
+    {
+      "question": "Thiết bị có khả năng phát Wi-Fi, qua một hệ thống mạng cục bộ không dây (WLAN) có một bộ định tuyến kết nối với nhà cung cấp dịch vụ Internet.",
+      "options": [
+        "ADSL",
+        "DSL",
+        "ADO",
+        "AP"
+      ],
+      "answer": "AP"
+    },
+    {
+      "question": "Trong gói tin IP, trường Identification dùng để làm gì?",
+      "options": [
+        "Đánh số các gói tin IP gửi đi",
+        "Đánh số các Byte dữ liệu gửi đi.",
+        "Phân mảnh và hợp nhất các gói tin IP",
+        "Báo cho bên gửi biết đã nhận đúng gói tin số Identification"
+      ],
+      "answer": "Đánh số các gói tin IP gửi đi"
+    },
+    {
+      "question": "Đơn vị dữ liệu ở tầng Transport của mô hình OSI có dạng:",
+      "options": [
+        "Segments",
+        "Datas",
+        "Packets",
+        "Frames"
+      ],
+      "answer": "Segments"
+    },
+    {
+      "question": "Giao thức không kết nối không cần thiết lập kết nối logic trước khi truyền dữ liệu, đúng hay sai?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True"
+    },
+    {
+      "question": "Các giao thức TCP và UDP hoạt động ở tầng nào của mô hình OSI?",
+      "options": [
+        "Transport",
+        "Application",
+        "Presentation",
+        "Network"
+      ],
+      "answer": "Transport"
+    },
+    {
+      "question": "Kiểu cáp RJ45 UTP nào được sử dụng giữa hai Switch?",
+      "options": [
+        "Crossover với một router giữa hai switch",
+        "Crossover với một CSU/DSU",
+        "Crossover cable",
+        "Straigth-through"
+      ],
+      "answer": "Crossover cable"
+    },
+    {
+      "question": "Các công nghệ mạng LAN gồm:",
+      "options": [
+        "VLAN, PEET TO PEER",
+        "Wi-Fi, AP",
+        "MAN, LAN, WAN",
+        "ETHERNET, WLAN, BLUETOOTH"
+      ],
+      "answer": "ETHERNET, WLAN, BLUETOOTH"
+    },
+    {
+      "question": "Giao thức nào dùng để tìm địa chỉ MAC khi biết địa chỉ IP của máy tính?",
+      "options": [
+        "RARP",
+        "DHCP",
+        "ARP",
+        "TCP/IP"
+      ],
+      "answer": "ARP"
+    },
+    {
+      "question": "Mạng máy tính có những lợi ích nào sau đây?",
+      "options": [
+        "Dùng chung các thiết bị phần cứng, dùng chung các phần mềm, trao đổi thông tin.",
+        "Chia sẻ dữ liệu, dùng chung các phần cứng và các phần mềm, trao đổi thông tin.",
+        "Chia sẻ dữ liệu, dùng chung các thiết bị phần cứng, dùng chung các phần mềm.",
+        "Chia sẻ dữ liệu, dùng chung các thiết bị phần cứng, trao đổi thông tin."
+      ],
+      "answer": "Chia sẻ dữ liệu, dùng chung các phần cứng và các phần mềm, trao đổi thông tin."
+    },
+    {
+      "question": "Địa chỉ IP có dạng 192.168.1.1 thuộc lớp nào?",
+      "options": [
+        "Lớp D",
+        "Lớp A",
+        "Lớp C",
+        "Lớp B"
+      ],
+      "answer": "Lớp C"
+    },
+    {
+      "question": "Cáp đồng trục loại mỏng (thin ethernet) cho phép kết nối một kiến trúc mạng Bus có:",
+      "options": [
+        "Khoảng cách tối đa 200m, số kết nối là 28, khoảng cách tối thiểu giữa hai máy là 1m",
+        "Khoảng cách tối đa 200m, số kết nối là 30, khoảng cách tối thiểu giữa hai máy là 1m",
+        "Khoảng cách tối đa 185m, số kết nối là 30, khoảng cách tối thiểu giữa hai máy là 0.5m",
+        "Khoảng cách tối đa 500m, số kết nối là 30, khoảng cách tối thiểu giữa hai máy là 0.5m"
+      ],
+      "answer": "Khoảng cách tối đa 185m, số kết nối là 30, khoảng cách tối thiểu giữa hai máy là 0.5m"
+    },
+    {
+      "question": "Ưu điểm nào sau đây không đúng về mạng MANET?",
+      "options": [
+        "Phí lắp đặt thấp",
+        "Dễ bảo trì và mở rộng mạng",
+        "Bảo mật kém",
+        "Thiết bị có thể truy cập tiện lợi trong lúc đang di chuyển"
+      ],
+      "answer": "Bảo mật kém"
+    },
+    {
+      "question": "Chọn đáp án phù hợp với câu hỏi gợi ý: ISO → Tổ chức tiêu chuẩn quốc tế, ASP → Trang web động, ISP → Nhà cung cấp dịch vụ Internet, ISA → Kiến trúc tiêu chuẩn công nghiệp, OSI → Mô hình kết nối các hệ thống mở.",
+      "options": [
+        "Chỉ ISO và OSI đúng",
+        "Chỉ ISP đúng",
+        "Tất cả đều đúng",
+        "Chỉ ASP và ISA đúng"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Trong địa chỉ IP, có 5 lớp A, B, C, D, E. Lớp B là lớp có dãy địa chỉ:",
+      "options": [
+        "192.0.0.0 tới 223.255.255.255",
+        "128.0.0.0 tới 191.255.255.255",
+        "240.0.0.0 tới 255.255.255.255",
+        "224.0.0.0 tới 239.255.255.255"
+      ],
+      "answer": "128.0.0.0 tới 191.255.255.255"
+    },
+    {
+      "question": "Thiết bị mạng nào sau đây có khả năng duy trì thông tin về hiện trạng kết nối của toàn bộ một mạng xí nghiệp hoặc khuôn viên bằng cách trao đổi thông tin nói trên giữa chúng với nhau:",
+      "options": [
+        "Repeater",
+        "Connectors",
+        "Router",
+        "Bridge"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Mạng ngang hàng còn có tên gọi khác là mạng gì?\nTrả lời: Đồng đẳng\nĐổi tên Workgroup được không ? được (True)/không (False)",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True"
+    },
+    {
+      "question": "Tập tin được thiết kế bằng Packet Tracer có phần mở rộng là gì?",
+      "options": [
+        "Pktc",
+        "ptc",
+        "Pct",
+        "pkt"
+      ],
+      "answer": "pkt"
+    },
+    {
+      "question": "………… là máy tính điều khiển các máy tính khác và thiết bị dùng chung trong mạng thông qua các phần mềm.",
+      "options": [
+        "Máy khách",
+        "Máy quét",
+        "Máy chủ",
+        "Máy in"
+      ],
+      "answer": "Máy chủ"
+    },
+    {
+      "question": "Phần mềm Wireshark được sử dụng trên nền tảng hệ điều hành nào ?",
+      "options": [
+        "MacOS",
+        "Linux",
+        "Tất cả đáp án",
+        "Windows"
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Các thiết bị vỉ mạng, Hub, bộ chuyển mạch thuộc thành phần nào của mạng máy tính?",
+      "options": [
+        "Thiết bị đầu cuối.",
+        "Giao thức truyền thông.",
+        "Môi trường truyền dẫn.",
+        "Thiết bị kết nối mạng."
+      ],
+      "answer": "Thiết bị kết nối mạng."
+    },
+    {
+      "question": "Các thiết bị máy tính, máy in, điện thoại thông minh là loại thiết bị",
+      "options": [
+        "Thiết bị đầu cuối",
+        "Thiết bị kết nối mạng",
+        "Giao thức truyền thông",
+        "Môi trường truyền dẫn"
+      ],
+      "answer": "Thiết bị đầu cuối"
+    },
+    {
+      "question": "Cách nào đúng để xem địa chỉ IP?",
+      "options": [
+        "Windows+R → cmd → Nhập <ping + IP>",
+        "Windows+R → cmd → Nhập địa chỉ IP",
+        "Windows+R → cmd → Nhập địa chỉ host",
+        "Windows+R → cmd → Nhập <ipconfig>"
+      ],
+      "answer": "Windows+R → cmd → Nhập <ipconfig>"
+    },
+    {
+      "question": "Giao thức có kết nối không cần thiết lập kết nối logic trước khi truyền dữ liệu, đúng hay sai?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False"
+    },
+    {
+      "question": "Điểm giống nhau giữa 2 mô hình OSI và TCP/IP là?",
+      "options": [
+        "Đều có tầng Transport và tầng Datalink",
+        "Có số tầng bằng nhau",
+        "Cung cấp phương pháp truyền thông chuyển mạch gói",
+        "Ứng dụng trong thực tế giống nhau"
+      ],
+      "answer": "Cung cấp phương pháp truyền thông chuyển mạch gói"
+    },
+    {
+      "question": "Công nghệ mạng LAN nào được sử dụng rộng rãi nhất trong cơ quan/doanh nghiệp?",
+      "options": [
+        "ArcNet",
+        "FDDI",
+        "Token Ring",
+        "Ethernet"
+      ],
+      "answer": "Ethernet"
+    },
+    {
+      "question": "Địa chỉ nào được Switch sử dụng khi quyết định gửi dữ liệu qua cổng (port)?",
+      "options": [
+        "Destination MAC address",
+        "Network address",
+        "Subnet work address",
+        "Source MAC address"
+      ],
+      "answer": "Destination MAC address"
+    },
+    {
+      "question": "Các thiết bị Vỉ mạng, Hub, bộ chuyển mạch thuộc thành phần nào của mạng máy tính:",
+      "options": [
+        "Giao thức truyền thông",
+        "Môi trường truyền dẫn",
+        "Thiết bị đầu cuối",
+        "Thiết bị kết nối mạng"
+      ],
+      "answer": "Thiết bị kết nối mạng"
+    },
+    {
+      "question": "Đặc điểm của kiến trúc mạng Bus là gì?",
+      "options": [
+        "Tất cả các nút mạng kết nối vào nút mạng trung tâm (Ví dụ như Hub)",
+        "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút mạng còn lại",
+        "Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý",
+        "Mỗi nút mạng kết nối với 2 nút mạng còn lại"
+      ],
+      "answer": "Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý"
+    },
+    {
+      "question": "BÀI KIỂM TRA\nWireshark được sử dụng để phục vụ các mục đích gì ?",
+      "options": [
+        "Kiểm tra tính bảo mật, phục vụ việc học giao thức mạng",
+        "Xác minh network applications, gỡ lỗi phát triển các giao thức",
+        "Tất cả đáp án",
+        "Khắc phục những vấn đề liên quan đến sự cổ mạng"
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Đầu nối RJ45 có thể dùng để bấm vào loại cáp nào sau đây?",
+      "options": [
+        "Tất cả đều đúng",
+        "AMP",
+        "ScTP",
+        "UTP"
+      ],
+      "answer": "UTP"
+    },
+    {
+      "question": "Mô hình tham chiếu TCP/IP gồm có mấy lớp?",
+      "options": [
+        "4 lớp",
+        "7 lớp",
+        "6 lớp",
+        "5 lớp"
+      ],
+      "answer": "4 lớp"
+    },
+    {
+      "question": "Sắp xếp giao diện chính của Wireshark đúng thứ tự từ trên xuống: 1.Packet List; 2.Packet Details; 3.Packet Bytes.",
+      "options": [
+        "3 1 2",
+        "2 3 1",
+        "1 2 3",
+        "Tất cả đều sai"
+      ],
+      "answer": "Tất cả đều sai"
+    },
+    {
+      "question": "Xem sơ đồ mạng như hình sau đây, địa chỉ IP của các máy gồm: User1 (192.168.0.1), User2 (192.168.1.1), User3 (192.168.1.2), User4 (192.168.2.1), User5 (192.168.0.2). Người dùng đang ở máy user1, dùng lệnh ping đến 4 máy còn lại. Hỏi máy nào sẽ trả lời lại máy User1.",
+      "options": [
+        "User02",
+        "User04",
+        "User03",
+        "User05"
+      ],
+      "answer": "User05"
+    },
+    {
+      "question": "Địa chỉ quảng bá của đường mạng có IP là 137.1.0.0 là bao nhiêu?",
+      "options": [
+        "255.255.255.255",
+        "137.1.0.255",
+        "137.255.255.255",
+        "137.1.255.255"
+      ],
+      "answer": "137.1.255.255"
+    },
+    {
+      "question": "Để xem tên máy tính của máy tính hiện tại ta dùng lệnh gì?",
+      "options": [
+        "Ipconfig",
+        "Ping",
+        "Hostname",
+        "ftp:<tên máy>"
+      ],
+      "answer": "Hostname"
+    },
+    {
+      "question": "Giao thức mạng nào dưới đây được sử dụng trong mạng cục bộ LAN?",
+      "options": [
+        "Tất cả đều đúng",
+        "NETBIOS",
+        "IPX",
+        "TCP/IP"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Ưu điểm của mạng ngang hàng là:",
+      "options": [
+        "Đơn giản, khó lắp đặt, chi phí thấp",
+        "Thuận lợi trong việc chia sẻ file, folder",
+        "Đơn giản, không cần bảo mật",
+        "Đơn giản trong lắp đặt, khó sử dụng"
+      ],
+      "answer": "Thuận lợi trong việc chia sẻ file, folder"
+    },
+    {
+      "question": "Dãy địa chỉ IP thuộc lớp B là gì?",
+      "options": [
+        "0.x.x.x đến 126.x.x.x",
+        "224.x.x.x đến 239.x.x.x",
+        "128.x.x.x đến 191.x.x.x",
+        "192.x.x.x đến 223.x.x.x"
+      ],
+      "answer": "128.x.x.x đến 191.x.x.x"
+    },
+    {
+      "question": "Các thành phần tạo nên mạng máy tính gồm có gì?",
+      "options": [
+        "Tất cả đều đúng",
+        "Network adapter, cable",
+        "Máy tính, hub, switch",
+        "Protocol"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Thiết bị Bridge cho phép:",
+      "options": [
+        "Giúp định tuyến cho các packets",
+        "Kết nối 2 mạng LAN lại với nhau đồng thời đóng vai trò như một bộ lọc, cho phép gói tin có địa chỉ đích nằm ngoài nhánh LAN mà gói đi qua",
+        "Tăng cường tín hiệu điện để mở rộng đoạn mạng",
+        "Ngăn không cho các packet thuộc loại Broadcast đi qua nó"
+      ],
+      "answer": "Kết nối 2 mạng LAN lại với nhau đồng thời đóng vai trò như một bộ lọc, cho phép gói tin có địa chỉ đích nằm ngoài nhánh LAN mà gói đi qua"
+    },
+    {
+      "question": "Thiết bị nào hoạt động ở tầng 1 của mô hình OSI?",
+      "options": [
+        "NIC",
+        "Hub",
+        "Repeater",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Địa chỉ IP có 3 bit đầu của byte thứ nhất là 110. Hỏi IP này thuộc lớp nào?",
+      "options": [
+        "Lớp C",
+        "Lớp B",
+        "Lớp A",
+        "Lớp D"
+      ],
+      "answer": "Lớp C"
+    },
+    {
+      "question": "Cách nào đúng để truy cập đến tài nguyên bằng địa chỉ IP?",
+      "options": [
+        "//địa chỉ IP của máy muốn truy cập tài nguyên",
+        "%IP",
+        "//192.186.1.200",
+        "\\\\địa chỉ IP của máy muốn truy cập tài nguyên"
+      ],
+      "answer": "\\\\địa chỉ IP của máy muốn truy cập tài nguyên"
+    },
+    {
+      "question": "Hình sau đây là mô tả của loại cáp nào?",
+      "options": [
+        "STP",
+        "UTP",
+        "ScTP",
+        "AMP"
+      ],
+      "answer": "STP"
+    },
+    {
+      "question": "Nhược điểm của Peer To Peer là gì?",
+      "options": [
+        "Dễ bị xâm nhập",
+        "Khó cài đặt",
+        "Các tài nguyên không được sắp xếp nên rất khó để tìm kiếm",
+        "bảo mật cao"
+      ],
+      "answer": "Các tài nguyên không được sắp xếp nên rất khó để tìm kiếm"
+    },
+    {
+      "question": "Giá trị SubnetMask của đường mạng có IP 172.16.0.0 sau khi đã chọn 8 bit ở phần host làm chia mạng con là?",
+      "options": [
+        "255.255.255.0",
+        "255.255.255.224",
+        "255.255.255.240",
+        "255.255.255.248"
+      ],
+      "answer": "255.255.255.0"
+    },
+    {
+      "question": "Mô hình TCP/IP bao gồm các tầng nào sau đây?",
+      "options": [
+        "Internet, data link, transport, application",
+        "Network access, internet, transport, application",
+        "Network access, data link, transport, application",
+        "Physical, data link, transport, application"
+      ],
+      "answer": "Network access, internet, transport, application"
+    },
+    {
+      "question": "Nếu bấm cáp theo chuẩn T568A thì sợ dây ở chân số 3 có màu gì?",
+      "options": [
+        "Trắng cam",
+        "Trắng xanh dương",
+        "Trắng nâu",
+        "Xanh dương"
+      ],
+      "answer": "Trắng cam"
+    },
+    {
+      "question": "Tập tin được thiết kế bằng Packet Tracer có phần mở rộng là gì?",
+      "options": [
+        "Pkt",
+        "pktc",
+        "Ptc",
+        "pct"
+      ],
+      "answer": "Pkt"
+    },
+    {
+      "question": "Trong Packet tracer, muốn đặt địa chỉ IP cho PC để kết nối vào mạng ta chọn tùy chọn nào?",
+      "options": [
+        "Chọn PC → chọn Tab CONFIG  → Nhập địa chỉ IP",
+        "Chọn PC → chọn Tab DESKTOP  → Command Prompt → Nhập địa chỉ IP",
+        "Chọn PC → chọn Tab DESKTOP  → Terminal → Nhập địa chỉ IP",
+        "Chọn PC → chọn Tab DESKTOP  → IP Configuration → Nhập địa chỉ IP"
+      ],
+      "answer": "Chọn PC → chọn Tab DESKTOP  → IP Configuration → Nhập địa chỉ IP"
+    },
+    {
+      "question": "Đặc điểm của thiết bị Hub trong LAN?",
+      "options": [
+        "Tất cả đều đúng",
+        "Dùng để nối mạng, thông qua những đầu cắm của nó người ta liên kết với các máy tính dưới dạng hình sao",
+        "Khi nhận được gói tin, nó sẽ truyền ra tất cả các port của nó",
+        "Hoạt động ở tầng 1 của mô hình OSI"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Trang thiết bị mạng nào dùng để nối các mạng và kiểm soát được gói tin quảng bá (Broadcast)?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Bridge",
+        "Router"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Wireshark có nhiều tính năng nổi bật như:",
+      "options": [
+        "Lưu dữ liệu gói bị bắt.",
+        "Hiển thị các gói với thông tin giao thức rất chi tiết.",
+        "Tất cả đáp án",
+        "Xuất một số hoặc tất cả các gói trong một số định dạng capture file."
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Mỗi đường mạng thuộc lớp C có thể sử dụng được tối đa bao nhiêu host?",
+      "options": [
+        "254",
+        "253",
+        "192",
+        "255"
+      ],
+      "answer": "254"
+    },
+    {
+      "question": "Trong cửa sổ cmd gõ lệnh: \"tracert google.com\" dùng để làm gì?",
+      "options": [
+        "Dùng để xác định đường đi từ nguồn tới đích của một gói Giao thức mạng Internet (IP - Internet Protocol)",
+        "Dùng để xác định địa chỉ máy chủ google",
+        "Dùng để xác định thông mạng tới máy chủ google hay không?",
+        "Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
+      ],
+      "answer": "Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
+    },
+    {
+      "question": "Trang thiết bị mạng nào làm giảm bớt vùng va chạm (collisions)?",
+      "options": [
+        "NIC",
+        "Switch",
+        "Transceiver",
+        "Hub"
+      ],
+      "answer": "Switch"
+    },
+    {
+      "question": "Màu đen trong bảng màu mặc định được cung cấp cho loại gói chính nào ?",
+      "options": [
+        "Lưu lượng TCP",
+        "Các gói có lỗi",
+        "Lưu lượng UDP",
+        "Lưu lượng truy cập HTTP"
+      ],
+      "answer": "Các gói có lỗi"
+    },
+    {
+      "question": "Trong các dịch vụ sau dịch vụ nào là dịch vụ truyền File?",
+      "options": [
+        "FTP",
+        "DNS",
+        "WWW",
+        "IIS"
+      ],
+      "answer": "FTP"
+    },
+    {
+      "question": "Cách nào đúng để xem tài nguyên chia sẻ của máy 192.168.1.250?",
+      "options": [
+        "Windows+R → cmd → Nhập 192.168.1.250",
+        "Windows+R → cmd → Nhập \\\\192.168.1.250",
+        "Windows+R → cmd → Nhập <ipconfig>",
+        "Windows+R → Nhập \\\\192.168.1.250"
+      ],
+      "answer": "Windows+R → Nhập \\\\192.168.1.250"
+    },
+    {
+      "question": "Mặc định cổng kết nối vào FTP Server là bao nhiêu?",
+      "options": [
+        "8080",
+        "21",
+        "80",
+        "Tất cả đều sai"
+      ],
+      "answer": "21"
+    },
+    {
+      "question": "Nếu lấy 1 địa chỉ lớp B để chia mạng con với Subnetmask là 255.255.240.0 thì có bao nhiêu đường mạng con có thể sử dụng được",
+      "options": [
+        "2",
+        "30",
+        "16",
+        "4"
+      ],
+      "answer": "16"
+    },
+    {
+      "question": "Nếu bấm cáp theo chuẩn T568A thì sợ cáp màu nào nằm ở chân số 6?",
+      "options": [
+        "Trắng nâu",
+        "Trắng cam",
+        "Cam",
+        "Trắng xanh dương"
+      ],
+      "answer": "Cam"
+    },
+    {
+      "question": "Dãy địa chỉ IP thuộc lớp A là gì?",
+      "options": [
+        "0.x.x.x đến 127.x.x.x",
+        "192.x.x.x đến 223.x.x.x",
+        "128.x.x.x đến 191.x.x.x",
+        "224.x.x.x đến 239.x.x.x"
+      ],
+      "answer": "0.x.x.x đến 127.x.x.x"
+    },
+    {
+      "question": "Trong mạng ETHENET dùng giao thức TCP/IP, SubnetMask là 255.255.255.224. Hãy xác định địa chỉ quảng bá của mạng nếu biết rằng một máy tính trong mạng có địa chỉ là 192.168.1.1.",
+      "options": [
+        "192.168.1.15",
+        "192.168.1.255",
+        "192.168.1.31",
+        "192.168.1.96"
+      ],
+      "answer": "192.168.1.31"
+    },
+    {
+      "question": "Mô tả nào sau đây là cho mạng hình sao (star)?",
+      "options": [
+        "Các nút mạng sử dụng chung một đường cáp",
+        "Có một nút trung tâm và các nút mạng khác kết nối đến",
+        "Truyền dữ liệu qua cáp đồng trục",
+        "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác"
+      ],
+      "answer": "Có một nút trung tâm và các nút mạng khác kết nối đến"
+    },
+    {
+      "question": "Chức năng của repeater là?",
+      "options": [
+        "Dùng cho kết nối giữa LAN vả WAN",
+        "Thiết bị trung tâm của mạng hình sao",
+        "Khuyếch đại tín hiệu giúp truyền thông tin được xa hơn",
+        "Làm chậm lại thởi gian truyển tính hiệu giữa các mạng"
+      ],
+      "answer": "Khuyếch đại tín hiệu giúp truyền thông tin được xa hơn"
+    },
+    {
+      "question": "Mạng ngang hàng có chia sẻ các file multimedia được không? được (True)/không (False)",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True"
+    },
+    {
+      "question": "Màu tím nhạt trong bảng màu mặc định được cung cấp cho loại gói chính nào ?",
+      "options": [
+        "Lưu lượng truy cập HTTP",
+        "Lưu lượng UDP",
+        "Lưu lượng TCP",
+        "Các gói có lỗi"
+      ],
+      "answer": "Lưu lượng TCP"
+    },
+    {
+      "question": "Đơn vị truyền tin của tầng mạng là gì?",
+      "options": [
+        "Data",
+        "Đoạn (Segment)",
+        "C . Gói tin (Packet)",
+        "Khung (Frame)"
+      ],
+      "answer": "C . Gói tin (Packet)"
+    },
+    {
+      "question": "Phát biểu nào sau đây mô tả đúng nhất cho cấu hình Star?",
+      "options": [
+        "Khó tái lập cấu hình hơn so với các cấu hình khác.",
+        "Cần ít cáp hơn nhiều so với các cấu hình khác.",
+        "Khi cáp đứt tại một điểm nào đó làm toàn bộ mạng ngưng hoạt động.",
+        "Dễ kiểm soát và quản lý tập trung."
+      ],
+      "answer": "Dễ kiểm soát và quản lý tập trung."
+    },
+    {
+      "question": "Thiết bị Router hoạt động ở tầng mấy trong mô hình OSI?",
+      "options": [
+        "Tầng 4",
+        "Tầng 2",
+        "Tầng 1",
+        "Tầng 3"
+      ],
+      "answer": "Tầng 3"
+    },
+    {
+      "question": "Thiết bị kết nối trung tâm trong mạng hình sao là?",
+      "options": [
+        "Hub hoặc Switch",
+        "Repeater",
+        "Card mạng (NIC)",
+        "Router"
+      ],
+      "answer": "Hub hoặc Switch"
+    },
+    {
+      "question": "Cáp xoắn đôi có khoản cách truyền tối đa là bao nhiêu mét?",
+      "options": [
+        "500",
+        "100",
+        "200",
+        "300"
+      ],
+      "answer": "100"
+    },
+    {
+      "question": "Máy tính chạy Win2008 server được cài DNS. Trên máy tính này tạo vùng tên là dthu, trong vùng dthu tạo tên miền mit, trong miền mit tạo host tên may03 với IP là địa chỉ IP của máy user03. Cấu hình cho máy user04 sử dụng DNS. Trên máy user04 ta có thể kiểm tra sự liên thông giữa 2 máy user04 và user03 bằng lệnh nào sau đây?",
+      "options": [
+        "Ping user03",
+        "Ping IP (trong đó IP là địa chỉ IP của user03)",
+        "Tất cả đều đúng",
+        "Ping may03.mit.dthu"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Kiến trúc mesh có đặc điểm nào sau đây?",
+      "options": [
+        "Mỗi node sẽ liên kết Hub",
+        "Tất cả các node đều sử dụng chung 1 sợ cáp",
+        "Mỗi nút sẽ liên kết đến tất cả các nút còn lại",
+        "Mỗi node sẽ liên kết đến Switch"
+      ],
+      "answer": "Mỗi nút sẽ liên kết đến tất cả các nút còn lại"
+    },
+    {
+      "question": "Thiết bị mạng nào sau đây là không thể thiếu khi kết nối liên mạng?",
+      "options": [
+        "ROUTER",
+        "SWITCH",
+        "BRIDGE",
+        "HUB"
+      ],
+      "answer": "ROUTER"
+    },
+    {
+      "question": "Gói tin (Packets) được đóng thành Khung (Frames) ở tầng nào của mô hình OSI?",
+      "options": [
+        "Session",
+        "Network",
+        "Transport",
+        "Data link"
+      ],
+      "answer": "Data link"
+    },
+    {
+      "question": "Lệnh ping hoạt động tại tầng nào của mô hình OSI?",
+      "options": [
+        "Phisycal",
+        "Cả 7 tầng",
+        "Datalink",
+        "Network"
+      ],
+      "answer": "Cả 7 tầng"
+    },
+    {
+      "question": "BÀI KIỂM TRA\nĐặc điểm của chuẩn 10BaseT?",
+      "options": [
+        "Tốc độ truyền 10MBit/Second",
+        "Chiều dài tối đa sợ cáp là 185 mét",
+        "Sử dụng cáp đồng trục mảnh",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Địa chỉ quảng bá của đường mạng có IP là 137.1.0.0 là bao nhiêu?",
+      "options": [
+        "137.255.255.255",
+        "137.1.255.255",
+        "255.255.255.255",
+        "137.1.0.255"
+      ],
+      "answer": "137.1.255.255"
+    },
+    {
+      "question": "Mô tả nào sau đây là cho mạng hình sao (star)?",
+      "options": [
+        "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác",
+        "Truyền dữ liệu qua cáp đồng trục",
+        "Các nút mạng sử dụng chung một đường cáp",
+        "Có một nút trung tâm và các nút mạng khác kết nối đến"
+      ],
+      "answer": "Có một nút trung tâm và các nút mạng khác kết nối đến"
+    },
+    {
+      "question": "Sắp xếp giao diện chính của Wireshark đúng thứ tự từ trên xuống: 1.Packet List; 2.Packet Details; 3.Packet Bytes.",
+      "options": [
+        "2 3 1",
+        "Tất cả đều sai",
+        "1 2 3",
+        "3 1 2"
+      ],
+      "answer": "Tất cả đều sai"
+    },
+    {
+      "question": "Nếu bấm cáp theo chuẩn T568A, sử dụng trong mạng 100BaseT thì sợ cáp màu nào không dùng đến?",
+      "options": [
+        "Xanh dương",
+        "Nâu, trắng nâu",
+        "Trắng xanh dương",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Phần mềm Wireshark được sử dụng trên nền tảng hệ điều hành nào ?",
+      "options": [
+        "MacOS",
+        "Tất cả đáp án",
+        "Linux",
+        "Windows"
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Mặc định cổng kết nối vào FTP Server là bao nhiêu?",
+      "options": [
+        "Tất cả đều sai",
+        "8080",
+        "80",
+        "21"
+      ],
+      "answer": "21"
+    },
+    {
+      "question": "Có thể thiết lập mạng ngang hàng gồm 2 laptop thông qua cùng wifi có được (True) không (False)?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True"
+    },
+    {
+      "question": "Giá trị subnetmask của IP 192.168.0.0 sau khi đã chọn 4 bit ở phần host để chia mạng con là gì?",
+      "options": [
+        "255.255.255.248",
+        "255.255.255.0",
+        "255.255.255.240",
+        "255.255.255.224"
+      ],
+      "answer": "255.255.255.240"
+    },
+    {
+      "question": "Thiết bị nào sau đây được gọi là multi-port bridge?",
+      "options": [
+        "Router",
+        "Repeater",
+        "Switch",
+        "Hub"
+      ],
+      "answer": "Switch"
+    },
+    {
+      "question": "Tầng nào trong OSI có nhiệm vụ tìm đường đi cho các gói tin (packet)?",
+      "options": [
+        "Liên kết dữ liệu",
+        "Tất cả đều sai",
+        "Vật lý",
+        "Mạng"
+      ],
+      "answer": "Mạng"
+    },
+    {
+      "question": "Nếu bấm cáp theo chuẩn T568A thì sợ dây ở chân số 2 có màu gì?",
+      "options": [
+        "Trắng cam",
+        "Xanh lá",
+        "Xanh dương",
+        "Trắng nâu"
+      ],
+      "answer": "Xanh lá"
+    },
+    {
+      "question": "Wireshark được sử dụng để phục vụ các mục đích gì ?",
+      "options": [
+        "Xác minh network applications, gỡ lỗi phát triển các giao thức",
+        "Kiểm tra tính bảo mật, phục vụ việc học giao thức mạng",
+        "Tất cả đáp án",
+        "Khắc phục những vấn đề liên quan đến sự cổ mạng"
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Xem sơ đồ mạng như hình sau đây, địa chỉ IP của các máy gồm: User1 (192.168.0.1), User2 (192.168.0.2), User3 (192.168.2.1), User4 (192.168.3.1), User5 (192.168.3.2). Người dùng đang ở máy user1, dùng lệnh ping đến 4 máy còn lại. Hỏi máy nào sẽ trả lời lại máy User1?",
+      "options": [
+        "User3",
+        "User5",
+        "User4",
+        "User2"
+      ],
+      "answer": "User2"
+    },
+    {
+      "question": "Đặc điểm của thiết bị Switch trong LAN?",
+      "options": [
+        "Nối nhiều mạng với nhau và cho phép các gói tin có thể đi theo nhiều đường khác nhau để đến đích",
+        "Tất cả đều sai",
+        "Hoạt động trên tầng liên kết dữ liệu, khi nhận được các gói tin, nó chọn lọc và chuyển những gói tin ra các port đúng với máy nhận",
+        "Hoạt động trên tầng liên kết dữ liệu, khi nhận được các gói tin, nó chuyển những gói tin ra tất cả các port"
+      ],
+      "answer": "Hoạt động trên tầng liên kết dữ liệu, khi nhận được các gói tin, nó chọn lọc và chuyển những gói tin ra các port đúng với máy nhận"
+    },
+    {
+      "question": "Trang thiết bị mạng nào làm giảm bớt vùng va chạm (collisions)?",
+      "options": [
+        "NIC",
+        "Switch",
+        "Transceiver",
+        "Hub"
+      ],
+      "answer": "Switch"
+    },
+    {
+      "question": "Khi thực hiện phép AND giữa 2 địa chỉ IP 172.16.20.23 và 255.255.248.0 sẽ cho IP nào sau đây?",
+      "options": [
+        "172.16.20.0",
+        "172.16.16.0",
+        "172.16.20.16",
+        "172.16.0.0"
+      ],
+      "answer": "172.16.16.0"
+    },
+    {
+      "question": "Phát biểu nào sau đây mô tả đúng nhất cho cấu hình Star?",
+      "options": [
+        "Cần ít cáp hơn nhiều so với các cấu hình khác.",
+        "Dễ kiểm soát và quản lý tập trung.",
+        "Khi cáp đứt tại một điểm nào đó làm toàn bộ mạng ngưng hoạt động.",
+        "Khó tái lập cấu hình hơn so với các cấu hình khác."
+      ],
+      "answer": "Dễ kiểm soát và quản lý tập trung."
+    },
+    {
+      "question": "Giao thức mạng nào dưới đây được sử dụng trong mạng cục bộ LAN?",
+      "options": [
+        "Tất cả đều đúng",
+        "IPX",
+        "TCP/IP",
+        "NETBIOS"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Đổi tên Workgroup được không ? được (True)/không (False)",
+      "options": [
+        "A .True",
+        "False"
+      ],
+      "answer": "A .True"
+    },
+    {
+      "question": "Các thành phần tạo nên mạng máy tính gồm có gì?",
+      "options": [
+        "Protocol",
+        "Network adapter, cable",
+        "Tất cả đều đúng",
+        "Máy tính, hub, switch"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Xem sơ đồ mạng như hình sau đây, địa chỉ IP của các máy gồm: User1 (192.168.0.1), User2 (192.168.1.1), User3 (192.168.1.2), User4 (192.168.2.1), User5 (192.168.0.2). Người dùng đang ở máy user1, dùng lệnh ping đến 4 máy còn lại. Hỏi máy nào sẽ trả lời lại máy User1.",
+      "options": [
+        "User05",
+        "User04",
+        "User03",
+        "User02"
+      ],
+      "answer": "User05"
+    },
+    {
+      "question": "Hãy chọn phát biểu đúng về Switch và Hub?",
+      "options": [
+        "Sử dụng Hub hiệu quả hơn do tăng kích thước vùng đụng độ",
+        "Sử dụng Switch hiệu quả hơn do phân tách vùng đụng độ",
+        "Hub là tăng hiệu năng mạng do xử lý tính hiệu ở hệ nhị phân và không xử lý thêm",
+        "Cả 2 hoạt động hiệu quả như nhau, nhưng Switch đắt tiền hơn"
+      ],
+      "answer": "Sử dụng Switch hiệu quả hơn do phân tách vùng đụng độ"
+    },
+    {
+      "question": "Thiết bị nào sau đây cần thiết cho PC kết nối vào ETHERNET?",
+      "options": [
+        "NIC",
+        "Hub",
+        "Router",
+        "Switch"
+      ],
+      "answer": "NIC"
+    },
+    {
+      "question": "Trong các cách sắp xếp sau của mô hình OSI bạn hãy chọn cách sắp xếp theo thứ tự các tầng từ trên xuống?",
+      "options": [
+        "Tầng ứng dụng – Tầng giao dịch - Tầng Trình bày – Tầng vận chuyển - Tầng mạng – Tầng liên kết dữ liệu - Tầng vật lý",
+        "Tầng ứng dụng – Tầng Trình bày - Tầng giao dịch – Tầng vận chuyển - Tầng mạng – Tầng liên kết dữ liệu - Tầng vật lý",
+        "Tầng ứng dụng – Tầng Trình bày - Tầng giao dịch – Tầng vận chuyển - Tầng mạng – Tầng vật lý - Tầng liên kết dữ liệu",
+        "Tầng Trình bày - Tầng ứng dụng - Tầng giao dịch – Tầng vận chuyển - Tầng mạng – Tầng liên kết dữ liệu - Tầng vật lý"
+      ],
+      "answer": "Tầng ứng dụng – Tầng Trình bày - Tầng giao dịch – Tầng vận chuyển - Tầng mạng – Tầng liên kết dữ liệu - Tầng vật lý"
+    },
+    {
+      "question": "Địa chỉ quảng bá của đường mạng có IP là 192.168.0.0 là bao nhiêu?",
+      "options": [
+        "192.168.2.256",
+        "192.168.0.0",
+        "255.255.255.255",
+        "192.168.0.255"
+      ],
+      "answer": "192.168.0.255"
+    },
+    {
+      "question": "Thiết bị mạng nào sau đây là không thể thiếu khi kết nối liên mạng?",
+      "options": [
+        "BRIDGE",
+        "SWITCH",
+        "HUB",
+        "ROUTER"
+      ],
+      "answer": "ROUTER"
+    },
+    {
+      "question": "Switch sử dụng yếu tố nào trong Frame để chuyển dữ liệu đến máy đích?",
+      "options": [
+        "Địa chỉ mạng con",
+        "Địa chỉ mạng",
+        "Địa chỉ MAC",
+        "Địa chỉ IP"
+      ],
+      "answer": "Địa chỉ MAC"
+    },
+    {
+      "question": "Đơn vị truyền tin của tầng mạng là gì?",
+      "options": [
+        "Data",
+        "Gói tin (Packet)",
+        "Khung (Frame)",
+        "Đoạn (Segment)"
+      ],
+      "answer": "Gói tin (Packet)"
+    },
+    {
+      "question": "Thiết bị mạng nào sau đây có thể làm giảm bớt dữ liệu quảng bá (broadcast) qua mạng?",
+      "options": [
+        "Router",
+        "NIC",
+        "Switch",
+        "Hub"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Phần mềm nào sau đây dùng để bắt và phân tích gói tin:",
+      "options": [
+        "Partition Magic",
+        "Catch Packet",
+        "Wire Shark",
+        "Package Include"
+      ],
+      "answer": "Wire Shark"
+    },
+    {
+      "question": "Với cách mô tả địa chỉ IP(v4). Hỏi có thể viết tối ta bao nhiêu IP?",
+      "options": [
+        "(2 mũ 32)-2",
+        "2 mũ 24",
+        "(2 mũ 24)-2",
+        "2 mũ 32"
+      ],
+      "answer": "2 mũ 32"
+    },
+    {
+      "question": "Thiết bị Router hoạt động ở tầng mấy trong mô hình OSI?",
+      "options": [
+        "Tầng 2",
+        "Tầng 1",
+        "Tầng 3",
+        "Tầng 4"
+      ],
+      "answer": "Tầng 3"
+    },
+    {
+      "question": "Màu đen trong bảng màu mặc định được cung cấp cho loại gói chính nào ?",
+      "options": [
+        "Lưu lượng TCP",
+        "Lưu lượng UDP",
+        "Lưu lượng truy cập HTTP",
+        "Các gói có lỗi"
+      ],
+      "answer": "Các gói có lỗi"
+    },
+    {
+      "question": "Giao thức nào dùng để tìm địa chỉ MAC khi biết địa chỉ IP của máy tính?",
+      "options": [
+        "TCP/IP",
+        "DHCP",
+        "ARP",
+        "RARP"
+      ],
+      "answer": "ARP"
+    },
+    {
+      "question": "Địa chỉ IP có 3 bit đầu của byte thứ nhất là 110. Hỏi IP này thuộc lớp nào?",
+      "options": [
+        "Lớp B",
+        "Lớp A",
+        "Lớp D",
+        "Lớp C"
+      ],
+      "answer": "Lớp C"
+    },
+    {
+      "question": "Bấm cáp thẳng có thể nối giữa các thiết bị nào sau đây?",
+      "options": [
+        "Tất cả đều sai",
+        "Router – PC",
+        "Hub – Hub",
+        "PC-PC"
+      ],
+      "answer": "Tất cả đều sai"
+    },
+    {
+      "question": "Tên miền cho các tổ chức thương mại là gì?",
+      "options": [
+        "Gov",
+        "Mil",
+        "Net",
+        "Com"
+      ],
+      "answer": "Com"
+    },
+    {
+      "question": "Đầu nối RJ45 có thể dùng để bấm vào loại cáp nào sau đây?",
+      "options": [
+        "ScTP",
+        "UTP",
+        "Tất cả đều đúng",
+        "AMP"
+      ],
+      "answer": "UTP"
+    },
+    {
+      "question": "Mạng WAN có các đặc điểm nào sau đây?",
+      "options": [
+        "Có phạm vi hẹp, băng thông lớn, dễ quản trị mạng và giá thành thấp",
+        "Có phạm vi hẹp, băng thông thấp, dễ quản trị và giá thành cao",
+        "Có phạm vi rộng, băng thông thấp, quản trị mạng phức tạp",
+        "Có phạm vi rộng, băng thông lớn, quản trị mạng đơn giản"
+      ],
+      "answer": "Có phạm vi rộng, băng thông thấp, quản trị mạng phức tạp"
+    },
+    {
+      "question": "Giá trị SubnetMask của đường mạng có IP 172.16.0.0 sau khi đã chọn 8 bit ở phần host làm chia mạng con là?",
+      "options": [
+        "255.255.255.240",
+        "255.255.255.248",
+        "255.255.255.0",
+        "255.255.255.224"
+      ],
+      "answer": "255.255.255.0"
+    }
+  ]
+}

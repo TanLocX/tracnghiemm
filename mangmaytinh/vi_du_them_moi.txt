@@ -1,0 +1,36 @@
+Bộ đề mẫu - Ôn tập nhanh
+
+Câu 1: Giao thức nào hoạt động ở tầng Transport của mô hình OSI?
+a. IP
+b. TCP
+c. HTTP
+d. ARP
+=> b
+
+Câu 2: DNS là viết tắt của?
+a. Dynamic Network Service
+b. Data Name System
+c. Domain Name System
+d. Digital Network Standard
+=> c
+
+Câu 3: IPv4 có tổng cộng bao nhiêu bit?
+a. 16
+b. 64
+c. 128
+d. 32
+=> d
+
+Câu 4: Thiết bị nào hoạt động ở tầng Network của mô hình OSI?
+a. Hub
+b. Switch
+c. Router
+d. Repeater
+=> c
+
+Câu 5: HTTP sử dụng cổng (port) mặc định nào?
+a. 21
+b. 25
+c. 80
+d. 443
+=> c

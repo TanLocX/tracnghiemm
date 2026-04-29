@@ -1,0 +1,691 @@
+{
+  "section": "Nhóm Bộ Giao Thức TCP/IP và Internet",
+  "questions": [
+    {
+      "question": "Câu 282: Địa chỉ IP của mỗi máy tính có thể thay đổi bởi người dùng, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 283: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 192.168.100.0 và Subnet Mask là 255.255.255.0?",
+      "options": [
+        "192.168.1.1",
+        "192.167.100.10",
+        "192.168.100.254",
+        "192.168.100.255"
+      ],
+      "answer": "192.168.100.254"
+    },
+    {
+      "question": "Câu 284: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 192.168.10.128 và Subnet Mask là 255.255.255.252?",
+      "options": [
+        "192.168.10.129",
+        "192.167.11.10",
+        "192.168.10.137",
+        "192.168.10.133"
+      ],
+      "answer": "192.168.10.129"
+    },
+    {
+      "question": "Câu 285: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 10.20.64.0 và subnet Mask là 255.255.240.0?",
+      "options": [
+        "10.20.91.86",
+        "10.20.78.68",
+        "10.21.68.86",
+        "10.20.5.1"
+      ],
+      "answer": "10.20.78.68"
+    },
+    {
+      "question": "Câu 286: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 192.32.0.0 và Subnet Mask là 255.224.0.0?",
+      "options": [
+        "192.68.1.1",
+        "192.86.100.10",
+        "192.33.100.254",
+        "191.168.100.255"
+      ],
+      "answer": "192.33.100.254"
+    },
+    {
+      "question": "Câu 287: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 10.16.0.0 và có Subnet Mask là 255.240.0.0?",
+      "options": [
+        "10.18.254.1",
+        "10.33.100.10",
+        "11.18.100.2",
+        "10.48.100.55"
+      ],
+      "answer": "10.18.254.1"
+    },
+    {
+      "question": "Câu 288: Địa chỉ IP nào dưới đây nằm trong mạng có địa chỉ mạng là 192.168.128.0 và Subnet Mask là 255.255.192.0?",
+      "options": [
+        "192.168.200.1",
+        "192.167.10.10",
+        "192.168.100.254",
+        "192.168.129.25"
+      ],
+      "answer": "192.168.129.25"
+    },
+    {
+      "question": "Câu 289: Trên môi trường Windows, lệnh nào sau đây cho biết địa chỉ IP và địa chỉ mạng của một máy tính?",
+      "options": [
+        "Ping",
+        "Ipconfig",
+        "Hostname",
+        "Cls"
+      ],
+      "answer": "Ipconfig"
+    },
+    {
+      "question": "Câu 290: Trên môi trường của hệ điều hành Windows, lệnh nào sau đây cho biết địa chỉ MAC của một máy tính?",
+      "options": [
+        "Ping",
+        "Ipconfig /all",
+        "Hostname",
+        "Net"
+      ],
+      "answer": "Ipconfig /all"
+    },
+    {
+      "question": "Câu 291: Việc phân chia các mạng thành mạng con có lợi ích gì?",
+      "options": [
+        "Giảm thời gian sử dụng CPU do giảm các gói tin quảng bá",
+        "Giới hạn phạm các sự cố xảy ra trên từng mạng con mà không ảnh hưởng tới toàn mạng LAN",
+        "Giảm tắc nghẽn mạng do giảm các gói tin quảng bá",
+        "Cả ba câu trên đều đúng"
+      ],
+      "answer": "Cả ba câu trên đều đúng"
+    },
+    {
+      "question": "Câu 292: Địa chỉ mạng được xác định bằng cách nào?",
+      "options": [
+        "Chuyển đổi IP và Subnet Mask thành chuỗi các bit nhị phân, sau đó thực hiện phép toán logic AND cho các cặp bit tương ứng của hai đối tượng trên",
+        "Chuyển đổi IP và Subnet Mask thành chuỗi các bit nhị phân, sau đó thực hiện phép toán logic OR cho các cặp bit tương ứng của hai đối tượng trên",
+        "Chuyển đổi IP và Subnet Mask thành chuỗi các bit nhị phân, sau đó thực hiện phép toán logic NOR cho các cặp bit tương ứng của hai đối tượng trên",
+        "Chuyển đổi IP và Subnet Mask thành chuỗi các bit nhị phân, sau đó thực hiện phép toán logic NAND cho các cặp bit tương ứng của hai đối tượng trên"
+      ],
+      "answer": "Chuyển đổi IP và Subnet Mask thành chuỗi các bit nhị phân, sau đó thực hiện phép toán logic AND cho các cặp bit tương ứng của hai đối tượng trên"
+    },
+    {
+      "question": "Câu 293: Ý nghĩa của Subnet Mask là gì?",
+      "options": [
+        "Nhằm để xác định địa chỉ Host",
+        "Nhằm để xác định địa chỉ mạng",
+        "Nhằm để phân chia các mạng thành mạng con",
+        "Cả ba câu trên đều đúng"
+      ],
+      "answer": "Nhằm để phân chia các mạng thành mạng con"
+    },
+    {
+      "question": "Câu 294: Căn cứ vào đâu để máy tính chuyển gói tin đến Router khi trao đổi thông tin với các máy tính ngoài LAN?",
+      "options": [
+        "Địa chỉ IP đích",
+        "Địa chỉ mạng đích",
+        "Subnet Mask",
+        "Câu a và b"
+      ],
+      "answer": "Câu a và b"
+    },
+    {
+      "question": "Câu 295: Trên môi trường của hệ điều hành Windows, lệnh 'route PRINTF' thực hiện chức năng gì?",
+      "options": [
+        "Hiển thị thông tin về trạng thái truyền và nhận dữ liệu của máy tính",
+        "Hiển thị thông tin bảng định tuyến của máy tính",
+        "Hiển thị thông tin về địa chỉ IP của các máy tính trong LAN",
+        "Hiển thị thông tin về các tham số cấu hình mạng của máy tính"
+      ],
+      "answer": "Hiển thị thông tin bảng định tuyến của máy tính"
+    },
+    {
+      "question": "Câu 296: Trên môi trường của hệ điều hành Windows, lệnh nào sau đây cho biết tên của một máy tính trên mạng?",
+      "options": [
+        "Ping",
+        "Ipconfig /all",
+        "Hostname",
+        "Nslookup"
+      ],
+      "answer": "Hostname"
+    },
+    {
+      "question": "Câu 297: Giao thức nào được sử dụng để thông báo lỗi liên quan đến IP?",
+      "options": [
+        "SMTP",
+        "ICMP",
+        "RTMP",
+        "SMTP"
+      ],
+      "answer": "ICMP"
+    },
+    {
+      "question": "Câu 298: Giao thức phân giải địa chỉ IP thành địa chỉ MAC?",
+      "options": [
+        "DNS",
+        "ARP",
+        "NetBIOS",
+        "TCP"
+      ],
+      "answer": "ARP"
+    },
+    {
+      "question": "Câu 299: Giao thức nào phân giải địa chỉ MAC thành địa chỉ IP?",
+      "options": [
+        "DNS",
+        "RARP",
+        "NetBIOS",
+        "TCP"
+      ],
+      "answer": "RARP"
+    },
+    {
+      "question": "Câu 300: Giao thức ARP được cài đặt tại các thiết bị nào?",
+      "options": [
+        "Máy tính",
+        "Router",
+        "Switch",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 301: Tính chất cơ bản của địa chỉ MAC là gì?",
+      "options": [
+        "Độ dài 32 bits, viết dưới dạng xxx.xxx.xxx.xxx",
+        "Độ dài 64 bits, viết dưới dạng yy:yy:yy:yy:yy:yy:yy:yy",
+        "Cho phép xác định vị trí địa lý của một thiết bị",
+        "Cho phép xác định duy nhất một thiết bị"
+      ],
+      "answer": "Cho phép xác định duy nhất một thiết bị"
+    },
+    {
+      "question": "Câu 302: Địa chỉ IP nào dưới đây thuộc địa chỉ lớp C?",
+      "options": [
+        "129.219.145.255",
+        "221.218.253.255",
+        "190.44.255.255",
+        "190.12.253.255"
+      ],
+      "answer": "221.218.253.255"
+    },
+    {
+      "question": "Câu 305: Địa chỉ IP nào dưới đây thuộc địa chỉ lớp A?",
+      "options": [
+        "129.219.145.255",
+        "221.218.253.255",
+        "190.44.255.255",
+        "122.12.253.255"
+      ],
+      "answer": "122.12.253.255"
+    },
+    {
+      "question": "Câu 306: Địa chỉ IP nào dưới đây thuộc địa chỉ lớp B?",
+      "options": [
+        "133.219.145.255",
+        "221.218.253.255",
+        "90.44.255.255",
+        "22.12.253.255"
+      ],
+      "answer": "133.219.145.255"
+    },
+    {
+      "question": "Câu 310: Số lượng bit nhiều nhất có thể mượn để chia subnets của địa chỉ IP lớp C là bao nhiêu?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": "6"
+    },
+    {
+      "question": "Câu 311: Số lượng bit nhiều nhất có thể mượn để chia subnets của địa chỉ IP lớp A là bao nhiêu?",
+      "options": [
+        "8",
+        "16",
+        "24",
+        "22"
+      ],
+      "answer": "22"
+    },
+    {
+      "question": "Câu 312: Số lượng bit nhiều nhất có thể mượn để chia subnets của địa chỉ IP lớp B là bao nhiêu?",
+      "options": [
+        "8",
+        "16",
+        "10",
+        "14"
+      ],
+      "answer": "14"
+    },
+    {
+      "question": "Câu 313: Trong mạng có các máy tính dùng giao thức TCP/IP và Subnet Mask là 255.255.255.0, cặp máy tính nào sau đây liên thông với nhau?",
+      "options": [
+        "192.168.1.3 và 192.168.100.1",
+        "192.168.15.1 và 192.168.15.254",
+        "192.168.100.15 và 192.186.100.16",
+        "172.25.11.1 và 172.26.11.2"
+      ],
+      "answer": "192.168.15.1 và 192.168.15.254"
+    },
+    {
+      "question": "Câu 317: Đặc điểm chung giữa hai máy tính trong một LAN là gì?",
+      "options": [
+        "Có cùng địa chỉ IP",
+        "Có cùng địa chỉ MAC",
+        "Có cùng địa chỉ mạng",
+        "Câu a và c đúng"
+      ],
+      "answer": "Có cùng địa chỉ mạng"
+    },
+    {
+      "question": "Câu 318: Đặc điểm phân biệt giữa hai máy tính ở hai LAN khác nhau là gì?",
+      "options": [
+        "Có cùng địa chỉ IP",
+        "Có cùng địa chỉ MAC",
+        "Có địa chỉ mạng khác nhau",
+        "Câu a và b đúng"
+      ],
+      "answer": "Có địa chỉ mạng khác nhau"
+    },
+    {
+      "question": "Câu 319: Hai máy tính ở hai LAN khác nhau thì không thể trao đổi thông tin trực tiếp được với nhau, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 320: Để kết nối hai LAN, người ta thường sử dụng thiết bị nào?",
+      "options": [
+        "Modem",
+        "Router",
+        "Switch",
+        "Hub"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Câu 324: Địa chỉ được thiết lập tại trường Default Gateway trong giao diện cấu hình các tham số mạng của máy tính cài đặt hệ điều hành Windows XP là địa chỉ của thiết bị nào trong LAN?",
+      "options": [
+        "Switch",
+        "Router",
+        "Bridge",
+        "Hub"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Câu 325: Địa chỉ được thiết lập tại trường preferred DNS Server trong giao diện cấu hình các tham số mạng của máy tính cài đặt hệ điều hành Windows XP là địa chỉ máy tính nào?",
+      "options": [
+        "Webserver",
+        "Mail Server",
+        "DNS Server",
+        "FPT Server"
+      ],
+      "answer": "DNS Server"
+    },
+    {
+      "question": "Câu 326: Nếu không thiết lập địa chỉ tại trường Default Gateway trong giao diện cấu hình các tham số mạng của máy tính cài đặt hệ điều hành Windows XP thì điều gì sẽ xảy ra?",
+      "options": [
+        "Máy tính này sẽ không thể trao đổi thông tin với các trạm khác trong LAN",
+        "Máy tính này sẽ không thể trao đổi thông tin với các trạm khác ở LAN khác",
+        "Máy tính này sẽ không thể truy nhập thông tin trên Internet",
+        "Câu b và c đúng"
+      ],
+      "answer": "Câu b và c đúng"
+    },
+    {
+      "question": "Câu 327: Nếu không thiết lập địa chỉ tại trường preferred DNS Server trong giao diện cấu hình các tham số mạng của máy tính cài đặt hệ điều hành Windows XP thì điều gì sẽ xảy ra?",
+      "options": [
+        "Máy tính này sẽ không thể trao đổi thông tin với các trạm khác trong LAN",
+        "Máy tính này sẽ không thể trao đổi thông tin với các trạm khác ở LAN khác",
+        "Máy tính này sẽ không thể truy nhập thông tin trên Internet thông qua tên miền",
+        "Câu b và c đúng"
+      ],
+      "answer": "Máy tính này sẽ không thể truy nhập thông tin trên Internet thông qua tên miền"
+    },
+    {
+      "question": "Câu 330: Địa chỉ 139.219.255.255 là địa chỉ gì?",
+      "options": [
+        "Broadcast lớp B",
+        "Broadcast lớp A",
+        "Broadcast lớp C",
+        "Host của lớp B"
+      ],
+      "answer": "Broadcast lớp B"
+    },
+    {
+      "question": "Câu 331: Địa chỉ 39.254.255.255 là địa chỉ gì?",
+      "options": [
+        "Broadcast lớp B",
+        "Broadcast lớp A",
+        "Broadcast lớp C",
+        "Host của lớp A"
+      ],
+      "answer": "Host của lớp A"
+    },
+    {
+      "question": "Câu 332: Địa chỉ 200.255.254.255 là địa chỉ gì?",
+      "options": [
+        "Broadcast lớp B",
+        "Broadcast lớp A",
+        "Broadcast lớp C",
+        "Host của lớp C"
+      ],
+      "answer": "Broadcast lớp C"
+    },
+    {
+      "question": "Câu 347: Giá trị nào là Subnetmask mặc định cho lớp A?",
+      "options": [
+        "255.0.0.255",
+        "255.255.0.0",
+        "255.0.0.0",
+        "255.255.255.0"
+      ],
+      "answer": "255.0.0.0"
+    },
+    {
+      "question": "Câu 348: Giá trị nào là Subnetmask mặc định cho lớp B?",
+      "options": [
+        "255.0.0.255",
+        "255.255.0.0",
+        "255.0.255.0",
+        "255.255.255.0"
+      ],
+      "answer": "255.255.0.0"
+    },
+    {
+      "question": "Câu 349: Giá trị nào là Subnetmask mặc định cho lớp C?",
+      "options": [
+        "255.0.0.255",
+        "255.255.0.0",
+        "255.0.255.255",
+        "255.255.255.0"
+      ],
+      "answer": "255.255.255.0"
+    },
+    {
+      "question": "Câu 350: Mỗi mạng thuộc lớp A có thể thiết lập bao nhiêu địa chỉ IP của máy trạm?",
+      "options": [
+        "2^24 - 2",
+        "2^16 - 2",
+        "2^8 - 2",
+        "2^20 - 2"
+      ],
+      "answer": "2^24 - 2"
+    },
+    {
+      "question": "Câu 351: Mỗi mạng thuộc lớp B có thể thiết lập bao nhiêu địa chỉ IP của máy trạm?",
+      "options": [
+        "2^24 - 2",
+        "2^16 - 2",
+        "2^8 - 2",
+        "2^20 - 2"
+      ],
+      "answer": "2^16 - 2"
+    },
+    {
+      "question": "Câu 352: Mỗi mạng thuộc lớp C có thể thiết lập bao nhiêu địa chỉ IP của máy trạm?",
+      "options": [
+        "2^24 - 2",
+        "2^16 - 2",
+        "2^8 - 2",
+        "2^20 - 2"
+      ],
+      "answer": "2^8 - 2"
+    },
+    {
+      "question": "Câu 356: TCP/IP là thuật ngữ viết tắt của cụm từ nào?",
+      "options": [
+        "Transfer Control Protocol/ Interrnet Protocol",
+        "Transmission Control Protocol/ Interrnet Protocol",
+        "Transmission Control Protocol/ Interconnection Protocol",
+        "Transfer Communication Protocol/ Interrnet Protocol"
+      ],
+      "answer": "Transmission Control Protocol/ Interrnet Protocol"
+    },
+    {
+      "question": "Câu 357: Bộ phần mềm giao thức TCP/IP được tích hợp vào phần mềm nào sau đây?",
+      "options": [
+        "Trình điều khiển (Driver) cho Card mạng",
+        "Hệ điều hành Linux",
+        "Hệ điều hành Windows XP",
+        "Câu b và c đúng"
+      ],
+      "answer": "Câu b và c đúng"
+    },
+    {
+      "question": "Câu 358: Kích thước của địa chỉ IPv4 gồm bao nhiêu bit?",
+      "options": [
+        "16",
+        "32",
+        "64",
+        "128"
+      ],
+      "answer": "32"
+    },
+    {
+      "question": "Câu 359: Trường thông tin Header Checksum trong cấu trúc gói số liệu IP dùng để làm gì?",
+      "options": [
+        "Điều khiển lưu lượng",
+        "Kiểm soát lỗi của dữ liệu truyền thông",
+        "Kiểm soát lỗi kết nối",
+        "Kiểm soát trạng thái xung đột truyền thông xảy ra trên mạng"
+      ],
+      "answer": "Kiểm soát lỗi của dữ liệu truyền thông"
+    },
+    {
+      "question": "Câu 360: Trường thông tin Time To Live trong cấu trúc gói số liệu IP dùng để làm gì?",
+      "options": [
+        "Xử lý tắc nghẽn truyền thông trên mạng",
+        "Kiểm soát trạng thái xung đột truyền thông xảy ra trên mạng",
+        "Kiểm soát thời gian truyền của gói tin",
+        "Kiểm soát lỗi truyền thông trên mạng"
+      ],
+      "answer": "Xử lý tắc nghẽn truyền thông trên mạng"
+    },
+    {
+      "question": "Câu 361: Độ dài tối đa của gói tin IP là bao nhiêu byte?",
+      "options": [
+        "65563",
+        "65536",
+        "65000",
+        "65525"
+      ],
+      "answer": "65536"
+    },
+    {
+      "question": "Câu 363: Chức năng chính của giao thức ICMP là gì?",
+      "options": [
+        "Điều khiển lưu lượng dữ liệu để tránh 'ngập lụt' ở phía nhận",
+        "Định hướng lại tuyến đường gửi dữ liệu liên mạng",
+        "Thiết lập địa chỉ IP cho gói dữ liệu IP",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 364: Giao thức nào sau đây thuộc tầng giao vận?",
+      "options": [
+        "UCP",
+        "UDP",
+        "TDP",
+        "TDC"
+      ],
+      "answer": "UDP"
+    },
+    {
+      "question": "Câu 365: TCP là giao thức có kết nối, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 366: Trường thông tin Sequence Number trong cấu trúc gói số liệu TCP dùng để làm gì?",
+      "options": [
+        "Lưu số thứ tự truyền của các gói tin",
+        "Lưu mã xử lý lỗi của gói tin",
+        "Lưu thông tin điều khiển lưu lượng",
+        "Lưu thông tin điều khiển xung đột"
+      ],
+      "answer": "Lưu số thứ tự truyền của các gói tin"
+    },
+    {
+      "question": "Câu 367: Trường thông tin Checksum trong cấu trúc gói số liệu TCP dùng để làm gì?",
+      "options": [
+        "Lưu số thứ tự của các gói tin",
+        "Lưu mã xử lý lỗi của gói tin",
+        "Lưu thông tin điều khiển lưu lượng",
+        "Lưu thông tin điều khiển xung đột"
+      ],
+      "answer": "Lưu mã xử lý lỗi của gói tin"
+    },
+    {
+      "question": "Câu 368: Trường thông tin ACK trong cấu trúc gói số liệu TCP dùng để làm gì?",
+      "options": [
+        "Lưu số thứ tự của các gói tin",
+        "Lưu thông tin về gói tin nhận có bị lỗi hay không",
+        "Lưu mã kiểm soát lỗi cho toàn bộ gói tin",
+        "Lưu thông tin điều khiển xung đột"
+      ],
+      "answer": "Lưu thông tin về gói tin nhận có bị lỗi hay không"
+    },
+    {
+      "question": "Câu 371: Giao thức nào sau đây là giao thức không có kết nối?",
+      "options": [
+        "UDP",
+        "IP",
+        "ICMP",
+        "Cả ba giao thức trên"
+      ],
+      "answer": "Cả ba giao thức trên"
+    },
+    {
+      "question": "Câu 372: Giao thức nào sau thực hiện chức năng của tầng giao vận?",
+      "options": [
+        "TCP",
+        "ICMP",
+        "UDP",
+        "Câu a và c đúng"
+      ],
+      "answer": "Câu a và c đúng"
+    },
+    {
+      "question": "Câu 373: Giao thức UDP đơn giản hơn so với giao thức TCP, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 374: Đặc điểm của giao thức TCP là gì?",
+      "options": [
+        "Truyền các gói dữ liệu theo đúng thứ tự",
+        "Có khả năng gây ra tắc nghẽn đường truyền",
+        "Truyền lại các gói dữ liệu bị mất trên đường truyền",
+        "Câu a và c đúng"
+      ],
+      "answer": "Câu a và c đúng"
+    },
+    {
+      "question": "Câu 375: Đặc điểm của giao thức UDP là gì?",
+      "options": [
+        "Truyền các gói dữ liệu theo đúng thứ tự",
+        "Truyền lại các gói dữ liệu mất trên đường truyền",
+        "Không truyền lại các gói dữ liệu bị lỗi",
+        "Câu a và b đúng"
+      ],
+      "answer": "Không truyền lại các gói dữ liệu bị lỗi"
+    },
+    {
+      "question": "Câu 376: Giao thức TCP thích ứng với các ứng dụng nào sau?",
+      "options": [
+        "Ứng dụng thời gian thực",
+        "Ứng dụng truyền tin tin cậy",
+        "Ứng dụng truyền dữ liệu đa phương tiện như âm thanh, hình ảnh",
+        "Câu a và c đúng"
+      ],
+      "answer": "Ứng dụng truyền tin tin cậy"
+    },
+    {
+      "question": "Câu 377: Giao thức UDP thích ứng với các ứng dụng nào sau?",
+      "options": [
+        "Ứng dụng thời gian thực",
+        "Ứng dụng truyền tin tin cậy",
+        "Ứng dụng truyền dữ liệu đa phương tiện như âm thanh, hình ảnh",
+        "Câu a và c đúng"
+      ],
+      "answer": "Câu a và c đúng"
+    },
+    {
+      "question": "Câu 378: Giao thức truyền thông UDP tin cậy hơn so với giao thức truyền thông TCP, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 379: Giao thức truyền thông UDP không cung cấp chức năng sắp xếp thứ tự truyền thông của các gói tin, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 380: Giao thức truyền thông UDP không có cơ chế kiểm tra và báo nhận ACK, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 382: TCP/IP là gì?",
+      "options": [
+        "Là một bộ giao thức cho phép LAN kết nối với LAN",
+        "Là một bộ giao thức cho phép LAN kết nối với WAN",
+        "Là một bộ giao thức cho phép WAN kết nối với WAN",
+        "Là một bộ giao thức cho phép truyền thông dữ liệu thông qua nhiều mạng khác nhau"
+      ],
+      "answer": "Là một bộ giao thức cho phép truyền thông dữ liệu thông qua nhiều mạng khác nhau"
+    },
+    {
+      "question": "Câu 383: Việc thiết lập địa chỉ cổng dịch vụ cho mỗi gói tin TCP nhằm để làm gì?",
+      "options": [
+        "Nhằm để phân loại và sắp xếp, xác định gói tin thuộc về dịch vụ trao đổi thông tin nào",
+        "Để định danh gói tin TCP",
+        "Để sắp xếp các gói tin cho đúng thứ tự gửi và nhận",
+        "Nhằm để điều khiển truyền thông gói tin"
+      ],
+      "answer": "Nhằm để phân loại và sắp xếp, xác định gói tin thuộc về dịch vụ trao đổi thông tin nào"
+    },
+    {
+      "question": "Câu 384: Một máy tính trên mạng có thể cài đặt được tối đa bao nhiêu địa chỉ IP?",
+      "options": [
+        "Một",
+        "Nhiều",
+        "Không cần cài đặt địa chỉ IP",
+        "Câu a và câu b đúng"
+      ],
+      "answer": "Nhiều"
+    },
+    {
+      "question": "Câu 385: Một địa chỉ IP có thể định danh cho bao nhiều máy tính trong mạng?",
+      "options": [
+        "Một",
+        "Hai",
+        "Ba",
+        "Nhiều"
+      ],
+      "answer": "Một"
+    }
+  ]
+}

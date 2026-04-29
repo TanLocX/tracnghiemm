@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python split_chapters.py)",
+      "Bash(python check_answers.py)",
+      "Bash(python -c ' *)",
+      "Bash(python fix_chuong1.py)",
+      "Bash(python check_chuong2.py)",
+      "Bash(python fix_chuong2.py)",
+      "Bash(python fix_chuong3.py)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('quiz_app.py', doraise=True\\); print\\('OK'\\)\")",
+      "PowerShell(New-NetFirewallRule -DisplayName \"Quiz App Port 8080\" -Direction Inbound -Protocol TCP -LocalPort 8080 -Action Allow -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-NetFirewallRule -DisplayName \"Quiz App Port 8080\")",
+      "PowerShell(New-NetFirewallRule -DisplayName \"Quiz App Port 8080\" -Direction Inbound -Protocol TCP -LocalPort 8080 -Action Allow 2>&1)",
+      "PowerShell(netstat -ano)",
+      "Bash(python -c \"import flet; print\\(flet.version.version\\)\")"
+    ]
+  }
+}

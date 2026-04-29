@@ -1,0 +1,109 @@
+--- PAGE 0 ---
+BỘ SỐ 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NGÂN HÀNG CÂU HỎI TRẮC NGHIỆM 
+ 
+MÔN LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM 
+(917 CÂU HỎI VÀ ĐÁP ÁN) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NĂM HỌC 2026 
+
+--- PAGE 0 FONT INFO ---
+Text: 'BỘ SỐ 3' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'NGÂN HÀNG CÂU HỎI TRẮC NGHIỆM' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'MÔN LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: '(917 CÂU HỎI VÀ ĐÁP ÁN)' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'NĂM HỌC 2026' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+--- PAGE 1 ---
+2 
+ 
+CHƯƠNG 1: ĐẢNG CỘNG SẢN VIỆT NAM RA ĐỜI VÀ LÃNH ĐẠO ĐẤU 
+TRANH GIÀNH CHÍNH QUYỀN (1930 - 1945) 
+ 
+Câu 1: Cuối thế kỷ 19 đầu thế kỷ XX nguy cơ nào do các nước đế quốc gây ra 
+chi phối trực tiếp đến lịch sử của nhiều nước Châu Á, Châu Phi, trong đó có Việt 
+Nam… 
+A. sự phát triển vượt bậc của nền kinh tế 
+B. sự hình thành các tổ chức độc quyền  
+C. tăng cường xâm lược thuộc địa  
+D. chuẩn bị chiến tranh để chia lại thị trường thế giới  
+Câu 2: Năm 1923, Nguyễn Phan Long, Bùi Quang Chiêu đã thành lập tổ chức 
+chính trị nào để tập hợp quần chúng đấu tranh? 
+A. Việt Nam Quốc dân Đảng  
+B. Đảng Thanh niên 
+C. Đảng lập pháp  
+D. Đảng Lập hiến  
+Câu 3: Thời gian thực dân Pháp tiến hành khai thác thuộc địa lần thứ nhất ở 
+Việt Nam khi nào?   
+A. 1858-1884   
+B. 1884-1896   
+C. 1896-1913   
+D. 1914-1918   
+Câu 4: Trong đợt khai thác thuộc địa lần thứ nhất của thực dân Pháp ở nước ta 
+có giai cấp mới nào được hình thành?  
+A. Giai cấp tư sản   
+B. Giai cấp tư sản và công nhân   
+C. Giai cấp công nhân   
+D. Giai cấp tiểu tư sản   
+Câu 5: Trước Chiến tranh thế giới thứ nhất, ở Việt Nam có những giai cấp, tầng 
+lớp nào?   
+A. Địa chủ phong kiến và nông dân   
+
+--- PAGE 1 FONT INFO ---
+Text: '2' | Font: Courier New | Color: 0x0 | Flags: 12
+Text: 'CHƯƠNG 1: ĐẢNG CỘNG SẢN VIỆT NAM RA ĐỜI VÀ LÃNH ĐẠ' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'TRANH GIÀNH CHÍNH QUYỀN (1930 - 1945' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: ')' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Câu 1: Cuối thế kỷ 19 đầu thế kỷ XX nguy cơ nào do' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'chi phối trực tiếp đến lịch sử của nhiều nước Châu' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'Nam…' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'A.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'sự phát triển vượt bậc của nền kinh tế' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'B.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'sự hình thành các tổ chức độc quyền' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'C.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'tăng cường xâm lược thuộc địa' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'D.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'chuẩn bị chiến tranh để chia lại thị trường thế gi' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Câu 2: Năm 1923, Nguyễn Phan Long, Bùi Quang Chiêu' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'chính trị nào để tập hợp quần chúng đấu tranh?' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'A.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Việt Nam Quốc dân Đảng' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'B.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Đảng Thanh niên' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'C.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Đảng lập pháp' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'D.' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Đảng Lập hiến' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Câu 3: Thời gian thực dân Pháp tiến hành khai thác' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'Việt Nam khi nào?' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'A. 1858-1884' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'B. 1884-1896' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'C. 1896-1913' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'D. 1914-1918' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Câu 4: Trong đợt khai thác thuộc địa lần thứ nhất ' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'có giai cấp mới nào được hình thành?' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'A. Giai cấp tư sản' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'B. Giai cấp tư sản và công nhân' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'C. Giai cấp công nhân' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'D. Giai cấp tiểu tư sản' | Font: Times New Roman | Color: 0x0 | Flags: 4
+Text: 'Câu 5: Trước Chiến tranh thế giới thứ nhất, ở Việt' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'lớp nào?' | Font: Times New Roman,Bold | Color: 0x0 | Flags: 20
+Text: 'A. Địa chủ phong kiến và nông dân' | Font: Times New Roman | Color: 0x0 | Flags: 4

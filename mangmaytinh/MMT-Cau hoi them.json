@@ -1,0 +1,405 @@
+{
+  "section": "MMT-Cau hoi them",
+  "questions": [
+    {
+      "question": "CÂU HỎI TRẮC NGHIỆM THIẾT BỊ MẠNG MÁY TÍNH\nThiết bị Hub thông thường nằm ở tầng nào của mô hình OSI?",
+      "options": [
+        "Tầng 1",
+        "Tầng 2",
+        "Tầng 3",
+        "Tất cả đều sai"
+      ],
+      "answer": "Tầng 1"
+    },
+    {
+      "question": "Thiết bị Switch thông thường nằm ở tầng nào của mô hình OSI?",
+      "options": [
+        "Tầng 1",
+        "Tầng 2",
+        "Tầng 3",
+        "Tất cả đều sai"
+      ],
+      "answer": "Tầng 2"
+    },
+    {
+      "question": "Thiết bị Bridge nằm ở tầng nào của mô hình OSI?",
+      "options": [
+        "Tầng 1",
+        "Tầng 2",
+        "Tầng 3",
+        "Tất cả đều sai"
+      ],
+      "answer": "Tầng 1"
+    },
+    {
+      "question": "Thiết bị Router thường nằm ở tầng nào của mô hình OSI?",
+      "options": [
+        "Tầng 1",
+        "Tầng 2",
+        "Từ tầng 3 trở lên",
+        "Tất cả đều sai"
+      ],
+      "answer": "Từ tầng 3 trở lên"
+    },
+    {
+      "question": "Thiết bị Repeater nằm ở tầng nào của mô hình OSI?",
+      "options": [
+        "Tầng 1",
+        "Tầng 2",
+        "Tầng 3",
+        "Tất cả đều sai"
+      ],
+      "answer": "Tầng 1"
+    },
+    {
+      "question": "Thiết bị Hub có bao nhiêu collision domain?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "1"
+    },
+    {
+      "question": "Để nối Router và máy tính ta phải bấm cáp kiểu gì?",
+      "options": [
+        "Thẳng",
+        "Chéo",
+        "Kiểu nào cũng được",
+        "Tất cả điều sai"
+      ],
+      "answer": "Thẳng"
+    },
+    {
+      "question": "Khi dùng Repeater để mở rộng các đoạn mạng ta có thể?",
+      "options": [
+        "Đặt tối đa 4 đoạn mạng máy tính",
+        "Đặt tối đa 5 đoạn mạng máy tính",
+        "Đặt tối đa 3 đoạn mạng máy tính",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Đặt tối đa 3 đoạn mạng máy tính"
+    },
+    {
+      "question": "Phát biểu nào sau đây đúng nhất cho Switch?",
+      "options": [
+        "Sử dụng địa chỉ vật lí và hoạt động tại tầng Physical của mô hình OSI.",
+        "Sử dụng địa chỉ vật lí và hoạt động tại tầng Network của mô hình OSI.",
+        "Sử dụng địa chỉ vật lí và hoạt động tại tầng Data Link của mô hình OSI.",
+        "Sử dụng địa chỉ IP và hoạt động tại tầng Network của mô hình OSI."
+      ],
+      "answer": "Sử dụng địa chỉ vật lí và hoạt động tại tầng Data Link của mô hình OSI."
+    },
+    {
+      "question": "Router là một thiết bị mạng dùng để:",
+      "options": [
+        "Định tuyến giữa các mạng",
+        "Lọc các gói tin dư thừa",
+        "Mở rộng một hệ thống mạng",
+        "Cả 3 đều đúng"
+      ],
+      "answer": "Định tuyến giữa các mạng"
+    },
+    {
+      "question": "Thiết bị Repeater cho phép:",
+      "options": [
+        "Kéo dài 1 nhánh LAN qua việc khuêch đại tín hiệu truyền đến phần mở rộng của nó",
+        "Ngăn không cho các packet thuộc loại Broadcast đi qua nó",
+        "Giúp định tuyến cho các packets",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Kéo dài 1 nhánh LAN qua việc khuêch đại tín hiệu truyền đến phần mở rộng của nó"
+    },
+    {
+      "question": "Thiết bị Hub cho phép:",
+      "options": [
+        "Kéo dài 1 nhánh LAN thông qua viêc khuếch đại tính hiệu truyền đến nó",
+        "Ngăn không cho các packet thuộc loại Broadcast đi qua nó",
+        "Giúp định tuyến cho các packets",
+        "Kết nối nhiều máy tính lại với nhau để tạo một nhánh LAN( segment)"
+      ],
+      "answer": "Kết nối nhiều máy tính lại với nhau để tạo một nhánh LAN( segment)"
+    },
+    {
+      "question": "Thiết bị Bridge cho phép:",
+      "options": [
+        "Ngăn không cho các packet thuộc loại Broadcast đi qua nó",
+        "Giúp định tuyến cho các packets",
+        "Kết nối 2 mạng LAN lại với nhau đồng thời đóng vai trò như một bộ lọc( filter), chỉ cho phép các packet mà địa chỉ đích nằm ngoài nhánh LAN mà packet xuất phát, đi qua.",
+        "Tất cả đều sai"
+      ],
+      "answer": "Kết nối 2 mạng LAN lại với nhau đồng thời đóng vai trò như một bộ lọc( filter), chỉ cho phép các packet mà địa chỉ đích nằm ngoài nhánh LAN mà packet xuất phát, đi qua."
+    },
+    {
+      "question": "Chức năng chủ yếu của Repeater:",
+      "options": [
+        "Khuếch đại tín hiệu, lọc tin và truyền tin",
+        "Khuếch đại tín hiệu và truyền tin",
+        "Định tuyến các gói tin",
+        "Tất cả đều đúng"
+      ],
+      "answer": "Khuếch đại tín hiệu và truyền tin"
+    },
+    {
+      "question": "Chọn các phát biểu sai về HUB( chọn 2 đáp án)",
+      "options": [
+        "Hoạt động ở tầng Data Link",
+        "Lọc các gói tin dựa vào địa chỉ MAC",
+        "Là Repeater multiport",
+        "Làm tăng kích thước của collision domain"
+      ],
+      "answer": "Lọc các gói tin dựa vào địa chỉ MAC"
+    },
+    {
+      "question": "Chọn phát biểu đúng về Repeater",
+      "options": [
+        "Hoạt động ở tầng Physycal",
+        "Lọc gói tin dựa trên địa chỉ Mac",
+        "Tiếp cận tin hiệu ở một cổng , khuếch đại tín hiệu lên và truyền ra cổng kia",
+        "Có chức nagw phân cách các collision domain"
+      ],
+      "answer": "Tiếp cận tin hiệu ở một cổng , khuếch đại tín hiệu lên và truyền ra cổng kia"
+    },
+    {
+      "question": "Chức năng chính của router là:",
+      "options": [
+        "Mở rộng kích thước cho phép một đoạn mạch bằng cách khuếch đại tín hiệu.",
+        "Kết nối nhiều mạng LAN với nhau, ngăn các gói tin broadcast và chuyển các gói tin giữa các mạng LAN",
+        "Kết nối nhiều máy tính với nhau",
+        "Lọc các gói tin dựa vào địa chỉ MAC"
+      ],
+      "answer": "Kết nối nhiều mạng LAN với nhau, ngăn các gói tin broadcast và chuyển các gói tin giữa các mạng LAN"
+    },
+    {
+      "question": "Chọn phát biểu đúng về switch và hub",
+      "options": [
+        "Sử dụng HUB hiệu quả hơn, do HUB làm tăng kích thước của colllision-domain.",
+        "Sử dụng SWITCH hiệu quả hơn, do SWITCH phân cách giữa các collision-domain",
+        "HUB và SWITCH đều cho hiệu quả hiệu suất hoạt động ngang nhau, tuy nhiên SWITCH cho phép cấu hình để thực hiện một số công việc khác nên đắt tiền hơn.",
+        "HUB làm tăng hiệu quả của mạng do chỉ chuyển các tín hiệu nhị phân mà không xử lí gì hết."
+      ],
+      "answer": "Sử dụng SWITCH hiệu quả hơn, do SWITCH phân cách giữa các collision-domain"
+    },
+    {
+      "question": "Để hạn chế sự đụng độ của các gói tin trên 1 đoạn mạng, người ta chia mạng thành các mạng nhỏ hơn và kết nối chúng lại bằng các thiết bị:",
+      "options": [
+        "Repeater/Hub",
+        "Bridges/Switches",
+        "Router",
+        "Tất cả các thiết bị trên"
+      ],
+      "answer": "Bridges/Switches"
+    },
+    {
+      "question": "Các thiết bị mạng nào sau đây có khả năng định tuyến cho 1 gói tin (chuyển gói tin sang một mạng kế khác nằm trên đường đến mạng đích) bằng cách dựa vào địa chỉ IP của máy đích có trong gói tin và thông tin hiện thời về tình trạng mạng được thể hiện trong bảng định tuyến có trong thiết bị:",
+      "options": [
+        "Bridge",
+        "Router",
+        "Switch",
+        "Hub và Repeater"
+      ],
+      "answer": "Router"
+    },
+    {
+      "question": "Cáp đồng trục mảnh và dày khác nhau chủ yếu là:",
+      "options": [
+        "Cáp đồng trục mảnh có lõi đồng dày hơn",
+        "Cáp đồng trục mảnh có lõi đồng mỏng hơn",
+        "Cáp đồng trục mảnh truyền thông tin đi xa hơn",
+        "Cáp đồng trục mảnh chống nhiễu tốt hơn"
+      ],
+      "answer": "Cáp đồng trục mảnh có lõi đồng mỏng hơn"
+    },
+    {
+      "question": "Cáp đồng trục mảnh dùng trong các trường hợp nào sau đây:",
+      "options": [
+        "Dùng làm cáp chính trong đồ hình dạng Bus",
+        "Dùng làm cáp nối giữa các máy tính với cáp chính",
+        "Dùng kết nối trong đồ hình dạng sao",
+        "Tất cả đều sai"
+      ],
+      "answer": "Dùng làm cáp nối giữa các máy tính với cáp chính"
+    },
+    {
+      "question": "Tín hiệu sẽ như thế nào nếu dùng nhiều repeater để khuyếch đại và mở rộng kích thước mạng?",
+      "options": [
+        "Giữ nguyên tín hiệu.",
+        "Phục hồi dần.",
+        "Không ảnh hưởng đến tín hiệu.",
+        "Sai lệch dần."
+      ],
+      "answer": "Sai lệch dần."
+    },
+    {
+      "question": "Hub được chia làm mấy loại?",
+      "options": [
+        "1 loại: Intelligent Hub.",
+        "2 loại: Passive Hub, Active Hub.",
+        "3 loại: Passive Hub, Active Hub, Intelligent Hub.",
+        "4 loại: Passive Hub, Active Hub, Intelligent Hub, Medium Hub."
+      ],
+      "answer": "3 loại: Passive Hub, Active Hub, Intelligent Hub."
+    },
+    {
+      "question": "Chức năng nào được sử dụng trên máy tính A để chia sẻ internet (share net) cho máy B, khi máy tính A có 2 card mạng, card thứ 1 kết nối ra internet, card mạng thứ 2 kết nối với máy tính B?",
+      "options": [
+        "Chức năng share trên windows.",
+        "Chức năng bridge mềm trên windows.",
+        "Chức năng routing trên windows.",
+        "Tất cả đều đúng."
+      ],
+      "answer": "Chức năng bridge mềm trên windows."
+    },
+    {
+      "question": "Chọn phát biểu không phải là khuyết điểm của bridge?",
+      "options": [
+        "Chậm hơn Repeater vì phải xử lý các gói tin.",
+        "Chưa tìm được đường đi tối ưu trong trường hợp có nhiều đường đi.",
+        "Chỉ kết nối 2 mạng có cùng giao thức.",
+        "Không xác định đường đi cho dữ liệu và gửi dữ liệu ra tất cả các cổng."
+      ],
+      "answer": "Không xác định đường đi cho dữ liệu và gửi dữ liệu ra tất cả các cổng."
+    },
+    {
+      "question": "Chọn phát biểu đúng nhất gateway?",
+      "options": [
+        "Gateway xác định đường đi cho dữ liệu truyền qua nó và gửi dữ liệu ra tất cả các cổng.",
+        "Gateway cho phép nối ghép hai loại giao thức với nhau.",
+        "Gateway lọc các gói tin và biết gói tin thuộc nhánh mạng nào.",
+        "Tất cả đều đúng."
+      ],
+      "answer": "Gateway cho phép nối ghép hai loại giao thức với nhau."
+    },
+    {
+      "question": "Thiết bị nào hỗ trợ các máy tính sử dụng các giao thức khác nhau có thể kết nối được với nhau?",
+      "options": [
+        "Router.",
+        "Switch.",
+        "Gateway.",
+        "Tất cả đều đúng."
+      ],
+      "answer": "Gateway."
+    },
+    {
+      "question": "Thiết bị nào sẽ chuyển đổi (giao tiếp - kết nối) giữa giao thức TCP/IP và IPX/SPX?",
+      "options": [
+        "Router.",
+        "Gateway.",
+        "Switch.",
+        "Tất cả đều đúng."
+      ],
+      "answer": "Gateway."
+    },
+    {
+      "question": "Công dụng của modem:",
+      "options": [
+        "Dùng để chuyển đổi giữa tín hiệu số và tín hiệu tuần tự.",
+        "Dùng để nối ghép hai loại giao thức với nhau.",
+        "Dùng để lọc các gói tin và biết gói tin thuộc nhánh mạng nào.",
+        "Tất cả đều đúng."
+      ],
+      "answer": "Dùng để chuyển đổi giữa tín hiệu số và tín hiệu tuần tự."
+    },
+    {
+      "question": "Thiết bị modem có mấy loại?",
+      "options": [
+        "1 loại.",
+        "2 loại.",
+        "3 loại.",
+        "4 loại."
+      ],
+      "answer": "2 loại."
+    },
+    {
+      "question": "Thiết bị modem có những loại nào?",
+      "options": [
+        "A. Modem Internal.",
+        "B. Modem External.",
+        "C. Câu A và B đúng.",
+        "D. Câu A và B sai."
+      ],
+      "answer": "C. Câu A và B đúng."
+    },
+    {
+      "question": "Modem internal giao tiếp với máy tính bằng cổng nào?",
+      "options": [
+        "PCI, ISA.",
+        "COM, USB.",
+        "Câu A và B đúng.",
+        "Câu A và B sai."
+      ],
+      "answer": "PCI, ISA."
+    },
+    {
+      "question": "Cáp mảnh (thinnet), cáp dày (thicknet) là loại cáp gì?",
+      "options": [
+        "Cáp đồng trục.",
+        "Cáp xoắn đôi.",
+        "Cáp quang.",
+        "Tất cả đều sai."
+      ],
+      "answer": "Cáp đồng trục."
+    },
+    {
+      "question": "Chuẩn T586A, T586B là chuẩn:",
+      "options": [
+        "Chuẩn tín hiệu.",
+        "Chuẩn giao thức.",
+        "Chuẩn bấm cáp mạng.",
+        "Tất cả đều sai"
+      ],
+      "answer": "Chuẩn bấm cáp mạng."
+    },
+    {
+      "question": "Hai đầu dây cáp được bấm theo chuẩn T586A, gọi cáp được bấm đó là gì?",
+      "options": [
+        "Cáp thẳng.",
+        "Cáp chéo.",
+        "Câu A và B đúng.",
+        "Câu A và B sai."
+      ],
+      "answer": "Cáp thẳng."
+    },
+    {
+      "question": "Khoảng cách tối đa cho cáp đồng trục mảnh là:",
+      "options": [
+        "185m",
+        "200m",
+        "250m",
+        "500m"
+      ],
+      "answer": "185m"
+    },
+    {
+      "question": "Bấm cáp chéo là:",
+      "options": [
+        "T586A – T586A.",
+        "T586A – T586B.",
+        "T568A – T568A.",
+        "T568A – T568B."
+      ],
+      "answer": "T586A – T586B."
+    },
+    {
+      "question": "Thiết bị trong hình là:",
+      "options": [
+        "Hub.",
+        "Switch.",
+        "Router.",
+        "NIC."
+      ],
+      "answer": "NIC."
+    },
+    {
+      "question": "Thiết bị nào có chứa bảng địa chỉ MAC?",
+      "options": [
+        "A. Switch.",
+        "B. Hub.",
+        "C. Router.",
+        "D. Câu A và C đúng."
+      ],
+      "answer": "A. Switch."
+    }
+  ]
+}

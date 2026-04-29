@@ -1,0 +1,649 @@
+{
+  "section": "Nhóm Mạng Cục Bộ (LAN)",
+  "questions": [
+    {
+      "question": "Câu 89: Đặc trưng của mạng cục bộ là gì?",
+      "options": [
+        "Tốc độ truyền thông cao, tỉ suất lỗi thấp",
+        "Có nhiều cơ quan quản lý",
+        "Sử dụng chung hệ thống truyền thông, phạm vi kết nối giữa các máy tính hẹp",
+        "Câu a và c đúng"
+      ],
+      "answer": "Câu a và c đúng"
+    },
+    {
+      "question": "Câu 90: Mô hình ghép nối mạng (topo) là gì?",
+      "options": [
+        "Hình dạng vật lý của hệ thống mạng",
+        "Hình dạng logic của hệ thống mạng",
+        "Mô hình trao đổi thông tin giữa các máy tính trong mạng",
+        "Cả ba câu trên đều sai"
+      ],
+      "answer": "Hình dạng logic của hệ thống mạng"
+    },
+    {
+      "question": "Câu 91: Yếu tố khác nhau giữa mạng cục bộ và mạng diện rộng là:",
+      "options": [
+        "Phạm vi kết nối máy tính",
+        "Tốc độ truyền thông và tỉ suất lỗi",
+        "Chủ sở hữu mạng",
+        "Cả ba yếu tố trên"
+      ],
+      "answer": "Cả ba yếu tố trên"
+    },
+    {
+      "question": "Câu 92: Tốc độ truyền thông trong mạng cục bộ thường lớn hơn so với mạng diện rộng, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 93: Tỉ suất lỗi xảy ra trong mạng cục bộ thường lớn hơn so với mạng diện rộng, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 94: Mạng cục bộ thường do nhiều cơ quan, tổ chức tham gia quản lý, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 95: Liệt kê các mô hình ghép nối (topo) cơ bản của mạng cục bộ?",
+      "options": [
+        "Bus, Ring, Point-to-Point",
+        "Bus, Ring, Star",
+        "Ring, Star, Broadcast",
+        "Point-to-Point, Broadcast"
+      ],
+      "answer": "Bus, Ring, Star"
+    },
+    {
+      "question": "Câu 96: Mạng dạng tuyến (Bus) là gì?",
+      "options": [
+        "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung được giới hạn bởi các đầu nối Terminator",
+        "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung dạng vòng khép kín",
+        "Các máy tính và các thiết bị được nối với nhau bởi thiết bị xử lý truyền thông trung tâm",
+        "Các máy tính và các thiết bị được nối trực tiếp với nhau"
+      ],
+      "answer": "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung được giới hạn bởi các đầu nối Terminator"
+    },
+    {
+      "question": "Câu 97: Chuẩn IEEE nào định nghĩa mạng dùng mô hình kết nối mạng dạng vòng (ring)?",
+      "options": [
+        "802.3",
+        "802.5",
+        "802.12",
+        "802.11b"
+      ],
+      "answer": "802.5"
+    },
+    {
+      "question": "Câu 98: Họ các chuẩn IEEE dành cho mạng cục bộ là:",
+      "options": [
+        "802",
+        "803",
+        "804",
+        "805"
+      ],
+      "answer": "802"
+    },
+    {
+      "question": "Câu 99: Chuẩn IEEE nào định nghĩa chuẩn kết nối dành cho mạng cục bộ dựa trên Ethernet?",
+      "options": [
+        "802.3",
+        "802.5",
+        "802.12",
+        "802.11b"
+      ],
+      "answer": "802.3"
+    },
+    {
+      "question": "Câu 100: Chuẩn IEEE nào định nghĩa chuẩn kết nối dành cho mạng Wireless LAN?",
+      "options": [
+        "802.3",
+        "802.5",
+        "802.6",
+        "802.11"
+      ],
+      "answer": "802.11"
+    },
+    {
+      "question": "Câu 101: Chuẩn IEEE nào định nghĩa chuẩn kết nối dành cho mạng dạng vòng (Ring)?",
+      "options": [
+        "802.3",
+        "802.5",
+        "802.11",
+        "802.11b"
+      ],
+      "answer": "802.5"
+    },
+    {
+      "question": "Câu 102: Trong mạng dạng tuyến (BUS), Terminator dùng để làm gì?",
+      "options": [
+        "Kết nối giữa mạng dạng tuyến với các mạng khác",
+        "Tránh sự phản xạ của sóng điện từ khi lan truyền đến cuối sợi cáp",
+        "Tăng cường năng lượng của sóng điện từ",
+        "Dùng để khử nhiễu trong sóng điện từ"
+      ],
+      "answer": "Tránh sự phản xạ của sóng điện từ khi lan truyền đến cuối sợi cáp"
+    },
+    {
+      "question": "Câu 103: Trạng thái của mạng dạng BUS sẽ như thế nào nếu không có Terminator?",
+      "options": [
+        "Mạng vẫn hoạt động bình thường nhưng tốc độ truyền thông chậm",
+        "Mạng không hoạt động được",
+        "Mạng vẫn hoạt động bình thường và không có khả năng mở rộng",
+        "Mạng vẫn hoạt động bình thường và hiệu suất truyền tin giảm"
+      ],
+      "answer": "Mạng không hoạt động được"
+    },
+    {
+      "question": "Câu 104: Ưu điểm của mạng dạng BUS là gì?",
+      "options": [
+        "Ít tốn dây cáp lắp đặt và dễ lắp đặt cáp",
+        "Chiều dài cho phép của cáp lớn hơn so với mạng dạng Ring",
+        "Có khả năng mở rộng kết nối nhiều mạng dạng BUS bằng thiết bị cầu (Bridge)",
+        "Cả ba ưu điểm trên"
+      ],
+      "answer": "Cả ba ưu điểm trên"
+    },
+    {
+      "question": "Câu 105: Trong mạng dạng BUS, người ta có thể thay Terminator bằng một máy tính có hỗ trợ chức năng Terminator đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 106: Trong mạng dạng BUS, tín hiệu dữ liệu được gửi đến toàn bộ các máy trạm trong mạng đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 107: Thiết bị ghép nối giữa các trạm với đường truyền chính trong mạng dạng BUS thường là thiết bị nào?",
+      "options": [
+        "BNC-Connector",
+        "T-Connector",
+        "RJ-45 Connector",
+        "AUI-Connector"
+      ],
+      "answer": "T-Connector"
+    },
+    {
+      "question": "Câu 108: Mạng dạng tuyến (Bus) kết nối các máy tính theo phương thức:",
+      "options": [
+        "Điểm-điểm",
+        "Điểm-nhiều điểm",
+        "Hỗn hợp",
+        "Điểm-một số điểm"
+      ],
+      "answer": "Điểm-nhiều điểm"
+    },
+    {
+      "question": "Câu 109: Nguyên nhân nào có thể gây ra lỗi kết nối trao đổi thông tin giữa hai máy trạm trong mạng dạng tuyến?",
+      "options": [
+        "Do thiết bị Terminator bị lỗi",
+        "Do đầu nối giữa máy trạm và đường truyền chính (T-Connector) bị lỗi",
+        "Do có nhiều cặp máy trạm trên mạng trao đổi thông tin đồng thời",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 110: Nguyên nhân nào có thể dẫn đến giảm hiệu suất truyền thông trong một LAN?",
+      "options": [
+        "Do có nhiều cặp máy tính trong mạng trao đổi thông tin với lưu lượng cao",
+        "Do Virus chiếm dụng băng thông của đường truyền",
+        "Do thiết bị truyền thông có năng lực kém",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 111: Mạng dạng vòng (Ring) kết nối các máy tính theo phương thức:",
+      "options": [
+        "Điểm-điểm",
+        "Điểm-nhiều điểm",
+        "Điểm-một số điểm",
+        "Câu a và b đúng"
+      ],
+      "answer": "Điểm-điểm"
+    },
+    {
+      "question": "Câu 112: Nguyên nhân nào có thể gây ra lỗi kết nối trao đổi thông tin giữa hai máy trạm trong mạng dạng vòng (Ring)?",
+      "options": [
+        "Do thẻ bài bị mất",
+        "Do đầu nối giữa máy trạm và đường truyền chính bị lỗi",
+        "Do mạng bị tắc nghẽn",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 113: Nhược điểm chính của mạng dạng vòng (Ring) là gì?",
+      "options": [
+        "Đường dây cần phải khép kín, nếu bị ngắt ở một nơi nào đó thì toàn bộ hệ thống cũng bị ngừng hoạt động",
+        "Tốc độ trao đổi thông tin chậm",
+        "Tốn nhiều dây cáp, hiệu suất đường truyền thấp",
+        "Khó có khả năng mở rộng mạng"
+      ],
+      "answer": "Đường dây cần phải khép kín, nếu bị ngắt ở một nơi nào đó thì toàn bộ hệ thống cũng bị ngừng hoạt động"
+    },
+    {
+      "question": "Câu 114: Ưu điểm chính của mạng dạng vòng (Ring) là gì?",
+      "options": [
+        "Có thể nới rộng đường truyền chính, ít tốn kém đường truyền mạng, hiệu suất của đường truyền có thể đạt tới gần 100%",
+        "Nhiều cặp máy trạm có thể trao đổi thông tin đồng thời",
+        "Khi một trạm nào đó ngừng hoạt động thì hệ thống mạng vẫn hoạt động bình thường",
+        "Giao thức truyền dữ liệu đơn giản hơn so với mạng dạng sao"
+      ],
+      "answer": "Có thể nới rộng đường truyền chính, ít tốn kém đường truyền mạng, hiệu suất của đường truyền có thể đạt tới gần 100%"
+    },
+    {
+      "question": "Câu 115: Trong giao thức Token Ring, cấu trúc của thẻ bài cho phép người ta có thể thiết lập độ ưu tiên truyền dữ liệu cho các trạm trong mạng dạng vòng (Ring) đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 116: Trong giao thức Token BUS, cấu trúc của thẻ bài cho phép người ta có thể thiết lập độ ưu tiên truyền dữ liệu cho các trạm trong mạng dạng tuyến (BUS) đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 117: Trong giao thức Token Ring, các gói dữ liệu truyền thông trong mạng dạng vòng (RING) có thể được truyền đi theo hai hướng khác nhau, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 118: Thiết bị kết nối giữa các trạm và đường truyền chính trong mạng dạng vòng (RING) thường được sử dụng là thiết bị nào?",
+      "options": [
+        "Hub",
+        "Repeater",
+        "Bridge",
+        "NIC"
+      ],
+      "answer": "Repeater"
+    },
+    {
+      "question": "Câu 119: Việc xảy ra xung đột dữ liệu có thể xảy ra trong mạng dạng vòng (Ring) đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 120: Trong giao thức Token Ring, gói dữ liệu trong mạng dạng vòng (Ring) lần lượt phải được chuyển tới tất cả các trạm trong mạng trước khi tới đích, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 121: Trong giao thức Token Ring, thẻ bài sẽ luôn di chuyển quanh vòng theo một chiều xác định ngay cả khi không có trạm nào có nhu cầu truyền dữ liệu đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Đúng"
+    },
+    {
+      "question": "Câu 122: Mạng dạng vòng tròn (Ring) là gì?",
+      "options": [
+        "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung được giới hạn bởi hai đầu nối Terminator",
+        "Các máy tính hay các thiết bị được nối với nhau bởi đường truyền dẫn chung dạng vòng khép kín, mỗi thiết bị hay máy tính được nối với đường truyền bởi thiết bị Repeater",
+        "Các máy tính và các thiết bị được nối với nhau bởi thiết bị xử lý truyền thông trung tâm như Hub/Switch",
+        "Các máy tính và các thiết bị được nối trực tiếp với nhau"
+      ],
+      "answer": "Các máy tính hay các thiết bị được nối với nhau bởi đường truyền dẫn chung dạng vòng khép kín, mỗi thiết bị hay máy tính được nối với đường truyền bởi thiết bị Repeater"
+    },
+    {
+      "question": "Câu 123: Mạng dạng vòng sẽ ở trạng thái nào nếu thẻ bài luôn ở trạng thái bận?",
+      "options": [
+        "Không hoạt động",
+        "Hoạt động tốt",
+        "Hoạt động với hiệu suất truyền thông thấp",
+        "Câu a và c đúng"
+      ],
+      "answer": "Không hoạt động"
+    },
+    {
+      "question": "Câu 124: Mạng dạng vòng sẽ ở trạng thái nào nếu không tồn tại thẻ bài trong mạng?",
+      "options": [
+        "Không hoạt động",
+        "Hoạt động tốt",
+        "Hoạt động với hiệu suất truyền thông thấp",
+        "Câu a và c đúng"
+      ],
+      "answer": "Không hoạt động"
+    },
+    {
+      "question": "Câu 125: Chức năng nào sau không là chức năng của thẻ bài trong mạng Ring là gì?",
+      "options": [
+        "Nâng cao hiệu suất truyền thông của mạng",
+        "Điều khiển tắc nghẽn trong mạng",
+        "Cấp phát quyền truy nhập đường truyền",
+        "Cấp phát quyền nhận dữ liệu"
+      ],
+      "answer": "Cấp phát quyền nhận dữ liệu"
+    },
+    {
+      "question": "Câu 126: Mô hình kết nối mạng (topo) của LAN là gì?",
+      "options": [
+        "Star",
+        "Bus",
+        "Ring",
+        "Một trong những mô hình kết nối mạng trên"
+      ],
+      "answer": "Một trong những mô hình kết nối mạng trên"
+    },
+    {
+      "question": "Câu 127: Mạng cục bộ của Trường đại học điện lực là mạng dạng Ring, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 128: Các trạm trong mạng dạng vòng (Ring) phải dò tìm xung đột trước khi truyền dữ liệu, đúng hay sai?",
+      "options": [
+        "Đúng",
+        "Sai"
+      ],
+      "answer": "Sai"
+    },
+    {
+      "question": "Câu 129: Có bao nhiêu thẻ bài tồn tại trong mỗi mạng dạng vòng (Ring)?",
+      "options": [
+        "Một",
+        "Hai",
+        "Ba",
+        "Nhiều"
+      ],
+      "answer": "Một"
+    },
+    {
+      "question": "Câu 130: Mạng dạng hình sao là gì?",
+      "options": [
+        "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung được giới hạn bởi hai đầu nối Terminator",
+        "Các máy tính và các thiết bị được nối với nhau bởi đường truyền dẫn chung dạng vòng khép kín",
+        "Các máy tính và các thiết bị được nối với nhau bởi thiết bị xử lý truyền thông trung tâm",
+        "Các máy tính và các thiết bị được nối trực tiếp với nhau"
+      ],
+      "answer": "Các máy tính và các thiết bị được nối với nhau bởi thiết bị xử lý truyền thông trung tâm"
+    },
+    {
+      "question": "Câu 131: Ưu điểm của mạng dạng sao là gì?",
+      "options": [
+        "Nếu có một máy trạm nào đó trong mạng bị hỏng thì mạng vẫn hoạt động bình thường",
+        "Mạng có thể mở rộng hoặc thu hẹp tuỳ theo yêu cầu của người sử dụng",
+        "Dễ dàng kiểm soát và khắc phục sự cố",
+        "Câu a và câu c đúng"
+      ],
+      "answer": "Câu a và câu c đúng"
+    },
+    {
+      "question": "Câu 132: Nhược điểm của mạng dạng sao là gì?",
+      "options": [
+        "Khi thiết bị xử lý truyền thông trung tâm bị hỏng thì cả hệ thống ngừng hoạt động",
+        "Khả năng mở rộng mạng phụ thuộc vào khả năng xử lý truyền thông của thiết bị trung tâm",
+        "Việc cấu hình lại mạng là rất khó khăn",
+        "Câu a và câu b đúng"
+      ],
+      "answer": "Câu a và câu b đúng"
+    },
+    {
+      "question": "Câu 133: Nguyên nhân nào có thể gây ra lỗi kết nối truyền thông giữa hai trạm trong mạng dạng sao (star)?",
+      "options": [
+        "Do thiết bị trung tâm bị lỗi",
+        "Do đường truyền bị lỗi",
+        "Do có nhiều cặp máy trạm khác cùng trao đổi thông tin đồng thời",
+        "Câu a và b đúng"
+      ],
+      "answer": "Câu a và b đúng"
+    },
+    {
+      "question": "Câu 134: Để mở rộng kết nối của mạng dạng sao, về cơ bản người ta phải làm gì?",
+      "options": [
+        "Nâng cao năng lực xử lý truyền thông của thiết bị trung tâm",
+        "Nâng cao năng lực tính toán của mỗi máy trạm",
+        "Cài đặt bổ sung phần mềm mạng vào các máy trạm",
+        "Câu a và c đúng"
+      ],
+      "answer": "Nâng cao năng lực xử lý truyền thông của thiết bị trung tâm"
+    },
+    {
+      "question": "Câu 135: Sắp xếp thứ tự từ thấp đến cao của các thiết bị trung tâm về vai trò mở rộng kết nối mạng máy tính?",
+      "options": [
+        "Hub, Bridge, Router, Switch",
+        "Hub, Switch, Bridge, Router",
+        "Hub, Switch, Router, Bridge",
+        "Hub, Bridge, Switch, Router"
+      ],
+      "answer": "Hub, Bridge, Switch, Router"
+    },
+    {
+      "question": "Câu 136: Thiết bị nào sau đây không có chức năng mở rộng kết nối mạng?",
+      "options": [
+        "Repeater",
+        "Modem",
+        "NIC",
+        "Hub"
+      ],
+      "answer": "NIC"
+    },
+    {
+      "question": "Câu 137: Mạng EpuNet của trường Đại học Điện lực được xây dựng dựa trên mô hình mạng nào?",
+      "options": [
+        "Dạng vòng",
+        "Dạng tuyến",
+        "Dạng sao",
+        "Hỗn hợp"
+      ],
+      "answer": "Dạng sao"
+    },
+    {
+      "question": "Câu 154: Thiết bị mạng nào giảm bớt sự xung đột các gói tin truyền thông?",
+      "options": [
+        "Hub",
+        "Switch",
+        "NIC",
+        "Repeater"
+      ],
+      "answer": "Switch"
+    },
+    {
+      "question": "Câu 155: Công nghệ LAN nào được sử dụng rộng rãi nhất hiện nay?",
+      "options": [
+        "Token Ring",
+        "Ethernet",
+        "FDDI",
+        "ArcNet"
+      ],
+      "answer": "Ethernet"
+    },
+    {
+      "question": "Câu 157: Switch là thiết bị thực hiện chức năng của tầng nào?",
+      "options": [
+        "Vật lý",
+        "Liên kết dữ liệu",
+        "Mạng",
+        "Giao vận"
+      ],
+      "answer": "Liên kết dữ liệu"
+    },
+    {
+      "question": "Câu 158: Router là thiết bị thực hiện chức năng của tầng nào?",
+      "options": [
+        "Vật lý",
+        "Liên kết dữ liệu",
+        "Mạng",
+        "Giao vận"
+      ],
+      "answer": "Mạng"
+    },
+    {
+      "question": "Câu 159: Repeater là thiết bị thực hiện chức năng của tầng nào?",
+      "options": [
+        "Vật lý",
+        "Liên kết dữ liệu",
+        "Mạng",
+        "Giao vận"
+      ],
+      "answer": "Vật lý"
+    },
+    {
+      "question": "Câu 166: NIC là thuật ngữ viết tắt của cụm từ nào?",
+      "options": [
+        "Network Internet Card",
+        "Network Interface Card",
+        "Network Information Connect",
+        "Network International Communication"
+      ],
+      "answer": "Network Interface Card"
+    },
+    {
+      "question": "Câu 167: Chức năng chính của NIC là gì?",
+      "options": [
+        "Biến đổi tín hiệu số sang tín hiệu điện hoặc quang",
+        "Biến đổi tín hiệu điện hoặc quang trên đường truyền sang tín hiệu số",
+        "Gán địa chỉ IP cho mỗi gói tin",
+        "Câu a và câu b đúng"
+      ],
+      "answer": "Câu a và câu b đúng"
+    },
+    {
+      "question": "Câu 168: Khẳng định nào sau đây là đúng?",
+      "options": [
+        "Khi một tín được gửi đến một cổng nào đó trên Hub, thì tín hiệu này sẽ được chuyển tới một cổng xác định trên Hub",
+        "Khi một tín được gửi đến một cổng nào đó trên Hub, thì tín hiệu này sẽ được chuyển tới tất cả các cổng còn lại trên Hub",
+        "Khi một tín được gửi đến nào đó trên Hub, thì tín hiệu này sẽ được chuyển tới một số cổng cần thiết trên Hub",
+        "Khi một tín được gửi đến nào đó trên Hub, thì tín hiệu này có thể sẽ không chuyển tới bất kỳ một cổng nào trên Hub"
+      ],
+      "answer": "Khi một tín được gửi đến một cổng nào đó trên Hub, thì tín hiệu này sẽ được chuyển tới tất cả các cổng còn lại trên Hub"
+    },
+    {
+      "question": "Câu 172: MAC (giao thức mạng, địa chỉ vật lý) là thuật ngữ viết tắt của cụm từ:",
+      "options": [
+        "Media Address Control",
+        "Media Address Connection",
+        "Media Access Connector",
+        "Media Access Control"
+      ],
+      "answer": "Media Access Control"
+    },
+    {
+      "question": "Câu 173: Router là thiết bị thường dùng để làm gì?",
+      "options": [
+        "Kết nối giữa các LAN",
+        "Kết nối giữa LAN và WAN",
+        "Kết nối giữa các WAN",
+        "Ba câu trên đều đúng"
+      ],
+      "answer": "Ba câu trên đều đúng"
+    },
+    {
+      "question": "Câu 177: Kích thước của địa chỉ vật lý (MAC) là bao nhiêu bit?",
+      "options": [
+        "24 bit",
+        "48 bit",
+        "64 bit",
+        "12 bit"
+      ],
+      "answer": "48 bit"
+    },
+    {
+      "question": "Câu 185: Thuật ngữ CSMA là viết tắt của cụm từ nào?",
+      "options": [
+        "Carrier Sensor Multiple Access",
+        "Carrier Sense Media Access",
+        "Carrier Sense Multiple Access",
+        "Cable Sense Multiple Access"
+      ],
+      "answer": "Carrier Sense Multiple Access"
+    },
+    {
+      "question": "Câu 186: Thuật ngữ CSMA/CD là viết tắt của cụm từ nào?",
+      "options": [
+        "Carrier Sensor Multiple Access with Collision Detection",
+        "Carrier Sense Media Access with Collision Detection",
+        "Carrier Sense Multiple Access with Collision Detection",
+        "Carrier Sense Multiple Access with Connection Detection"
+      ],
+      "answer": "Carrier Sense Multiple Access with Collision Detection"
+    },
+    {
+      "question": "Câu 238: Cáp quang thường được sử dụng trong mạng nào?",
+      "options": [
+        "WAN",
+        "MAN",
+        "GAN",
+        "Cả ba mạng máy tính trên"
+      ],
+      "answer": "Cả ba mạng máy tính trên"
+    },
+    {
+      "question": "Câu 239: Tín hiệu truyền thông tin trong cáp quang ít suy hao năng lượng là dựa trên tính chất nào của tín hiệu quang học?",
+      "options": [
+        "Phản xạ",
+        "Khúc xạ",
+        "Phản xạ toàn phần",
+        "Câu a và b đúng"
+      ],
+      "answer": "Phản xạ toàn phần"
+    },
+    {
+      "question": "Câu 240: VLAN là thuật ngữ viết tắt của cụm từ nào?",
+      "options": [
+        "Virtual Local Area Networking",
+        "Virtual Local Area Network",
+        "Virtual Local Access Network",
+        "Virtual Location Area Network"
+      ],
+      "answer": "Virtual Local Area Network"
+    },
+    {
+      "question": "Câu 241: Mạng LAN ảo (Virtual LAN) là gì?",
+      "options": [
+        "Là phương thức để phân chia mạng máy tính thành nhiều vùng logic khác nhau, mỗi vùng đóng vai trò tương đương với một LAN",
+        "Là một mô phỏng của LAN trên máy tính",
+        "Là LAN được xây dựng chỉ dựa trên các thiết bị Hub để kết nối các máy tính",
+        "Là LAN được xây dựng chỉ dựa trên các thiết bị Switch để kết nối các máy tính"
+      ],
+      "answer": "Là phương thức để phân chia mạng máy tính thành nhiều vùng logic khác nhau, mỗi vùng đóng vai trò tương đương với một LAN"
+    },
+    {
+      "question": "Câu 242: Ưu điểm của VLAN là gì?",
+      "options": [
+        "Cho phép phân hoạch mạng để sử dụng giải thông có hiệu quả",
+        "Cho phép tổ chức và cấu hình mạng dễ dàng, linh hoạt bằng chương trình, độc lập với tầng vật lý",
+        "Cho phép mở rộng LAN thành WAN",
+        "Câu a và câu b đúng"
+      ],
+      "answer": "Câu a và câu b đúng"
+    }
+  ]
+}

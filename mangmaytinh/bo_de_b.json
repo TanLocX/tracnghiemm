@@ -1,0 +1,456 @@
+{
+  "section": "Bộ đề B",
+  "description": "50 câu - chụp 2025-11-29",
+  "questions": [
+    {
+      "question": "Mô hình TCP/IP khác mô hình OSI ở điểm nào?",
+      "options": [
+        "Tất cả đều đúng",
+        "TCP/IP đơn giản hơn vì nó có ít lớp hơn",
+        "TCP/IP tập hợp các lớp Physical và Data link thành một với tên gọi là Network access",
+        "TCP/IP tập hợp các lớp Presentation và lớp Session vào lớp Application"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Gói tin (Packets) được đóng thành Khung (Frames) ở tầng nào của mô hình OSI?",
+      "options": [
+        "Data link",
+        "Network",
+        "Session",
+        "Transport"
+      ],
+      "answer": "Data link"
+    },
+    {
+      "question": "Địa chỉ nào được SWITCH sử dụng khi quyết định gửi dữ liệu sang cổng tương ứng máy tính nhận?",
+      "options": [
+        "Destination MAC address",
+        "Source MAC address",
+        "Source IP address",
+        "Destination IP address"
+      ],
+      "answer": "Destination MAC address"
+    },
+    {
+      "question": "Mạng máy tính gồm các thành phần nào sau đây?",
+      "options": [
+        "Đường biên mạng, mạng đường trục",
+        "Đường biên mạng",
+        "Mạng truy cập",
+        "Đường biên mạng, mạng đường trục, mạng truy cập"
+      ],
+      "answer": "Đường biên mạng, mạng đường trục, mạng truy cập"
+    },
+    {
+      "question": "Trong mạng dùng TCP/IP, SubnetMask là 255.255.255.0 thì cặp máy tính nào sau đây liên thông?",
+      "options": [
+        "172.25.11.1 và 172.26.11.2",
+        "192.168.1.3 và 192.168.100.1",
+        "192.168.15.1 và 192.168.15.254",
+        "192.168.100.15 và 192.186.100.16"
+      ],
+      "answer": "192.168.15.1 và 192.168.15.254"
+    },
+    {
+      "question": "Trong các dịch vụ sau dịch vụ nào là dịch vụ truyền File?",
+      "options": [
+        "WWW",
+        "DNS",
+        "FTP",
+        "IIS"
+      ],
+      "answer": "FTP"
+    },
+    {
+      "question": "Hệ thống phân giải tên miền là giao thức nào?",
+      "options": [
+        "ARP",
+        "RARP",
+        "DHCP",
+        "DNS"
+      ],
+      "answer": "DNS"
+    },
+    {
+      "question": "Hãy chọn các bước được thực hiện trong quá trình đóng gói dữ liệu dựa trên mô hình OSI?",
+      "options": [
+        "Data-packets-segments-frames-bits",
+        "Data-segments-packets-frames-bits",
+        "Data-frames-segments-packets-bits",
+        "Data-segments-frames-packets-bits"
+      ],
+      "answer": "Data-segments-packets-frames-bits"
+    },
+    {
+      "question": "Giao thức nào dùng để tìm địa chỉ MAC khi biết địa chỉ IP của máy tính?",
+      "options": [
+        "TCP/IP",
+        "DHCP",
+        "RARP",
+        "ARP"
+      ],
+      "answer": "ARP"
+    },
+    {
+      "question": "Sợi cáp UTP với 2 đầu bấm khác chuẩn nhau (T568A – T568B) có thể nối giữa 2 thiết bị nào?",
+      "options": [
+        "PC to PC",
+        "Bridge To PC",
+        "Switch To PC",
+        "Hub To PC"
+      ],
+      "answer": "PC to PC"
+    },
+    {
+      "question": "Đặc điểm của thiết bị Hub trong LAN?",
+      "options": [
+        "Tất cả đều đúng",
+        "Dùng để nối mạng, kết nối với các máy tính dưới dạng hình sao",
+        "Hoạt động ở tầng 1 của mô hình OSI",
+        "Khi nhận được gói tin, nó sẽ truyền ra tất cả các port"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Địa chỉ IP có 3 bit đầu của byte thứ nhất là 110. Hỏi IP này thuộc lớp nào?",
+      "options": [
+        "Lớp C",
+        "Lớp B",
+        "Lớp A",
+        "Lớp D"
+      ],
+      "answer": "Lớp C"
+    },
+    {
+      "question": "Đơn vị dữ liệu giao thức viết tắt là:",
+      "options": [
+        "PDU",
+        "ADU",
+        "SDU",
+        "DPU"
+      ],
+      "answer": "PDU"
+    },
+    {
+      "question": "Khi thực hiện phép AND giữa 172.16.20.23 và 255.255.248.0 sẽ cho IP nào?",
+      "options": [
+        "172.16.20.0",
+        "172.16.20.16",
+        "172.16.16.0",
+        "172.16.0.0"
+      ],
+      "answer": "172.16.16.0"
+    },
+    {
+      "question": "Lệnh nào dưới đây được dùng để xác định đường truyền?",
+      "options": [
+        "Nslookup",
+        "Tracert",
+        "Route",
+        "Ipconfig"
+      ],
+      "answer": "Tracert"
+    },
+    {
+      "question": "Địa chỉ IP có 1 bit đầu của byte thứ nhất là 0. Hỏi IP này thuộc lớp nào?",
+      "options": [
+        "Lớp B",
+        "Lớp D",
+        "Lớp C",
+        "Lớp A"
+      ],
+      "answer": "Lớp A"
+    },
+    {
+      "question": "Mô tả nào sau đây là cho mạng hình sao (star)?",
+      "options": [
+        "Các nút mạng sử dụng chung một đường cáp",
+        "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác",
+        "Có một nút trung tâm và các nút mạng khác kết nối đến",
+        "Truyền dữ liệu qua cáp đồng trục"
+      ],
+      "answer": "Có một nút trung tâm và các nút mạng khác kết nối đến"
+    },
+    {
+      "question": "Để hạn chế sự đụng độ của các gói tin trên mạng, người ta nối các mạng nhỏ bằng thiết bị nào?",
+      "options": [
+        "Hub",
+        "Repeaters",
+        "Switch",
+        "Cạc mạng (NIC)"
+      ],
+      "answer": "Switch"
+    },
+    {
+      "question": "Nếu 4 PC kết nối với nhau thông qua HUB thì cần bao nhiêu địa chỉ IP cho 5 thiết bị mạng này?",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "Tất cả đều sai"
+      ],
+      "answer": "4"
+    },
+    {
+      "question": "Đầu nối chữ T dùng để nối loại cáp nào sau đây?",
+      "options": [
+        "Cáp đồng trục",
+        "Cáp xoắn đôi",
+        "Cáp quang",
+        "Cáp UTP"
+      ],
+      "answer": "Cáp đồng trục"
+    },
+    {
+      "question": "Lệnh PING được sử dụng để thực hiện thao tác nào sau đây?",
+      "options": [
+        "Kiểm tra các máy tính có đĩa cứng hay không",
+        "Kiểm tra các máy tính có hoạt động tốt hay không",
+        "Kiểm tra các máy tính có truy cập vào Internet không",
+        "Kiểm tra các máy tính trong mạng có liên thông không"
+      ],
+      "answer": "Kiểm tra các máy tính trong mạng có liên thông không"
+    },
+    {
+      "question": "Mạng WAN có các đặc điểm nào sau đây?",
+      "options": [
+        "Có phạm vi hẹp, băng thông thấp, dễ quản trị và giá thành cao",
+        "Có phạm vi rộng, băng thông thấp, quản trị mạng phức tạp",
+        "Có phạm vi hẹp, băng thông lớn, dễ quản trị mạng và giá thành thấp",
+        "Có phạm vi rộng, băng thông lớn, quản trị mạng đơn giản"
+      ],
+      "answer": "Có phạm vi rộng, băng thông thấp, quản trị mạng phức tạp"
+    },
+    {
+      "question": "Tầng thấp nhất của mô hình OSI là gì?",
+      "options": [
+        "Physical",
+        "Data link",
+        "Presentation",
+        "Application"
+      ],
+      "answer": "Physical"
+    },
+    {
+      "question": "Giá trị subnetmask của IP 192.168.0.0 sau khi đã chọn 4 bit ở phần host để chia mạng con là gì?",
+      "options": [
+        "255.255.255.248",
+        "255.255.255.0",
+        "255.255.255.240",
+        "255.255.255.224"
+      ],
+      "answer": "255.255.255.240"
+    },
+    {
+      "question": "Để quản trị tài khoản người dùng trong mô hình domain, ta dùng tiện ích gì?",
+      "options": [
+        "Active Directory Domains and Trust",
+        "Active Directory Users and Computers",
+        "Domain Controller Security Policy",
+        "Active Directory Sites and Services"
+      ],
+      "answer": "Active Directory Users and Computers"
+    },
+    {
+      "question": "Lợi ích của mạng máy tính là gì?",
+      "options": [
+        "Tất cả đều đúng",
+        "Chia sẻ tài nguyên",
+        "Truyền thông",
+        "Tiết kiệm chi phí"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Dãy địa chỉ IP thuộc lớp B là gì?",
+      "options": [
+        "128.x.x.x đến 191.x.x.x",
+        "192.x.x.x đến 223.x.x.x",
+        "224.x.x.x đến 239.x.x.x",
+        "0.x.x.x đến 126.x.x.x"
+      ],
+      "answer": "128.x.x.x đến 191.x.x.x"
+    },
+    {
+      "question": "Hiệp hội viễn thông quốc tế là:",
+      "options": [
+        "DARPA",
+        "ISO",
+        "IEEE",
+        "ITU"
+      ],
+      "answer": "ITU"
+    },
+    {
+      "question": "Hãy chọn phát biểu đúng về Switch và Hub?",
+      "options": [
+        "Cả 2 hoạt động hiệu quả như nhau, nhưng Switch đắt tiền hơn",
+        "Hub tăng hiệu năng mạng do xử lý tín hiệu ở hệ nhị phân",
+        "Sử dụng Switch hiệu quả hơn do phân tách vùng đụng độ",
+        "Sử dụng Hub hiệu quả hơn do tăng kích thước vùng đụng độ"
+      ],
+      "answer": "Sử dụng Switch hiệu quả hơn do phân tách vùng đụng độ"
+    },
+    {
+      "question": "Mạng LAN có các đặc điểm nào sau đây?",
+      "options": [
+        "Có phạm vi rộng, băng thông thấp, quản trị mạng phức tạp",
+        "Có phạm vi rộng, băng thông lớn, quản trị mạng đơn giản",
+        "Có phạm vi hẹp, băng thông lớn, dễ quản trị mạng và giá thành thấp",
+        "Có phạm vi hẹp, băng thông thấp, dễ quản trị và giá thành cao"
+      ],
+      "answer": "Có phạm vi hẹp, băng thông lớn, dễ quản trị mạng và giá thành thấp"
+    },
+    {
+      "question": "Tầng nào trong OSI có nhiệm vụ tìm đường đi cho các gói tin (packet)?",
+      "options": [
+        "Vật lý",
+        "Mạng",
+        "Tất cả đều sai",
+        "Liên kết dữ liệu"
+      ],
+      "answer": "Mạng"
+    },
+    {
+      "question": "Địa chỉ quảng bá của đường mạng có IP là 127.0.0.0 là bao nhiêu?",
+      "options": [
+        "127.255.0.255",
+        "127.0.255.255",
+        "127.0.0.255",
+        "127.255.255.255"
+      ],
+      "answer": "127.255.255.255"
+    },
+    {
+      "question": "Tầng cao nhất của mô hình OSI là gì?",
+      "options": [
+        "Application",
+        "Presentation",
+        "Session",
+        "Transport"
+      ],
+      "answer": "Application"
+    },
+    {
+      "question": "Từ máy User1 (192.168.0.1) dùng lệnh ping đến 4 máy còn lại, máy nào sẽ trả lời?",
+      "options": [
+        "User4 (192.168.3.1)",
+        "User5 (192.168.3.2)",
+        "User3 (192.168.2.1)",
+        "User2 (192.168.0.2)"
+      ],
+      "answer": "User2 (192.168.0.2)"
+    },
+    {
+      "question": "Router sử dụng thông tin nào trong Packet để chuyển gói tin đi tới đích?",
+      "options": [
+        "IP và MAC Address",
+        "IP",
+        "Tất cả đều sai",
+        "Mac Address"
+      ],
+      "answer": "IP"
+    },
+    {
+      "question": "Để cấu hình máy tính vào miền (domain) ta cần biết các yếu tố nào?",
+      "options": [
+        "Tất cả đều đúng",
+        "Tên miền, tài khoản và mật khẩu người dùng",
+        "Địa chỉ IP của Domain Controller",
+        "DNS Server trỏ về Domain Controller"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Đặc điểm của mô hình mạng WorkGroup là gì?",
+      "options": [
+        "Không cần máy chủ tập trung",
+        "Các trạm có thể chia sẻ tài nguyên, mỗi máy trạm có CSDL người dùng riêng",
+        "Tất cả đều đúng",
+        "Trách nhiệm bảo mật thuộc về từng máy trạm"
+      ],
+      "answer": "Tất cả đều đúng"
+    },
+    {
+      "question": "Tên miền cho các tổ chức thương mại là gì?",
+      "options": [
+        "Net",
+        "Gov",
+        "Mil",
+        "Com"
+      ],
+      "answer": "Com"
+    },
+    {
+      "question": "Đơn vị truyền tin của tầng mạng là gì?",
+      "options": [
+        "Gói tin (Packet)",
+        "Data",
+        "Đoạn (Segment)",
+        "Khung (Frame)"
+      ],
+      "answer": "Gói tin (Packet)"
+    },
+    {
+      "question": "Địa chỉ IP 192.168.1.52 thuộc lớp nào?",
+      "options": [
+        "Lớp B",
+        "Lớp A",
+        "Lớp D",
+        "Lớp C"
+      ],
+      "answer": "Lớp C"
+    },
+    {
+      "question": "Khoảng cách tối đa của cáp mạng STP là bao nhiêu?",
+      "options": [
+        "500m",
+        "100m",
+        "150m",
+        "300m"
+      ],
+      "answer": "100m"
+    },
+    {
+      "question": "Nếu bấm cáp theo chuẩn T568A thì sợi dây ở chân số 2 có màu gì?",
+      "options": [
+        "Xanh dương",
+        "Xanh lá",
+        "Cam",
+        "Trắng xanh lá"
+      ],
+      "answer": "Xanh lá"
+    },
+    {
+      "question": "Cáp xoắn đôi có khoảng cách truyền tối đa là bao nhiêu mét?",
+      "options": [
+        "100",
+        "500",
+        "300",
+        "200"
+      ],
+      "answer": "100"
+    },
+    {
+      "question": "Điều gì sẽ xảy ra với dữ liệu khi có va chạm (collision)?",
+      "options": [
+        "HUB/SWITCH sẽ gửi lại dữ liệu",
+        "Dữ liệu sẽ bị phá hỏng từng bit một",
+        "Dữ liệu sẽ bị huỷ, dữ liệu sẽ được truyền lại theo một giải thuật nhất định",
+        "Dữ liệu sẽ được xây dựng lại tại máy nhận"
+      ],
+      "answer": "Dữ liệu sẽ bị huỷ, dữ liệu sẽ được truyền lại theo một giải thuật nhất định"
+    },
+    {
+      "question": "Trang thiết bị mạng nào dùng để nối các mạng và kiểm soát được gói tin quảng bá (Broadcast)?",
+      "options": [
+        "Bridge",
+        "Hub",
+        "Router",
+        "Switch"
+      ],
+      "answer": "Router"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "section": "Thực hành",
+  "description": "20 câu - chụp 2025-11-29",
+  "questions": [
+    {
+      "question": "Để thiết lập mạng ngang hàng cần phải có máy chủ - Đúng hay Sai?",
+      "options": [
+        "Đúng (True)",
+        "Sai (False)"
+      ],
+      "answer": "Sai (False)"
+    },
+    {
+      "question": "Có thể thiết lập mạng ngang hàng gồm 2 laptop thông qua 2 wifi KHÁC NHAU không?",
+      "options": [
+        "Có (True)",
+        "Không (False)"
+      ],
+      "answer": "Không (False)"
+    },
+    {
+      "question": "Màu tím nhạt trong bảng màu mặc định của Wireshark được cung cấp cho loại gói chính nào?",
+      "options": [
+        "Lưu lượng truy cập HTTP",
+        "Lưu lượng TCP",
+        "Lưu lượng UDP",
+        "Các gói có lỗi"
+      ],
+      "answer": "Lưu lượng TCP"
+    },
+    {
+      "question": "Trong ứng dụng Wireshark, để xem ý nghĩa của các mã màu ta chọn:",
+      "options": [
+        "Edit -> Coloring Rules",
+        "Capture -> Coloring Rules",
+        "View -> Coloring Rules",
+        "Go -> Coloring Rules"
+      ],
+      "answer": "View -> Coloring Rules"
+    },
+    {
+      "question": "Wireshark có nhiều tính năng nổi bật như:",
+      "options": [
+        "Lưu dữ liệu gói bị bắt",
+        "Tất cả đáp án",
+        "Xuất một số hoặc tất cả các gói trong một số định dạng capture file",
+        "Hiển thị các gói với thông tin giao thức rất chi tiết"
+      ],
+      "answer": "Tất cả đáp án"
+    },
+    {
+      "question": "Tên máy tính có đổi được không?",
+      "options": [
+        "Có (True)",
+        "Không (False)"
+      ],
+      "answer": "Có (True)"
+    },
+    {
+      "question": "Gõ lệnh Ping <địa chỉ IP của máy tính khác> trong cửa sổ cmd dùng để làm gì?",
+      "options": [
+        "Kiểm tra máy tính khác có truy cập được Internet không?",
+        "Kiểm tra máy tính khác có card mạng hay không",
+        "Kiểm tra máy tính khác có hoạt động tốt hay không",
+        "Kiểm tra sự liên thông mạng với máy tính khác?"
+      ],
+      "answer": "Kiểm tra sự liên thông mạng với máy tính khác?"
+    },
+    {
+      "question": "Cách nào đúng để truy cập đến tài nguyên bằng địa chỉ IP?",
+      "options": [
+        "//192.186.1.200",
+        "\\\\địa chỉ IP của máy muốn truy cập tài nguyên",
+        "%IP",
+        "//địa chỉ IP của máy muốn truy cập tài nguyên"
+      ],
+      "answer": "\\\\địa chỉ IP của máy muốn truy cập tài nguyên"
+    },
+    {
+      "question": "Phát biểu nào đúng đối với mạng ngang hàng?",
+      "options": [
+        "Cung cấp sự an toàn và mức độ kiểm soát cao hơn mạng Client/Server",
+        "Được khuyến cáo sử dụng cho mạng có từ 10 người dùng trở xuống",
+        "Đòi hỏi một máy phục vụ trung tâm có cấu hình mạnh",
+        "Người dùng phân bố trong địa bàn rộng"
+      ],
+      "answer": "Được khuyến cáo sử dụng cho mạng có từ 10 người dùng trở xuống"
+    },
+    {
+      "question": "Cách nào đúng để kiểm tra thông mạng với máy khác?",
+      "options": [
+        "Windows+R → cmd → Nhập địa chỉ IP của máy khác",
+        "Windows+R → cmd → Nhập <ping + IP>",
+        "Windows+R → \\\\địa chỉ IP của máy khác",
+        "Windows+R → cmd → Nhập <ping + ipconfig>"
+      ],
+      "answer": "Windows+R → cmd → Nhập <ping + IP>"
+    },
+    {
+      "question": "Có thể thiết lập mạng ngang hàng gồm 2 laptop thông qua CÙNG wifi không?",
+      "options": [
+        "Có (True)",
+        "Không (False)"
+      ],
+      "answer": "Có (True)"
+    },
+    {
+      "question": "Tập tin được thiết kế bằng Packet Tracer có phần mở rộng là gì?",
+      "options": [
+        "pktc",
+        "pct",
+        "pkt",
+        "ptc"
+      ],
+      "answer": "pkt"
+    },
+    {
+      "question": "Lệnh nào dùng để xác định đường truyền khi gõ trong cửa sổ cmd của Windows?",
+      "options": [
+        "Router",
+        "nslookup",
+        "ipconfig",
+        "Tracert"
+      ],
+      "answer": "Tracert"
+    },
+    {
+      "question": "Để thiết lập mạng ngang hàng gồm 2 laptop dùng cáp gì?",
+      "options": [
+        "Cáp chéo",
+        "Cáp ethernet",
+        "Cáp quang",
+        "Cáp thẳng"
+      ],
+      "answer": "Cáp chéo"
+    },
+    {
+      "question": "Trong mạng Peer to peer, cách nào đúng để truy cập đến tài nguyên chia sẻ bằng tên máy?",
+      "options": [
+        "Windows+R → %IP",
+        "Windows+R → \\\\Tên máy tính muốn truy cập tài nguyên",
+        "Windows+R → #Tên hãng máy tính",
+        "Windows+R → //Tên máy tính"
+      ],
+      "answer": "Windows+R → \\\\Tên máy tính muốn truy cập tài nguyên"
+    },
+    {
+      "question": "Sắp xếp giao diện chính của Wireshark đúng thứ tự từ trên xuống: 1.Packet List; 2.Packet Details; 3.Packet Bytes",
+      "options": [
+        "3 1 2",
+        "2 3 1",
+        "Tất cả đều sai",
+        "1 2 3"
+      ],
+      "answer": "Tất cả đều sai"
+    },
+    {
+      "question": "Màu đen trong bảng màu mặc định của Wireshark được cung cấp cho loại gói chính nào?",
+      "options": [
+        "Lưu lượng TCP",
+        "Lưu lượng UDP",
+        "Lưu lượng truy cập HTTP",
+        "Các gói có lỗi"
+      ],
+      "answer": "Các gói có lỗi"
+    },
+    {
+      "question": "Trong Packet tracer, muốn đặt địa chỉ IP cho PC để kết nối vào mạng ta chọn tùy chọn nào?",
+      "options": [
+        "Chọn PC → Tab CONFIG → Nhập địa chỉ IP",
+        "Chọn PC → Tab DESKTOP → Command Prompt → Nhập địa chỉ IP",
+        "Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP",
+        "Chọn PC → Tab DESKTOP → Terminal → Nhập địa chỉ IP"
+      ],
+      "answer": "Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP"
+    }
+  ]
+}
