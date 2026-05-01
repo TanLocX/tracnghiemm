@@ -5,402 +5,402 @@
     {
       "question": "Lớp C được phép mượn tối đa bao nhiêu bit cho Subnet?",
       "options": [
-        "6",
-        "8",
-        "2",
-        "4"
+        "A. 6",
+        "B. 8",
+        "C. 2",
+        "D. 4"
       ],
-      "answer": "6"
+      "answer": "A. 6"
     },
     {
       "question": "Trong gói tin IP, trường Identification dùng để làm gì?",
       "options": [
-        "Đánh số các gói tin IP gửi đi",
-        "Báo cho bên gửi biết đã nhận đúng gói tin số Identification",
-        "Đánh số các Byte dữ liệu gửi đi",
-        "Phân mảnh và hợp nhất các gói tin IP"
+        "A. Đánh số các gói tin IP gửi đi",
+        "B. Báo cho bên gửi biết đã nhận đúng gói tin số Identification",
+        "C. Đánh số các Byte dữ liệu gửi đi",
+        "D. Phân mảnh và hợp nhất các gói tin IP"
       ],
-      "answer": "Đánh số các gói tin IP gửi đi"
+      "answer": "A. Đánh số các gói tin IP gửi đi"
     },
     {
       "question": "Wireshark có nhiều tính năng nổi bật như:",
       "options": [
-        "Hiển thị các gói với thông tin giao thức rất chi tiết",
-        "Lưu dữ liệu gói bị bắt",
-        "Xuất một số hoặc tất cả các gói trong một số định dạng capture file",
-        "Tất cả đáp án"
+        "A. Hiển thị các gói với thông tin giao thức rất chi tiết",
+        "B. Lưu dữ liệu gói bị bắt",
+        "C. Xuất một số hoặc tất cả các gói trong một số định dạng capture file",
+        "D. Tất cả đáp án"
       ],
-      "answer": "Tất cả đáp án"
+      "answer": "D. Tất cả đáp án"
     },
     {
       "question": "Giao thức DHCP có thể cấp được các thông số nào sau đây cho máy trạm client?",
       "options": [
-        "DefaultGateway",
-        "DNSServer",
-        "IPAddress",
-        "SubnetMask"
+        "A. DefaultGateway",
+        "B. DNSServer",
+        "C. IPAddress",
+        "D. SubnetMask"
       ],
-      "answer": "IPAddress"
+      "answer": "C. IPAddress"
     },
     {
       "question": "Địa chỉ Subnet của một IP nằm từ bit thứ 17 tới bit thứ 23. Vậy địa chỉ IP của nó thuộc lớp nào?",
       "options": [
-        "Lớp C",
-        "Lớp D",
-        "Lớp B",
-        "Lớp A"
+        "A. Lớp C",
+        "B. Lớp D",
+        "C. Lớp B",
+        "D. Lớp A"
       ],
-      "answer": "Lớp B"
+      "answer": "C. Lớp B"
     },
     {
       "question": "Thiết bị nào sau đây gọi là thiết bị đầu cuối?",
       "options": [
-        "Thiết bị Hub",
-        "Máy in",
-        "Dây cáp",
-        "Vỉ mạng"
+        "A. Thiết bị Hub",
+        "B. Máy in",
+        "C. Dây cáp",
+        "D. Vỉ mạng"
       ],
-      "answer": "Máy in"
+      "answer": "B. Máy in"
     },
     {
       "question": "Hãy chỉ ra địa chỉ IP của host không hợp lệ với Subnet Mask = 255.255.255.224",
       "options": [
-        "222.88.65.135",
-        "222.81.22.104",
-        "222.81.55.128",
-        "222.81.56.130"
+        "A. 222.88.65.135",
+        "B. 222.81.22.104",
+        "C. 222.81.55.128",
+        "D. 222.81.56.130"
       ],
-      "answer": "222.81.55.128"
+      "answer": "C. 222.81.55.128"
     },
     {
       "question": "Muốn hệ thống mạng hoạt động hiệu quả người ta thường:",
       "options": [
-        "Giảm số lượng các Collision domain, tăng kích thước các Collision domain",
-        "Tăng số lượng các Collision domain, giảm kích thước các Collision domain",
-        "Giảm số lượng các Collision domain, giảm kích thước các Collision domain",
-        "Tăng số lượng các Collision domain, tăng kích thước các Collision domain"
+        "A. Giảm số lượng các Collision domain, tăng kích thước các Collision domain",
+        "B. Tăng số lượng các Collision domain, giảm kích thước các Collision domain",
+        "C. Giảm số lượng các Collision domain, giảm kích thước các Collision domain",
+        "D. Tăng số lượng các Collision domain, tăng kích thước các Collision domain"
       ],
-      "answer": "Tăng số lượng các Collision domain, giảm kích thước các Collision domain"
+      "answer": "B. Tăng số lượng các Collision domain, giảm kích thước các Collision domain"
     },
     {
       "question": "Đặc điểm của kiến trúc mạng Bus là gì?",
       "options": [
-        "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút mạng còn lại",
-        "Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý",
-        "Mỗi nút mạng kết nối với 2 nút mạng còn lại",
-        "Tất cả các nút mạng kết nối vào nút mạng trung tâm (Ví dụ như Hub)"
+        "A. Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút mạng còn lại",
+        "B. Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý",
+        "C. Mỗi nút mạng kết nối với 2 nút mạng còn lại",
+        "D. Tất cả các nút mạng kết nối vào nút mạng trung tâm (Ví dụ như Hub)"
       ],
-      "answer": "Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý"
+      "answer": "B. Tất cả các nút mạng kết nối trên cùng một đường truyền vật lý"
     },
     {
       "question": "Trong cửa sổ cmd gõ lệnh: \"tracert google.com\" dùng để làm gì?",
       "options": [
-        "Dùng để xác định đường đi từ nguồn tới đích của một gói Giao thức mạng Internet (IP)",
-        "Dùng để xác định địa chỉ máy chủ google",
-        "Dùng để xác định thông mạng tới máy chủ google hay không",
-        "Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
+        "A. Dùng để xác định đường đi từ nguồn tới đích của một gói Giao thức mạng Internet (IP)",
+        "B. Dùng để xác định địa chỉ máy chủ google",
+        "C. Dùng để xác định thông mạng tới máy chủ google hay không",
+        "D. Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
       ],
-      "answer": "Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
+      "answer": "D. Dùng để xác định đường đi từ máy hiện tại tới máy chủ google của gói Giao thức IP"
     },
     {
       "question": "Địa chỉ IP có dạng 192.168.1.1 thuộc lớp nào?",
       "options": [
-        "Lớp A",
-        "Lớp D",
-        "Lớp C",
-        "Lớp B"
+        "A. Lớp A",
+        "B. Lớp D",
+        "C. Lớp C",
+        "D. Lớp B"
       ],
-      "answer": "Lớp C"
+      "answer": "C. Lớp C"
     },
     {
       "question": "Điểm giống nhau giữa 2 mô hình OSI và TCP/IP là?",
       "options": [
-        "Có số tầng bằng nhau",
-        "Ứng dụng trong thực tế giống nhau",
-        "Cung cấp phương pháp truyền thông chuyển mạch gói",
-        "Đều có tầng giao vận và tầng liên kết dữ liệu"
+        "A. Có số tầng bằng nhau",
+        "B. Ứng dụng trong thực tế giống nhau",
+        "C. Cung cấp phương pháp truyền thông chuyển mạch gói",
+        "D. Đều có tầng giao vận và tầng liên kết dữ liệu"
       ],
-      "answer": "Cung cấp phương pháp truyền thông chuyển mạch gói"
+      "answer": "C. Cung cấp phương pháp truyền thông chuyển mạch gói"
     },
     {
       "question": "Các giao thức được sử dụng ở tầng Internet trong mô hình TCP/IP là:",
       "options": [
-        "IP, ARP, ICMP, RARP",
-        "TCP, ARP, SMTP",
-        "ARP, UDP, FTP",
-        "TCP, IP, UDP"
+        "A. IP, ARP, ICMP, RARP",
+        "B. TCP, ARP, SMTP",
+        "C. ARP, UDP, FTP",
+        "D. TCP, IP, UDP"
       ],
-      "answer": "IP, ARP, ICMP, RARP"
+      "answer": "A. IP, ARP, ICMP, RARP"
     },
     {
       "question": "Bộ giao thức liên mạng được sử dụng phổ biến trên mạng Internet có tên là gì?",
       "options": [
-        "IPX/SPX",
-        "TCP/IP",
-        "Netbeui",
-        "Tất cả ý trên"
+        "A. IPX/SPX",
+        "B. TCP/IP",
+        "C. Netbeui",
+        "D. Tất cả ý trên"
       ],
-      "answer": "TCP/IP"
+      "answer": "B. TCP/IP"
     },
     {
       "question": "Mạng LAN kết nối dạng thắng (Bus) sử dụng phương pháp trao đổi dữ liệu theo kiểu nào?",
       "options": [
-        "Không kết nối, có báo nhận (Connectionless, Acknowledgement)",
-        "Có kết nối (Connection-Oriented)",
-        "Quảng bá (Broadcast)",
-        "Không kết nối (Connectionless)"
+        "A. Không kết nối, có báo nhận (Connectionless, Acknowledgement)",
+        "B. Có kết nối (Connection-Oriented)",
+        "C. Quảng bá (Broadcast)",
+        "D. Không kết nối (Connectionless)"
       ],
-      "answer": "Quảng bá (Broadcast)"
+      "answer": "C. Quảng bá (Broadcast)"
     },
     {
       "question": "Phát biểu nào sau đây là đúng nhất cho kiến trúc mạng Star?",
       "options": [
-        "Khó mở rộng hoặc thu hẹp mạng",
-        "Dễ kiểm soát và quản lý tập trung",
-        "Khi cáp đứt tại một điểm nào đó làm cho toàn bộ mạng ngưng hoạt động",
-        "Cần ít cáp hơn nhiều so với các kiến trúc khác"
+        "A. Khó mở rộng hoặc thu hẹp mạng",
+        "B. Dễ kiểm soát và quản lý tập trung",
+        "C. Khi cáp đứt tại một điểm nào đó làm cho toàn bộ mạng ngưng hoạt động",
+        "D. Cần ít cáp hơn nhiều so với các kiến trúc khác"
       ],
-      "answer": "Dễ kiểm soát và quản lý tập trung"
+      "answer": "B. Dễ kiểm soát và quản lý tập trung"
     },
     {
       "question": "Giao thức thông dụng làm việc tại tầng Transport của mô hình OSI là:",
       "options": [
-        "TCP, UDP",
-        "ICMP, UDP",
-        "TCP, RIP",
-        "TCP/IP"
+        "A. TCP, UDP",
+        "B. ICMP, UDP",
+        "C. TCP, RIP",
+        "D. TCP/IP"
       ],
-      "answer": "TCP, UDP"
+      "answer": "A. TCP, UDP"
     },
     {
       "question": "Kiến trúc mạng kết hợp nào sau đây là đúng?",
       "options": [
-        "Star-Bus",
-        "Bus-Star",
-        "Ring-Star",
-        "Ring-Bus"
+        "A. Star-Bus",
+        "B. Bus-Star",
+        "C. Ring-Star",
+        "D. Ring-Bus"
       ],
-      "answer": "Star-Bus"
+      "answer": "A. Star-Bus"
     },
     {
       "question": "Một nút mạng có thông số: 194.12.2.179/255.255.255.240. Xác định số hiệu Subnet và host number:",
       "options": [
-        "Subnet 11110000\\2, host number 179",
-        "Subnet 01010101\\2, hostnumber 12",
-        "Subnet 11110000\\2, host number 11",
-        "Subnet 10110000/2, host number 3"
+        "A. Subnet 11110000\\2, host number 179",
+        "B. Subnet 01010101\\2, hostnumber 12",
+        "C. Subnet 11110000\\2, host number 11",
+        "D. Subnet 10110000/2, host number 3"
       ],
-      "answer": "Subnet 10110000/2, host number 3"
+      "answer": "D. Subnet 10110000/2, host number 3"
     },
     {
       "question": "Màu tím nhạt trong bảng màu mặc định của Wireshark được cung cấp cho loại gói chính nào?",
       "options": [
-        "Lưu lượng UDP",
-        "Lưu lượng TCP",
-        "Lưu lượng truy cập HTTP",
-        "Các gói có lỗi"
+        "A. Lưu lượng UDP",
+        "B. Lưu lượng TCP",
+        "C. Lưu lượng truy cập HTTP",
+        "D. Các gói có lỗi"
       ],
-      "answer": "Lưu lượng TCP"
+      "answer": "B. Lưu lượng TCP"
     },
     {
       "question": "Switch1 vừa Restart. Host A gửi Frame dữ liệu đến Host B thì địa chỉ nào được thêm vào bảng Switching?",
       "options": [
-        "Switch1 sẽ thêm 192.168.23.12 vào bảng switching",
-        "Switch1 sẽ thêm 192.168.23.4 vào bảng switching",
-        "Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching",
-        "Switch1 sẽ thêm 000B.DB95.2EE9 vào bảng switching"
+        "A. Switch1 sẽ thêm 192.168.23.12 vào bảng switching",
+        "B. Switch1 sẽ thêm 192.168.23.4 vào bảng switching",
+        "C. Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching",
+        "D. Switch1 sẽ thêm 000B.DB95.2EE9 vào bảng switching"
       ],
-      "answer": "Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching"
+      "answer": "C. Switch1 sẽ thêm 000A.8A47.E612 vào bảng switching"
     },
     {
       "question": "Một mạng con lớp C cần chứa tối thiểu 15 host, sử dụng Subnet Mask nào sau đây:",
       "options": [
-        "255.255.255.248",
-        "255.0.0.255",
-        "255.255.255.224",
-        "255.255.255.240"
+        "A. 255.255.255.248",
+        "B. 255.0.0.255",
+        "C. 255.255.255.224",
+        "D. 255.255.255.240"
       ],
-      "answer": "255.255.255.224"
+      "answer": "C. 255.255.255.224"
     },
     {
       "question": "Giao thức nào trong các giao thức sau dùng trong mô hình mạng WAN:",
       "options": [
-        "Tất cả đáp án trên",
-        "NETBEUI",
-        "DLC",
-        "TCP/IP"
+        "A. Tất cả đáp án trên",
+        "B. NETBEUI",
+        "C. DLC",
+        "D. TCP/IP"
       ],
-      "answer": "TCP/IP"
+      "answer": "D. TCP/IP"
     },
     {
       "question": "Tìm số lượng Broadcast domain trong mô hình mạng LAN gồm 1 Router, 1 Switch, 1 Hub và 6 PC?",
       "options": [
-        "5 Broadcast domain",
-        "8 Broadcast domain",
-        "4 Broadcast domain",
-        "2 Broadcast domain"
+        "A. 5 Broadcast domain",
+        "B. 8 Broadcast domain",
+        "C. 4 Broadcast domain",
+        "D. 2 Broadcast domain"
       ],
-      "answer": "2 Broadcast domain"
+      "answer": "D. 2 Broadcast domain"
     },
     {
       "question": "Kích thước của khung dữ liệu trong mô hình TCP/IP?",
       "options": [
-        "Phụ thuộc vào mạng mà máy nhận kết nối",
-        "Nhỏ hơn 64KB",
-        "Phụ thuộc vào mạng mà máy gửi kết nối",
-        "Lớn hơn 64KB"
+        "A. Phụ thuộc vào mạng mà máy nhận kết nối",
+        "B. Nhỏ hơn 64KB",
+        "C. Phụ thuộc vào mạng mà máy gửi kết nối",
+        "D. Lớn hơn 64KB"
       ],
-      "answer": "Phụ thuộc vào mạng mà máy gửi kết nối"
+      "answer": "C. Phụ thuộc vào mạng mà máy gửi kết nối"
     },
     {
       "question": "Địa chỉ nào sau đây là địa chỉ MAC?",
       "options": [
-        "00-00-0c-12-34-255",
-        "0000.0c12.3456.255",
-        "0000.0c12.3456",
-        "00-00-0c-12-34-45-20-25"
+        "A. 00-00-0c-12-34-255",
+        "B. 0000.0c12.3456.255",
+        "C. 0000.0c12.3456",
+        "D. 00-00-0c-12-34-45-20-25"
       ],
-      "answer": "0000.0c12.3456"
+      "answer": "C. 0000.0c12.3456"
     },
     {
       "question": "Cho địa chỉ IP 192.168.25.91/26, Subnet Mask sẽ là:",
       "options": [
-        "255.255.255.128",
-        "255.224.255.240",
-        "255.255.255.192",
-        "255.255.255.224"
+        "A. 255.255.255.128",
+        "B. 255.224.255.240",
+        "C. 255.255.255.192",
+        "D. 255.255.255.224"
       ],
-      "answer": "255.255.255.192"
+      "answer": "C. 255.255.255.192"
     },
     {
       "question": "Phần mềm Wireshark được sử dụng trên nền tảng hệ điều hành nào?",
       "options": [
-        "Windows",
-        "Tất cả đáp án",
-        "Linux",
-        "MacOS"
+        "A. Windows",
+        "B. Tất cả đáp án",
+        "C. Linux",
+        "D. MacOS"
       ],
-      "answer": "Tất cả đáp án"
+      "answer": "B. Tất cả đáp án"
     },
     {
       "question": "Trong Packet tracer, muốn đặt địa chỉ IP cho PC để kết nối vào mạng ta chọn tùy chọn nào?",
       "options": [
-        "Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP",
-        "Chọn PC → Tab CONFIG → Nhập địa chỉ IP",
-        "Chọn PC → Tab DESKTOP → Terminal → Nhập địa chỉ IP",
-        "Chọn PC → Tab DESKTOP → Command Prompt → Nhập địa chỉ IP"
+        "A. Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP",
+        "B. Chọn PC → Tab CONFIG → Nhập địa chỉ IP",
+        "C. Chọn PC → Tab DESKTOP → Terminal → Nhập địa chỉ IP",
+        "D. Chọn PC → Tab DESKTOP → Command Prompt → Nhập địa chỉ IP"
       ],
-      "answer": "Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP"
+      "answer": "A. Chọn PC → Tab DESKTOP → IP Configuration → Nhập địa chỉ IP"
     },
     {
       "question": "Sử dụng địa chỉ lớp B để chia Subnet với subnet mask là 255.255.248.0 thì có bao nhiêu Subnet có thể sử dụng?",
       "options": [
-        "2",
-        "6",
-        "30",
-        "14"
+        "A. 2",
+        "B. 6",
+        "C. 30",
+        "D. 14"
       ],
-      "answer": "30"
+      "answer": "C. 30"
     },
     {
       "question": "Để cấp phát động địa chỉ IP, ta có thể sử dụng dịch vụ nào?",
       "options": [
-        "FTP",
-        "DNS",
-        "DHCP",
-        "HTTP"
+        "A. FTP",
+        "B. DNS",
+        "C. DHCP",
+        "D. HTTP"
       ],
-      "answer": "DHCP"
+      "answer": "C. DHCP"
     },
     {
       "question": "Nhược điểm của kiến trúc mạng hình sao (Star) là gì?",
       "options": [
-        "Khó cài đặt và bảo trì",
-        "Khó khắc phục khi lỗi cáp xảy ra, và ảnh hưởng tới các nút mạng khác",
-        "Không có khả năng thay đổi khi đã lắp đặt",
-        "Cần quá nhiều cáp để kết nối tới nút mạng trung tâm"
+        "A. Khó cài đặt và bảo trì",
+        "B. Khó khắc phục khi lỗi cáp xảy ra, và ảnh hưởng tới các nút mạng khác",
+        "C. Không có khả năng thay đổi khi đã lắp đặt",
+        "D. Cần quá nhiều cáp để kết nối tới nút mạng trung tâm"
       ],
-      "answer": "Cần quá nhiều cáp để kết nối tới nút mạng trung tâm"
+      "answer": "D. Cần quá nhiều cáp để kết nối tới nút mạng trung tâm"
     },
     {
       "question": "Điều gì sẽ xảy ra với dữ liệu khi có va chạm (collision)?",
       "options": [
-        "Dữ liệu sẽ bị phá hỏng từng bit một",
-        "Dữ liệu sẽ được xây dựng lại tại máy nhận",
-        "Dữ liệu sẽ bị mất",
-        "Hub/Switch sẽ gửi lại dữ liệu"
+        "A. Dữ liệu sẽ bị phá hỏng từng bit một",
+        "B. Dữ liệu sẽ được xây dựng lại tại máy nhận",
+        "C. Dữ liệu sẽ bị mất",
+        "D. Hub/Switch sẽ gửi lại dữ liệu"
       ],
-      "answer": "Dữ liệu sẽ bị phá hỏng từng bit một"
+      "answer": "A. Dữ liệu sẽ bị phá hỏng từng bit một"
     },
     {
       "question": "Khoảng cách tối đa cho cáp UTP là bao nhiêu mét?",
       "options": [
-        "300",
-        "150",
-        "100",
-        "200"
+        "A. 300",
+        "B. 150",
+        "C. 100",
+        "D. 200"
       ],
-      "answer": "100"
+      "answer": "C. 100"
     },
     {
       "question": "Có thể truy cập các dịch vụ của một máy tính chạy Windows trong mạng TCP/IP bằng cách sử dụng:",
       "options": [
-        "Tên DNS",
-        "Tên máy",
-        "Địa chỉ IP",
-        "Địa chỉ MAC"
+        "A. Tên DNS",
+        "B. Tên máy",
+        "C. Địa chỉ IP",
+        "D. Địa chỉ MAC"
       ],
-      "answer": "Tên DNS"
+      "answer": "A. Tên DNS"
     },
     {
       "question": "Tìm số lượng Collision domain trong mô hình mạng LAN gồm 1 Router, 1 Switch, 1 Hub và 6 PC?",
       "options": [
-        "8 Collision domain",
-        "3 Collision domain",
-        "4 Collision domain",
-        "5 Collision domain"
+        "A. 8 Collision domain",
+        "B. 3 Collision domain",
+        "C. 4 Collision domain",
+        "D. 5 Collision domain"
       ],
-      "answer": "5 Collision domain"
+      "answer": "D. 5 Collision domain"
     },
     {
       "question": "Công nghệ mạng LAN nào được sử dụng rộng rãi nhất trong cơ quan/doanh nghiệp?",
       "options": [
-        "ArcNet",
-        "Ethernet",
-        "Token Ring",
-        "FDDI"
+        "A. ArcNet",
+        "B. Ethernet",
+        "C. Token Ring",
+        "D. FDDI"
       ],
-      "answer": "Ethernet"
+      "answer": "B. Ethernet"
     },
     {
       "question": "Dịch vụ nào cho phép tham chiếu host bằng tên thay cho việc dùng địa chỉ IP khi duyệt Internet?",
       "options": [
-        "HTTP",
-        "DNS",
-        "FTP",
-        "POTS"
+        "A. HTTP",
+        "B. DNS",
+        "C. FTP",
+        "D. POTS"
       ],
-      "answer": "DNS"
+      "answer": "B. DNS"
     },
     {
       "question": "Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng?",
       "options": [
-        "Telnet: TCP Port 23",
-        "TFTP: UDP Port 69",
-        "SMTP: TCP Port 21",
-        "HTTP: TCP Port 80"
+        "A. Telnet: TCP Port 23",
+        "B. TFTP: UDP Port 69",
+        "C. SMTP: TCP Port 21",
+        "D. HTTP: TCP Port 80"
       ],
-      "answer": "HTTP: TCP Port 80"
+      "answer": "D. HTTP: TCP Port 80"
     },
     {
       "question": "Gõ lệnh Ping <địa chỉ IP của máy tính khác> trong cửa sổ cmd dùng để làm gì?",
       "options": [
-        "Kiểm tra máy tính khác có truy cập được Internet không?",
-        "Kiểm tra sự liên thông mạng với máy tính khác?",
-        "Kiểm tra máy tính khác có card mạng hay không",
-        "Kiểm tra máy tính khác có hoạt động tốt hay không"
+        "A. Kiểm tra máy tính khác có truy cập được Internet không?",
+        "B. Kiểm tra sự liên thông mạng với máy tính khác?",
+        "C. Kiểm tra máy tính khác có card mạng hay không",
+        "D. Kiểm tra máy tính khác có hoạt động tốt hay không"
       ],
-      "answer": "Kiểm tra sự liên thông mạng với máy tính khác?"
+      "answer": "B. Kiểm tra sự liên thông mạng với máy tính khác?"
     }
   ]
 }

@@ -4,698 +4,698 @@
     {
       "question": "Câu 386: Internet bắt nguồn đầu tiên từ mạng máy máy tính nào?",
       "options": [
-        "ARPANET",
-        "NSFNET",
-        "ALOHAnet",
-        "MILNET"
+        "A. ARPANET",
+        "B. NSFNET",
+        "C. ALOHAnet",
+        "D. MILNET"
       ],
-      "answer": "ARPANET"
+      "answer": "A. ARPANET"
     },
     {
       "question": "Câu 387: Thuật ngữ ARPANET là viết tắt của cụm từ nào?",
       "options": [
-        "Advanced Research Projects Agency Networking",
-        "Advanced Resource Projects Agency Network",
-        "Advanced Research Projects American Network",
-        "American Research Projects Agency Network"
+        "A. Advanced Research Projects Agency Networking",
+        "B. Advanced Resource Projects Agency Network",
+        "C. Advanced Research Projects American Network",
+        "D. American Research Projects Agency Network"
       ],
-      "answer": "Advanced Research Projects Agency Networking"
+      "answer": "A. Advanced Research Projects Agency Networking"
     },
     {
       "question": "Câu 388: Việt Nam chính thức gia nhập và Internet bắt đầu vào năm nào?",
       "options": [
-        "1995",
-        "1996",
-        "1997",
-        "1998"
+        "A. 1995",
+        "B. 1996",
+        "C. 1997",
+        "D. 1998"
       ],
-      "answer": "1997"
+      "answer": "C. 1997"
     },
     {
       "question": "Câu 389: Khẳng định nào sau đây là đúng?",
       "options": [
-        "Internet sử dụng bộ giao thức chung TCP/IP để trao đổi thông tin",
-        "Internet sử dụng giao thức chung TCP để trao đổi thông tin",
-        "Internet sử dụng giao thức chung IP để trao đổi thông tin",
-        "Internet sử dụng bộ giao thức chung UDP/IP để trao đổi thông tin"
+        "A. Internet sử dụng bộ giao thức chung TCP/IP để trao đổi thông tin",
+        "B. Internet sử dụng giao thức chung TCP để trao đổi thông tin",
+        "C. Internet sử dụng giao thức chung IP để trao đổi thông tin",
+        "D. Internet sử dụng bộ giao thức chung UDP/IP để trao đổi thông tin"
       ],
-      "answer": "Internet sử dụng bộ giao thức chung TCP/IP để trao đổi thông tin"
+      "answer": "A. Internet sử dụng bộ giao thức chung TCP/IP để trao đổi thông tin"
     },
     {
       "question": "Câu 390: Thuật ngữ SMTP là viết tắt của cụm từ nào?",
       "options": [
-        "Simple Mail Transmission Protocol",
-        "Simplex Mail Transfer Protocol",
-        "Simple Mail Transport Protocol",
-        "Simple Mail Transfer Protocol"
+        "A. Simple Mail Transmission Protocol",
+        "B. Simplex Mail Transfer Protocol",
+        "C. Simple Mail Transport Protocol",
+        "D. Simple Mail Transfer Protocol"
       ],
-      "answer": "Simple Mail Transfer Protocol"
+      "answer": "D. Simple Mail Transfer Protocol"
     },
     {
       "question": "Câu 391: SMTP là giao thức được dùng để làm gì?",
       "options": [
-        "Trao đổi các siêu văn bản",
-        "Trao đổi thư điện tử",
-        "Trao đổi các tệp Video",
-        "Trao đổi các tệp âm thanh"
+        "A. Trao đổi các siêu văn bản",
+        "B. Trao đổi thư điện tử",
+        "C. Trao đổi các tệp Video",
+        "D. Trao đổi các tệp âm thanh"
       ],
-      "answer": "Trao đổi thư điện tử"
+      "answer": "B. Trao đổi thư điện tử"
     },
     {
       "question": "Câu 392: Trường thông tin CC trong cấu trúc thư điện tử dùng để làm gì?",
       "options": [
-        "Lưu địa chỉ thư của người nhận",
-        "Lưu địa chỉ thư của người gửi",
-        "Lưu danh sách địa chỉ thư của các người nhận",
-        "Lưu nội dung chủ đề của thư"
+        "A. Lưu địa chỉ thư của người nhận",
+        "B. Lưu địa chỉ thư của người gửi",
+        "C. Lưu danh sách địa chỉ thư của các người nhận",
+        "D. Lưu nội dung chủ đề của thư"
       ],
-      "answer": "Lưu danh sách địa chỉ thư của các người nhận"
+      "answer": "C. Lưu danh sách địa chỉ thư của các người nhận"
     },
     {
       "question": "Câu 393: Một máy chủ cung cấp cả hai dịch vụ FTP và WWW, làm sao để máy chủ phân biệt các yêu cầu (request) giữa hai dịch vụ này?",
       "options": [
-        "Dựa vào hai giao thức TCP & UDP",
-        "Dựa vào hai tên miền",
-        "Dựa vào hai địa chỉ IP",
-        "Dựa vào hai số hiệu cổng TCP/UDP"
+        "A. Dựa vào hai giao thức TCP & UDP",
+        "B. Dựa vào hai tên miền",
+        "C. Dựa vào hai địa chỉ IP",
+        "D. Dựa vào hai số hiệu cổng TCP/UDP"
       ],
-      "answer": "Dựa vào hai số hiệu cổng TCP/UDP"
+      "answer": "D. Dựa vào hai số hiệu cổng TCP/UDP"
     },
     {
       "question": "Câu 394: DNS là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Domain Name Server",
-        "Domain Name System",
-        "Domain Naming System",
-        "Domaining Name System"
+        "A. Domain Name Server",
+        "B. Domain Name System",
+        "C. Domain Naming System",
+        "D. Domaining Name System"
       ],
-      "answer": "Domain Name System"
+      "answer": "B. Domain Name System"
     },
     {
       "question": "Câu 395: ISP (nhà cung cấp dịch vụ Internet) là thuật ngữ viết tắt của cụm từ sau?",
       "options": [
-        "Internet Service Provider",
-        "Inter-connectoin Service Provider",
-        "Internet Server Provider",
-        "Internet Service Providing"
+        "A. Internet Service Provider",
+        "B. Inter-connectoin Service Provider",
+        "C. Internet Server Provider",
+        "D. Internet Service Providing"
       ],
-      "answer": "Internet Service Provider"
+      "answer": "A. Internet Service Provider"
     },
     {
       "question": "Câu 396: ISP là gì?",
       "options": [
-        "Là nhà cung cấp dịch vụ đường truyền cho phép truy cập đến Internet như: Dial-Up, ADSL...",
-        "Là nhà cung cấp các dịch vụ truy cập thông tin trên Internet như e-mail, Web,...",
-        "Là nhà cung cấp dịch vụ khác như: DNS, Hosting Web,...",
-        "Cả ba câu trên đều đúng"
+        "A. Là nhà cung cấp dịch vụ đường truyền cho phép truy cập đến Internet như: Dial-Up, ADSL...",
+        "B. Là nhà cung cấp các dịch vụ truy cập thông tin trên Internet như e-mail, Web,...",
+        "C. Là nhà cung cấp dịch vụ khác như: DNS, Hosting Web,...",
+        "D. Cả ba câu trên đều đúng"
       ],
-      "answer": "Cả ba câu trên đều đúng"
+      "answer": "D. Cả ba câu trên đều đúng"
     },
     {
       "question": "Câu 397: Để cấp phát địa chỉ IP động, người ta sử dụng dịch vụ có giao thức nào?",
       "options": [
-        "DNS",
-        "FTP",
-        "DHCP",
-        "HTTP"
+        "A. DNS",
+        "B. FTP",
+        "C. DHCP",
+        "D. HTTP"
       ],
-      "answer": "DHCP"
+      "answer": "C. DHCP"
     },
     {
       "question": "Câu 398: Ưu điểm của việc cấp phát địa chỉ IP động trong LAN so với việc thiết lập địa chỉ IP tĩnh?",
       "options": [
-        "Người dùng trong LAN không cần quan tâm đến việc thiết lập địa chỉ IP",
-        "Việc sử dụng trong LAN không gian địa chỉ IP trở nên tiết kiệm hơn",
-        "Làm tăng tốc độ trao đổi thông tin",
-        "Câu a và b đúng"
+        "A. Người dùng trong LAN không cần quan tâm đến việc thiết lập địa chỉ IP",
+        "B. Việc sử dụng trong LAN không gian địa chỉ IP trở nên tiết kiệm hơn",
+        "C. Làm tăng tốc độ trao đổi thông tin",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 400: Giao thức nào thực hiện chức năng của tầng ứng dụng?",
       "options": [
-        "IP",
-        "HTTP",
-        "TCP",
-        "NFS"
+        "A. IP",
+        "B. HTTP",
+        "C. TCP",
+        "D. NFS"
       ],
-      "answer": "HTTP"
+      "answer": "B. HTTP"
     },
     {
       "question": "Câu 401: Hai người muốn gửi và nhận thư điện tử với nhau bằng dịch vụ E-Mail thì phải cùng đang online, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Sai"
+      "answer": "B. Sai"
     },
     {
       "question": "Câu 402: Hai người muốn gửi và nhận thư điện tử với nhau bằng dịch vụ E-Mail thì phải có tài khoản người dùng thư, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 403: Dịch vụ thư điện tử nào sau đây cho phép đăng ký sử dụng miễn phí?",
       "options": [
-        "gmail.com",
-        "mail.vnu.edu.vn",
-        "mail.epu.edu.vn",
-        "mail.ioit.ac.vn"
+        "A. gmail.com",
+        "B. mail.vnu.edu.vn",
+        "C. mail.epu.edu.vn",
+        "D. mail.ioit.ac.vn"
       ],
-      "answer": "gmail.com"
+      "answer": "A. gmail.com"
     },
     {
       "question": "Câu 404: Giao thức nào sau đây có thể dùng để nhận thư điện tử?",
       "options": [
-        "POP3",
-        "IMAP",
-        "HTTP",
-        "Cả ba giao thức trên"
+        "A. POP3",
+        "B. IMAP",
+        "C. HTTP",
+        "D. Cả ba giao thức trên"
       ],
-      "answer": "Cả ba giao thức trên"
+      "answer": "D. Cả ba giao thức trên"
     },
     {
       "question": "Câu 405: Khi người dùng đăng nhập vào hòm thư của mình và gửi thư (có đính kèm file) cho người bạn, những nguyên nhân nào có thể gây ra lỗi khi gửi thư?",
       "options": [
-        "Do địa chỉ người nhận được thiết lập không đúng",
-        "Do dịch vụ E-mail máy chủ thư của người nhận không hoạt động",
-        "Do người nhận hiện không online trên mạng",
-        "Câu a và b đúng"
+        "A. Do địa chỉ người nhận được thiết lập không đúng",
+        "B. Do dịch vụ E-mail máy chủ thư của người nhận không hoạt động",
+        "C. Do người nhận hiện không online trên mạng",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 406: Thư điện tử của người dùng thường được lưu và quản lý ở đâu?",
       "options": [
-        "Máy chủ thư của người gửi",
-        "Máy chủ thư của người nhận",
-        "Máy khách của người nhận",
-        "Câu a và c đúng"
+        "A. Máy chủ thư của người gửi",
+        "B. Máy chủ thư của người nhận",
+        "C. Máy khách của người nhận",
+        "D. Câu a và c đúng"
       ],
-      "answer": "Máy chủ thư của người nhận"
+      "answer": "B. Máy chủ thư của người nhận"
     },
     {
       "question": "Câu 407: Trong mô hình Internet Mail, các máy chủ thư trao đổi thư điện tử với nhau bằng giao thức nào?",
       "options": [
-        "IMAP",
-        "POP3",
-        "HTTP",
-        "SMTP"
+        "A. IMAP",
+        "B. POP3",
+        "C. HTTP",
+        "D. SMTP"
       ],
-      "answer": "SMTP"
+      "answer": "D. SMTP"
     },
     {
       "question": "Câu 408: Trong mô hình Internet Mail, người dùng thư có thể gửi thư bằng giao thức nào?",
       "options": [
-        "IMAP",
-        "HTTP",
-        "SMTP",
-        "Câu b và c đúng"
+        "A. IMAP",
+        "B. HTTP",
+        "C. SMTP",
+        "D. Câu b và c đúng"
       ],
-      "answer": "Câu b và c đúng"
+      "answer": "D. Câu b và c đúng"
     },
     {
       "question": "Câu 409: Dịch vụ thư điện tử cho phép trao đổi thông tin ở dạng nào?",
       "options": [
-        "Văn bản (kể cả văn bản dạng HTML)",
-        "Hình ảnh",
-        "Âm thanh",
-        "Cả ba dạng trên"
+        "A. Văn bản (kể cả văn bản dạng HTML)",
+        "B. Hình ảnh",
+        "C. Âm thanh",
+        "D. Cả ba dạng trên"
       ],
-      "answer": "Cả ba dạng trên"
+      "answer": "D. Cả ba dạng trên"
     },
     {
       "question": "Câu 411: Chức năng nào sau đây cho phép nhận thư điện tử?",
       "options": [
-        "Inbox",
-        "Reply",
-        "Forward",
-        "Compose"
+        "A. Inbox",
+        "B. Reply",
+        "C. Forward",
+        "D. Compose"
       ],
-      "answer": "Inbox"
+      "answer": "A. Inbox"
     },
     {
       "question": "Câu 412: Chức năng nào sau đây cho phép chuyển tiếp thư điện tử tới người nhận?",
       "options": [
-        "Inbox",
-        "Reply",
-        "Forward",
-        "Compose"
+        "A. Inbox",
+        "B. Reply",
+        "C. Forward",
+        "D. Compose"
       ],
-      "answer": "Forward"
+      "answer": "C. Forward"
     },
     {
       "question": "Câu 413: Chức năng nào sau đây cho phép soạn thư điện tử?",
       "options": [
-        "Inbox",
-        "Reply",
-        "Forward",
-        "Compose"
+        "A. Inbox",
+        "B. Reply",
+        "C. Forward",
+        "D. Compose"
       ],
-      "answer": "Compose"
+      "answer": "D. Compose"
     },
     {
       "question": "Câu 414: Chức năng nào sau đây cho phép đính kèm một tệp hay nhiều tệp với thư điện tử?",
       "options": [
-        "Attachment",
-        "Reply",
-        "Forward",
-        "Compose"
+        "A. Attachment",
+        "B. Reply",
+        "C. Forward",
+        "D. Compose"
       ],
-      "answer": "Attachment"
+      "answer": "A. Attachment"
     },
     {
       "question": "Câu 415: Không cần thiết lập dịch vụ E – Mail, người ta có thể trao đổi thư điện tử thông qua dịch vụ WWW, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Sai"
+      "answer": "B. Sai"
     },
     {
       "question": "Câu 416: SPAM là gì?",
       "options": [
-        "Là một loại Virus máy tính",
-        "Là một loại phần mềm gián điệp (Spyware)",
-        "Là một loại sâu máy tính (worm)",
-        "Là loại thư điện tử rác mà người dùng không muốn nhận"
+        "A. Là một loại Virus máy tính",
+        "B. Là một loại phần mềm gián điệp (Spyware)",
+        "C. Là một loại sâu máy tính (worm)",
+        "D. Là loại thư điện tử rác mà người dùng không muốn nhận"
       ],
-      "answer": "Là loại thư điện tử rác mà người dùng không muốn nhận"
+      "answer": "D. Là loại thư điện tử rác mà người dùng không muốn nhận"
     },
     {
       "question": "Câu 417: Để sử dụng Outlook Express cho việc nhận thư, máy chủ thư (Mail Server) phải hỗ trợ giao thức nào?",
       "options": [
-        "HTTP",
-        "POP3",
-        "FTP",
-        "SMTP"
+        "A. HTTP",
+        "B. POP3",
+        "C. FTP",
+        "D. SMTP"
       ],
-      "answer": "POP3"
+      "answer": "B. POP3"
     },
     {
       "question": "Câu 418: Bản chất của trình duyệt Web là gì?",
       "options": [
-        "Một hệ biên dịch",
-        "Một phần mềm cho phép soạn các văn bản HTML",
-        "Một phần mềm cho phép soạn các văn bản XHTML",
-        "Câu a và b đúng"
+        "A. Một hệ biên dịch",
+        "B. Một phần mềm cho phép soạn các văn bản HTML",
+        "C. Một phần mềm cho phép soạn các văn bản XHTML",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Một hệ biên dịch"
+      "answer": "A. Một hệ biên dịch"
     },
     {
       "question": "Câu 419: HyperLink là gì?",
       "options": [
-        "Siêu liên kết",
-        "Siêu văn bản",
-        "Ngôn ngữ siêu liên kết",
-        "Ngôn ngữ siêu văn bản"
+        "A. Siêu liên kết",
+        "B. Siêu văn bản",
+        "C. Ngôn ngữ siêu liên kết",
+        "D. Ngôn ngữ siêu văn bản"
       ],
-      "answer": "Siêu liên kết"
+      "answer": "A. Siêu liên kết"
     },
     {
       "question": "Câu 420: Hypertext là gì?",
       "options": [
-        "Siêu liên kết",
-        "Siêu văn bản",
-        "Ngôn ngữ siêu liên kết",
-        "Ngôn ngữ siêu văn bản"
+        "A. Siêu liên kết",
+        "B. Siêu văn bản",
+        "C. Ngôn ngữ siêu liên kết",
+        "D. Ngôn ngữ siêu văn bản"
       ],
-      "answer": "Siêu văn bản"
+      "answer": "B. Siêu văn bản"
     },
     {
       "question": "Câu 421: Các siêu văn bản có thể liên kết với nhau thông qua phương tiện nào?",
       "options": [
-        "Các yêu cầu (request)",
-        "Các siêu liên kết",
-        "URL",
-        "Câu a và b đúng"
+        "A. Các yêu cầu (request)",
+        "B. Các siêu liên kết",
+        "C. URL",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 422: Chức năng nào sau đây trên giao diện của trình duyệt Web (Internet Explore) cho phép người dùng lưu các URL cần thiết?",
       "options": [
-        "Refresh",
-        "Stop",
-        "Favorites",
-        "History"
+        "A. Refresh",
+        "B. Stop",
+        "C. Favorites",
+        "D. History"
       ],
-      "answer": "Favorites"
+      "answer": "C. Favorites"
     },
     {
       "question": "Câu 427: Máy khách trong mô hình Khách/Chủ thực hiện chức năng gì?",
       "options": [
-        "Gửi yêu cầu truy nhập thông tin tới máy chủ",
-        "Gửi yêu cầu truy nhập thông tin tới máy chủ và tiếp nhận, thể hiện kết quả cho người dùng",
-        "Tiếp nhận yêu cầu từ máy chủ và gửi kết quả trả về cho máy chủ",
-        "Xử lý các thông tin do máy chủ yêu cầu"
+        "A. Gửi yêu cầu truy nhập thông tin tới máy chủ",
+        "B. Gửi yêu cầu truy nhập thông tin tới máy chủ và tiếp nhận, thể hiện kết quả cho người dùng",
+        "C. Tiếp nhận yêu cầu từ máy chủ và gửi kết quả trả về cho máy chủ",
+        "D. Xử lý các thông tin do máy chủ yêu cầu"
       ],
-      "answer": "Gửi yêu cầu truy nhập thông tin tới máy chủ và tiếp nhận, thể hiện kết quả cho người dùng"
+      "answer": "B. Gửi yêu cầu truy nhập thông tin tới máy chủ và tiếp nhận, thể hiện kết quả cho người dùng"
     },
     {
       "question": "Câu 428: Máy chủ trong mô hình Khách/Chủ thực hiện chức năng gì?",
       "options": [
-        "Gửi yêu cầu truy nhập thông tin tới máy khách",
-        "Gửi thông tin tới máy khách theo yêu cầu và tiếp nhận yêu cầu, tổ chức lưu trữ",
-        "Tiếp nhận yêu cầu từ máy khách, xử lý yêu cầu và gửi kết quả trả về cho máy khách",
-        "Xử lý các thông tin do máy khách yêu cầu"
+        "A. Gửi yêu cầu truy nhập thông tin tới máy khách",
+        "B. Gửi thông tin tới máy khách theo yêu cầu và tiếp nhận yêu cầu, tổ chức lưu trữ",
+        "C. Tiếp nhận yêu cầu từ máy khách, xử lý yêu cầu và gửi kết quả trả về cho máy khách",
+        "D. Xử lý các thông tin do máy khách yêu cầu"
       ],
-      "answer": "Gửi thông tin tới máy khách theo yêu cầu và tiếp nhận yêu cầu, tổ chức lưu trữ"
+      "answer": "B. Gửi thông tin tới máy khách theo yêu cầu và tiếp nhận yêu cầu, tổ chức lưu trữ"
     },
     {
       "question": "Câu 429: Dịch vụ nào sau đây hoạt động không theo mô hình Khách/Chủ?",
       "options": [
-        "E-Mail",
-        "WWW (World Wide Web)",
-        "FTP (File Transfer Protocol)",
-        "Telnet"
+        "A. E-Mail",
+        "B. WWW (World Wide Web)",
+        "C. FTP (File Transfer Protocol)",
+        "D. Telnet"
       ],
-      "answer": "Telnet"
+      "answer": "D. Telnet"
     },
     {
       "question": "Câu 430: Thông tin kết quả được trả về từ máy chủ Web cho máy khách Web ở dạng nào?",
       "options": [
-        "HTML",
-        "ASP",
-        "PHP",
-        "ASP.NET"
+        "A. HTML",
+        "B. ASP",
+        "C. PHP",
+        "D. ASP.NET"
       ],
-      "answer": "HTML"
+      "answer": "A. HTML"
     },
     {
       "question": "Câu 432: IIS không hỗ trợ biên dịch ngôn ngữ nào sau?",
       "options": [
-        "ASP",
-        "ASP.NET",
-        "PHP",
-        "C#"
+        "A. ASP",
+        "B. ASP.NET",
+        "C. PHP",
+        "D. C#"
       ],
-      "answer": "PHP"
+      "answer": "C. PHP"
     },
     {
       "question": "Câu 433: Apache chỉ hỗ trợ biên dịch cho ngôn ngữ nào sau đây?",
       "options": [
-        "ASP",
-        "ASP.NET",
-        "PHP",
-        "C#"
+        "A. ASP",
+        "B. ASP.NET",
+        "C. PHP",
+        "D. C#"
       ],
-      "answer": "PHP"
+      "answer": "C. PHP"
     },
     {
       "question": "Câu 434: Apache là phần mềm dành cho máy chủ Web hoạt động trên môi trường:",
       "options": [
-        "Windows",
-        "Linux"
+        "A. Windows",
+        "B. Linux"
       ],
-      "answer": "Linux"
+      "answer": "B. Linux"
     },
     {
       "question": "Câu 437: Số hiệu cổng mặc định của dịch vụ WWW là bao nhiêu?",
       "options": [
-        "80",
-        "23",
-        "110",
-        "11"
+        "A. 80",
+        "B. 23",
+        "C. 110",
+        "D. 11"
       ],
-      "answer": "80"
+      "answer": "A. 80"
     },
     {
       "question": "Câu 439: Số hiệu cổng mặc định của dịch vụ FTP là bao nhiêu?",
       "options": [
-        "80",
-        "21",
-        "110",
-        "25"
+        "A. 80",
+        "B. 21",
+        "C. 110",
+        "D. 25"
       ],
-      "answer": "21"
+      "answer": "B. 21"
     },
     {
       "question": "Câu 440: Số hiệu cổng mặc định của dịch vụ E-mail dựa trên giao thức SMTP là bao nhiêu?",
       "options": [
-        "80",
-        "23",
-        "110",
-        "25"
+        "A. 80",
+        "B. 23",
+        "C. 110",
+        "D. 25"
       ],
-      "answer": "25"
+      "answer": "D. 25"
     },
     {
       "question": "Câu 441: Số hiệu cổng mặc định của dịch vụ mail dựa trên giao thức POP3 là bao nhiêu?",
       "options": [
-        "80",
-        "23",
-        "110",
-        "25"
+        "A. 80",
+        "B. 23",
+        "C. 110",
+        "D. 25"
       ],
-      "answer": "110"
+      "answer": "C. 110"
     },
     {
       "question": "Câu 443: Phần mềm nào sau đây không có chức năng dành cho máy khách Web?",
       "options": [
-        "FireFox",
-        "Mozilla",
-        "Telnet",
-        "Internet Explore"
+        "A. FireFox",
+        "B. Mozilla",
+        "C. Telnet",
+        "D. Internet Explore"
       ],
-      "answer": "Telnet"
+      "answer": "C. Telnet"
     },
     {
       "question": "Câu 444: Phần mềm nào sau đây có chức năng dành cho máy chủ Web?",
       "options": [
-        "IIS (Internet Information Service)",
-        "Outlook Express",
-        "Internet Explore",
-        "fireFox"
+        "A. IIS (Internet Information Service)",
+        "B. Outlook Express",
+        "C. Internet Explore",
+        "D. fireFox"
       ],
-      "answer": "IIS (Internet Information Service)"
+      "answer": "A. IIS (Internet Information Service)"
     },
     {
       "question": "Câu 446: Dịch vụ DNS có hoạt động theo mô hình Khách/Chủ hay không?",
       "options": [
-        "Có",
-        "Không"
+        "A. Có",
+        "B. Không"
       ],
-      "answer": "Có"
+      "answer": "A. Có"
     },
     {
       "question": "Câu 447: Một tên miền (DomainName) có thể tương ứng với bao nhiêu địa chỉ IP?",
       "options": [
-        "Một",
-        "Hai",
-        "Ba",
-        "Nhiều"
+        "A. Một",
+        "B. Hai",
+        "C. Ba",
+        "D. Nhiều"
       ],
-      "answer": "Một"
+      "answer": "A. Một"
     },
     {
       "question": "Câu 448: Một địa chỉ IP có thể ứng với bao nhiêu tên miền (DomainName)?",
       "options": [
-        "Một",
-        "Hai",
-        "Ba",
-        "Nhiều"
+        "A. Một",
+        "B. Hai",
+        "C. Ba",
+        "D. Nhiều"
       ],
-      "answer": "Nhiều"
+      "answer": "D. Nhiều"
     },
     {
       "question": "Câu 457: Dịch vụ DHCP có hoạt động theo mô hình Khách/Chủ hay không?",
       "options": [
-        "Có",
-        "Không"
+        "A. Có",
+        "B. Không"
       ],
-      "answer": "Có"
+      "answer": "A. Có"
     },
     {
       "question": "Câu 458: Dịch vụ WWW(World Wide Web) hoạt động trao đổi thông tin theo giao thức nào?",
       "options": [
-        "FTP",
-        "HTTP",
-        "SMTP",
-        "DHCP"
+        "A. FTP",
+        "B. HTTP",
+        "C. SMTP",
+        "D. DHCP"
       ],
-      "answer": "HTTP"
+      "answer": "B. HTTP"
     },
     {
       "question": "Câu 460: HTML là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "HyperText Markup Language",
-        "HyperText Made Language",
-        "HybridText Markup Language",
-        "HyperText Markup Locator"
+        "A. HyperText Markup Language",
+        "B. HyperText Made Language",
+        "C. HybridText Markup Language",
+        "D. HyperText Markup Locator"
       ],
-      "answer": "HyperText Markup Language"
+      "answer": "A. HyperText Markup Language"
     },
     {
       "question": "Câu 461: Siêu văn bản có chứa những dạng dữ liệu nào sau đây?",
       "options": [
-        "Văn bản",
-        "Âm thanh",
-        "Hình ảnh",
-        "Cả ba dạng dữ liệu trên"
+        "A. Văn bản",
+        "B. Âm thanh",
+        "C. Hình ảnh",
+        "D. Cả ba dạng dữ liệu trên"
       ],
-      "answer": "Cả ba dạng dữ liệu trên"
+      "answer": "D. Cả ba dạng dữ liệu trên"
     },
     {
       "question": "Câu 462: Siêu văn bản được viết bằng ngôn ngữ nào?",
       "options": [
-        "ASP",
-        "PHP",
-        "Dot NET",
-        "HTML"
+        "A. ASP",
+        "B. PHP",
+        "C. Dot NET",
+        "D. HTML"
       ],
-      "answer": "HTML"
+      "answer": "D. HTML"
     },
     {
       "question": "Câu 467: Ý nghĩa cơ bản của tên miền là gì?",
       "options": [
-        "Giúp cho người dùng dễ dàng truy cập thông tin trên mạng theo tên miền mà không cần phải nhớ địa chỉ IP",
-        "Cho phép quản lý các máy tính trên mạng Internet thuận lợi hơn theo sự phân cấp của tên miền",
-        "Cho phép người dùng truy cập thông tin với tốc độ nhanh hơn",
-        "Cho phép xác định vị trí vật lý của các máy tính dễ dàng"
+        "A. Giúp cho người dùng dễ dàng truy cập thông tin trên mạng theo tên miền mà không cần phải nhớ địa chỉ IP",
+        "B. Cho phép quản lý các máy tính trên mạng Internet thuận lợi hơn theo sự phân cấp của tên miền",
+        "C. Cho phép người dùng truy cập thông tin với tốc độ nhanh hơn",
+        "D. Cho phép xác định vị trí vật lý của các máy tính dễ dàng"
       ],
-      "answer": "Giúp cho người dùng dễ dàng truy cập thông tin trên mạng theo tên miền mà không cần phải nhớ địa chỉ IP"
+      "answer": "A. Giúp cho người dùng dễ dàng truy cập thông tin trên mạng theo tên miền mà không cần phải nhớ địa chỉ IP"
     },
     {
       "question": "Câu 472: Firewall là gì?",
       "options": [
-        "Là một hệ thống bao gồm cả phần cứng và phần mềm được đặt tại vị trí trung gian giữa mạng của một tổ chức và Internet",
-        "Là một hệ thống đóng có chức năng ngăn chặn các phiên truy nhập bất hợp pháp từ Internet vào mạng Intranet của một tổ chức và ngược lại",
-        "Là một hệ thống máy tính nhằm mục đích bảo vệ mạng tránh các cuộc tấn công từ môi trường bên ngoài",
-        "Là một hệ thống máy tính nhằm mục đích điều khiển luồng thông tin trao đổi giữa mạng nội bộ của một tổ chức và Internet"
+        "A. Là một hệ thống bao gồm cả phần cứng và phần mềm được đặt tại vị trí trung gian giữa mạng của một tổ chức và Internet",
+        "B. Là một hệ thống đóng có chức năng ngăn chặn các phiên truy nhập bất hợp pháp từ Internet vào mạng Intranet của một tổ chức và ngược lại",
+        "C. Là một hệ thống máy tính nhằm mục đích bảo vệ mạng tránh các cuộc tấn công từ môi trường bên ngoài",
+        "D. Là một hệ thống máy tính nhằm mục đích điều khiển luồng thông tin trao đổi giữa mạng nội bộ của một tổ chức và Internet"
       ],
-      "answer": "Là một hệ thống đóng có chức năng ngăn chặn các phiên truy nhập bất hợp pháp từ Internet vào mạng Intranet của một tổ chức và ngược lại"
+      "answer": "B. Là một hệ thống đóng có chức năng ngăn chặn các phiên truy nhập bất hợp pháp từ Internet vào mạng Intranet của một tổ chức và ngược lại"
     },
     {
       "question": "Câu 473: Firewall thường được đặt ở vị trí nào?",
       "options": [
-        "Ở trong LAN",
-        "Ở trong WAN",
-        "Ở giữa mạng của một tổ chức (Intranet, VPN, LAN) và Internet",
-        "Bất kỳ"
+        "A. Ở trong LAN",
+        "B. Ở trong WAN",
+        "C. Ở giữa mạng của một tổ chức (Intranet, VPN, LAN) và Internet",
+        "D. Bất kỳ"
       ],
-      "answer": "Ở giữa mạng của một tổ chức (Intranet, VPN, LAN) và Internet"
+      "answer": "C. Ở giữa mạng của một tổ chức (Intranet, VPN, LAN) và Internet"
     },
     {
       "question": "Câu 474: Chức năng cơ bản của Firewall là gì?",
       "options": [
-        "Cho phép hoặc cấm những dịch vụ trao đổi thông tin từ trong mạng ra Internet và ngược lại",
-        "Kiểm soát truy cập thông tin trên Internet của người dùng",
-        "Kiểm soát nội dung thông tin lưu chuyển trong mạng nội bộ với Internet",
-        "Cả ba câu trên đều đúng"
+        "A. Cho phép hoặc cấm những dịch vụ trao đổi thông tin từ trong mạng ra Internet và ngược lại",
+        "B. Kiểm soát truy cập thông tin trên Internet của người dùng",
+        "C. Kiểm soát nội dung thông tin lưu chuyển trong mạng nội bộ với Internet",
+        "D. Cả ba câu trên đều đúng"
       ],
-      "answer": "Cả ba câu trên đều đúng"
+      "answer": "D. Cả ba câu trên đều đúng"
     },
     {
       "question": "Câu 475: Các hạn chế cơ bản của Firewall là gì?",
       "options": [
-        "Khó khăn cho người dùng khi thiết lập các quy định trong kiểm soát luồng thông tin",
-        "Làm giảm tốc độ trao đổi thông tin",
-        "Làm giảm độ tin cậy truyền thông",
-        "Câu a và b đúng"
+        "A. Khó khăn cho người dùng khi thiết lập các quy định trong kiểm soát luồng thông tin",
+        "B. Làm giảm tốc độ trao đổi thông tin",
+        "C. Làm giảm độ tin cậy truyền thông",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 476: Các nguy cơ có thể xảy ra khi không có Firewall?",
       "options": [
-        "Các thông tin cá nhân có thể bị đánh cắp từ bên ngoài mạng",
-        "Các thông tin cá nhân có thể bị thay đổi hoặc phá huỷ do các Hacker thực hiện từ ngoài mạng",
-        "Lây nhiễm Virus từ ngoài mạng",
-        "Cả ba nguy cơ trên"
+        "A. Các thông tin cá nhân có thể bị đánh cắp từ bên ngoài mạng",
+        "B. Các thông tin cá nhân có thể bị thay đổi hoặc phá huỷ do các Hacker thực hiện từ ngoài mạng",
+        "C. Lây nhiễm Virus từ ngoài mạng",
+        "D. Cả ba nguy cơ trên"
       ],
-      "answer": "Cả ba nguy cơ trên"
+      "answer": "D. Cả ba nguy cơ trên"
     },
     {
       "question": "Câu 480: Máy trạm A gửi dữ liệu cho máy trạm B (A, B ở hai LAN khác nhau và nối với nhau thông qua một Router). Các gói dữ liệu nhận được tại tầng liên kết dữ liệu của máy trạm B chứa địa chỉ MAC nguồn của thiết bị nào?",
       "options": [
-        "Router",
-        "Switch trong LAN của máy trạm B",
-        "Card mạng của máy trạm A",
-        "Card mạng của máy trạm B"
+        "A. Router",
+        "B. Switch trong LAN của máy trạm B",
+        "C. Card mạng của máy trạm A",
+        "D. Card mạng của máy trạm B"
       ],
-      "answer": "Router"
+      "answer": "A. Router"
     },
     {
       "question": "Câu 487: Router có cần thiết phải cài đặt thức ARP không?",
       "options": [
-        "Có",
-        "Không"
+        "A. Có",
+        "B. Không"
       ],
-      "answer": "Có"
+      "answer": "A. Có"
     },
     {
       "question": "Câu 488: Thông thường, Proxy Server là một Firewall ở mức nào?",
       "options": [
-        "Ứng dụng",
-        "Mạng",
-        "Liên kết dữ liệu",
-        "Proxy Server không đóng vai trò Firewall"
+        "A. Ứng dụng",
+        "B. Mạng",
+        "C. Liên kết dữ liệu",
+        "D. Proxy Server không đóng vai trò Firewall"
       ],
-      "answer": "Ứng dụng"
+      "answer": "A. Ứng dụng"
     },
     {
       "question": "Câu 489: Chức năng Cache của dịch vụ Proxy có ý nghĩa gì?",
       "options": [
-        "Nâng cao tính bảo mật thông tin khi người dùng truy cập Internet",
-        "Nâng cao tốc độ và hiệu quả truy cập thông tin trên Internet",
-        "Nâng cao nhằm để tránh các truy nhập bất hợp pháp từ ngoài Internet vào mạng trong",
-        "Câu a và b đúng"
+        "A. Nâng cao tính bảo mật thông tin khi người dùng truy cập Internet",
+        "B. Nâng cao tốc độ và hiệu quả truy cập thông tin trên Internet",
+        "C. Nâng cao nhằm để tránh các truy nhập bất hợp pháp từ ngoài Internet vào mạng trong",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Nâng cao tốc độ và hiệu quả truy cập thông tin trên Internet"
+      "answer": "B. Nâng cao tốc độ và hiệu quả truy cập thông tin trên Internet"
     },
     {
       "question": "Câu 490: Các hệ thống Firewall thường được cài đặt ít nhất bao nhiêu thiết bị NIC?",
       "options": [
-        "1",
-        "2",
-        "3",
-        "4"
+        "A. 1",
+        "B. 2",
+        "C. 3",
+        "D. 4"
       ],
-      "answer": "2"
+      "answer": "B. 2"
     },
     {
       "question": "Câu 492: URL là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Uniform Resource Local",
-        "Unicode Resource Locator",
-        "Uniform Resource Locator",
-        "Uniform Research Locator"
+        "A. Uniform Resource Local",
+        "B. Unicode Resource Locator",
+        "C. Uniform Resource Locator",
+        "D. Uniform Research Locator"
       ],
-      "answer": "Uniform Resource Locator"
+      "answer": "C. Uniform Resource Locator"
     },
     {
       "question": "Câu 494: Cú pháp tổng quát của URL có dạng như thế nào?",
       "options": [
-        "Protocol :// Host name/Path/filename",
-        "Protocol :// Host name [:port]/Path/filename",
-        "Http:// Host name [:port]/Path/filename",
-        "ftp:// Host name [:port]/Path/filename"
+        "A. Protocol :// Host name/Path/filename",
+        "B. Protocol :// Host name [:port]/Path/filename",
+        "C. Http:// Host name [:port]/Path/filename",
+        "D. ftp:// Host name [:port]/Path/filename"
       ],
-      "answer": "Protocol :// Host name [:port]/Path/filename"
+      "answer": "B. Protocol :// Host name [:port]/Path/filename"
     },
     {
       "question": "Câu 495: Miền có tên nào sau đây được gán cho nước Mỹ?",
       "options": [
-        "AU",
-        "COM",
-        "US",
-        "FR"
+        "A. AU",
+        "B. COM",
+        "C. US",
+        "D. FR"
       ],
-      "answer": "US"
+      "answer": "C. US"
     },
     {
       "question": "Câu 500: Trong chức năng tìm kiếm ảnh của trang Web tìm kiếm văn bản Web www.google.com.vn, từ khoá tìm kiếm: \"Hà Nội\" có ý nghĩa gì?",
       "options": [
-        "Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà Nội\"",
-        "Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà\" hoặc từ \"Nội\"",
-        "Tìm kiếm các file ảnh, trong ảnh có chứa từ \"Hà Nội\"",
-        "Tìm kiếm các file ảnh, trong ảnh có chứa từ \"Hà\" hoặc từ \"Nội\""
+        "A. Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà Nội\"",
+        "B. Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà\" hoặc từ \"Nội\"",
+        "C. Tìm kiếm các file ảnh, trong ảnh có chứa từ \"Hà Nội\"",
+        "D. Tìm kiếm các file ảnh, trong ảnh có chứa từ \"Hà\" hoặc từ \"Nội\""
       ],
-      "answer": "Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà Nội\""
+      "answer": "A. Tìm kiếm các file ảnh, trong đó tên file có chứa từ \"Hà Nội\""
     }
   ]
 }

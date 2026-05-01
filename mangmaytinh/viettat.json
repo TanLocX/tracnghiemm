@@ -1,0 +1,55 @@
+{
+  "section": "Viet tat",
+  "questions": [
+    {
+      "question": "Tổ chức tiêu chuẩn quốc tế viết tắt là gì?",
+      "options": [
+        "A. ISO",
+        "B. ISP",
+        "C. OSI",
+        "D. ISA"
+      ],
+      "answer": "A. ISO"
+    },
+    {
+      "question": "Trang web động viết tắt là gì?",
+      "options": [
+        "A. ISP",
+        "B. ASP",
+        "C. OSI",
+        "D. ISA"
+      ],
+      "answer": "B. ASP"
+    },
+    {
+      "question": "Nhà cung cấp dịch vụ Internet viết tắt là gì?",
+      "options": [
+        "A. ISO",
+        "B. ASP",
+        "C. ISP",
+        "D. OSI"
+      ],
+      "answer": "C. ISP"
+    },
+    {
+      "question": "Kiến trúc tiêu chuẩn công nghiệp viết tắt là gì?",
+      "options": [
+        "A. ISO",
+        "B. ASP",
+        "C. ISP",
+        "D. ISA"
+      ],
+      "answer": "D. ISA"
+    },
+    {
+      "question": "Mô hình kết nối các hệ thống mở viết tắt là gì?",
+      "options": [
+        "A. ISO",
+        "B. ISP",
+        "C. ISA",
+        "D. OSI"
+      ],
+      "answer": "D. OSI"
+    }
+  ]
+}

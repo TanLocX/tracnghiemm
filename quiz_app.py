@@ -313,7 +313,11 @@ def main(page: ft.Page):
     page.bgcolor = BG_DARK
     page.window.width = 900
     page.window.height = 700
-    page.window.on_event = lambda e: os._exit(0) if e.data == "close" else None
+    def on_window_event(e):
+        if e.data in ("close", "destroy"):
+            os._exit(0)
+    page.window.on_event = on_window_event
+    page.window.prevent_close = False
     page.window.min_width = 700
     page.window.min_height = 500
     page.padding = 0
@@ -697,6 +701,7 @@ def main(page: ft.Page):
         total = state["num_questions"]
         opts = q["options"][:]
         random.shuffle(opts)
+        effective_answer = q["answer"]
 
         state["selected"] = None
         state["answered"] = False
@@ -790,7 +795,7 @@ def main(page: ft.Page):
                 return
             state["answered"] = True
             state["selected"] = chosen
-            correct = q["answer"]
+            correct = effective_answer
             ok = chosen == correct
 
             if ok:
@@ -805,21 +810,14 @@ def main(page: ft.Page):
 
             # Update button colors
             for btn, opt in zip(option_buttons, opts):
-                badge = btn.content.controls[0]
-                label_text = btn.content.controls[1]
+                label_text = btn.content.controls[0]
                 if opt == correct:
                     btn.bgcolor = "#1B5E20"
                     btn.border = ft.border.all(2.5, GREEN_L)
-                    badge.bgcolor = GREEN_L
-                    badge.border = ft.border.all(1.5, GREEN_L)
-                    badge.content = ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=WHITE, size=18)
                     label_text.color = WHITE
                 elif opt == chosen and not ok:
                     btn.bgcolor = "#B71C1C"
                     btn.border = ft.border.all(2.5, RED_L)
-                    badge.bgcolor = RED_L
-                    badge.border = ft.border.all(1.5, RED_L)
-                    badge.content = ft.Icon(ft.Icons.CANCEL_ROUNDED, color=WHITE, size=18)
                     label_text.color = WHITE
                 else:
                     btn.bgcolor = BG_CARD2
@@ -828,8 +826,7 @@ def main(page: ft.Page):
                 btn.update()
 
             # Feedback
-            import re as _re
-            correct_display = _re.sub(r"^[A-Da-d][.)]\s*", "", correct).strip()
+            correct_display = correct
             if ok:
                 feedback_row.controls = [
                     ft.Container(
@@ -863,31 +860,16 @@ def main(page: ft.Page):
             skip_btn.update()
 
         for idx, opt in enumerate(opts):
-            letter = OPT_LETTERS[idx % len(OPT_LETTERS)]
-            lcolor = OPT_COLORS[idx % len(OPT_COLORS)]
-            # Bỏ prefix "A. " / "B. " nếu có trong text
-            import re as _re
-            display_text = _re.sub(r"^[A-Da-d][.)]\s*", "", opt).strip()
-
-            letter_badge = ft.Container(
-                width=36, height=36,
-                border_radius=10,
-                bgcolor=lcolor,
-                shadow=ft.BoxShadow(blur_radius=6, color=f"{lcolor}88", offset=ft.Offset(0, 2)),
-                content=ft.Text(letter, size=16, weight=ft.FontWeight.BOLD, color="#0A1628"),
-                alignment=ft.Alignment(0, 0),
-            )
             btn = ft.Container(
                 bgcolor=BG_CARD,
                 border_radius=14,
                 padding=ft.padding.symmetric(horizontal=14, vertical=13),
-                border=ft.border.all(1.5, f"{lcolor}55"),
+                border=ft.border.all(1.5, f"{GREY}55"),
                 content=ft.Row(
                     spacing=12,
                     vertical_alignment=ft.CrossAxisAlignment.CENTER,
                     controls=[
-                        letter_badge,
-                        ft.Text(display_text, size=17, color=WHITE, expand=True),
+                        ft.Text(opt, size=17, color=WHITE, expand=True),
                     ],
                 ),
                 on_click=lambda e, o=opt: select_option(o),

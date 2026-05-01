@@ -4,372 +4,372 @@
     {
       "question": "Câu 1: Nguyên nhân cơ bản nào dẫn đến sự ra đời của mạng máy tính?",
       "options": [
-        "Nhu cầu trao đổi thông tin ngày càng tăng",
-        "Khối lượng thông tin lưu trên máy tính ngày càng tăng",
-        "Khoa học và công nghệ về lĩnh vực máy tính và truyền thông phát triển",
-        "Cả ba câu trên đúng"
+        "A. Nhu cầu trao đổi thông tin ngày càng tăng",
+        "B. Khối lượng thông tin lưu trên máy tính ngày càng tăng",
+        "C. Khoa học và công nghệ về lĩnh vực máy tính và truyền thông phát triển",
+        "D. Cả ba câu trên đúng"
       ],
-      "answer": "Cả ba câu trên đúng"
+      "answer": "D. Cả ba câu trên đúng"
     },
     {
       "question": "Câu 2: Ý nghĩa cơ bản nhất của mạng máy tính là gì?",
       "options": [
-        "Nâng cao độ tin cậy của hệ thống máy tính",
-        "Trao đổi và chia sẻ thông tin",
-        "Phát triển ứng dụng trên máy tính",
-        "Nâng cao chất lượng khai thác thông tin"
+        "A. Nâng cao độ tin cậy của hệ thống máy tính",
+        "B. Trao đổi và chia sẻ thông tin",
+        "C. Phát triển ứng dụng trên máy tính",
+        "D. Nâng cao chất lượng khai thác thông tin"
       ],
-      "answer": "Trao đổi và chia sẻ thông tin"
+      "answer": "B. Trao đổi và chia sẻ thông tin"
     },
     {
       "question": "Câu 3: Thuật ngữ viết tắt bằng tiếng Anh của mạng cục bộ là gì?",
       "options": [
-        "LAN (Local Area Network)",
-        "MAN (Metropolitan Area Network)",
-        "WAN (Wide Area Network)",
-        "GAN (Global Area Network)"
+        "A. LAN (Local Area Network)",
+        "B. MAN (Metropolitan Area Network)",
+        "C. WAN (Wide Area Network)",
+        "D. GAN (Global Area Network)"
       ],
-      "answer": "LAN (Local Area Network)"
+      "answer": "A. LAN (Local Area Network)"
     },
     {
       "question": "Câu 4: Thuật ngữ viết tắt bằng tiếng Anh của mạng diện rộng là gì?",
       "options": [
-        "LAN (Local Area Network)",
-        "MAN (Metropolitan Area Network)",
-        "WAN (Wide Area Network)",
-        "GAN (Global Area Network)"
+        "A. LAN (Local Area Network)",
+        "B. MAN (Metropolitan Area Network)",
+        "C. WAN (Wide Area Network)",
+        "D. GAN (Global Area Network)"
       ],
-      "answer": "WAN (Wide Area Network)"
+      "answer": "C. WAN (Wide Area Network)"
     },
     {
       "question": "Câu 5: Thuật ngữ viết tắt bằng tiếng Anh của mạng đô thị là gì?",
       "options": [
-        "LAN (Local Area Network)",
-        "MAN (Metropolitan Area Network)",
-        "WAN (Wide Area Network)",
-        "GAN (Global Area Network)"
+        "A. LAN (Local Area Network)",
+        "B. MAN (Metropolitan Area Network)",
+        "C. WAN (Wide Area Network)",
+        "D. GAN (Global Area Network)"
       ],
-      "answer": "MAN (Metropolitan Area Network)"
+      "answer": "B. MAN (Metropolitan Area Network)"
     },
     {
       "question": "Câu 6: Thuật ngữ viết tắt bằng tiếng Anh của mạng toàn cục là gì?",
       "options": [
-        "LAN (Local Area Network)",
-        "MAN (Metropolitan Area Network)",
-        "WAN (Wide Area Network)",
-        "GAN (Global Area Network)"
+        "A. LAN (Local Area Network)",
+        "B. MAN (Metropolitan Area Network)",
+        "C. WAN (Wide Area Network)",
+        "D. GAN (Global Area Network)"
       ],
-      "answer": "GAN (Global Area Network)"
+      "answer": "D. GAN (Global Area Network)"
     },
     {
       "question": "Câu 7: Thuật ngữ LAN (mạng cục bộ) là viết tắt của cụm từ nào?",
       "options": [
-        "Local Access Network",
-        "Local Access Networking",
-        "Local Area Network",
-        "Local Area Networking"
+        "A. Local Access Network",
+        "B. Local Access Networking",
+        "C. Local Area Network",
+        "D. Local Area Networking"
       ],
-      "answer": "Local Area Network"
+      "answer": "C. Local Area Network"
     },
     {
       "question": "Câu 8: Thuật ngữ WAN (mạng diện rộng) là viết tắt của cụm từ nào?",
       "options": [
-        "Wide Access Network",
-        "Wide Access Networking",
-        "Wide Area Networking",
-        "Wide Area Network"
+        "A. Wide Access Network",
+        "B. Wide Access Networking",
+        "C. Wide Area Networking",
+        "D. Wide Area Network"
       ],
-      "answer": "Wide Area Network"
+      "answer": "D. Wide Area Network"
     },
     {
       "question": "Câu 9: Thuật ngữ MAN (mạng đô thị) là viết tắt của cụm từ nào?",
       "options": [
-        "Metropolitan Area Network",
-        "Metropolitan Area Networking",
-        "Metro Area Network",
-        "Metro Area Networking"
+        "A. Metropolitan Area Network",
+        "B. Metropolitan Area Networking",
+        "C. Metro Area Network",
+        "D. Metro Area Networking"
       ],
-      "answer": "Metropolitan Area Network"
+      "answer": "A. Metropolitan Area Network"
     },
     {
       "question": "Câu 10: Thuật ngữ GAN (mạng toàn cầu) là viết tắt của cụm từ nào?",
       "options": [
-        "Global Access Network",
-        "Global Area Network",
-        "Global Access Networking",
-        "Global Area Networking"
+        "A. Global Access Network",
+        "B. Global Area Network",
+        "C. Global Access Networking",
+        "D. Global Area Networking"
       ],
-      "answer": "Global Area Network"
+      "answer": "B. Global Area Network"
     },
     {
       "question": "Câu 11: Các kiểu mạng LAN, MAN, WAN, GAN được phân biệt với nhau bởi tiêu chí phân loại nào?",
       "options": [
-        "Khoảng cách địa lý",
-        "Giao thức truyền thông",
-        "Thiết bị mạng",
-        "Đường truyền mạng"
+        "A. Khoảng cách địa lý",
+        "B. Giao thức truyền thông",
+        "C. Thiết bị mạng",
+        "D. Đường truyền mạng"
       ],
-      "answer": "Khoảng cách địa lý"
+      "answer": "A. Khoảng cách địa lý"
     },
     {
       "question": "Câu 12: Mục đích chính của việc xây dựng LAN là gì?",
       "options": [
-        "Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-        "Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
-        "Kết nối các máy tính trong phạm vi toàn cầu",
-        "Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học..."
+        "A. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+        "B. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
+        "C. Kết nối các máy tính trong phạm vi toàn cầu",
+        "D. Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học..."
       ],
-      "answer": "Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học..."
+      "answer": "D. Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học..."
     },
     {
       "question": "Câu 13: Mục đích chính của việc xây dựng WAN là gì?",
       "options": [
-        "Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
-        "Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-        "Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
-        "Kết nối các máy tính trong phạm vi toàn cầu"
+        "A. Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
+        "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+        "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
+        "D. Kết nối các máy tính trong phạm vi toàn cầu"
       ],
-      "answer": "Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
+      "answer": "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
     },
     {
       "question": "Câu 14: Mục đích chính của việc xây dựng MAN là gì?",
       "options": [
-        "Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
-        "Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-        "Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
-        "Kết nối các máy tính trong phạm vi toàn cầu"
+        "A. Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
+        "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+        "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
+        "D. Kết nối các máy tính trong phạm vi toàn cầu"
       ],
-      "answer": "Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế"
+      "answer": "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế"
     },
     {
       "question": "Câu 15: Mục đích chính của việc xây dựng GAN là gì?",
       "options": [
-        "Kết nối các máy tính trong phạm vi toàn cầu",
-        "Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
-        "Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-        "Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
+        "A. Kết nối các máy tính trong phạm vi toàn cầu",
+        "B. Kết nối các máy tính trong phạm hẹp như một toà nhà, trường học...",
+        "C. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+        "D. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
       ],
-      "answer": "Kết nối các máy tính trong phạm vi toàn cầu"
+      "answer": "A. Kết nối các máy tính trong phạm vi toàn cầu"
     },
     {
       "question": "Câu 16: Mạng Internet là mạng thuộc loại mạng nào?",
       "options": [
-        "LAN",
-        "MAN",
-        "WAN",
-        "GAN"
+        "A. LAN",
+        "B. MAN",
+        "C. WAN",
+        "D. GAN"
       ],
-      "answer": "GAN"
+      "answer": "D. GAN"
     },
     {
       "question": "Câu 17: Mạng máy tính EpuNet của Trường Đại học Điện Lực thuộc loại mạng nào?",
       "options": [
-        "LAN",
-        "MAN",
-        "WAN",
-        "GAN"
+        "A. LAN",
+        "B. MAN",
+        "C. WAN",
+        "D. GAN"
       ],
-      "answer": "LAN"
+      "answer": "A. LAN"
     },
     {
       "question": "Câu 18: Hai máy tính có thể kết nối trực tiếp với nhau để trao đổi thông tin, mạng kết nối 2 máy tính đó thuộc loại mạng nào?",
       "options": [
-        "Mạng Internet",
-        "Mạng LAN",
-        "Mạng MAN",
-        "Mạng WAN"
+        "A. Mạng Internet",
+        "B. Mạng LAN",
+        "C. Mạng MAN",
+        "D. Mạng WAN"
       ],
-      "answer": "Mạng LAN"
+      "answer": "B. Mạng LAN"
     },
     {
       "question": "Câu 19: Các tài nguyên nào có thể dùng chung được nhờ có mạng máy tính?",
       "options": [
-        "Chương trình, dữ liệu",
-        "Máy in, máy scanner...",
-        "Ổ đĩa CD ROM",
-        "Tất cả các tài nguyên trên"
+        "A. Chương trình, dữ liệu",
+        "B. Máy in, máy scanner...",
+        "C. Ổ đĩa CD ROM",
+        "D. Tất cả các tài nguyên trên"
       ],
-      "answer": "Tất cả các tài nguyên trên"
+      "answer": "D. Tất cả các tài nguyên trên"
     },
     {
       "question": "Câu 20: Người ta có thể điều khiển hoạt động của một máy tính từ xa thông qua công cụ nào sau đây?",
       "options": [
-        "Telnet",
-        "Command Prompt",
-        "Service",
-        "Computer Management"
+        "A. Telnet",
+        "B. Command Prompt",
+        "C. Service",
+        "D. Computer Management"
       ],
-      "answer": "Telnet"
+      "answer": "A. Telnet"
     },
     {
       "question": "Câu 21: Sau khi đã khảo sát và thiết kế một mạng máy tính, bước tiếp theo để thiết lập một mạng máy tính, người ta cần phải thực hiện các công việc gì?",
       "options": [
-        "Xây dựng và lắp đặt các thiết bị truyền thông",
-        "Xây dựng và lắp đặt các cáp truyền thông hoặc là lắp đặt các thiết bị hỗ trợ truyền thông vô tuyến",
-        "Cài đặt và cấu hình các phần mềm giao thức mạng",
-        "Tất cả các công việc trên"
+        "A. Xây dựng và lắp đặt các thiết bị truyền thông",
+        "B. Xây dựng và lắp đặt các cáp truyền thông hoặc là lắp đặt các thiết bị hỗ trợ truyền thông vô tuyến",
+        "C. Cài đặt và cấu hình các phần mềm giao thức mạng",
+        "D. Tất cả các công việc trên"
       ],
-      "answer": "Tất cả các công việc trên"
+      "answer": "D. Tất cả các công việc trên"
     },
     {
       "question": "Câu 22: Tại sao cần phải xây dựng hệ thống an ninh mạng máy tính?",
       "options": [
-        "Nhằm để tránh các truy nhập bất hợp pháp từ ngoài mạng",
-        "Nhằm để tránh các lỗi do bản thân mạng sinh ra",
-        "Nhằm để nâng cao tốc độ truyền thông",
-        "Nhằm để nâng cao hiệu suất truyền thông"
+        "A. Nhằm để tránh các truy nhập bất hợp pháp từ ngoài mạng",
+        "B. Nhằm để tránh các lỗi do bản thân mạng sinh ra",
+        "C. Nhằm để nâng cao tốc độ truyền thông",
+        "D. Nhằm để nâng cao hiệu suất truyền thông"
       ],
-      "answer": "Nhằm để tránh các truy nhập bất hợp pháp từ ngoài mạng"
+      "answer": "A. Nhằm để tránh các truy nhập bất hợp pháp từ ngoài mạng"
     },
     {
       "question": "Câu 23: Các thành phần tạo nên mạng máy tính là gì?",
       "options": [
-        "Các máy tính, hệ thống đường truyền vật lý",
-        "Các thiết bị mạng như Hub, Switch, Router...",
-        "Giao thức mạng",
-        "Tất cả thành phần trên"
+        "A. Các máy tính, hệ thống đường truyền vật lý",
+        "B. Các thiết bị mạng như Hub, Switch, Router...",
+        "C. Giao thức mạng",
+        "D. Tất cả thành phần trên"
       ],
-      "answer": "Tất cả thành phần trên"
+      "answer": "D. Tất cả thành phần trên"
     },
     {
       "question": "Câu 24: Nguyên nhân nào gây ra việc hai máy tính (kết nối vật lý đã thông) trong mạng không thể trao đổi thông tin với nhau?",
       "options": [
-        "Do hai máy tính cài đặt hai hệ điều hành khác nhau",
-        "Do hai máy tính không được cài đặt cùng giao thức trao đổi thông tin",
-        "Do hai máy tính đó có cấu hình phần cứng khác nhau",
-        "Câu a và câu c đúng"
+        "A. Do hai máy tính cài đặt hai hệ điều hành khác nhau",
+        "B. Do hai máy tính không được cài đặt cùng giao thức trao đổi thông tin",
+        "C. Do hai máy tính đó có cấu hình phần cứng khác nhau",
+        "D. Câu a và câu c đúng"
       ],
-      "answer": "Do hai máy tính không được cài đặt cùng giao thức trao đổi thông tin"
+      "answer": "B. Do hai máy tính không được cài đặt cùng giao thức trao đổi thông tin"
     },
     {
       "question": "Câu 25: Một số vấn đề cơ bản khi mở rộng kết nối mạng?",
       "options": [
-        "Tắc nghẽn truyền thông",
-        "Chuẩn hoá và chuyển đổi giao thức",
-        "Xử lý lỗi truyền thông",
-        "Cả ba vấn đề trên"
+        "A. Tắc nghẽn truyền thông",
+        "B. Chuẩn hoá và chuyển đổi giao thức",
+        "C. Xử lý lỗi truyền thông",
+        "D. Cả ba vấn đề trên"
       ],
-      "answer": "Cả ba vấn đề trên"
+      "answer": "D. Cả ba vấn đề trên"
     },
     {
       "question": "Câu 26: Tại sao vấn đề an ninh mạng máy tính lại được quan tâm và phát triển hiện nay?",
       "options": [
-        "Do yêu cầu đảm bảo an ninh tài nguyên mạng của người dùng",
-        "Do sự phát triển nhanh của các cuộc xâm nhập tài nguyên mạng bất hợp pháp",
-        "Do khối lượng tài nguyên của mạng máy tính ngày càng tăng và có giá trị cao",
-        "Cả ba câu trên đều đúng"
+        "A. Do yêu cầu đảm bảo an ninh tài nguyên mạng của người dùng",
+        "B. Do sự phát triển nhanh của các cuộc xâm nhập tài nguyên mạng bất hợp pháp",
+        "C. Do khối lượng tài nguyên của mạng máy tính ngày càng tăng và có giá trị cao",
+        "D. Cả ba câu trên đều đúng"
       ],
-      "answer": "Cả ba câu trên đều đúng"
+      "answer": "D. Cả ba câu trên đều đúng"
     },
     {
       "question": "Câu 27: Ứng dụng nào sau hỗ trợ chức năng cập nhật phiên bản mới qua mạng?",
       "options": [
-        "Internet Explore",
-        "BkavPro",
-        "Symantec Antivirus",
-        "Cả ba ứng dụng trên"
+        "A. Internet Explore",
+        "B. BkavPro",
+        "C. Symantec Antivirus",
+        "D. Cả ba ứng dụng trên"
       ],
-      "answer": "Cả ba ứng dụng trên"
+      "answer": "D. Cả ba ứng dụng trên"
     },
     {
       "question": "Câu 28: Hệ điều hành Windows2000 tích hợp các ứng dụng mạng nào sau đây?",
       "options": [
-        "Telnet",
-        "IIS (Internet Information Service)",
-        "Messenger",
-        "Cả ba ứng dụng trên"
+        "A. Telnet",
+        "B. IIS (Internet Information Service)",
+        "C. Messenger",
+        "D. Cả ba ứng dụng trên"
       ],
-      "answer": "Cả ba ứng dụng trên"
+      "answer": "D. Cả ba ứng dụng trên"
     },
     {
       "question": "Câu 29: Ứng dụng nào sau có hỗ trợ chức năng truyền thông mạng?",
       "options": [
-        "Windows Media",
-        "Semantic Antivirus",
-        "Câu a và b đúng",
-        "Notepad"
+        "A. Windows Media",
+        "B. Semantic Antivirus",
+        "C. Câu a và b đúng",
+        "D. Notepad"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "C. Câu a và b đúng"
     },
     {
       "question": "Câu 30: Ứng dụng nào sau không hỗ trợ chức năng truyền thông mạng?",
       "options": [
-        "Paint",
-        "Telnet",
-        "Semantic Antivirus",
-        "Yahoo Messenger"
+        "A. Paint",
+        "B. Telnet",
+        "C. Semantic Antivirus",
+        "D. Yahoo Messenger"
       ],
-      "answer": "Paint"
+      "answer": "A. Paint"
     },
     {
       "question": "Câu 31: Ứng dụng nào sau có hỗ trợ chức năng truyền thông mạng?",
       "options": [
-        "Paint",
-        "Notepad",
-        "Acrobat Reader",
-        "Câu a và c đúng"
+        "A. Paint",
+        "B. Notepad",
+        "C. Acrobat Reader",
+        "D. Câu a và c đúng"
       ],
-      "answer": "Acrobat Reader"
+      "answer": "C. Acrobat Reader"
     },
     {
       "question": "Câu 32: Ứng dụng nào sau không hỗ trợ chức năng truyền thông mạng?",
       "options": [
-        "LAC VIET mtd2002",
-        "Telnet",
-        "Semantic Antivirus",
-        "Internet Explore"
+        "A. LAC VIET mtd2002",
+        "B. Telnet",
+        "C. Semantic Antivirus",
+        "D. Internet Explore"
       ],
-      "answer": "LAC VIET mtd2002"
+      "answer": "A. LAC VIET mtd2002"
     },
     {
       "question": "Câu 33: Tổ chức nào sau đây cung cấp dịch vụ truyền thông Internet?",
       "options": [
-        "Viettel",
-        "FPT",
-        "Net Nam",
-        "Cả ba tổ chức trên"
+        "A. Viettel",
+        "B. FPT",
+        "C. Net Nam",
+        "D. Cả ba tổ chức trên"
       ],
-      "answer": "Cả ba tổ chức trên"
+      "answer": "D. Cả ba tổ chức trên"
     },
     {
       "question": "Câu 34: Ứng dụng mạng nào sau đây cho phép gọi điện qua Internet?",
       "options": [
-        "Internet Explore",
-        "Yahoo Messenger",
-        "Windows Media",
-        "Fire Fox"
+        "A. Internet Explore",
+        "B. Yahoo Messenger",
+        "C. Windows Media",
+        "D. Fire Fox"
       ],
-      "answer": "Yahoo Messenger"
+      "answer": "B. Yahoo Messenger"
     },
     {
       "question": "Câu 35: Ứng dụng mạng nào sau đây cho phép truyền hình ảnh trực tiếp qua Internet?",
       "options": [
-        "Internet Explore",
-        "Windows Media",
-        "Yahoo Messenger",
-        "Câu b và c đúng"
+        "A. Internet Explore",
+        "B. Windows Media",
+        "C. Yahoo Messenger",
+        "D. Câu b và c đúng"
       ],
-      "answer": "Yahoo Messenger"
+      "answer": "C. Yahoo Messenger"
     },
     {
       "question": "Câu 36: Khi sử dụng mạng máy tính ta sẽ được các lợi ích:",
       "options": [
-        "Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích...)",
-        "Quản lý tập trung",
-        "Tận dụng năng lực xử lý của các máy tính rỗi để làm các đề án lớn",
-        "Tất cả đều đúng"
+        "A. Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích...)",
+        "B. Quản lý tập trung",
+        "C. Tận dụng năng lực xử lý của các máy tính rỗi để làm các đề án lớn",
+        "D. Tất cả đều đúng"
       ],
-      "answer": "Tất cả đều đúng"
+      "answer": "D. Tất cả đều đúng"
     },
     {
       "question": "Câu 37: Kiến trúc mạng máy tính là:",
       "options": [
-        "Cấu trúc kết nối cụ thể giữa các máy trong mạng",
-        "Các phần tử chức năng cấu thành mạng và mối quan hệ giữa chúng",
-        "Bao gồm hai ý của câu a và b",
-        "Cả ba câu trên đều sai"
+        "A. Cấu trúc kết nối cụ thể giữa các máy trong mạng",
+        "B. Các phần tử chức năng cấu thành mạng và mối quan hệ giữa chúng",
+        "C. Bao gồm hai ý của câu a và b",
+        "D. Cả ba câu trên đều sai"
       ],
-      "answer": "Bao gồm hai ý của câu a và b"
+      "answer": "C. Bao gồm hai ý của câu a và b"
     }
   ]
 }

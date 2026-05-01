@@ -2,82 +2,82 @@
   {
     "question": "1. Thuật ngữ viết tắt bằng tiếng Anh của mạng thành phố là gì?",
     "options": [
-      "a) LAN (Local Area Network)",
-      "b) MAN (Metropolitan Area Network)",
-      "c) WAN (Wide Area Network)",
-      "d) GAN (Global Area Network)"
+      "A. LAN (Local Area Network)",
+      "B. MAN (Metropolitan Area Network)",
+      "C. WAN (Wide Area Network)",
+      "D. GAN (Global Area Network)"
     ],
-    "answer": "b) MAN (Metropolitan Area Network)"
+    "answer": "B. MAN (Metropolitan Area Network)"
   },
   {
     "question": "2. Gói tin tại tầng mạng trong bộ giao thức TCP/IP có tên gọi là gì?",
     "options": [
-      "a) Dlink",
-      "b) Datagram",
-      "c) Frame",
-      "d) Ethernet"
+      "A. Dlink",
+      "B. Datagram",
+      "C. Frame",
+      "D. Ethernet"
     ],
-    "answer": "b) Datagram"
+    "answer": "B. Datagram"
   },
   {
     "question": "3. Giao thức là gì?",
     "options": [
-      "a) Mô hình nhằm để thiết lập các ứng dụng trao đổi thông tin",
-      "b) Các quy định để truyền thông tin của một thực thể mạng",
-      "c) Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ",
-      "d) Đáp án khác"
+      "A. Mô hình nhằm để thiết lập các ứng dụng trao đổi thông tin",
+      "B. Các quy định để truyền thông tin của một thực thể mạng",
+      "C. Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ",
+      "D. Đáp án khác"
     ],
-    "answer": "c) Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ"
+    "answer": "C. Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ"
   },
   {
     "question": "4. Tầng nào trong mô hình OSI chịu trách nhiệm mã hoá dữ liệu?",
     "options": [
-      "a) Ứng dụng",
-      "b) Giao vận",
-      "c) Trình diễn",
-      "d) Phiên"
+      "A. Ứng dụng",
+      "B. Giao vận",
+      "C. Trình diễn",
+      "D. Phiên"
     ],
-    "answer": "c) Trình diễn"
+    "answer": "C. Trình diễn"
   },
   {
     "question": "5. Mục đích chính của việc xây dựng GAN là gì?",
     "options": [
-      "a) Kết nối các máy tính trong phạm vi toàn cầu",
-      "b) Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
-      "c) Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-      "d) Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
+      "A. Kết nối các máy tính trong phạm vi toàn cầu",
+      "B. Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
+      "C. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+      "D. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
     ],
-    "answer": "a) Kết nối các máy tính trong phạm vi toàn cầu"
+    "answer": "A. Kết nối các máy tính trong phạm vi toàn cầu"
   },
   {
     "question": "6. Chuyển đổi số 1560 sang số nhị phân ta được dãy số?",
     "options": [
-      "a) 11000010100",
-      "b) 11000011000",
-      "c) 11000001100",
-      "d) 11000011100"
+      "A. 11000010100",
+      "B. 11000011000",
+      "C. 11000001100",
+      "D. 11000011100"
     ],
-    "answer": "b) 11000011000"
+    "answer": "B. 11000011000"
   },
   {
     "question": "7. Chức năng nào sau đây không là chức năng của tầng vật lý?",
     "options": [
-      "a) Định địa chỉ IP",
-      "b) Thích ứng với đường truyền mạng",
-      "c) Thiết lập khuôn dạng gói tin",
-      "d) a và c đúng"
+      "A. Định địa chỉ IP",
+      "B. Thích ứng với đường truyền mạng",
+      "C. Thiết lập khuôn dạng gói tin",
+      "D. a và c đúng"
     ],
-    "answer": "d) a và c đúng"
+    "answer": "D. a và c đúng"
   },
   {
     "question": "8. Việc đánh số hiệu cổng cho các gói tin của tầng giao vận có ý nghĩa gì?",
     "options": [
-      "a) Để định danh cho mỗi gói tin",
-      "b) Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
-      "c) Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
-      "d) Nhằm để phát hiện lỗi truyền thông"
+      "A. Để định danh cho mỗi gói tin",
+      "B. Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
+      "C. Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
+      "D. Nhằm để phát hiện lỗi truyền thông"
     ],
-    "answer": "b) Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên"
+    "answer": "B. Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên"
   },
   {
     "question": "9. Những quy định nào sau đây không phải là của ISO dành cho việc xây dựng mô hình OSI?",
@@ -92,22 +92,22 @@
   {
     "question": "10. Ứng dụng nào sau hỗ trợ chức năng cập nhật phiên bản mới qua mạng?",
     "options": [
-      "a) Internet Explorer",
-      "b) Facebook",
-      "c) Zalo",
-      "d) Cả ba ứng dụng trên"
+      "A. Internet Explorer",
+      "B. Facebook",
+      "C. Zalo",
+      "D. Cả ba ứng dụng trên"
     ],
-    "answer": "d) Cả ba ứng dụng trên"
+    "answer": "D. Cả ba ứng dụng trên"
   },
   {
     "question": "11. Mục đích chính của việc xây dựng MAN là gì?",
     "options": [
-      "a) Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
-      "b) Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-      "c) Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
-      "d) Kết nối các máy tính trong phạm vi toàn cầu"
+      "A. Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
+      "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+      "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
+      "D. Kết nối các máy tính trong phạm vi toàn cầu"
     ],
-    "answer": "b) Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế"
+    "answer": "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế"
   },
   {
     "question": "12. Mô hình OSI được chia ra thành mấy tầng?",
@@ -122,10 +122,10 @@
   {
     "question": "13. Dữ liệu tại tầng vật lý trong mô hình OSI ở dạng chuỗi bit và không có cấu trúc, đúng hay sai?",
     "options": [
-      "a) Đúng",
-      "b) Sai"
+      "A. Đúng",
+      "B. Sai"
     ],
-    "answer": "a) Đúng"
+    "answer": "A. Đúng"
   },
   {
     "question": "14. Xác thực người dùng được thực hiện bởi tầng chức năng nào?",
@@ -140,62 +140,62 @@
   {
     "question": "15. Mạng Internet là mạng thuộc loại mạng nào?",
     "options": [
-      "a) LAN",
-      "b) MAN",
-      "c) WAN",
-      "d) GAN"
+      "A. LAN",
+      "B. MAN",
+      "C. WAN",
+      "D. GAN"
     ],
-    "answer": "d) GAN"
+    "answer": "D. GAN"
   },
   {
     "question": "16. Chức năng xác lập cơ chế truy nhập đường truyền được thực hiện bởi tầng chức năng nào?",
     "options": [
-      "a) Data Link",
-      "b) Network",
-      "c) Transport",
-      "d) Physical"
+      "A. Data Link",
+      "B. Network",
+      "C. Transport",
+      "D. Physical"
     ],
-    "answer": "b) Network"
+    "answer": "B. Network"
   },
   {
     "question": "17. Mỗi tầng chức năng trong mỗi hệ thống theo mô hình OSI trao đổi thông tin như thế nào với các tầng còn lại?",
     "options": [
-      "a) Không thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
-      "b) Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liền kề nó",
-      "c) Có thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
-      "d) Tất cả đều sai"
+      "A. Không thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
+      "B. Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liền kề nó",
+      "C. Có thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
+      "D. Tất cả đều sai"
     ],
-    "answer": "b) Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liền kề nó"
+    "answer": "B. Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liền kề nó"
   },
   {
     "question": "18. Chuyển đổi số nhị phân 11000011001 sang hệ thập phân là?",
     "options": [
-      "a) 1461",
-      "b) 1561",
-      "c) 1661",
-      "d) Đáp án khác"
+      "A. 1461",
+      "B. 1561",
+      "C. 1661",
+      "D. Đáp án khác"
     ],
-    "answer": "b) 1561"
+    "answer": "B. 1561"
   },
   {
     "question": "19. Chức năng chuyển đổi cú pháp cho dữ liệu truyền thông được thực hiện bởi tầng chức năng nào?",
     "options": [
-      "a) Session",
-      "b) Data Link",
-      "c) Network",
-      "d) Presentation"
+      "A. Session",
+      "B. Data Link",
+      "C. Network",
+      "D. Presentation"
     ],
-    "answer": "d) Presentation"
+    "answer": "D. Presentation"
   },
   {
     "question": "20. Hai máy tính có thể kết nối trực tiếp với nhau để trao đổi thông tin, mạng kết nối 2 máy tính đó thuộc loại mạng nào?",
     "options": [
-      "a) Mạng Internet",
-      "b) Mạng LAN",
-      "c) Mạng MAN",
-      "d) Mạng WAN"
+      "A. Mạng Internet",
+      "B. Mạng LAN",
+      "C. Mạng MAN",
+      "D. Mạng WAN"
     ],
-    "answer": "b) Mạng LAN"
+    "answer": "B. Mạng LAN"
   },
   {
     "question": "21. Giao thức tìm địa chỉ IP khi biết được địa chỉ MAC là?",
@@ -210,12 +210,12 @@
   {
     "question": "22. Thứ tự các tầng sắp xếp từ cao đến thấp trong mô hình OSI là?",
     "options": [
-      "a) Vật lý, liên kết dữ liệu, mạng, trình diễn, giao vận, phiên, ứng dụng",
-      "b) Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng",
-      "c) Ứng dụng, trình diễn, phiên, giao vận, mạng, liên kết dữ liệu, vật lý",
-      "d) Ứng dụng, trình diễn, phiên, mạng, giao vận, liên kết dữ liệu, vật lý"
+      "A. Vật lý, liên kết dữ liệu, mạng, trình diễn, giao vận, phiên, ứng dụng",
+      "B. Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng",
+      "C. Ứng dụng, trình diễn, phiên, giao vận, mạng, liên kết dữ liệu, vật lý",
+      "D. Ứng dụng, trình diễn, phiên, mạng, giao vận, liên kết dữ liệu, vật lý"
     ],
-    "answer": "c) Ứng dụng, trình diễn, phiên, giao vận, mạng, liên kết dữ liệu, vật lý"
+    "answer": "C. Ứng dụng, trình diễn, phiên, giao vận, mạng, liên kết dữ liệu, vật lý"
   },
   {
     "question": "23. Các tầng chức năng đồng mức của hai hệ thống trao đổi thông tin với nhau theo mô hình OSI có liên kết với nhau như thế nào?",
@@ -240,151 +240,151 @@
   {
     "question": "25. Chức năng xác lập địa chỉ cổng dịch vụ cho các gói dữ liệu truyền thông được thực hiện bởi tầng chức năng nào?",
     "options": [
-      "a) Application",
-      "b) Network",
-      "c) Session",
-      "d) Transport"
+      "A. Application",
+      "B. Network",
+      "C. Session",
+      "D. Transport"
     ],
-    "answer": "d) Transport"
+    "answer": "D. Transport"
   },
   {
     "question": "26. Việc định nghĩa địa chỉ IP tại tầng mạng có ý nghĩa gì?",
     "options": [
-      "a) Để các máy tính trong một mạng có thể trao đổi thông tin với nhau",
-      "b) Không có ý nghĩa gì cả",
-      "c) Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
-      "d) Nhằm đảm bảo an ninh mạng máy tính"
+      "A. Để các máy tính trong một mạng có thể trao đổi thông tin với nhau",
+      "B. Không có ý nghĩa gì cả",
+      "C. Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
+      "D. Nhằm đảm bảo an ninh mạng máy tính"
     ],
-    "answer": "c) Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau"
+    "answer": "C. Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau"
   },
   {
     "question": "27. Tầng giao vận có thể cung cấp chức năng nào?",
     "options": [
-      "a) Phát hiện và xử lý lỗi truyền thông",
-      "b) Điều khiển lưu lượng truyền thông",
-      "c) Thiết lập số hiệu cổng dịch vụ của thực thể gửi và thực thể nhận",
-      "d) Cả ba câu a, b, c đều đúng"
+      "A. Phát hiện và xử lý lỗi truyền thông",
+      "B. Điều khiển lưu lượng truyền thông",
+      "C. Thiết lập số hiệu cổng dịch vụ của thực thể gửi và thực thể nhận",
+      "D. Cả ba câu a, b, c đều đúng"
     ],
-    "answer": "d) Cả ba câu a, b, c đều đúng"
+    "answer": "D. Cả ba câu a, b, c đều đúng"
   },
   {
     "question": "28. Thuật ngữ viết tắt bằng tiếng Anh của mạng diện rộng là gì?",
     "options": [
-      "a) LAN (Local Area Network)",
-      "b) MAN (Metropolitan Area Network)",
-      "c) WAN (Wide Area Network)",
-      "d) GAN (Global Area Network)"
+      "A. LAN (Local Area Network)",
+      "B. MAN (Metropolitan Area Network)",
+      "C. WAN (Wide Area Network)",
+      "D. GAN (Global Area Network)"
     ],
-    "answer": "c) WAN (Wide Area Network)"
+    "answer": "C. WAN (Wide Area Network)"
   },
   {
     "question": "29. Một số vấn đề cơ bản khi mở rộng kết nối mạng là?",
     "options": [
-      "a) Tắc nghẽn truyền thông",
-      "b) Chuẩn hoá và chuyển đổi giao thức",
-      "c) Xử lý lỗi truyền thông",
-      "d) Cả ba vấn đề trên"
+      "A. Tắc nghẽn truyền thông",
+      "B. Chuẩn hoá và chuyển đổi giao thức",
+      "C. Xử lý lỗi truyền thông",
+      "D. Cả ba vấn đề trên"
     ],
-    "answer": "d) Cả ba vấn đề trên"
+    "answer": "D. Cả ba vấn đề trên"
   },
   {
     "question": "30. Tầng nào trong mô hình OSI có nhiệm vụ chia dữ liệu thành các khung (frame) để truyền lên mạng?",
     "options": [
-      "a) Network",
-      "b) Data Link",
-      "c) Physical",
-      "d) Transport"
+      "A. Network",
+      "B. Data Link",
+      "C. Physical",
+      "D. Transport"
     ],
-    "answer": "b) Data Link"
+    "answer": "B. Data Link"
   },
   {
     "question": "31. Sau khi đã khảo sát và thiết kế một mạng máy tính, bước tiếp theo để thiết lập một mạng máy tính, người ta cần phải thực hiện các công việc gì?",
     "options": [
-      "a) Xây dựng và lắp đặt các thiết bị truyền thông",
-      "b) Xây dựng và lắp đặt các cáp truyền thông hoặc lắp đặt các thiết bị hỗ trợ truyền thông vô tuyến",
-      "c) Cài đặt và cấu hình các phần mềm giao thức mạng",
-      "d) Tất cả các công việc trên"
+      "A. Xây dựng và lắp đặt các thiết bị truyền thông",
+      "B. Xây dựng và lắp đặt các cáp truyền thông hoặc lắp đặt các thiết bị hỗ trợ truyền thông vô tuyến",
+      "C. Cài đặt và cấu hình các phần mềm giao thức mạng",
+      "D. Tất cả các công việc trên"
     ],
-    "answer": "d) Tất cả các công việc trên"
+    "answer": "D. Tất cả các công việc trên"
   },
   {
     "question": "32. Mục đích chính của việc xây dựng WAN là gì?",
     "options": [
-      "a) Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
-      "b) Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
-      "c) Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
-      "d) Kết nối các máy tính trong phạm vi toàn cầu"
+      "A. Kết nối các máy tính trong phạm vi hẹp như một toà nhà, trường học,...",
+      "B. Kết nối các máy tính trong phạm vi một thành phố hay một trung tâm kinh tế",
+      "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục",
+      "D. Kết nối các máy tính trong phạm vi toàn cầu"
     ],
-    "answer": "c) Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
+    "answer": "C. Kết nối các máy tính trong phạm vi một quốc gia hoặc trong một châu lục"
   },
   {
     "question": "33. Nguyên nhân nào có thể dẫn đến hai thực thể tầng mạng của hai máy tính trong mạng không trao đổi thông tin với nhau?",
     "options": [
-      "a) Do giao thức tầng liên kết dữ liệu bị lỗi",
-      "b) Do đường truyền mạng bị lỗi",
-      "c) Do giao thức tầng vật lý bị lỗi",
-      "d) Cả ba câu trên đều đúng"
+      "A. Do giao thức tầng liên kết dữ liệu bị lỗi",
+      "B. Do đường truyền mạng bị lỗi",
+      "C. Do giao thức tầng vật lý bị lỗi",
+      "D. Cả ba câu trên đều đúng"
     ],
-    "answer": "d) Cả ba câu trên đều đúng"
+    "answer": "D. Cả ba câu trên đều đúng"
   },
   {
     "question": "34. Thuật ngữ MAN (mạng thành phố) là viết tắt của cụm từ nào?",
     "options": [
-      "a) Metropolitan Area Network",
-      "b) Metropolitan Area Networking",
-      "c) Metro Area Network",
-      "d) Metro Area Networking"
+      "A. Metropolitan Area Network",
+      "B. Metropolitan Area Networking",
+      "C. Metro Area Network",
+      "D. Metro Area Networking"
     ],
-    "answer": "a) Metropolitan Area Network"
+    "answer": "A. Metropolitan Area Network"
   },
   {
     "question": "35. Những lợi ích của mạng máy tính là?",
     "options": [
-      "a) Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích,...)",
-      "b) Quản lý tập trung",
-      "c) Tận dụng năng lực xử lý của các máy tính rỗi để làm các đề án lớn",
-      "d) Tất cả đều đúng"
+      "A. Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích,...)",
+      "B. Quản lý tập trung",
+      "C. Tận dụng năng lực xử lý của các máy tính rỗi để làm các đề án lớn",
+      "D. Tất cả đều đúng"
     ],
-    "answer": "d) Tất cả đều đúng"
+    "answer": "D. Tất cả đều đúng"
   },
   {
     "question": "36. Thuật ngữ GAN (mạng toàn cục) là viết tắt của cụm từ nào?",
     "options": [
-      "a) Global Access Network",
-      "b) Global Area Network",
-      "c) Global Access Networking",
-      "d) Global Area Networking"
+      "A. Global Access Network",
+      "B. Global Area Network",
+      "C. Global Access Networking",
+      "D. Global Area Networking"
     ],
-    "answer": "b) Global Area Network"
+    "answer": "B. Global Area Network"
   },
   {
     "question": "37. Thuật ngữ LAN (mạng cục bộ) là viết tắt của cụm từ nào?",
     "options": [
-      "a) Local Access Network",
-      "b) Local Access Networking",
-      "c) Local Area Network",
-      "d) Local Area Networking"
+      "A. Local Access Network",
+      "B. Local Access Networking",
+      "C. Local Area Network",
+      "D. Local Area Networking"
     ],
-    "answer": "c) Local Area Network"
+    "answer": "C. Local Area Network"
   },
   {
     "question": "39. Hãy chỉ ra địa chỉ IP nào thuộc subnet 197.52.60.16/255.255.255.252?",
     "options": [
-      "a) 197.52.60.14",
-      "b) 197.52.60.18",
-      "c) 197.52.60.20",
-      "d) 197.52.60.22"
+      "A. 197.52.60.14",
+      "B. 197.52.60.18",
+      "C. 197.52.60.20",
+      "D. 197.52.60.22"
     ],
-    "answer": "b) 197.52.60.18"
+    "answer": "B. 197.52.60.18"
   },
   {
     "question": "40. Chuyển đổi địa chỉ IPV6 ::C0A8:0F18 sang IPV4 là?",
     "options": [
-      "a) 192.168.15.20",
-      "b) 192.168.15.24",
-      "c) 192.168.16.20",
-      "d) 192.168.16.24"
+      "A. 192.168.15.20",
+      "B. 192.168.15.24",
+      "C. 192.168.16.20",
+      "D. 192.168.16.24"
     ],
-    "answer": "b) 192.168.15.24"
+    "answer": "B. 192.168.15.24"
   }
 ]

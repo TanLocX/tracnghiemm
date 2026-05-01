@@ -4,494 +4,494 @@
     {
       "question": "Câu 38: Tầng nào trong mô hình OSI thực hiện gửi tín hiệu lên cáp?",
       "options": [
-        "Physical",
-        "Network",
-        "Data Link",
-        "Transport"
+        "A. Physical",
+        "B. Network",
+        "C. Data Link",
+        "D. Transport"
       ],
-      "answer": "Physical"
+      "answer": "A. Physical"
     },
     {
       "question": "Câu 39: Địa chỉ mạng được gán tại tầng nào trong mô hình OSI?",
       "options": [
-        "Session",
-        "Data Link",
-        "Network",
-        "Presentation"
+        "A. Session",
+        "B. Data Link",
+        "C. Network",
+        "D. Presentation"
       ],
-      "answer": "Network"
+      "answer": "C. Network"
     },
     {
       "question": "Câu 40: Mô hình OSI được chia ra thành mấy tầng?",
       "options": [
-        "4 tầng",
-        "5 tầng",
-        "6 tầng",
-        "7 tầng"
+        "A. 4 tầng",
+        "B. 5 tầng",
+        "C. 6 tầng",
+        "D. 7 tầng"
       ],
-      "answer": "7 tầng"
+      "answer": "D. 7 tầng"
     },
     {
       "question": "Câu 41: Mô hình OSI là một bộ định chuẩn của tổ chức nào?",
       "options": [
-        "IEEE",
-        "ISO",
-        "ANSI",
-        "WLAN"
+        "A. IEEE",
+        "B. ISO",
+        "C. ANSI",
+        "D. WLAN"
       ],
-      "answer": "ISO"
+      "answer": "B. ISO"
     },
     {
       "question": "Câu 42: Mô hình OSI được nghiên cứu bắt đầu từ năm nào?",
       "options": [
-        "1969",
-        "1970",
-        "1971",
-        "1981"
+        "A. 1969",
+        "B. 1970",
+        "C. 1971",
+        "D. 1981"
       ],
-      "answer": "1971"
+      "answer": "C. 1971"
     },
     {
       "question": "Câu 43: Chức năng nén dữ liệu trước khi gửi được thực hiện bởi tầng chức năng nào trong mô hình OSI?",
       "options": [
-        "Application",
-        "Presentation",
-        "Session",
-        "Network"
+        "A. Application",
+        "B. Presentation",
+        "C. Session",
+        "D. Network"
       ],
-      "answer": "Presentation"
+      "answer": "B. Presentation"
     },
     {
       "question": "Câu 44: Chức năng chuyển đổi cú pháp cho dữ liệu truyền thông được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Application",
-        "Presentation",
-        "Session",
-        "Network"
+        "A. Application",
+        "B. Presentation",
+        "C. Session",
+        "D. Network"
       ],
-      "answer": "Presentation"
+      "answer": "B. Presentation"
     },
     {
       "question": "Câu 45: Chức năng xác lập địa chỉ cổng dịch vụ cho các gói dữ liệu truyền thông được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Application",
-        "Network",
-        "Session",
-        "Transport"
+        "A. Application",
+        "B. Network",
+        "C. Session",
+        "D. Transport"
       ],
-      "answer": "Transport"
+      "answer": "D. Transport"
     },
     {
       "question": "Câu 46: Chức năng đánh số thứ tự cho gói dữ liệu truyền thông được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Application",
-        "Transport",
-        "Network",
-        "Presentation"
+        "A. Application",
+        "B. Transport",
+        "C. Network",
+        "D. Presentation"
       ],
-      "answer": "Transport"
+      "answer": "B. Transport"
     },
     {
       "question": "Câu 47: Chức năng xác lập cơ chế truy nhập đường truyền được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Data Link",
-        "Network",
-        "Transport",
-        "Physical"
+        "A. Data Link",
+        "B. Network",
+        "C. Transport",
+        "D. Physical"
       ],
-      "answer": "Network"
+      "answer": "B. Network"
     },
     {
       "question": "Câu 48: Chức năng xác lập chuẩn đầu nối, dây cáp, tốc độ truyền, điện áp,... được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Transport",
-        "Network",
-        "Data Link",
-        "Physical"
+        "A. Transport",
+        "B. Network",
+        "C. Data Link",
+        "D. Physical"
       ],
-      "answer": "Physical"
+      "answer": "D. Physical"
     },
     {
       "question": "Câu 49: Những quy định nào sau đây không phải là của ISO dành cho việc xây dựng mô hình OSI?",
       "options": [
-        "Các chức năng giống nhau có thể đặt ở các tầng khác nhau",
-        "Không được định nghĩa quá nhiều tầng chức năng",
-        "Tạo ranh giới giữa các tầng chức năng sao cho số các tương tác giữa hai tầng là nhỏ nhất",
-        "Tạo các tầng riêng biệt cho các chức năng khác nhau hoàn toàn về kỹ thuật sử dụng hoặc quá trình thực hiện"
+        "A. Các chức năng giống nhau có thể đặt ở các tầng khác nhau",
+        "B. Không được định nghĩa quá nhiều tầng chức năng",
+        "C. Tạo ranh giới giữa các tầng chức năng sao cho số các tương tác giữa hai tầng là nhỏ nhất",
+        "D. Tạo các tầng riêng biệt cho các chức năng khác nhau hoàn toàn về kỹ thuật sử dụng hoặc quá trình thực hiện"
       ],
-      "answer": "Các chức năng giống nhau có thể đặt ở các tầng khác nhau"
+      "answer": "A. Các chức năng giống nhau có thể đặt ở các tầng khác nhau"
     },
     {
       "question": "Câu 50: Ý nghĩa của dữ liệu không được gán cho các tầng nào sau đây?",
       "options": [
-        "Transport",
-        "Network",
-        "Data Link",
-        "Physical"
+        "A. Transport",
+        "B. Network",
+        "C. Data Link",
+        "D. Physical"
       ],
-      "answer": "Physical"
+      "answer": "D. Physical"
     },
     {
       "question": "Câu 51: Các gói dữ liệu truyền thông giữa hai trạm theo mô hình OSI được truyền thông theo phương thức chuyển mạng gì?",
       "options": [
-        "Mạng quảng bá",
-        "Mạng chuyển mạch",
-        "Mạng chuyển gói",
-        "Tất cả đều sai"
+        "A. Mạng quảng bá",
+        "B. Mạng chuyển mạch",
+        "C. Mạng chuyển gói",
+        "D. Tất cả đều sai"
       ],
-      "answer": "Mạng chuyển gói"
+      "answer": "C. Mạng chuyển gói"
     },
     {
       "question": "Câu 52: Tầng nào trong mô hình OSI thực hiện chia nhỏ các gói tin nhận được từ tầng phiên trước khi gửi đi?",
       "options": [
-        "Physical",
-        "Data Link",
-        "Network",
-        "Transport"
+        "A. Physical",
+        "B. Data Link",
+        "C. Network",
+        "D. Transport"
       ],
-      "answer": "Transport"
+      "answer": "D. Transport"
     },
     {
       "question": "Câu 53: Chức năng định tuyến các gói tin xảy ra ở tầng nào trong mô hình OSI?",
       "options": [
-        "Data Link",
-        "Network",
-        "Transport",
-        "Presentation"
+        "A. Data Link",
+        "B. Network",
+        "C. Transport",
+        "D. Presentation"
       ],
-      "answer": "Network"
+      "answer": "B. Network"
     },
     {
       "question": "Câu 55: Khi gói tin bị mất hoặc bị lỗi thì tầng liên kết dữ liệu sẽ làm gì?",
       "options": [
-        "Tự khôi phục hoặc sửa lại gói tin bị mất hoặc lỗi hoặc đó",
-        "Đưa ra yêu cầu cho trạm nguồn gửi lại gói tin bị lỗi hoặc mất",
-        "Huỷ phiên trao đổi dữ liệu, đưa ra thông báo lỗi cho trạm nguồn",
-        "Cả ba câu trên đều sai"
+        "A. Tự khôi phục hoặc sửa lại gói tin bị mất hoặc lỗi hoặc đó",
+        "B. Đưa ra yêu cầu cho trạm nguồn gửi lại gói tin bị lỗi hoặc mất",
+        "C. Huỷ phiên trao đổi dữ liệu, đưa ra thông báo lỗi cho trạm nguồn",
+        "D. Cả ba câu trên đều sai"
       ],
-      "answer": "Cả ba câu trên đều sai"
+      "answer": "D. Cả ba câu trên đều sai"
     },
     {
       "question": "Câu 56: Thông thường, tầng liên kết dữ liệu sử dụng kỹ thuật nào để điều khiển tốc độ gửi và tốc độ nhận?",
       "options": [
-        "Báo nhận",
-        "Kỹ thuật hàng đợi",
-        "Đưa ra quy định về tốc độ gửi và tốc độ nhận",
-        "Cả ba câu trên đúng"
+        "A. Báo nhận",
+        "B. Kỹ thuật hàng đợi",
+        "C. Đưa ra quy định về tốc độ gửi và tốc độ nhận",
+        "D. Cả ba câu trên đúng"
       ],
-      "answer": "Cả ba câu trên đúng"
+      "answer": "D. Cả ba câu trên đúng"
     },
     {
       "question": "Câu 57: Định nghĩa địa chỉ IP được thực hiện tại tầng nào trong các tầng sau?",
       "options": [
-        "Liên kết dữ liệu",
-        "Mạng",
-        "Giao vận",
-        "Vật lý"
+        "A. Liên kết dữ liệu",
+        "B. Mạng",
+        "C. Giao vận",
+        "D. Vật lý"
       ],
-      "answer": "Mạng"
+      "answer": "B. Mạng"
     },
     {
       "question": "Câu 58: Việc đánh số thứ tự cho các gói tin của tầng giao vận có ý nghĩa gì?",
       "options": [
-        "Để định danh cho mỗi gói tin",
-        "Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
-        "Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
-        "Nhằm để phát hiện lỗi truyền thông"
+        "A. Để định danh cho mỗi gói tin",
+        "B. Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
+        "C. Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
+        "D. Nhằm để phát hiện lỗi truyền thông"
       ],
-      "answer": "Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận"
+      "answer": "C. Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận"
     },
     {
       "question": "Câu 59: Việc đánh số hiệu cổng cho các gói tin của tầng giao vận có ý nghĩa gì?",
       "options": [
-        "Để định danh cho mỗi gói tin",
-        "Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
-        "Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
-        "Nhằm để phát hiện lỗi truyền thông"
+        "A. Để định danh cho mỗi gói tin",
+        "B. Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên",
+        "C. Để xác định số thứ tự khi gửi và sắp xếp chúng khi nhận",
+        "D. Nhằm để phát hiện lỗi truyền thông"
       ],
-      "answer": "Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên"
+      "answer": "B. Để phân loại gói tin cho các dịch vụ trao đổi thông tin ở tầng trên"
     },
     {
       "question": "Câu 60: Việc chia nhỏ các gói tin tại tầng giao vận trước khi gửi đi có ý nghĩa gì?",
       "options": [
-        "Để phát hiện lỗi truyền thông",
-        "Để nâng cao hiệu suất và độ tin cậy trong trao đổi thông tin trên mạng",
-        "Để nâng cao độ an toàn truyền thông mạng",
-        "Để điều khiển lưu lượng truyền thông, tránh tắc nghẽn"
+        "A. Để phát hiện lỗi truyền thông",
+        "B. Để nâng cao hiệu suất và độ tin cậy trong trao đổi thông tin trên mạng",
+        "C. Để nâng cao độ an toàn truyền thông mạng",
+        "D. Để điều khiển lưu lượng truyền thông, tránh tắc nghẽn"
       ],
-      "answer": "Để nâng cao hiệu suất và độ tin cậy trong trao đổi thông tin trên mạng"
+      "answer": "B. Để nâng cao hiệu suất và độ tin cậy trong trao đổi thông tin trên mạng"
     },
     {
       "question": "Câu 60b: Việc định nghĩa địa chỉ IP tại tầng mạng có ý nghĩa gì?",
       "options": [
-        "Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
-        "Không có ý nghĩa gì cả",
-        "Để các máy tính trong một mạng có thể trao đổi thông tin với nhau",
-        "Nhằm đảm bảo an ninh mạng máy tính"
+        "A. Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
+        "B. Không có ý nghĩa gì cả",
+        "C. Để các máy tính trong một mạng có thể trao đổi thông tin với nhau",
+        "D. Nhằm đảm bảo an ninh mạng máy tính"
       ],
-      "answer": "Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau"
+      "answer": "A. Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau"
     },
     {
       "question": "Câu 62: Việc định nghĩa địa chỉ MAC tại tầng liên kết dữ liệu có ý nghĩa gì?",
       "options": [
-        "Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
-        "Để định danh một thiết bị trên mạng và cho phép các máy tính trong một mạng có thể trao đổi thông tin với nhau",
-        "Để định danh một máy tính trên mạng",
-        "Nhằm nâng cao độ tin cậy trong truyền tin"
+        "A. Để định danh một máy tính trên mạng và cho phép các máy tính trong liên mạng có thể trao đổi thông tin với nhau",
+        "B. Để định danh một thiết bị trên mạng và cho phép các máy tính trong một mạng có thể trao đổi thông tin với nhau",
+        "C. Để định danh một máy tính trên mạng",
+        "D. Nhằm nâng cao độ tin cậy trong truyền tin"
       ],
-      "answer": "Để định danh một thiết bị trên mạng và cho phép các máy tính trong một mạng có thể trao đổi thông tin với nhau"
+      "answer": "B. Để định danh một thiết bị trên mạng và cho phép các máy tính trong một mạng có thể trao đổi thông tin với nhau"
     },
     {
       "question": "Câu 63: Gói tin tại tầng liên kết dữ liệu có tên gọi là gì?",
       "options": [
-        "Datagram",
-        "Dlink",
-        "Frame",
-        "Ethernet"
+        "A. Datagram",
+        "B. Dlink",
+        "C. Frame",
+        "D. Ethernet"
       ],
-      "answer": "Frame"
+      "answer": "C. Frame"
     },
     {
       "question": "Câu 64: Gói tin tại tầng mạng trong bộ giao thức TCP/IP có tên gọi là gì?",
       "options": [
-        "Datagram",
-        "Dlink",
-        "Frame",
-        "Ethernet"
+        "A. Datagram",
+        "B. Dlink",
+        "C. Frame",
+        "D. Ethernet"
       ],
-      "answer": "Datagram"
+      "answer": "A. Datagram"
     },
     {
       "question": "Câu 65: Tầng nào trong mô hình OSI định nghĩa địa chỉ vật lý?",
       "options": [
-        "Liên kết dữ liệu",
-        "Vật lý",
-        "Mạng",
-        "Giao vận"
+        "A. Liên kết dữ liệu",
+        "B. Vật lý",
+        "C. Mạng",
+        "D. Giao vận"
       ],
-      "answer": "Liên kết dữ liệu"
+      "answer": "A. Liên kết dữ liệu"
     },
     {
       "question": "Câu 66: Chức năng cơ bản của tầng liên kết dữ liệu là gì?",
       "options": [
-        "Định địa chỉ vật lý",
-        "Điều khiển truy nhập đường truyền",
-        "Điều khiển kết nối logic",
-        "Tất cả các chức năng trên"
+        "A. Định địa chỉ vật lý",
+        "B. Điều khiển truy nhập đường truyền",
+        "C. Điều khiển kết nối logic",
+        "D. Tất cả các chức năng trên"
       ],
-      "answer": "Tất cả các chức năng trên"
+      "answer": "D. Tất cả các chức năng trên"
     },
     {
       "question": "Câu 67: Mục đích chính của việc xây dựng mô hình OSI là gì?",
       "options": [
-        "Kết nối các sản phẩm mạng của các hãng khác nhau",
-        "Chuyên môn hoá trong sản xuất các sản phẩm mạng",
-        "Xây dựng các giao thức truyền thông",
-        "Xây dựng các ứng dụng trên mạng"
+        "A. Kết nối các sản phẩm mạng của các hãng khác nhau",
+        "B. Chuyên môn hoá trong sản xuất các sản phẩm mạng",
+        "C. Xây dựng các giao thức truyền thông",
+        "D. Xây dựng các ứng dụng trên mạng"
       ],
-      "answer": "Kết nối các sản phẩm mạng của các hãng khác nhau"
+      "answer": "A. Kết nối các sản phẩm mạng của các hãng khác nhau"
     },
     {
       "question": "Câu 68: Điều gì sẽ xảy ra nếu không có mô hình OSI?",
       "options": [
-        "Người ta không thể thiết kế và xây dựng được các giao thức mạng",
-        "Người ta không thể thiết kế và xây dựng được các ứng dụng trên mạng",
-        "Người ta vẫn có thể xây dựng được các giao thức mạng, nhưng tính hiệu quả và đồng bộ thấp, gây khó khăn cho việc xây dựng và phát triển",
-        "Người ta không thể xây dựng được bộ giao thức TCP/IP"
+        "A. Người ta không thể thiết kế và xây dựng được các giao thức mạng",
+        "B. Người ta không thể thiết kế và xây dựng được các ứng dụng trên mạng",
+        "C. Người ta vẫn có thể xây dựng được các giao thức mạng, nhưng tính hiệu quả và đồng bộ thấp, gây khó khăn cho việc xây dựng và phát triển",
+        "D. Người ta không thể xây dựng được bộ giao thức TCP/IP"
       ],
-      "answer": "Người ta vẫn có thể xây dựng được các giao thức mạng, nhưng tính hiệu quả và đồng bộ thấp, gây khó khăn cho việc xây dựng và phát triển"
+      "answer": "C. Người ta vẫn có thể xây dựng được các giao thức mạng, nhưng tính hiệu quả và đồng bộ thấp, gây khó khăn cho việc xây dựng và phát triển"
     },
     {
       "question": "Câu 69: Tổ chức nào đã phát triển mô hình OSI?",
       "options": [
-        "IEEE",
-        "ISO",
-        "Cisco",
-        "ITU"
+        "A. IEEE",
+        "B. ISO",
+        "C. Cisco",
+        "D. ITU"
       ],
-      "answer": "ISO"
+      "answer": "B. ISO"
     },
     {
       "question": "Câu 70: Mỗi tầng chức năng trong mỗi hệ thống theo mô hình OSI trao đổi thông tin như thế nào với các tầng còn lại?",
       "options": [
-        "Có thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
-        "Không thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
-        "Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liên kề nó",
-        "Cả ba câu trên đều sai"
+        "A. Có thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
+        "B. Không thể trao đổi thông tin trực tiếp với các tầng chức năng còn lại",
+        "C. Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liên kề nó",
+        "D. Cả ba câu trên đều sai"
       ],
-      "answer": "Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liên kề nó"
+      "answer": "C. Chỉ trao đổi thông tin trực tiếp với tầng chức năng nằm liên kề nó"
     },
     {
       "question": "Câu 71: So sánh cấu trúc gói dữ liệu trao đổi của các tầng chức năng đồng mức ở hai hệ thống trao đổi thông tin với nhau theo mô hình OSI?",
       "options": [
-        "Giống nhau",
-        "Khác nhau hoàn toàn",
-        "Một phần giống nhau",
-        "Gói tin trong một hệ thống có cấu trúc là mở rộng cấu trúc gói tin của hệ thống còn lại"
+        "A. Giống nhau",
+        "B. Khác nhau hoàn toàn",
+        "C. Một phần giống nhau",
+        "D. Gói tin trong một hệ thống có cấu trúc là mở rộng cấu trúc gói tin của hệ thống còn lại"
       ],
-      "answer": "Giống nhau"
+      "answer": "A. Giống nhau"
     },
     {
       "question": "Câu 72: Tầng nào trong mô hình OSI có nhiệm vụ chia dữ liệu thành các khung (frame) để truyền lên mạng?",
       "options": [
-        "Network",
-        "Data Link",
-        "Physical",
-        "Transport"
+        "A. Network",
+        "B. Data Link",
+        "C. Physical",
+        "D. Transport"
       ],
-      "answer": "Data Link"
+      "answer": "B. Data Link"
     },
     {
       "question": "Câu 73: Các tầng chức năng đồng mức của hai hệ thống trao đổi thông tin với nhau theo mô hình OSI có liên kết với nhau như thế nào?",
       "options": [
-        "Liên kết logic với nhau",
-        "Liên kết vật lý với nhau",
-        "Chỉ có các tầng tầng vật lý là thực sự trao đổi thông tin với nhau",
-        "Cả 3 câu trên đều sai"
+        "A. Liên kết logic với nhau",
+        "B. Liên kết vật lý với nhau",
+        "C. Chỉ có các tầng tầng vật lý là thực sự trao đổi thông tin với nhau",
+        "D. Cả 3 câu trên đều sai"
       ],
-      "answer": "Chỉ có các tầng tầng vật lý là thực sự trao đổi thông tin với nhau"
+      "answer": "C. Chỉ có các tầng tầng vật lý là thực sự trao đổi thông tin với nhau"
     },
     {
       "question": "Câu 74: Thứ tự các tầng sắp xếp từ thấp đến cao trong mô hình OSI là:",
       "options": [
-        "Vật lý, liên kết dữ liệu, mạng, trình diễn, giao vận, phiên, ứng dụng",
-        "Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng",
-        "Vật lý, liên kết dữ liệu, mạng, phiên, giao vận, trình diễn, ứng dụng",
-        "Vật lý, liên kết dữ liệu, mạng, giao vận, trình diễn, phiên, ứng dụng"
+        "A. Vật lý, liên kết dữ liệu, mạng, trình diễn, giao vận, phiên, ứng dụng",
+        "B. Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng",
+        "C. Vật lý, liên kết dữ liệu, mạng, phiên, giao vận, trình diễn, ứng dụng",
+        "D. Vật lý, liên kết dữ liệu, mạng, giao vận, trình diễn, phiên, ứng dụng"
       ],
-      "answer": "Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng"
+      "answer": "B. Vật lý, liên kết dữ liệu, mạng, giao vận, phiên, trình diễn, ứng dụng"
     },
     {
       "question": "Câu 75: Giao thức là gì?",
       "options": [
-        "Mô hình nhằm để thiết lập các ứng dụng trao đổi thông tin",
-        "Các quy định để truyền thông tin của một thực thể mạng",
-        "Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ",
-        "Cả ba câu trên sai"
+        "A. Mô hình nhằm để thiết lập các ứng dụng trao đổi thông tin",
+        "B. Các quy định để truyền thông tin của một thực thể mạng",
+        "C. Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ",
+        "D. Cả ba câu trên sai"
       ],
-      "answer": "Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ"
+      "answer": "C. Một tập các quy tắc và thủ tục mà các thực thể mạng trao đổi thông tin với nhau phải tuân thủ"
     },
     {
       "question": "Câu 76: Giao thức có kết nối không cần thiết lập kết nối logic trước khi truyền dữ liệu, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Sai"
+      "answer": "B. Sai"
     },
     {
       "question": "Câu 77: Giao thức không kết nối không cần thiết lập kết nối logic trước khi truyền dữ liệu, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 78: Truyền thông theo giao thức không kết nối an toàn hơn so với giao thức có kết nối, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Sai"
+      "answer": "B. Sai"
     },
     {
       "question": "Câu 79: Chức năng cơ bản của tầng vật lý trong mô hình OSI là gì?",
       "options": [
-        "Chuyển đổi dữ liệu số trong máy tính thành tín hiệu đường truyền và ngược lại",
-        "Thiết lập địa chỉ vật lý",
-        "Xác định phương thức truyền thông và tốc độ truyền thông",
-        "Câu a và câu c là đúng"
+        "A. Chuyển đổi dữ liệu số trong máy tính thành tín hiệu đường truyền và ngược lại",
+        "B. Thiết lập địa chỉ vật lý",
+        "C. Xác định phương thức truyền thông và tốc độ truyền thông",
+        "D. Câu a và câu c là đúng"
       ],
-      "answer": "Câu a và câu c là đúng"
+      "answer": "D. Câu a và câu c là đúng"
     },
     {
       "question": "Câu 80: Dữ liệu tại tầng vật lý trong mô hình OSI ở dạng chuỗi bit và không có cấu trúc, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 81: Chức năng nào sau đây không là chức năng của tầng vật lý?",
       "options": [
-        "Định địa chỉ IP",
-        "Thiết lập khuôn dạng gói tin",
-        "Thích ứng với đường truyền mạng",
-        "Câu a và b đúng"
+        "A. Định địa chỉ IP",
+        "B. Thiết lập khuôn dạng gói tin",
+        "C. Thích ứng với đường truyền mạng",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 82: Tầng liên kết dữ liệu có thể thực hiện chức năng nào sau đây?",
       "options": [
-        "Cung cấp chức năng phát hiện và khắc phục lỗi đối với mỗi gói dữ liệu truyền thông",
-        "Điều khiển tốc độ truyền tin",
-        "Thực hiện điều khiển việc truy cập đường truyền chung",
-        "Cả ba câu trên"
+        "A. Cung cấp chức năng phát hiện và khắc phục lỗi đối với mỗi gói dữ liệu truyền thông",
+        "B. Điều khiển tốc độ truyền tin",
+        "C. Thực hiện điều khiển việc truy cập đường truyền chung",
+        "D. Cả ba câu trên"
       ],
-      "answer": "Cả ba câu trên"
+      "answer": "D. Cả ba câu trên"
     },
     {
       "question": "Câu 83: Tầng mạng không thực hiện chức năng nào sau đây?",
       "options": [
-        "Tìm đường đi trên mạng tốt nhất theo những tiêu chuẩn nhất định",
-        "Cập nhật các thông tin về mạng sử dụng cho việc chọn đường",
-        "Phát hiện và xử lý lỗi truyền thông",
-        "Sắp xếp các gói dữ liệu khi nhận"
+        "A. Tìm đường đi trên mạng tốt nhất theo những tiêu chuẩn nhất định",
+        "B. Cập nhật các thông tin về mạng sử dụng cho việc chọn đường",
+        "C. Phát hiện và xử lý lỗi truyền thông",
+        "D. Sắp xếp các gói dữ liệu khi nhận"
       ],
-      "answer": "Sắp xếp các gói dữ liệu khi nhận"
+      "answer": "D. Sắp xếp các gói dữ liệu khi nhận"
     },
     {
       "question": "Câu 84: Gói tin ở tầng mạng chứa các thông tin nào sau đây?",
       "options": [
-        "Địa chỉ IP của máy tính gửi và địa chỉ IP của máy nhận",
-        "Kích thước gói tin IP, thời gian sống của gói tin IP",
-        "Số thứ tự truyền thông",
-        "Câu a và câu b đúng"
+        "A. Địa chỉ IP của máy tính gửi và địa chỉ IP của máy nhận",
+        "B. Kích thước gói tin IP, thời gian sống của gói tin IP",
+        "C. Số thứ tự truyền thông",
+        "D. Câu a và câu b đúng"
       ],
-      "answer": "Câu a và câu b đúng"
+      "answer": "D. Câu a và câu b đúng"
     },
     {
       "question": "Câu 85: Tầng nào trong mô hình OSI chịu trách nhiệm mã hoá dữ liệu?",
       "options": [
-        "Ứng dụng",
-        "Trình diễn",
-        "Phiên",
-        "Giao vận"
+        "A. Ứng dụng",
+        "B. Trình diễn",
+        "C. Phiên",
+        "D. Giao vận"
       ],
-      "answer": "Trình diễn"
+      "answer": "B. Trình diễn"
     },
     {
       "question": "Câu 86: Tầng giao vận có thể cung cấp chức năng nào?",
       "options": [
-        "Thiết lập số hiệu cổng dịch vụ của thực thể gửi và thực thể nhận",
-        "Phát hiện và xử lý lỗi truyền thông",
-        "Điều khiển lưu lượng truyền thông",
-        "Cả ba câu a, b, c đều đúng"
+        "A. Thiết lập số hiệu cổng dịch vụ của thực thể gửi và thực thể nhận",
+        "B. Phát hiện và xử lý lỗi truyền thông",
+        "C. Điều khiển lưu lượng truyền thông",
+        "D. Cả ba câu a, b, c đều đúng"
       ],
-      "answer": "Cả ba câu a, b, c đều đúng"
+      "answer": "D. Cả ba câu a, b, c đều đúng"
     },
     {
       "question": "Câu 87: Xác thực người dùng được thực hiện bởi tầng chức năng nào?",
       "options": [
-        "Ứng dụng",
-        "Trình diễn",
-        "Phiên",
-        "Giao vận"
+        "A. Ứng dụng",
+        "B. Trình diễn",
+        "C. Phiên",
+        "D. Giao vận"
       ],
-      "answer": "Phiên"
+      "answer": "C. Phiên"
     },
     {
       "question": "Câu 88: Nguyên nhân nào có thể dẫn đến hai thực thể tầng mạng của hai máy tính trong mạng không trao đổi thông tin với nhau?",
       "options": [
-        "Do đường truyền mạng bị lỗi",
-        "Do giao thức tầng liên kết dữ liệu bị lỗi",
-        "Do giao thức tầng vật lý dữ liệu bị lỗi",
-        "Cả ba câu trên đều đúng"
+        "A. Do đường truyền mạng bị lỗi",
+        "B. Do giao thức tầng liên kết dữ liệu bị lỗi",
+        "C. Do giao thức tầng vật lý dữ liệu bị lỗi",
+        "D. Cả ba câu trên đều đúng"
       ],
-      "answer": "Cả ba câu trên đều đúng"
+      "answer": "D. Cả ba câu trên đều đúng"
     }
   ]
 }

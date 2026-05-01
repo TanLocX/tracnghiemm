@@ -4,236 +4,236 @@
     {
       "question": "Câu 253: Mạng diện rộng thường do bao nhiêu cơ quan tham hay tổ chức gia quản lý?",
       "options": [
-        "Một cơ quan",
-        "Hai cơ quan",
-        "Ba cơ quan",
-        "Nhiều cơ quan"
+        "A. Một cơ quan",
+        "B. Hai cơ quan",
+        "C. Ba cơ quan",
+        "D. Nhiều cơ quan"
       ],
-      "answer": "Nhiều cơ quan"
+      "answer": "D. Nhiều cơ quan"
     },
     {
       "question": "Câu 254: Mạng diện rộng thường sử dụng hạ tầng truyền dẫn của nhà cung cấp dịch vụ truyền thông công cộng như các công ty điện thoại, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 255: Ưu điểm của mạng diện rộng so với mạng cục bộ là:",
       "options": [
-        "Cho phép kết nối các máy tính trên một phạm vi lớn",
-        "Tốc độ truyền thông cao",
-        "Độ tin cậy cao",
-        "Câu a và c đúng"
+        "A. Cho phép kết nối các máy tính trên một phạm vi lớn",
+        "B. Tốc độ truyền thông cao",
+        "C. Độ tin cậy cao",
+        "D. Câu a và c đúng"
       ],
-      "answer": "Câu a và c đúng"
+      "answer": "D. Câu a và c đúng"
     },
     {
       "question": "Câu 256: Mạng diện rộng thường có tốc độ truyền thông lớn hơn so với mạng cục bộ, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Sai"
+      "answer": "B. Sai"
     },
     {
       "question": "Câu 257: Tại sao mạng diện rộng lại có độ tin cậy thấp so với mạng cục bộ?",
       "options": [
-        "Do chịu ảnh hưởng nhiều các tác động từ môi trường",
-        "Do phạm vi kết nối đường truyền lớn",
-        "Do tốc độ truyền thông cao",
-        "Câu a và b đúng"
+        "A. Do chịu ảnh hưởng nhiều các tác động từ môi trường",
+        "B. Do phạm vi kết nối đường truyền lớn",
+        "C. Do tốc độ truyền thông cao",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 258: Modem là thiết bị có chức năng gì?",
       "options": [
-        "Chuyển tín hiệu số thành tín hiệu tương tự và ngược lại",
-        "Tiếp nhận, xử lý và định tuyến các gói tin",
-        "Điều khiển lưu lượng truyền thông trên mạng",
-        "Phát hiện và xử lý lỗi truyền thông"
+        "A. Chuyển tín hiệu số thành tín hiệu tương tự và ngược lại",
+        "B. Tiếp nhận, xử lý và định tuyến các gói tin",
+        "C. Điều khiển lưu lượng truyền thông trên mạng",
+        "D. Phát hiện và xử lý lỗi truyền thông"
       ],
-      "answer": "Chuyển tín hiệu số thành tín hiệu tương tự và ngược lại"
+      "answer": "A. Chuyển tín hiệu số thành tín hiệu tương tự và ngược lại"
     },
     {
       "question": "Câu 259: Ở Việt Nam hiện nay, để kết nối tới nhà cung cấp dịch vụ kết nối Internet, người ta thường sử dụng Modem ADSL?",
       "options": [
-        "Do hầu hết các đường truyền sử dụng để kết nối là cáp điện thoại",
-        "Do Modem ADSL cho phép truy cập thông tin trên Internet hiệu quả cao",
-        "Do năng lực xử lý truyền thông của Modem ADSL cao",
-        "Câu a và b đúng"
+        "A. Do hầu hết các đường truyền sử dụng để kết nối là cáp điện thoại",
+        "B. Do Modem ADSL cho phép truy cập thông tin trên Internet hiệu quả cao",
+        "C. Do năng lực xử lý truyền thông của Modem ADSL cao",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 260: Mệnh đề nào sau đây đúng?",
       "options": [
-        "Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước",
-        "Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo nhiều đường truyền khác nhau",
-        "Trong mạng chuyển mạch gói, một trạm có thể trao đổi thông tin đồng thời với nhiều trạm khác tại cùng một thời điểm",
-        "Tốc độ truyền thông của mạng chuyển mạch kênh chậm hơn so với mạng chuyển mạch gói"
+        "A. Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước",
+        "B. Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo nhiều đường truyền khác nhau",
+        "C. Trong mạng chuyển mạch gói, một trạm có thể trao đổi thông tin đồng thời với nhiều trạm khác tại cùng một thời điểm",
+        "D. Tốc độ truyền thông của mạng chuyển mạch kênh chậm hơn so với mạng chuyển mạch gói"
       ],
-      "answer": "Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước"
+      "answer": "A. Trong mạng chuyển mạch kênh các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước"
     },
     {
       "question": "Câu 261: Mệnh đề nào sau đây là sai?",
       "options": [
-        "Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước và không thay đổi trong quá trình truyền",
-        "Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo nhiều đường truyền khác nhau",
-        "Trong mạng chuyển mạch gói, một trạm chỉ có thể trao đổi thông tin với nhiều trạm khác tại cùng một thời điểm",
-        "Tốc độ truyền thông của mạng chuyển mạch gói chậm hơn so với mạng chuyển mạch kênh"
+        "A. Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước và không thay đổi trong quá trình truyền",
+        "B. Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo nhiều đường truyền khác nhau",
+        "C. Trong mạng chuyển mạch gói, một trạm chỉ có thể trao đổi thông tin với nhiều trạm khác tại cùng một thời điểm",
+        "D. Tốc độ truyền thông của mạng chuyển mạch gói chậm hơn so với mạng chuyển mạch kênh"
       ],
-      "answer": "Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước và không thay đổi trong quá trình truyền"
+      "answer": "A. Trong mạng chuyển mạch gói, các dữ liệu chuyển từ trạm nguồn cho tới trạm đích theo một đường truyền được xác định trước và không thay đổi trong quá trình truyền"
     },
     {
       "question": "Câu 262: Mạng chuyển mạch gói có thể kết nối với mạng chuyển mạch kênh, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 263: Nguyên nhân dẫn đến hiệu suất truyền thông của mạng chuyển mạch gói cao hơn so với mạng chuyển mạch kênh?",
       "options": [
-        "Do dữ liệu được chia thành các gói tin được truyền theo nhiều đường khác nhau trên mạng cho tới đích",
-        "Do tại cùng một thời điểm có nhiều trạm được phép cùng sử dụng chung hạ tầng truyền thông của mạng để trao đổi thông tin",
-        "Do năng lực truyền thông của hạ tầng mạng chuyển mạch gói mạnh hơn so với năng lực truyền thông của mạng chuyển mạch kênh",
-        "Câu a và b đúng"
+        "A. Do dữ liệu được chia thành các gói tin được truyền theo nhiều đường khác nhau trên mạng cho tới đích",
+        "B. Do tại cùng một thời điểm có nhiều trạm được phép cùng sử dụng chung hạ tầng truyền thông của mạng để trao đổi thông tin",
+        "C. Do năng lực truyền thông của hạ tầng mạng chuyển mạch gói mạnh hơn so với năng lực truyền thông của mạng chuyển mạch kênh",
+        "D. Câu a và b đúng"
       ],
-      "answer": "Câu a và b đúng"
+      "answer": "D. Câu a và b đúng"
     },
     {
       "question": "Câu 264: Mạng điện thoại công cộng là một mạng chuyển mạch kênh, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 265: PSTN (mạng điện thoại công cộng) là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Public Switched Telecom Network",
-        "Public Switching Telephone Network",
-        "Public Switched Telephone Network",
-        "Public Switched Telephone Networking"
+        "A. Public Switched Telecom Network",
+        "B. Public Switching Telephone Network",
+        "C. Public Switched Telephone Network",
+        "D. Public Switched Telephone Networking"
       ],
-      "answer": "Public Switched Telephone Network"
+      "answer": "C. Public Switched Telephone Network"
     },
     {
       "question": "Câu 266: ISDN (Mạng thông tin số tích hợp dịch vụ) là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Intergrated Services Digital Networking",
-        "Intergrate Serviced Digital Network",
-        "Interconnection Services Digital Network",
-        "Intergrated Services Digital Network"
+        "A. Intergrated Services Digital Networking",
+        "B. Intergrate Serviced Digital Network",
+        "C. Interconnection Services Digital Network",
+        "D. Intergrated Services Digital Network"
       ],
-      "answer": "Intergrated Services Digital Network"
+      "answer": "D. Intergrated Services Digital Network"
     },
     {
       "question": "Câu 267: ATM là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Asynchronous Transmision Mode",
-        "Asynchronous Transfer Mode",
-        "Asynchronous Transfering Mode",
-        "Asynchronous Transfer Media"
+        "A. Asynchronous Transmision Mode",
+        "B. Asynchronous Transfer Mode",
+        "C. Asynchronous Transfering Mode",
+        "D. Asynchronous Transfer Media"
       ],
-      "answer": "Asynchronous Transfer Mode"
+      "answer": "B. Asynchronous Transfer Mode"
     },
     {
       "question": "Câu 268: ADSL là thuật ngữ viết tắt của cụm từ nào?",
       "options": [
-        "Address digital symetrical line",
-        "Asymmetrical digital subscriber line",
-        "Asymmetrical data subscriber line",
-        "Asymmetrical digital subscriber link"
+        "A. Address digital symetrical line",
+        "B. Asymmetrical digital subscriber line",
+        "C. Asymmetrical data subscriber line",
+        "D. Asymmetrical digital subscriber link"
       ],
-      "answer": "Asymmetrical digital subscriber line"
+      "answer": "B. Asymmetrical digital subscriber line"
     },
     {
       "question": "Câu 269: Trong công nghệ ADSL, tốc độ tải dữ liệu xuống và tốc độ tải dữ liệu lên có thể khác nhau, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 274: ISDN (Mạng thông tin số tích hợp dịch vụ) cho phép truyền quảng bá nhiều dạng dữ liệu (như thoại, video, đồ hoạ ..), đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 275: Hầu kết các loại mạng diện rộng hiện nay là sự kết hợp giữa mạng chuyển mạch kênh và mạng chuyển mạch gói, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 276: Tốc độ truyền dữ liệu và tốc độ kết nối của mạng ISDN cao hơn so với kết nối quay số truyền thống, đúng hay sai?",
       "options": [
-        "Đúng",
-        "Sai"
+        "A. Đúng",
+        "B. Sai"
       ],
-      "answer": "Đúng"
+      "answer": "A. Đúng"
     },
     {
       "question": "Câu 277: Các hoạt động truyền dữ liệu chính qua mạng chuyển mạch kênh là gì?",
       "options": [
-        "Thiết lập kết nối vật lý, truyền dữ liệu, nhận dữ liệu, giải phóng kết nối vật lý",
-        "Gửi dữ liệu, kiểm tra và nhận dữ liệu",
-        "Thiết lập kết nối logic, truyền dữ liệu, giải phóng kết nối logic",
-        "Câu a và câu c đúng"
+        "A. Thiết lập kết nối vật lý, truyền dữ liệu, nhận dữ liệu, giải phóng kết nối vật lý",
+        "B. Gửi dữ liệu, kiểm tra và nhận dữ liệu",
+        "C. Thiết lập kết nối logic, truyền dữ liệu, giải phóng kết nối logic",
+        "D. Câu a và câu c đúng"
       ],
-      "answer": "Thiết lập kết nối vật lý, truyền dữ liệu, nhận dữ liệu, giải phóng kết nối vật lý"
+      "answer": "A. Thiết lập kết nối vật lý, truyền dữ liệu, nhận dữ liệu, giải phóng kết nối vật lý"
     },
     {
       "question": "Câu 278: Hầu hết các Modem ADSL hiện nay tích hợp các chức năng của thiết bị nào?",
       "options": [
-        "Hub",
-        "Switch",
-        "Router",
-        "Repeater"
+        "A. Hub",
+        "B. Switch",
+        "C. Router",
+        "D. Repeater"
       ],
-      "answer": "Router"
+      "answer": "C. Router"
     },
     {
       "question": "Câu 279: Intranet là gì?",
       "options": [
-        "Mạng con của Internet",
-        "Mạng cục bộ kiểu Ethernet",
-        "Mạng cục bộ sử dụng công nghệ Internet",
-        "Mạng diện rộng theo chuẩn Internet"
+        "A. Mạng con của Internet",
+        "B. Mạng cục bộ kiểu Ethernet",
+        "C. Mạng cục bộ sử dụng công nghệ Internet",
+        "D. Mạng diện rộng theo chuẩn Internet"
       ],
-      "answer": "Mạng cục bộ sử dụng công nghệ Internet"
+      "answer": "C. Mạng cục bộ sử dụng công nghệ Internet"
     },
     {
       "question": "Câu 280: VPN (Virtual Private Network) là gì?",
       "options": [
-        "Là LAN sử dụng công nghệ Internet như TCP/IP",
-        "Là WAN sử dụng công nghệ Internet như TCP/IP",
-        "Là mạng riêng của một tổ chức bao gồm có nhiều điểm kết nối tới LAN trung tâm sử dụng hạ tầng hệ thống mạng công cộng",
-        "Là LAN có sử dụng công nghệ Web"
+        "A. Là LAN sử dụng công nghệ Internet như TCP/IP",
+        "B. Là WAN sử dụng công nghệ Internet như TCP/IP",
+        "C. Là mạng riêng của một tổ chức bao gồm có nhiều điểm kết nối tới LAN trung tâm sử dụng hạ tầng hệ thống mạng công cộng",
+        "D. Là LAN có sử dụng công nghệ Web"
       ],
-      "answer": "Là mạng riêng của một tổ chức bao gồm có nhiều điểm kết nối tới LAN trung tâm sử dụng hạ tầng hệ thống mạng công cộng"
+      "answer": "C. Là mạng riêng của một tổ chức bao gồm có nhiều điểm kết nối tới LAN trung tâm sử dụng hạ tầng hệ thống mạng công cộng"
     },
     {
       "question": "Câu 281: Có bao nhiều tổ chức quản lý VPN?",
       "options": [
-        "Có một tổ chức quản lý",
-        "Có nhiều tổ chức tham gia quản lý bao gồm nhà cung cấp dịch vụ và tổ chức sử dụng VPN,...",
-        "Do tổ chức sử dụng VPN quản lý",
-        "Câu a và c đúng"
+        "A. Có một tổ chức quản lý",
+        "B. Có nhiều tổ chức tham gia quản lý bao gồm nhà cung cấp dịch vụ và tổ chức sử dụng VPN,...",
+        "C. Do tổ chức sử dụng VPN quản lý",
+        "D. Câu a và c đúng"
       ],
-      "answer": "Có nhiều tổ chức tham gia quản lý bao gồm nhà cung cấp dịch vụ và tổ chức sử dụng VPN,..."
+      "answer": "B. Có nhiều tổ chức tham gia quản lý bao gồm nhà cung cấp dịch vụ và tổ chức sử dụng VPN,..."
     }
   ]
 }
