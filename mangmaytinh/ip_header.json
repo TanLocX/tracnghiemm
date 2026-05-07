@@ -1,0 +1,145 @@
+{
+  "section": "Cấu trúc Header IP (Tầng Mạng - Lớp 3)",
+  "questions": [
+    {
+      "question": "Trường Version trong Header IP có chức năng gì?",
+      "options": [
+        "A. Xác định phiên bản giao thức IP đang dùng (IPv4 hoặc IPv6)",
+        "B. Xác định độ dài của phần Header",
+        "C. Xác định giao thức tầng trên (TCP, UDP...)",
+        "D. Kiểm tra lỗi cho phần Header"
+      ],
+      "answer": "A. Xác định phiên bản giao thức IP đang dùng (IPv4 hoặc IPv6)"
+    },
+    {
+      "question": "Trường Header Length (IHL) trong Header IP cho biết điều gì?",
+      "options": [
+        "A. Độ dài tổng cộng của toàn bộ gói tin",
+        "B. Độ dài của phần Header IP",
+        "C. Số bước nhảy tối đa gói tin được phép đi qua",
+        "D. Phiên bản giao thức IP"
+      ],
+      "answer": "B. Độ dài của phần Header IP"
+    },
+    {
+      "question": "Trường Type of Service (ToS) trong Header IP dùng để làm gì?",
+      "options": [
+        "A. Xác định địa chỉ IP nguồn và đích",
+        "B. Quản lý việc cắt nhỏ gói tin khi đi qua mạng",
+        "C. Xác định mức độ ưu tiên của gói tin (QoS / Chất lượng dịch vụ)",
+        "D. Kiểm tra lỗi cho toàn bộ gói tin"
+      ],
+      "answer": "C. Xác định mức độ ưu tiên của gói tin (QoS / Chất lượng dịch vụ)"
+    },
+    {
+      "question": "Trường Total Length trong Header IP có kích thước bao nhiêu bit và cho biết điều gì?",
+      "options": [
+        "A. 8 bit – độ dài phần Header",
+        "B. 16 bit – độ dài tổng cộng toàn bộ gói tin (tối đa 65.535 byte)",
+        "C. 32 bit – địa chỉ IP nguồn",
+        "D. 16 bit – số thứ tự phân mảnh"
+      ],
+      "answer": "B. 16 bit – độ dài tổng cộng toàn bộ gói tin (tối đa 65.535 byte)"
+    },
+    {
+      "question": "Các trường Identification, Flags và Fragment Offset trong Header IP phục vụ mục đích gì?",
+      "options": [
+        "A. Xác định giao thức tầng trên",
+        "B. Kiểm soát chất lượng dịch vụ",
+        "C. Quản lý phân mảnh (Fragmentation) và ghép nối lại gói tin",
+        "D. Xác định số bước nhảy tối đa"
+      ],
+      "answer": "C. Quản lý phân mảnh (Fragmentation) và ghép nối lại gói tin"
+    },
+    {
+      "question": "Trường Time to Live (TTL) trong Header IP có tác dụng gì?",
+      "options": [
+        "A. Xác định độ dài Header",
+        "B. Giới hạn số bước nhảy (router) tối đa gói tin được phép đi qua, chống lặp vòng vô hạn",
+        "C. Xác định phiên bản giao thức",
+        "D. Kiểm tra lỗi cho Header"
+      ],
+      "answer": "B. Giới hạn số bước nhảy (router) tối đa gói tin được phép đi qua, chống lặp vòng vô hạn"
+    },
+    {
+      "question": "Trường Protocol trong Header IP dùng để làm gì?",
+      "options": [
+        "A. Kiểm soát lỗi chỉ phần Header",
+        "B. Xác định mức độ ưu tiên gói tin",
+        "C. Nhận diện giao thức tầng trên đang sử dụng (TCP = 6, UDP = 17, ICMP = 1)",
+        "D. Xác định phiên bản IP"
+      ],
+      "answer": "C. Nhận diện giao thức tầng trên đang sử dụng (TCP = 6, UDP = 17, ICMP = 1)"
+    },
+    {
+      "question": "Trường Header Checksum trong Header IP có chức năng gì?",
+      "options": [
+        "A. Kiểm soát lỗi cho toàn bộ gói tin bao gồm cả dữ liệu",
+        "B. Kiểm soát lỗi chỉ cho phần Header trong quá trình truyền",
+        "C. Xác định độ dài toàn bộ gói tin",
+        "D. Quản lý phân mảnh gói tin"
+      ],
+      "answer": "B. Kiểm soát lỗi chỉ cho phần Header trong quá trình truyền"
+    },
+    {
+      "question": "Trường Source / Destination IP trong Header IP lưu thông tin gì?",
+      "options": [
+        "A. Số hiệu cổng của ứng dụng nguồn và đích",
+        "B. Địa chỉ MAC của máy gửi và máy nhận",
+        "C. Địa chỉ IP của máy gửi và máy nhận",
+        "D. Số thứ tự phân mảnh gói tin"
+      ],
+      "answer": "C. Địa chỉ IP của máy gửi và máy nhận"
+    },
+    {
+      "question": "Trường nào trong Header IP giúp router biết sau khi nhận gói tin cần chuyển tiếp cho giao thức nào ở tầng trên?",
+      "options": [
+        "A. TTL",
+        "B. Header Checksum",
+        "C. Total Length",
+        "D. Protocol"
+      ],
+      "answer": "D. Protocol"
+    },
+    {
+      "question": "Khi gói tin IP đi qua mỗi router, giá trị của trường nào bị giảm đi 1?",
+      "options": [
+        "A. Total Length",
+        "B. Header Length",
+        "C. TTL (Time to Live)",
+        "D. Fragment Offset"
+      ],
+      "answer": "C. TTL (Time to Live)"
+    },
+    {
+      "question": "Trường nào trong Header IP liên quan đến QoS (Quality of Service)?",
+      "options": [
+        "A. Version",
+        "B. Type of Service (ToS)",
+        "C. TTL",
+        "D. Protocol"
+      ],
+      "answer": "B. Type of Service (ToS)"
+    },
+    {
+      "question": "Khi gói tin IP quá lớn để truyền qua một mạng có băng thông hẹp, trường nào trong Header IP hỗ trợ xử lý việc này?",
+      "options": [
+        "A. Version và TTL",
+        "B. Protocol và Checksum",
+        "C. Identification, Flags và Fragment Offset",
+        "D. Source IP và Destination IP"
+      ],
+      "answer": "C. Identification, Flags và Fragment Offset"
+    },
+    {
+      "question": "Trường Header IP nào có kích thước 4 bit và xác định phiên bản giao thức?",
+      "options": [
+        "A. Protocol",
+        "B. TTL",
+        "C. Header Length (IHL)",
+        "D. Version"
+      ],
+      "answer": "D. Version"
+    }
+  ]
+}

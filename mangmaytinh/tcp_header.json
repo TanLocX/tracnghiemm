@@ -1,0 +1,145 @@
+{
+  "section": "Cấu trúc Header TCP (Tầng Giao Vận - Lớp 4)",
+  "questions": [
+    {
+      "question": "Trường Source / Destination Port trong Header TCP có chức năng gì?",
+      "options": [
+        "A. Xác định địa chỉ IP của máy gửi và máy nhận",
+        "B. Xác định ứng dụng / dịch vụ nào đang gửi và nhận dữ liệu (Web, Email, Chat...)",
+        "C. Kiểm soát lưu lượng dữ liệu truyền",
+        "D. Xác nhận đã nhận được dữ liệu"
+      ],
+      "answer": "B. Xác định ứng dụng / dịch vụ nào đang gửi và nhận dữ liệu (Web, Email, Chat...)"
+    },
+    {
+      "question": "Trường Sequence Number trong Header TCP dùng để làm gì?",
+      "options": [
+        "A. Kiểm tra lỗi cho toàn bộ TCP segment",
+        "B. Xác định kích thước bộ nhớ đệm còn trống",
+        "C. Đánh số thứ tự các đoạn dữ liệu bị cắt nhỏ để sắp xếp và lắp ghép lại",
+        "D. Xác định cổng nguồn và cổng đích"
+      ],
+      "answer": "C. Đánh số thứ tự các đoạn dữ liệu bị cắt nhỏ để sắp xếp và lắp ghép lại"
+    },
+    {
+      "question": "Trường Acknowledgment Number (ACK) trong Header TCP có tác dụng gì?",
+      "options": [
+        "A. Điều khiển lưu lượng để tránh ngập dữ liệu",
+        "B. Xác nhận đã nhận được dữ liệu và thông báo số thứ tự byte mong đợi tiếp theo",
+        "C. Xác định số hiệu cổng ứng dụng",
+        "D. Đánh dấu dữ liệu khẩn cấp"
+      ],
+      "answer": "B. Xác nhận đã nhận được dữ liệu và thông báo số thứ tự byte mong đợi tiếp theo"
+    },
+    {
+      "question": "Trường Header Length (Data Offset) trong Header TCP cho biết điều gì?",
+      "options": [
+        "A. Độ dài toàn bộ TCP segment bao gồm dữ liệu",
+        "B. Kích thước của Header TCP (chỉ ra dữ liệu thực sự bắt đầu từ đâu)",
+        "C. Số byte dữ liệu có thể nhận thêm",
+        "D. Số thứ tự của đoạn dữ liệu"
+      ],
+      "answer": "B. Kích thước của Header TCP (chỉ ra dữ liệu thực sự bắt đầu từ đâu)"
+    },
+    {
+      "question": "Trường Flags (SYN, ACK, FIN, RST...) trong Header TCP dùng để làm gì?",
+      "options": [
+        "A. Kiểm tra lỗi cho toàn bộ segment",
+        "B. Xác định kích thước cửa sổ nhận",
+        "C. Điều khiển trạng thái kết nối: thiết lập (bắt tay 3 bước), duy trì và ngắt kết nối",
+        "D. Đánh số thứ tự dữ liệu"
+      ],
+      "answer": "C. Điều khiển trạng thái kết nối: thiết lập (bắt tay 3 bước), duy trì và ngắt kết nối"
+    },
+    {
+      "question": "Trường Window Size trong Header TCP có chức năng gì?",
+      "options": [
+        "A. Xác định phiên bản giao thức TCP",
+        "B. Báo cho bên gửi biết không gian bộ nhớ đệm còn trống để nhận dữ liệu, thực hiện Flow Control",
+        "C. Kiểm tra lỗi cho Header TCP",
+        "D. Xác nhận số thứ tự byte đã nhận đúng"
+      ],
+      "answer": "B. Báo cho bên gửi biết không gian bộ nhớ đệm còn trống để nhận dữ liệu, thực hiện Flow Control"
+    },
+    {
+      "question": "Trường Checksum trong Header TCP khác với Header Checksum trong IP như thế nào?",
+      "options": [
+        "A. TCP Checksum chỉ kiểm tra lỗi phần Header, IP Checksum kiểm tra toàn bộ",
+        "B. TCP Checksum kiểm tra lỗi cho toàn bộ TCP segment (cả Header lẫn phần dữ liệu)",
+        "C. Cả hai đều kiểm tra lỗi chỉ phần Header",
+        "D. TCP Checksum không bắt buộc, IP Checksum bắt buộc"
+      ],
+      "answer": "B. TCP Checksum kiểm tra lỗi cho toàn bộ TCP segment (cả Header lẫn phần dữ liệu)"
+    },
+    {
+      "question": "Trường Urgent Pointer trong Header TCP được dùng khi nào?",
+      "options": [
+        "A. Khi cần điều khiển lưu lượng",
+        "B. Khi cần đánh số thứ tự dữ liệu",
+        "C. Khi cần đánh dấu và ưu tiên xử lý dữ liệu khẩn cấp ngay lập tức",
+        "D. Khi cần thiết lập kết nối"
+      ],
+      "answer": "C. Khi cần đánh dấu và ưu tiên xử lý dữ liệu khẩn cấp ngay lập tức"
+    },
+    {
+      "question": "Trong quá trình bắt tay 3 bước (3-way handshake) của TCP, cờ nào được sử dụng?",
+      "options": [
+        "A. FIN và RST",
+        "B. SYN và ACK",
+        "C. URG và PSH",
+        "D. Checksum và Window Size"
+      ],
+      "answer": "B. SYN và ACK"
+    },
+    {
+      "question": "Trường nào trong Header TCP đảm bảo dữ liệu được lắp ghép đúng thứ tự khi đến đích?",
+      "options": [
+        "A. Window Size",
+        "B. Checksum",
+        "C. Sequence Number",
+        "D. Urgent Pointer"
+      ],
+      "answer": "C. Sequence Number"
+    },
+    {
+      "question": "Cơ chế Flow Control (điều khiển lưu lượng) trong TCP được thực hiện thông qua trường nào?",
+      "options": [
+        "A. Sequence Number",
+        "B. Flags",
+        "C. Checksum",
+        "D. Window Size"
+      ],
+      "answer": "D. Window Size"
+    },
+    {
+      "question": "Trường nào trong Header TCP giúp nhận biết gói tin thuộc ứng dụng nào (HTTP, FTP, DNS...)?",
+      "options": [
+        "A. Sequence Number",
+        "B. Source / Destination Port",
+        "C. Window Size",
+        "D. Flags"
+      ],
+      "answer": "B. Source / Destination Port"
+    },
+    {
+      "question": "Khi bên nhận muốn xác nhận (báo nhận) đã nhận đúng dữ liệu, trường nào trong Header TCP được sử dụng?",
+      "options": [
+        "A. Urgent Pointer",
+        "B. Window Size",
+        "C. Acknowledgment Number (ACK)",
+        "D. Header Length"
+      ],
+      "answer": "C. Acknowledgment Number (ACK)"
+    },
+    {
+      "question": "Điểm khác biệt chính giữa Header IP và Header TCP là gì?",
+      "options": [
+        "A. Header IP có trường Checksum còn TCP thì không",
+        "B. Header IP xử lý định tuyến và địa chỉ, Header TCP xử lý kết nối tin cậy và điều khiển truyền dữ liệu",
+        "C. Header TCP có trường TTL còn IP thì không",
+        "D. Cả hai Header có cấu trúc giống nhau hoàn toàn"
+      ],
+      "answer": "B. Header IP xử lý định tuyến và địa chỉ, Header TCP xử lý kết nối tin cậy và điều khiển truyền dữ liệu"
+    }
+  ]
+}

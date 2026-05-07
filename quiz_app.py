@@ -380,22 +380,89 @@ def main(page: ft.Page):
 
         # Xây danh sách radio động từ SECTIONS
         badge_colors = [LABEL_A, LABEL_B, LABEL_C, "#CE93D8", "#80DEEA", "#FFCC80"]
-        radio_controls = [
+        BATCH_SEC = 50
+
+        # sec_range_rows: key → {"container": ft.Container, "state": {"value": "all"}}
+        sec_range_rows = {}
+
+        radio_col_controls = [
             ft.Radio(
                 value="all",
                 label=f"Tất cả ({len(questions_db)} câu)",
                 label_style=ft.TextStyle(color=WHITE),
             )
         ]
+
         for i, sec in enumerate(sections_db):
             color = badge_colors[i % len(badge_colors)]
-            radio_controls.append(
+            radio_col_controls.append(
                 ft.Radio(
                     value=sec["key"],
                     label=sec["label"],
                     label_style=ft.TextStyle(color=color),
                 )
             )
+            count = sec["count"]
+            if count > BATCH_SEC:
+                batch_state = {"value": "all"}
+                chip_refs = {}
+
+                range_opts = [("all", f"Tất cả ({count} câu)")]
+                for s in range(0, count, BATCH_SEC):
+                    e_idx = min(s + BATCH_SEC, count)
+                    range_opts.append((str(s), f"Câu {s+1}–{e_idx}"))
+
+                def _make_chip(rk, rl, bs=batch_state, cr=chip_refs, col=color):
+                    def _on_click(e, k=rk):
+                        bs["value"] = k
+                        for ck, chip in cr.items():
+                            chip.style = ft.ButtonStyle(
+                                bgcolor=col if ck == k else BG_CARD2,
+                                color=WHITE if ck == k else GREY_L,
+                                padding=ft.padding.symmetric(horizontal=10, vertical=4),
+                                text_style=ft.TextStyle(size=13),
+                                shape=ft.RoundedRectangleBorder(radius=16),
+                            )
+                            chip.update()
+                    chip = ft.ElevatedButton(
+                        rl,
+                        style=ft.ButtonStyle(
+                            bgcolor=col if rk == "all" else BG_CARD2,
+                            color=WHITE if rk == "all" else GREY_L,
+                            padding=ft.padding.symmetric(horizontal=10, vertical=4),
+                            text_style=ft.TextStyle(size=13),
+                            shape=ft.RoundedRectangleBorder(radius=16),
+                        ),
+                        on_click=_on_click,
+                    )
+                    cr[rk] = chip
+                    return chip
+
+                chips = [_make_chip(rk, rl) for rk, rl in range_opts]
+                range_container = ft.Container(
+                    visible=False,
+                    padding=ft.padding.only(left=32, top=2, bottom=8),
+                    content=ft.Column(spacing=4, controls=[
+                        ft.Text("Phạm vi câu hỏi:", size=13, color=GREY_L),
+                        ft.Row(spacing=6, controls=chips, wrap=True),
+                    ]),
+                )
+                sec_range_rows[sec["key"]] = {"container": range_container, "state": batch_state, "chips": chip_refs}
+                radio_col_controls.append(range_container)
+
+        # Thêm một radio rỗng ở cuối danh sách
+        radio_col_controls.append(
+            ft.Radio(
+                value="__empty__",
+                label="",
+            )
+        )
+
+        def _on_radio_change(e):
+            new_val = e.control.value
+            for sk, data in sec_range_rows.items():
+                data["container"].visible = (sk == new_val)
+                data["container"].update()
 
         clo_data = state["clo_data"]
         BATCH = 50
@@ -424,8 +491,9 @@ def main(page: ft.Page):
                     width=200,
                     text_size=15,
                     content_padding=ft.padding.symmetric(horizontal=10, vertical=6),
+                    disabled=True,
                 )
-                selected_ref = {"value": True}
+                selected_ref = {"value": False}
                 card_ref = ft.Ref[ft.Container]()
 
                 def make_toggle(ch=ch_num, sr=selected_ref, cr=card_ref, col=color, d=dd):
@@ -440,9 +508,9 @@ def main(page: ft.Page):
 
                 card = ft.Container(
                     ref=card_ref,
-                    bgcolor=BG_CARD,
+                    bgcolor=BG_DARK,
                     border_radius=14,
-                    border=ft.border.all(2, color),
+                    border=ft.border.all(2, GREY),
                     padding=ft.padding.symmetric(horizontal=16, vertical=12),
                     on_click=make_toggle(),
                     ink=True,
@@ -482,18 +550,11 @@ def main(page: ft.Page):
             subj_options.append(ft.dropdown.Option(key, val["label"]))
 
         def handle_start():
+            selections = []
             if clo_data:
                 selections = [(r["ch"], r["dd"].value) for r in clo_rows if r["selected_ref"]["value"]]
-                if not selections:
-                    dlg = ft.AlertDialog(
-                        title=ft.Text("Chưa chọn chương"),
-                        content=ft.Text("Vui lòng tick ít nhất một chương để bắt đầu ôn tập."),
-                        actions=[ft.TextButton("OK", on_click=lambda e: (setattr(dlg, "open", False), page.update()))],
-                    )
-                    page.overlay.append(dlg)
-                    dlg.open = True
-                    page.update()
-                    return
+
+            if selections:
                 start_quiz_clo(selections)
             else:
                 if not questions_db:
@@ -506,7 +567,11 @@ def main(page: ft.Page):
                     dlg.open = True
                     page.update()
                     return
-                start_quiz(mode_ref.current.value, 99999)
+                radio_val = mode_ref.current.value
+                batch_val = "all"
+                if radio_val in sec_range_rows:
+                    batch_val = sec_range_rows[radio_val]["state"]["value"]
+                start_quiz(radio_val, 99999, batch_val)
 
         page.add(
             ft.Container(
@@ -563,21 +628,41 @@ def main(page: ft.Page):
                                     *(
                                         [
                                             ft.Text("Chọn chương & phạm vi câu hỏi:", size=14, color=GREY_L),
+                                            ft.Text("Ôn theo chương:", size=14, color=WHITE, weight=ft.FontWeight.W_500),
                                             ft.Column(
                                                 spacing=10,
                                                 controls=[r["card"] for r in clo_rows],
                                             ),
-                                        ]
-                                        if clo_data else
-                                        [
+                                            ft.Container(height=4),
+                                            ft.Divider(color=GREY, height=1),
+                                            ft.Container(height=2),
+                                            ft.Text("Hoặc ôn theo bộ đề (nếu không chọn chương nào):", size=14, color=WHITE, weight=ft.FontWeight.W_500),
                                             ft.Container(
                                                 height=220,
                                                 content=ft.RadioGroup(
                                                     ref=mode_ref,
                                                     value="all",
+                                                    on_change=_on_radio_change,
                                                     content=ft.Column(
                                                         spacing=4,
-                                                        controls=radio_controls,
+                                                        controls=radio_col_controls,
+                                                        scroll=ft.ScrollMode.AUTO,
+                                                    ),
+                                                ),
+                                            ),
+                                        ]
+                                        if clo_data else
+                                        [
+                                            ft.Text("Chọn bộ đề:", size=14, color=GREY_L),
+                                            ft.Container(
+                                                height=300,
+                                                content=ft.RadioGroup(
+                                                    ref=mode_ref,
+                                                    value="all",
+                                                    on_change=_on_radio_change,
+                                                    content=ft.Column(
+                                                        spacing=4,
+                                                        controls=radio_col_controls,
                                                         scroll=ft.ScrollMode.AUTO,
                                                     ),
                                                 ),
@@ -633,13 +718,16 @@ def main(page: ft.Page):
         )
         page.update()
 
-    def start_quiz(mode: str, num: int):
+    def start_quiz(mode: str, num: int, batch: str = "all"):
         if mode == "chuong":
             pool = state["questions"][:]
         elif mode == "all":
             pool = state["questions_db"][:]
         else:
             pool = [q for q in state["questions_db"] if q["section"] == mode]
+        if batch != "all":
+            start_idx = int(batch)
+            pool = pool[start_idx:start_idx + 50]
         if state["shuffle"]:
             random.shuffle(pool)
         chosen = pool[:min(num, len(pool))]
