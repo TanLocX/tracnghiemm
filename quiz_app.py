@@ -374,6 +374,28 @@ OPT_LETTERS = ["A", "B", "C", "D"]
 
 
 # ============================================================
+# HELPER CẮT PHÂN ĐOẠN (20 CÂU & 50 CÂU)
+# ============================================================
+def make_batch_options_list(count: int) -> list[tuple[str, str]]:
+    """Tạo danh sách phân đoạn hỗ trợ cả 20 câu và 50 câu."""
+    opts = [("all", f"Toàn bộ ({count} câu)")]
+    
+    # Phân đoạn 20 câu: 1-20, 21-40, 41-60, ...
+    if count > 20:
+        for s in range(0, count, 20):
+            e = min(s + 20, count)
+            opts.append((f"{s}:{e}", f"Câu {s+1}–{e} (20 câu)"))
+            
+    # Phân đoạn 50 câu: 1-50, 51-100, ... (nếu tổng câu > 50)
+    if count > 50:
+        for s in range(0, count, 50):
+            e = min(s + 50, count)
+            opts.append((f"{s}:{e}", f"Câu {s+1}–{e} (50 câu)"))
+            
+    return opts
+
+
+# ============================================================
 # MAIN APPLICATION
 # ============================================================
 def main(page: ft.Page):
@@ -438,7 +460,6 @@ def main(page: ft.Page):
         "history_saved": False,
         "mode": "all",
         "num_questions": 20,
-        "limit_choice": "all",  # "20", "40", "50", "all"
         "clo_data": initial_clo,
         "shuffle": True,
         "review_filter": "all",
@@ -532,8 +553,6 @@ def main(page: ft.Page):
         sections_db = state["sections_db"]
         clo_data = state["clo_data"]
 
-        badge_palette = [T()["accent"], T()["success_light"], T()["warning_light"], "#C084FC", "#F472B6", "#38BDF8"]
-        BATCH_SEC = 50
         sec_range_rows = {}
 
         radio_col_controls = [
@@ -562,11 +581,8 @@ def main(page: ft.Page):
             chip_refs = {}
             range_container = None
 
-            if count > BATCH_SEC:
-                range_opts = [("all", f"Toàn bộ ({count})")]
-                for s in range(0, count, BATCH_SEC):
-                    e_idx = min(s + BATCH_SEC, count)
-                    range_opts.append((str(s), f"Câu {s+1}–{e_idx}"))
+            if count > 20:
+                range_opts = make_batch_options_list(count)
 
                 def _make_chip(rk, rl, bs=batch_state, cr=chip_refs):
                     def _on_click(e, k=rk):
@@ -600,8 +616,8 @@ def main(page: ft.Page):
                 range_container = ft.Container(
                     visible=False,
                     padding=ft.padding.only(left=28, top=4, bottom=6),
-                    content=ft.Column(spacing=4, controls=[
-                        ft.Text("Chọn phạm vi làm bài:", size=fs(12), color=T()["text_muted"]),
+                    content=ft.Column(spacing=6, controls=[
+                        ft.Text("Chọn phạm vi làm bài (20 câu / 50 câu / Toàn bộ):", size=fs(12), color=T()["text_muted"]),
                         ft.Row(spacing=6, controls=chips, wrap=True),
                     ]),
                 )
@@ -645,27 +661,23 @@ def main(page: ft.Page):
         }
 
         if clo_data:
-            BATCH = 50
-            def make_batch_options(count: int):
-                opts = [ft.dropdown.Option("all", f"Tất cả ({count} câu)")]
-                for s in range(0, count, BATCH):
-                    e = min(s + BATCH, count)
-                    opts.append(ft.dropdown.Option(str(s), f"Câu {s+1}–{e}"))
-                return opts
-
             for ch_num, (tag, label, color) in CHUONG_META.items():
                 count = len(clo_data.get(ch_num, []))
                 if count == 0:
                     continue
+                
+                ch_opts_tuples = make_batch_options_list(count)
+                dd_options = [ft.dropdown.Option(k, l) for k, l in ch_opts_tuples]
+
                 dd = ft.Dropdown(
                     value="all",
-                    options=make_batch_options(count),
+                    options=dd_options,
                     bgcolor=T()["bg_card_alt"],
                     color=T()["text_main"],
                     border_color=T()["border_subtle"],
                     focused_border_color=T()["primary"],
-                    width=170,
-                    text_size=fs(13),
+                    width=210,
+                    text_size=fs(12),
                     content_padding=ft.padding.symmetric(horizontal=10, vertical=4),
                     disabled=True,
                 )
@@ -721,19 +733,8 @@ def main(page: ft.Page):
             if clo_data:
                 selections = [(r["ch"], r["dd"].value) for r in clo_rows if r["selected_ref"]["value"]]
 
-            # Limit choice
-            limit_val = state.get("limit_choice", "all")
-            if limit_val == "20":
-                limit_num = 20
-            elif limit_val == "40":
-                limit_num = 40
-            elif limit_val == "50":
-                limit_num = 50
-            else:
-                limit_num = 99999
-
             if selections:
-                start_quiz_clo(selections, limit_num)
+                start_quiz_clo(selections)
             else:
                 if not questions_db:
                     dlg = ft.AlertDialog(
@@ -749,7 +750,7 @@ def main(page: ft.Page):
                 batch_val = "all"
                 if radio_val in sec_range_rows:
                     batch_val = sec_range_rows[radio_val]["state"]["value"]
-                start_quiz(radio_val, limit_num, batch_val)
+                start_quiz(radio_val, 99999, batch_val)
 
         # ── HISTORY TAB CONTENT ──
         history_list = load_history()
@@ -891,26 +892,6 @@ def main(page: ft.Page):
         def switch_tab(tab_name):
             state["welcome_tab"] = tab_name
             show_welcome()
-
-        # Helper for Question Limit Pill Buttons
-        limit_opts = [("20", "20 câu"), ("40", "40 câu"), ("50", "50 câu"), ("all", "Toàn bộ")]
-        def make_limit_chip(lkey, llabel):
-            is_active = (state.get("limit_choice", "all") == lkey)
-            def _click_limit(e):
-                state["limit_choice"] = lkey
-                show_welcome()
-            return ft.ElevatedButton(
-                llabel,
-                style=ft.ButtonStyle(
-                    bgcolor=T()["primary"] if is_active else T()["bg_card_alt"],
-                    color=T()["text_main"] if is_active else T()["text_muted"],
-                    padding=ft.padding.symmetric(horizontal=14, vertical=6),
-                    text_style=ft.TextStyle(size=fs(12), weight=ft.FontWeight.BOLD if is_active else ft.FontWeight.W_500),
-                    shape=ft.RoundedRectangleBorder(radius=10),
-                    side=ft.BorderSide(1, T()["primary"] if is_active else T()["border_subtle"]),
-                ),
-                on_click=_click_limit,
-            )
 
         page.add(
             ft.Container(
@@ -1093,20 +1074,6 @@ def main(page: ft.Page):
                                                     ),
                                                 ]
                                             ),
-
-                                            ft.Divider(color=T()["border_subtle"], height=1),
-                                            # Number of Questions Selector (20 câu / 40 câu / 50 câu / Toàn bộ)
-                                            ft.Row(
-                                                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                                                vertical_alignment=ft.CrossAxisAlignment.CENTER,
-                                                controls=[
-                                                    ft.Row(spacing=8, controls=[
-                                                        ft.Icon(ft.Icons.TUNE_ROUNDED, color=T()["primary_light"], size=20),
-                                                        ft.Text("Số lượng câu / 1 lần làm:", size=fs(14), color=T()["text_main"], weight=ft.FontWeight.BOLD),
-                                                    ]),
-                                                    ft.Row(spacing=6, controls=[make_limit_chip(k, l) for k, l in limit_opts]),
-                                                ],
-                                            ),
                                         ],
                                     ),
                                 ),
@@ -1182,9 +1149,16 @@ def main(page: ft.Page):
             pool = state["questions_db"][:]
         else:
             pool = [q for q in state["questions_db"] if q["section"] == mode]
+
+        # Xử lý phân đoạn (hỗ trợ cả 20 câu "start:end" và 50 câu cũ)
         if batch != "all":
-            start_idx = int(batch)
-            pool = pool[start_idx:start_idx + 50]
+            if ":" in batch:
+                s_idx, e_idx = map(int, batch.split(":"))
+                pool = pool[s_idx:e_idx]
+            else:
+                s_idx = int(batch)
+                pool = pool[s_idx:s_idx + 50]
+
         if state["shuffle"]:
             random.shuffle(pool)
         chosen = pool[:min(num, len(pool))]
@@ -1218,20 +1192,23 @@ def main(page: ft.Page):
         state["num_questions"] = len(pool)
         show_quiz()
 
-    def start_quiz_clo(selections: list[tuple], num: int = 99999):
+    def start_quiz_clo(selections: list[tuple]):
         if not selections:
             selections = [(ch, "all") for ch in state["clo_data"].keys()]
         pool = []
         for ch_num, batch_val in selections:
             qs = state["clo_data"].get(ch_num, [])[:]
             if batch_val != "all":
-                start = int(batch_val)
-                qs = qs[start:start + 50]
+                if ":" in batch_val:
+                    s_idx, e_idx = map(int, batch_val.split(":"))
+                    qs = qs[s_idx:e_idx]
+                else:
+                    s_idx = int(batch_val)
+                    qs = qs[s_idx:s_idx + 50]
             pool.extend(qs)
         if state["shuffle"]:
             random.shuffle(pool)
-        chosen = pool[:min(num, len(pool))]
-        state["questions"] = chosen
+        state["questions"] = pool
         state["current"] = 0
         state["score"] = 0
         state["selected"] = None
@@ -1240,7 +1217,7 @@ def main(page: ft.Page):
         state["user_answers"] = {}
         state["history_saved"] = False
         state["mode"] = "chuong"
-        state["num_questions"] = len(chosen)
+        state["num_questions"] = len(pool)
         show_quiz()
 
     # ── QUIZ SCREEN ─────────────────────────────────────────
@@ -1698,7 +1675,6 @@ def main(page: ft.Page):
                                 expand=True,
                                 spacing=16,
                                 controls=[
-                                    # Main Quiz Arena (Left Column)
                                     ft.Container(
                                         expand=True,
                                         bgcolor=T()["bg_card"],
@@ -1728,7 +1704,6 @@ def main(page: ft.Page):
                                             ],
                                         ),
                                     ),
-                                    # Question Map Sidebar (Right Column)
                                     sidebar_map,
                                 ],
                             ),
