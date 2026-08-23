@@ -435,8 +435,10 @@ def main(page: ft.Page):
         "answered": False,
         "results": [],
         "user_answers": {},
+        "history_saved": False,
         "mode": "all",
         "num_questions": 20,
+        "limit_choice": "all",  # "20", "40", "50", "all"
         "clo_data": initial_clo,
         "shuffle": True,
         "review_filter": "all",
@@ -719,8 +721,19 @@ def main(page: ft.Page):
             if clo_data:
                 selections = [(r["ch"], r["dd"].value) for r in clo_rows if r["selected_ref"]["value"]]
 
+            # Limit choice
+            limit_val = state.get("limit_choice", "all")
+            if limit_val == "20":
+                limit_num = 20
+            elif limit_val == "40":
+                limit_num = 40
+            elif limit_val == "50":
+                limit_num = 50
+            else:
+                limit_num = 99999
+
             if selections:
-                start_quiz_clo(selections)
+                start_quiz_clo(selections, limit_num)
             else:
                 if not questions_db:
                     dlg = ft.AlertDialog(
@@ -736,7 +749,7 @@ def main(page: ft.Page):
                 batch_val = "all"
                 if radio_val in sec_range_rows:
                     batch_val = sec_range_rows[radio_val]["state"]["value"]
-                start_quiz(radio_val, 99999, batch_val)
+                start_quiz(radio_val, limit_num, batch_val)
 
         # ── HISTORY TAB CONTENT ──
         history_list = load_history()
@@ -878,6 +891,26 @@ def main(page: ft.Page):
         def switch_tab(tab_name):
             state["welcome_tab"] = tab_name
             show_welcome()
+
+        # Helper for Question Limit Pill Buttons
+        limit_opts = [("20", "20 câu"), ("40", "40 câu"), ("50", "50 câu"), ("all", "Toàn bộ")]
+        def make_limit_chip(lkey, llabel):
+            is_active = (state.get("limit_choice", "all") == lkey)
+            def _click_limit(e):
+                state["limit_choice"] = lkey
+                show_welcome()
+            return ft.ElevatedButton(
+                llabel,
+                style=ft.ButtonStyle(
+                    bgcolor=T()["primary"] if is_active else T()["bg_card_alt"],
+                    color=T()["text_main"] if is_active else T()["text_muted"],
+                    padding=ft.padding.symmetric(horizontal=14, vertical=6),
+                    text_style=ft.TextStyle(size=fs(12), weight=ft.FontWeight.BOLD if is_active else ft.FontWeight.W_500),
+                    shape=ft.RoundedRectangleBorder(radius=10),
+                    side=ft.BorderSide(1, T()["primary"] if is_active else T()["border_subtle"]),
+                ),
+                on_click=_click_limit,
+            )
 
         page.add(
             ft.Container(
@@ -1060,6 +1093,20 @@ def main(page: ft.Page):
                                                     ),
                                                 ]
                                             ),
+
+                                            ft.Divider(color=T()["border_subtle"], height=1),
+                                            # Number of Questions Selector (20 câu / 40 câu / 50 câu / Toàn bộ)
+                                            ft.Row(
+                                                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                                vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                                                controls=[
+                                                    ft.Row(spacing=8, controls=[
+                                                        ft.Icon(ft.Icons.TUNE_ROUNDED, color=T()["primary_light"], size=20),
+                                                        ft.Text("Số lượng câu / 1 lần làm:", size=fs(14), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                    ]),
+                                                    ft.Row(spacing=6, controls=[make_limit_chip(k, l) for k, l in limit_opts]),
+                                                ],
+                                            ),
                                         ],
                                     ),
                                 ),
@@ -1171,7 +1218,7 @@ def main(page: ft.Page):
         state["num_questions"] = len(pool)
         show_quiz()
 
-    def start_quiz_clo(selections: list[tuple]):
+    def start_quiz_clo(selections: list[tuple], num: int = 99999):
         if not selections:
             selections = [(ch, "all") for ch in state["clo_data"].keys()]
         pool = []
@@ -1183,7 +1230,8 @@ def main(page: ft.Page):
             pool.extend(qs)
         if state["shuffle"]:
             random.shuffle(pool)
-        state["questions"] = pool
+        chosen = pool[:min(num, len(pool))]
+        state["questions"] = chosen
         state["current"] = 0
         state["score"] = 0
         state["selected"] = None
@@ -1192,7 +1240,7 @@ def main(page: ft.Page):
         state["user_answers"] = {}
         state["history_saved"] = False
         state["mode"] = "chuong"
-        state["num_questions"] = len(pool)
+        state["num_questions"] = len(chosen)
         show_quiz()
 
     # ── QUIZ SCREEN ─────────────────────────────────────────
@@ -1235,7 +1283,6 @@ def main(page: ft.Page):
             _badge_label = _sec_label
             _badge_color = badge_palette[_idx % len(badge_palette)]
 
-        # Top Bar
         top_bar = ft.Container(
             padding=ft.padding.symmetric(horizontal=20, vertical=12),
             bgcolor=T()["bg_surface"],
@@ -1527,7 +1574,7 @@ def main(page: ft.Page):
                 state["current"] -= 1
                 show_quiz()
 
-        # ── SIDEBAR QUESTION MAP GRID (Hiển thị trực tiếp bên phải) ──
+        # ── SIDEBAR QUESTION MAP GRID ──
         grid_buttons = []
         for i in range(total):
             ans_info = state["user_answers"].get(i)
@@ -1602,7 +1649,6 @@ def main(page: ft.Page):
                         ],
                     ),
                     ft.Divider(color=T()["border_subtle"], height=1),
-                    # Scrollable questions grid
                     ft.Container(
                         expand=True,
                         content=ft.Column(
@@ -1619,7 +1665,6 @@ def main(page: ft.Page):
                         ),
                     ),
                     ft.Divider(color=T()["border_subtle"], height=1),
-                    # Bottom summary
                     ft.Row(
                         alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                         controls=[
