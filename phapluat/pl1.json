@@ -1,0 +1,549 @@
+[
+  {
+    "question": "Câu 1: Phương pháp điều chỉnh của ngành luật lao động là:",
+    "options": [
+      "Quyền uy, mệnh lệnh",
+      "Quyền uy, thỏa thuận",
+      "Thỏa thuận, mệnh lệnh",
+      "Tất cả đều sai"
+    ],
+    "answer": "Thỏa thuận, mệnh lệnh",
+    "explanation": "Phương pháp điều chỉnh của Luật Lao động kết hợp giữa thỏa thuận (xác lập quan hệ) và mệnh lệnh (kỷ luật, điều hành)."
+  },
+  {
+    "question": "Câu 2: Cố ý phạm tội là phạm tội trong những trường hợp sau đây?",
+    "options": [
+      "Người phạm tội tuy thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội nhưng cho rằng hậu quả đó sẽ không xảy ra hoặc có thể ngăn ngừa được",
+      "Người phạm tội không thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội, mặc dù phải thấy trước và có thể thấy trước hậu quả đó",
+      "Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, không thấy trước hậu quả của hành vi đó có thể xảy ra, tuy không mong muốn nhưng vẫn có ý thức để mặc cho hậu quả xảy ra",
+      "Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó và mong muốn hậu quả xảy ra"
+    ],
+    "answer": "Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó và mong muốn hậu quả xảy ra",
+    "explanation": "Căn cứ Khoản 1 Điều 10 BLHS 2015, đây là lỗi cố ý trực tiếp."
+  },
+  {
+    "question": "Câu 3: Hợp đồng lao động bằng lời nói áp dụng trong trường hợp nào?",
+    "options": [
+      "Đối với hợp đồng có thời hạn dưới 01 tháng.",
+      "Đối với hợp đồng có thời hạn dưới 03 tháng.",
+      "Đối với hợp đồng có thời hạn dưới 06 tháng."
+    ],
+    "answer": "Đối với hợp đồng có thời hạn dưới 01 tháng.",
+    "explanation": "Căn cứ Khoản 2 Điều 14 Bộ luật Lao động 2019."
+  },
+  {
+    "question": "Câu 4: Cơ quan nào là cơ quan ngang bộ của Nhà nước CHXHCN Việt Nam hiện nay:",
+    "options": [
+      "Thanh tra chính phủ",
+      "Bảo hiểm xã hội Việt Nam",
+      "Viện kiểm sát nhân dân tối cao",
+      "Tòa án nhân dân tối cao"
+    ],
+    "answer": "Thanh tra chính phủ",
+    "explanation": "Thanh tra Chính phủ là 1 trong 4 cơ quan ngang bộ của Chính phủ hiện nay."
+  },
+  {
+    "question": "Câu 5: Hành vi nào sau đây không phải là hành vi tham nhũng?",
+    "options": [
+      "Tham ô tài sản.",
+      "Nhận hối lộ; đưa hối lộ, môi giới hối lộ để giải quyết công việc của cơ quan, tổ chức, đơn vị hoặc địa phương vì vụ lợi.",
+      "Lạm dụng chức vụ, quyền hạn chiếm đoạt tài sản.",
+      "Không thực hiện kịp thời trách nhiệm giải trình"
+    ],
+    "answer": "Không thực hiện kịp thời trách nhiệm giải trình",
+    "explanation": "Căn cứ Điều 2 Luật Phòng, chống tham nhũng 2018."
+  },
+  {
+    "question": "Câu 6: Hình phạt nào có thể là hình phạt chính cũng có thể là hình phạt bổ sung?",
+    "options": [
+      "Phạt tiền",
+      "Cấm cư trú",
+      "Tịch thu tài sản",
+      "Cảnh cáo"
+    ],
+    "answer": "Phạt tiền",
+    "explanation": "Căn cứ Điều 32, 35 BLHS 2015, Phạt tiền và Trục xuất có thể là hình phạt chính hoặc hình phạt bổ sung."
+  },
+  {
+    "question": "Câu 7: Bà Hạnh và ông Phúc là vợ chồng hợp pháp, có ba con chung là Vàng (19 tuổi, khỏe mạnh), Bạc (16 tuổi), Đồng (10 tuổi). Ngoài ra, ông Phúc ngoại tình và có con riêng với bà Ngân là Kim Cương (9 tuổi). Cha, mẹ ông Phúc đã chết 10 năm. Năm 2020, ông Phúc chết di chúc toàn bộ tài sản cho bà Ngân. Vậy, người thừa kế không phụ thuộc nội dung di chúc là:",
+    "options": [
+      "Bà Hạnh, Vàng, Bạc, Đồng.",
+      "Bà Hạnh, Bạc, Đồng, Kim Cương.",
+      "Bà Hạnh, Vàng, Bạc, Đồng, Kim Cương.",
+      "Bà Ngân, Vàng, Bạc, Đồng, Kim Cương"
+    ],
+    "answer": "Bà Hạnh, Bạc, Đồng, Kim Cương.",
+    "explanation": "Căn cứ Điều 644 BLDS 2015: Vợ hợp pháp và các con chưa đủ 18 tuổi được hưởng thừa kế bắt buộc."
+  },
+  {
+    "question": "Câu 8: Quốc hội nước CHXHCN Việt Nam có nhiệm kỳ mấy năm trừ những trường hợp đặc biệt?",
+    "options": [
+      "4 năm",
+      "5 năm",
+      "6 năm",
+      "Tất cả đều sai."
+    ],
+    "answer": "5 năm",
+    "explanation": "Căn cứ Khoản 1 Điều 71 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 9: Theo quy định của Hiến pháp 2013, người có quyền công bố Hiến pháp và luật là:",
+    "options": [
+      "Chủ tịch Quốc hội",
+      "Chủ tịch nước",
+      "Tổng bí thư",
+      "Thủ tướng chính phủ"
+    ],
+    "answer": "Chủ tịch nước",
+    "explanation": "Căn cứ Khoản 1 Điều 88 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 10: Theo BLHS 2015 thì những trường hợp nào sau đây sẽ loại trừ trách nhiệm hình sự?",
+    "options": [
+      "Phòng vệ chính đáng",
+      "Sự kiện bất ngờ",
+      "Tình thế cấp thiết",
+      "Cả a, b, c đúng"
+    ],
+    "answer": "Cả a, b, c đúng",
+    "explanation": "Căn cứ Chương IV BLHS 2015."
+  },
+  {
+    "question": "Câu 11: Hình phạt nào sau đây chỉ được áp dụng đối với người phạm tội là người nước ngoài:",
+    "options": [
+      "Phạt tiền",
+      "Cảnh cáo",
+      "Trục xuất",
+      "Cấm cư trú"
+    ],
+    "answer": "Trục xuất",
+    "explanation": "Căn cứ Điều 37 BLHS 2015."
+  },
+  {
+    "question": "Câu 12: Hình thức cấu trúc của Nhà nước Việt nam là:",
+    "options": [
+      "Nhà nước đơn nhất",
+      "Nhà nước liên bang",
+      "Nhà nước liên minh",
+      "Tất cả đều đúng"
+    ],
+    "answer": "Nhà nước đơn nhất",
+    "explanation": "Việt Nam là một quốc gia đơn nhất, có chủ quyền thống nhất toàn vẹn."
+  },
+  {
+    "question": "Câu 13: Quyền nào sau đây của Chủ tịch nước là quyền trong lĩnh vực tư pháp:",
+    "options": [
+      "Công bố Luật, Pháp lệnh.",
+      "Thực hiện các chuyến công du ngoại giao.",
+      "Tuyên bố tình trạng chiến tranh.",
+      "Quyền ân xá."
+    ],
+    "answer": "Quyền ân xá.",
+    "explanation": "Quyền đặc xá (ân xá) là quyền thuộc lĩnh vực tư pháp của Chủ tịch nước (Điều 88 Hiến pháp)."
+  },
+  {
+    "question": "Câu 14: Quan hệ về bảo hiểm xã hội là đối tượng điều chỉnh của:",
+    "options": [
+      "Ngành Luật lao động",
+      "Ngành luật hành chính",
+      "Ngành luật dân sự",
+      "Ngành luật kinh tế"
+    ],
+    "answer": "Ngành Luật lao động",
+    "explanation": "Bảo hiểm xã hội là quan hệ phát sinh gắn liền với quan hệ lao động."
+  },
+  {
+    "question": "Câu 15: Văn bản nào có hiệu lực cao nhất trong hệ thống pháp luật Việt Nam:",
+    "options": [
+      "Pháp lệnh",
+      "Luật",
+      "Hiến pháp",
+      "Nghị quyết"
+    ],
+    "answer": "Hiến pháp",
+    "explanation": "Căn cứ Điều 119 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 16: Theo Luật Lao động, tiền lương của người lao động được trả như thế nào?",
+    "options": [
+      "Do hai bên thoả thuận trong hợp đồng, mức lương không được thấp hơn mức lương tối thiểu do Nhà nước quy định.",
+      "Trả theo năng suất lao động, chất lượng, hiệu quả công việc, do hai bên thoả thuận.",
+      "Trả theo năng suất, chất lượng, hiệu quả công việc, mức lương không thể thấp hơn mức tối thiểu do Nhà nước quy định.",
+      "Theo năng suất, chất lượng, hiệu quả công việc do hai bên thoả thuận trong hợp đồng nhưng không được thấp hơn mức tối thiểu do Nhà nước quy định."
+    ],
+    "answer": "Theo năng suất, chất lượng, hiệu quả công việc do hai bên thoả thuận trong hợp đồng nhưng không được thấp hơn mức tối thiểu do Nhà nước quy định.",
+    "explanation": "Căn cứ Điều 90 Bộ luật Lao động 2019."
+  },
+  {
+    "question": "Câu 17: Cơ sở truy cứu trách nhiệm pháp lý là:",
+    "options": [
+      "Nhân chứng",
+      "Vật chứng",
+      "Vi phạm pháp luật",
+      "Lỗi"
+    ],
+    "answer": "Vi phạm pháp luật",
+    "explanation": "Hành vi vi phạm pháp luật là cơ sở thực tế duy nhất để truy cứu trách nhiệm pháp lý."
+  },
+  {
+    "question": "Câu 18: Tùy theo mức độ phạm tội, tội phạm hình sự được chia thành các loại:",
+    "options": [
+      "Tội phạm nghiêm trọng; tội phạm rất nghiêm trọng",
+      "Tội phạm ít nghiêm trọng; tội phạm nghiêm trọng; tội phạm rất nghiêm trọng",
+      "Tội phạm nghiêm trọng; tội phạm rất nghiêm trọng; tội phạm đặc biệt nghiêm trọng",
+      "Tội phạm ít nghiêm trọng; tội phạm nghiêm trọng; tội phạm rất nghiêm trọng; tội phạm đặc biệt nghiêm trọng"
+    ],
+    "answer": "Tội phạm ít nghiêm trọng; tội phạm nghiêm trọng; tội phạm rất nghiêm trọng; tội phạm đặc biệt nghiêm trọng",
+    "explanation": "Căn cứ Khoản 1 Điều 9 BLHS 2015."
+  },
+  {
+    "question": "Câu 19: Đâu là loại tội phạm nghiêm trọng?",
+    "options": [
+      "là tội phạm có tính chất và mức độ nguy hiểm cho xã hội không lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù đến 03 năm",
+      "là tội phạm có tính chất và mức độ nguy hiểm cho xã hội lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 03 năm tù đến 07 năm tù",
+      "là tội phạm có tính chất và mức độ nguy hiểm cho xã hội rất lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 07 năm tù đến 15 năm tù",
+      "là tội phạm có tính chất và mức độ nguy hiểm cho xã hội đặc biệt lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 15 năm tù đến 20 năm tù, tù chung thân hoặc tử hình"
+    ],
+    "answer": "là tội phạm có tính chất và mức độ nguy hiểm cho xã hội lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 03 năm tù đến 07 năm tù",
+    "explanation": "Căn cứ Điểm b Khoản 1 Điều 9 BLHS 2015."
+  },
+  {
+    "question": "Câu 20: Nhận định nào sao đây là đúng?",
+    "options": [
+      "Bộ luật hình sự không áp dụng đối với hành vi phạm tội hoặc hậu quả của hành vi phạm tội xảy ra trên tàu bay, tàu biển mang quốc tịch Việt Nam hoặc tại vùng đặc quyền kinh tế, thềm lục địa của Việt Nam",
+      "Bộ luật Hình sự áp dụng đối với mọi hành vi phạm tội thực hiện trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+      "Bộ luật Hình sự áp dụng đối với mọi hành vi phạm tội thực hiện trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam và ngoài lãnh thổ Việt Nam",
+      "Người nước ngoài phạm tội trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam thuộc đối tượng được hưởng quyền miễn trừ ngoại giao hoặc lãnh sự theo pháp luật Việt Nam, theo điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên hoặc theo tập quán quốc tế, thì vẫn phải chịu áp dụng theo Bộ luật hình sự Việt Nam"
+    ],
+    "answer": "Bộ luật Hình sự áp dụng đối với mọi hành vi phạm tội thực hiện trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+    "explanation": "Căn cứ Khoản 1 Điều 5 BLHS 2015."
+  },
+  {
+    "question": "Câu 21: Quyền bình đẳng, quyền tự do tín ngưỡng là:",
+    "options": [
+      "Quyền chính trị",
+      "Quyền tài sản",
+      "Quyền nhân thân",
+      "Quyền đối nhân."
+    ],
+    "answer": "Quyền nhân thân",
+    "explanation": "Quyền nhân thân là quyền phi tài sản gắn liền với mỗi cá nhân."
+  },
+  {
+    "question": "Câu 22: A ăn trộm của B con gà trị giá 50.000 đ. Vậy A phải chịu loại trách nhiệm pháp lý nào sau đây:",
+    "options": [
+      "Hành chính",
+      "Dân sự",
+      "Hình sự",
+      "Kỷ luật"
+    ],
+    "answer": "Hành chính",
+    "explanation": "Trộm cắp tài sản dưới 2 triệu đồng chưa đủ cấu thành tội phạm hình sự mà bị xử phạt hành chính."
+  },
+  {
+    "question": "Câu 23: Trường hợp nào sau đây không nằm trong các trường hợp được hưởng thừa kế không phụ thuộc nội dung di chúc?",
+    "options": [
+      "Cha mẹ đã hết tuổi lao động.",
+      "Vợ (chồng) đã hết tuổi lao động.",
+      "Con đã thành niên.",
+      "Con chưa thành niên nhưng có khả năng tự kiếm sống."
+    ],
+    "answer": "Con đã thành niên.",
+    "explanation": "Căn cứ Điều 644 BLDS 2015."
+  },
+  {
+    "question": "Câu 24: Theo Hiến pháp Việt Nam 2013, Thủ tướng Chính phủ Nước CHXHCN Việt Nam:",
+    "options": [
+      "Do nhân dân bầu",
+      "Do Quốc hội bầu theo sự giới thiệu của Chủ tịch nước",
+      "Do Chủ tịch nước giới thiệu",
+      "Do Chính phủ bầu"
+    ],
+    "answer": "Do Quốc hội bầu theo sự giới thiệu của Chủ tịch nước",
+    "explanation": "Căn cứ Khoản 7 Điều 70 và Khoản 2 Điều 88 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 25: Nhà nước nào cũng có chức năng:",
+    "options": [
+      "Bảo đảm trật tự an toàn xã hội",
+      "Tổ chức và quản lý nền kinh tế",
+      "Đối nội và đối ngoại",
+      "Thiết lập mối quan hệ ngoại giao"
+    ],
+    "answer": "Đối nội và đối ngoại",
+    "explanation": "Mọi nhà nước đều thực hiện hai chức năng cơ bản là đối nội và đối ngoại."
+  },
+  {
+    "question": "Câu 26: Năng lực của chủ thể bao gồm:",
+    "options": [
+      "Năng lực pháp luật và năng lực hành vi.",
+      "Năng lực pháp luật và năng lực công dân",
+      "Năng lực hành vi và năng lực nhận thức",
+      "Năng lực pháp luật và năng lực nhận thức."
+    ],
+    "answer": "Năng lực pháp luật và năng lực hành vi.",
+    "explanation": "Năng lực chủ thể gồm Năng lực pháp luật và Năng lực hành vi."
+  },
+  {
+    "question": "Câu 27: Chọn phương án đúng nhất điền vào chỗ trống: …...… là tổng thể các quy phạm pháp luật có mối liên hệ nội tại thống nhất với nhau, được phân thành các chế định pháp luật, các ngành luật và được thể hiện trong các văn bản quy phạm pháp luật do Nhà nước ban hành?",
+    "options": [
+      "Quan hệ pháp luật",
+      "Hệ thống pháp luật",
+      "Quy phạm pháp luật",
+      "Ngành luật"
+    ],
+    "answer": "Hệ thống pháp luật",
+    "explanation": "Định nghĩa chuẩn của Hệ thống pháp luật."
+  },
+  {
+    "question": "Câu 28: Một trong những hậu quả pháp lý của giao dịch dân sự vô hiệu là",
+    "options": [
+      "Bên nào có lỗi thì phải xin lỗi, bồi thường và chịu phạt vi phạm.",
+      "Các bên bằng mọi giá phải khôi phục lại tình trạng ban đầu.",
+      "Bên ngay tình trong việc thu hoa lợi, lợi tức không phải hoàn trả lại hoa lợi, lợi tức đó."
+    ],
+    "answer": "Bên ngay tình trong việc thu hoa lợi, lợi tức không phải hoàn trả lại hoa lợi, lợi tức đó.",
+    "explanation": "Căn cứ Khoản 3 Điều 131 BLDS 2015."
+  },
+  {
+    "question": "Câu 29: Nhận định nào sau đây đúng khi bàn về sự ra đời của pháp luật?",
+    "options": [
+      "Pháp luật ra đời do nhu cầu khách quan của xã hội mà không cần đến vai trò của Nhà nước",
+      "Pháp luật là sản phẩm của xã hội có giai cấp và đấu tranh giai cấp",
+      "Ý chí chủ quan của Nhà nước được nâng thành pháp luật",
+      "Pháp luật là sự thỏa hiệp về ý chí của mọi người trong xã hội"
+    ],
+    "answer": "Pháp luật là sản phẩm của xã hội có giai cấp và đấu tranh giai cấp",
+    "explanation": "Quan điểm Mác - Lênin về nguồn gốc nhà nước và pháp luật."
+  },
+  {
+    "question": "Câu 30: Việc sửa đổi, bổ sung Hiến pháp phải có:",
+    "options": [
+      "Ít nhất 1/2 tổng số đại biểu tán thành",
+      "Ít nhất 2/3 tổng số đại biểu tán thành",
+      "Ít nhất 3/4 tổng số đại biểu tán thành",
+      "Tất cả đều sai."
+    ],
+    "answer": "Ít nhất 2/3 tổng số đại biểu tán thành",
+    "explanation": "Căn cứ Khoản 4 Điều 120 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 31: Cơ quan nào có thẩm quyền hạn chế năng lực hành vi của công dân:",
+    "options": [
+      "Viện kiểm sát nhân dân",
+      "Tòa án nhân dân",
+      "Hội đồng nhân dân; UBND",
+      "Quốc hội"
+    ],
+    "answer": "Tòa án nhân dân",
+    "explanation": "Căn cứ Điều 24 BLDS 2015."
+  },
+  {
+    "question": "Câu 32: Đâu là dấu hiệu của tội phạm?",
+    "options": [
+      "Hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự",
+      "Hành vi tuy có dấu hiệu của tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể",
+      "Hành vi nguy hiểm do người có năng lực hành vi dân sự thực hiện",
+      "Có hành vi nguy hiểm"
+    ],
+    "answer": "Hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự",
+    "explanation": "Căn cứ Khoản 1 Điều 8 BLHS 2015."
+  },
+  {
+    "question": "Câu 33: Tập quán pháp là:",
+    "options": [
+      "Biến đổi những tục lệ, tập quán có sẵn thành pháp luật.",
+      "Biến đổi những thói quen hành xử của con người trong lịch sử thành pháp luật.",
+      "Biến đổi những quy phạm tôn giáo thành quy phạm pháp luật.",
+      "Cả a,b,c."
+    ],
+    "answer": "Biến đổi những tục lệ, tập quán có sẵn thành pháp luật.",
+    "explanation": "Khái niệm tập quán pháp."
+  },
+  {
+    "question": "Câu 34: Theo pháp luật lao động Việt Nam, quy định chung về độ tuổi lao động là:",
+    "options": [
+      "Từ đủ 9 tuổi",
+      "Từ đủ 15 tuổi",
+      "Từ đủ 18 tuổi",
+      "Từ đủ 21 tuổi"
+    ],
+    "answer": "Từ đủ 15 tuổi",
+    "explanation": "Căn cứ Khoản 1 Điều 3 và Điều 143 BLLĐ 2019."
+  },
+  {
+    "question": "Câu 35: Luật hình sự là gì?",
+    "options": [
+      "Là một ngành luật trong hệ thống pháp luật của nước Cộng hoà xã hội chủ nghĩa Việt Nam",
+      "Bao gồm hệ thống những quy phạm pháp luật do Nhà nước ban hành",
+      "Xác định những hành vi nguy hiểm nào cho xã hội là tội phạm, đồng thời quy định hình phạt đối với những tội phạm ấy",
+      "Cả a, b, c đúng"
+    ],
+    "answer": "Cả a, b, c đúng",
+    "explanation": "Định nghĩa đầy đủ về ngành Luật Hình sự."
+  },
+  {
+    "question": "Câu 36: Thế nào là tham nhũng?",
+    "options": [
+      "Tham nhũng là hành vi của cán bộ, công chức nhà nước đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+      "Tham nhũng là hành vi lợi dụng chức vụ, quyền hạn để vụ lợi.",
+      "Tham nhũng là hành vi của người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+      "Tham nhũng là hành vi cửa quyền, hách dịch, đòi hỏi, gây khó khăn, phiền hà của người có chức vụ, quyền hạn trong khi thực hiện nhiệm vụ, công vụ"
+    ],
+    "answer": "Tham nhũng là hành vi của người có chức vụ, quyền hạn đã lợi dụng chức vụ, quyền hạn đó vì vụ lợi.",
+    "explanation": "Căn cứ Khoản 1 Điều 3 Luật Phòng, chống tham nhũng 2018."
+  },
+  {
+    "question": "Câu 37: Hình thức của hợp đồng lao động gồm?",
+    "options": [
+      "Bằng văn bản",
+      "Bằng lời nói",
+      "Cả 2 đáp án trên"
+    ],
+    "answer": "Cả 2 đáp án trên",
+    "explanation": "Căn cứ Điều 14 Bộ luật Lao động 2019."
+  },
+  {
+    "question": "Câu 38: Một thực khách đến quán ăn dùng bữa đã dựng xe trước cửa quán ăn. Vị khách này đã chủ quan không lấy thẻ giữ xe cũng như chất vấn chủ quán về trách nhiệm trông coi xe. Xe bị kẽ trộm lấy mất và người chủ quán thoái thác trách nhiệm. Trong trường hợp này người chủ quán:",
+    "options": [
+      "Có lỗi cố ý trực tiếp.",
+      "Có lỗi cố ý gián tiếp.",
+      "Vô ý vì quá tự tin.",
+      "Không có lỗi."
+    ],
+    "answer": "Không có lỗi.",
+    "explanation": "Chưa hình thành hợp đồng gửi giữ tài sản nên chủ quán không có lỗi theo Điều 554 BLDS."
+  },
+  {
+    "question": "Câu 39: Nhà nước là:",
+    "options": [
+      "Một tổ chức xã hội có giai cấp.",
+      "Một tổ chức xã hội có chủ quyền quốc gia.",
+      "Một tổ chức xã hội có luật lệ",
+      "Cả a,b,c."
+    ],
+    "answer": "Cả a,b,c.",
+    "explanation": "Nhà nước là tổ chức quyền lực đặc biệt mang bản chất giai cấp, chủ quyền và quản lý bằng pháp luật."
+  },
+  {
+    "question": "Câu 40: Cơ quan quyền lực Nhà nước cao nhất là:",
+    "options": [
+      "Quốc hội",
+      "Hội đồng nhân dân",
+      "Chính phủ",
+      "Câu a và b đúng"
+    ],
+    "answer": "Quốc hội",
+    "explanation": "Căn cứ Điều 69 Hiến pháp 2013."
+  },
+  {
+    "question": "Câu 41: Công dân có quyền gì trong công tác phòng, chống tham nhũng?",
+    "options": [
+      "Công dân chỉ có quyền phát hiện nhà báo tin về hành vi tham nhũng.",
+      "Công dân chỉ có quyền giám sát việc thực hiện pháp luật về phòng, chống tham nhũng.",
+      "Công dân chỉ có quyền phát hiện, kiến nghị với cơ quan nhà nước hoàn thiện pháp luật về phòng, chống tham nhũng và giám sát việc thực hiện pháp luật về phòng, chống tham nhũng.",
+      "Công dân có quyền phát hiện, phản ánh, tố cáo, tố giác, báo tin về hành vi tham nhũng và được bảo vệ, khen thưởng theo quy định của pháp luật; có quyền kiến nghị với cơ quan nhà nước hoàn thiện pháp luật về phòng, chống tham nhũng và giám sát việc thực hiện pháp luật về phòng, chống tham nhũng"
+    ],
+    "answer": "Công dân có quyền phát hiện, phản ánh, tố cáo, tố giác, báo tin về hành vi tham nhũng và được bảo vệ, khen thưởng theo quy định của pháp luật; có quyền kiến nghị với cơ quan nhà nước hoàn thiện pháp luật về phòng, chống tham nhũng và giám sát việc thực hiện pháp luật về phòng, chống tham nhũng",
+    "explanation": "Căn cứ Điều 5 Luật Phòng, chống tham nhũng 2018."
+  },
+  {
+    "question": "Câu 42: Trường hợp nào sau đây là hành vi vi phạm pháp luật",
+    "options": [
+      "Một người tâm thần thực hiện hành vi giết người.",
+      "Một người 14 tuổi gây thương tích cho người khác",
+      "Một người thuê mướn trẻ êm dưới 15 tuổi làm việc.",
+      "Cả a,b,c."
+    ],
+    "answer": "Một người thuê mướn trẻ êm dưới 15 tuổi làm việc.",
+    "explanation": "Người sử dụng lao động có đủ năng lực trách nhiệm pháp lý thực hiện hành vi vi phạm luật lao động."
+  },
+  {
+    "question": "Câu 43: Bộ máy quản lý hành chính của Nhà nước CHXHCN Việt Nam hiện nay có bao nhiêu bộ:",
+    "options": [
+      "15 Bộ",
+      "16 Bộ",
+      "14 Bộ",
+      "18 Bộ"
+    ],
+    "answer": "14 Bộ",
+    "explanation": "Theo tài liệu học tập của môn: 14 Bộ."
+  },
+  {
+    "question": "Câu 44: Không áp dụng hình phạt tử hình đối với đối tượng nào sau đây?",
+    "options": [
+      "Người dưới 18 tuổi",
+      "Phụ nữ có thai",
+      "Phụ nữ đang nuôi con dưới 36 tháng tuổi",
+      "Tất cả phương án trên đều đúng"
+    ],
+    "answer": "Tất cả phương án trên đều đúng",
+    "explanation": "Căn cứ Khoản 2 Điều 40 BLHS 2015."
+  },
+  {
+    "question": "Câu 45: Năng lực lập di chúc là:",
+    "options": [
+      "Minh mẫn, sáng suốt vào thời điểm lập di chúc.",
+      "Có tài sản riêng hợp  pháp.",
+      "18 tuổi trở lên.",
+      "Cả a,b,c."
+    ],
+    "answer": "Minh mẫn, sáng suốt vào thời điểm lập di chúc.",
+    "explanation": "Căn cứ Điểm a Khoản 1 Điều 630 BLDS 2015."
+  },
+  {
+    "question": "Câu 46: Hành vi của người vì bảo vệ quyền hoặc lợi ích chính đáng của mình, của người khác hoặc lợi ích của Nhà nước, của cơ quan, tổ chức mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm các lợi ích nói trên là?",
+    "options": [
+      "Thi hành mệnh lệnh của người chỉ huy hoặc của cấp trên",
+      "Rủi ro trong nghiên cứu, thử nghiệm, áp dụng tiến bộ khoa học, kỹ thuật và công nghệ",
+      "Tình thế cấp thiết",
+      "Phòng vệ chính đáng"
+    ],
+    "answer": "Phòng vệ chính đáng",
+    "explanation": "Căn cứ Khoản 1 Điều 22 BLHS 2015."
+  },
+  {
+    "question": "Câu 47: Kiểu Nhà nước đầu tiên trong lịch sử là?",
+    "options": [
+      "Nhà nước cộng sản nguyên thủy",
+      "Nhà nước chủ nô",
+      "Nhà nước phong kiến",
+      "Nhà nước Tư sản"
+    ],
+    "answer": "Nhà nước chủ nô",
+    "explanation": "Nhà nước chủ nô là kiểu nhà nước đầu tiên trong lịch sử loài người."
+  },
+  {
+    "question": "Câu 48: Những người nào sau đây không phải là người thừa kế không phụ thuộc vào nội dung của di chúc?",
+    "options": [
+      "Con chưa thành niên của người lập di chúc",
+      "Con thành niên của người lập di chúc",
+      "Cha, mẹ của người lập di chúc",
+      "Vợ, chồng của người lập di"
+    ],
+    "answer": "Con thành niên của người lập di chúc",
+    "explanation": "Căn cứ Điều 644 BLDS 2015."
+  },
+  {
+    "question": "Câu 49: Cấu thành của quy phạm pháp luật bao gồm:",
+    "options": [
+      "Giả định, quy định, chế tài.",
+      "Chủ thể, khách thể.",
+      "Mặt chủ quan, mặt khách quan.",
+      "b và c."
+    ],
+    "answer": "Giả định, quy định, chế tài.",
+    "explanation": "Cấu trúc quy phạm pháp luật gồm Giả định, Quy định, Chế tài."
+  },
+  {
+    "question": "Câu 50: Cơ quan thường trực của Quốc hội là:",
+    "options": [
+      "Hội đồng dân tộc",
+      "Ủy ban Quốc hội",
+      "Ủy ban thường vụ Quốc hội",
+      "Cả a, b, c đều đúng"
+    ],
+    "answer": "Ủy ban thường vụ Quốc hội",
+    "explanation": "Căn cứ Điều 73 Hiến pháp 2013."
+  }
+]
