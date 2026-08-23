@@ -333,7 +333,14 @@ def main(page: ft.Page):
         if os.path.isdir(dp) and d not in ignore_dirs and not d.startswith("."):
             valid_files = [f for f in os.listdir(dp) if f.endswith(('.json', '.txt', '.pdf')) and not f.upper().startswith("HUONG_DAN")]
             if valid_files:
-                label = "Mạng Máy Tính" if d == "mangmaytinh" else d.capitalize()
+                if d == "mangmaytinh":
+                    label = "Mạng Máy Tính"
+                elif d == "phapluat":
+                    label = "Pháp Luật Đại Cương"
+                elif d == "lichsudang":
+                    label = "Lịch Sử Đảng"
+                else:
+                    label = d.capitalize()
                 subject_dirs[d] = {"path": dp, "label": label}
             
     if not subject_dirs:
