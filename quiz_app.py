@@ -966,7 +966,6 @@ def main(page: ft.Page):
                 size=18,
                 color=TEXT_MAIN,
                 weight=ft.FontWeight.W_500,
-                line_height=1.4,
             )
         )
 
@@ -1112,7 +1111,7 @@ def main(page: ft.Page):
                                     ft.Icon(ft.Icons.LIGHTBULB_ROUNDED, color=WARNING_LIGHT, size=16),
                                     ft.Text("Giải thích chi tiết:", size=13, color=WARNING_LIGHT, weight=ft.FontWeight.BOLD),
                                 ]),
-                                ft.Text(explanation_text, size=13, color=TEXT_MUTED, line_height=1.35),
+                                ft.Text(explanation_text, size=13, color=TEXT_MUTED),
                             ],
                         ),
                     )
@@ -1158,7 +1157,7 @@ def main(page: ft.Page):
                     vertical_alignment=ft.CrossAxisAlignment.CENTER,
                     controls=[
                         badge_circle,
-                        ft.Text(opt, size=15, color=TEXT_MAIN, expand=True, line_height=1.35),
+                        ft.Text(opt, size=15, color=TEXT_MAIN, expand=True),
                         status_icon,
                     ],
                 ),
@@ -1325,7 +1324,6 @@ def main(page: ft.Page):
                             f"💡 {r['explanation']}",
                             size=12,
                             color=TEXT_MUTED,
-                            line_height=1.3,
                         ),
                     )
                 )
@@ -1349,7 +1347,6 @@ def main(page: ft.Page):
                                     color=TEXT_MAIN,
                                     weight=ft.FontWeight.W_500,
                                     expand=True,
-                                    line_height=1.3,
                                 ),
                             ],
                         ),
