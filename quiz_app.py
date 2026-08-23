@@ -1148,6 +1148,7 @@ def main(page: ft.Page):
         state["answered"] = False
         state["results"] = []
         state["user_answers"] = {}
+        state["history_saved"] = False
         state["mode"] = mode
         state["num_questions"] = len(chosen)
         show_quiz()
@@ -1166,6 +1167,7 @@ def main(page: ft.Page):
         state["answered"] = False
         state["results"] = []
         state["user_answers"] = {}
+        state["history_saved"] = False
         state["num_questions"] = len(pool)
         show_quiz()
 
@@ -1188,6 +1190,7 @@ def main(page: ft.Page):
         state["answered"] = False
         state["results"] = []
         state["user_answers"] = {}
+        state["history_saved"] = False
         state["mode"] = "chuong"
         state["num_questions"] = len(pool)
         show_quiz()
@@ -1702,18 +1705,20 @@ def main(page: ft.Page):
         state["score"] = score
         pct = (score / total * 100) if total > 0 else 0
 
-        now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
-        subj_lbl = subject_dirs.get(state["subject"], {}).get("label", state["subject"])
-        history_record = {
-            "subject": state["subject"],
-            "subject_label": subj_lbl,
-            "timestamp": now_str,
-            "score": score,
-            "total": total,
-            "pct": round(pct, 1),
-            "mode_label": "Theo chương" if state["mode"] == "chuong" else "Bộ đề thi",
-        }
-        save_history_record(history_record)
+        if not state.get("history_saved"):
+            now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
+            subj_lbl = subject_dirs.get(state["subject"], {}).get("label", state["subject"])
+            history_record = {
+                "subject": state["subject"],
+                "subject_label": subj_lbl,
+                "timestamp": now_str,
+                "score": score,
+                "total": total,
+                "pct": round(pct, 1),
+                "mode_label": "Theo chương" if state["mode"] == "chuong" else "Bộ đề thi",
+            }
+            save_history_record(history_record)
+            state["history_saved"] = True
 
         if pct >= 85:
             grade_color = T()["success"]
