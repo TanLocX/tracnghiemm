@@ -5,6 +5,7 @@ import os
 import re
 import sys
 import datetime
+import inspect
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -16,6 +17,18 @@ if not hasattr(ft, "colors"):
     ft.colors = ft.Colors
 if not hasattr(ft, "icons"):
     ft.icons = ft.Icons
+
+_orig_dropdown_init = ft.Dropdown.__init__
+_dd_params = set(inspect.signature(_orig_dropdown_init).parameters.keys())
+
+def _patched_dropdown_init(self, *args, **kwargs):
+    if "on_change" in kwargs and "on_change" not in _dd_params:
+        kwargs["on_select"] = kwargs.pop("on_change")
+    elif "on_select" in kwargs and "on_select" not in _dd_params:
+        kwargs["on_change"] = kwargs.pop("on_select")
+    _orig_dropdown_init(self, *args, **kwargs)
+
+ft.Dropdown.__init__ = _patched_dropdown_init
 # ─────────────────────────────────────────────────────────────
 
 # ============================================================
@@ -243,7 +256,7 @@ def load_history() -> list[dict]:
 def save_history_record(record: dict):
     history = load_history()
     history.insert(0, record)
-    history = history[:50]  # Giữ lại 50 lần gần nhất
+    history = history[:50]
     try:
         with open(HISTORY_FILE, "w", encoding="utf-8") as f:
             json.dump(history, f, ensure_ascii=False, indent=2)
@@ -421,7 +434,7 @@ def main(page: ft.Page):
         "selected": None,
         "answered": False,
         "results": [],
-        "user_answers": {},  # {q_idx: {"chosen": str, "ok": bool, "correct": str, "explanation": str}}
+        "user_answers": {},
         "mode": "all",
         "num_questions": 20,
         "clo_data": initial_clo,
@@ -429,7 +442,7 @@ def main(page: ft.Page):
         "review_filter": "all",
         "theme_key": "midnight",
         "font_scale": 1.0,
-        "welcome_tab": "quiz",  # "quiz" or "history"
+        "welcome_tab": "quiz",
     }
 
     def T():
@@ -438,14 +451,16 @@ def main(page: ft.Page):
     def fs(base_size: int) -> int:
         return max(10, int(base_size * state["font_scale"]))
 
-    # ── TOP BAR COMMON CONTROLS (Theme & Font Scaler) ───────
+    # ── TOP BAR COMMON CONTROLS ─────────────────────────────
     def make_top_settings_bar(on_refresh_callback):
         theme_options = [ft.dropdown.Option(k, v["name"]) for k, v in THEMES.items()]
         
         def on_theme_change(e):
-            state["theme_key"] = e.control.value
-            page.bgcolor = T()["bg_main"]
-            on_refresh_callback()
+            val = e.control.value
+            if val in THEMES:
+                state["theme_key"] = val
+                page.bgcolor = T()["bg_main"]
+                on_refresh_callback()
 
         def change_font(delta):
             state["font_scale"] = round(max(0.8, min(1.35, state["font_scale"] + delta)), 2)
@@ -781,7 +796,6 @@ def main(page: ft.Page):
             content=ft.Column(
                 spacing=16,
                 controls=[
-                    # Quick stats
                     ft.Row(
                         alignment=ft.MainAxisAlignment.SPACE_AROUND,
                         controls=[
@@ -859,7 +873,6 @@ def main(page: ft.Page):
             ),
         )
 
-        # ── WELCOME SCREEN LAYOUT ──
         active_tab = state["welcome_tab"]
 
         def switch_tab(tab_name):
@@ -880,14 +893,12 @@ def main(page: ft.Page):
                     spacing=16,
                     scroll=ft.ScrollMode.AUTO,
                     controls=[
-                        # Settings & Theme bar
                         ft.Container(
                             width=740,
                             padding=ft.padding.only(top=4),
                             content=ft.Row(
                                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                                 controls=[
-                                    # Tabs
                                     ft.Row(spacing=6, controls=[
                                         ft.ElevatedButton(
                                             "Luyện tập",
@@ -917,7 +928,6 @@ def main(page: ft.Page):
                             ),
                         ),
 
-                        # Hero Header
                         ft.Container(
                             padding=ft.padding.symmetric(horizontal=24, vertical=10),
                             content=ft.Column(
@@ -967,7 +977,6 @@ def main(page: ft.Page):
                             ),
                         ),
 
-                        # Main Settings Card or History Tab
                         *(
                             [
                                 ft.Container(
@@ -1055,7 +1064,6 @@ def main(page: ft.Page):
                                     ),
                                 ),
 
-                                # Options & Start
                                 ft.Container(
                                     width=740,
                                     padding=ft.padding.symmetric(horizontal=12),
@@ -1192,7 +1200,6 @@ def main(page: ft.Page):
         q = state["questions"][q_index]
         total = state["num_questions"]
         
-        # Options
         if "shuffled_options" not in q:
             opts = q["options"][:]
             if state["shuffle"]:
@@ -1203,7 +1210,6 @@ def main(page: ft.Page):
 
         effective_answer = q["answer"]
 
-        # Check if already answered in user_answers
         prev_ans = state["user_answers"].get(q_index)
         if prev_ans:
             state["answered"] = True
@@ -1214,7 +1220,6 @@ def main(page: ft.Page):
 
         progress_val = (q_index + 1) / total
         
-        # Section / Chuong Badge Info
         badge_palette = [T()["accent"], T()["success_light"], T()["warning_light"], "#C084FC", "#F472B6", "#38BDF8"]
         _ch_num = q.get("chuong")
         if _ch_num is not None and _ch_num in CHUONG_META:
@@ -1227,7 +1232,6 @@ def main(page: ft.Page):
             _badge_label = _sec_label
             _badge_color = badge_palette[_idx % len(badge_palette)]
 
-        # ── QUICK JUMP MAP DIALOG (Mục 1) ──
         def open_map_dialog():
             grid_buttons = []
             for i in range(total):
@@ -1326,7 +1330,6 @@ def main(page: ft.Page):
             dlg.open = True
             page.update()
 
-        # Top Bar
         top_bar = ft.Container(
             padding=ft.padding.symmetric(horizontal=20, vertical=12),
             bgcolor=T()["bg_surface"],
@@ -1348,7 +1351,6 @@ def main(page: ft.Page):
                         on_click=lambda _: show_welcome(),
                     ),
                     ft.Row(spacing=8, controls=[
-                        # Bản đồ câu hỏi
                         ft.ElevatedButton(
                             "Bản đồ câu hỏi",
                             icon=ft.Icons.GRID_VIEW_ROUNDED,
@@ -1388,7 +1390,6 @@ def main(page: ft.Page):
             height=4,
         )
 
-        # Question Title Parsing
         raw_q_text = q["question"]
         q_lines = raw_q_text.split("\n")
         if len(q_lines) > 1:
@@ -1498,8 +1499,6 @@ def main(page: ft.Page):
                 "explanation": q.get("explanation", "")
             }
             state["user_answers"][q_index] = ans_record
-
-            # Sync results list
             state["results"] = [state["user_answers"][i] for i in sorted(state["user_answers"].keys())]
 
             update_option_views(chosen, ok)
@@ -1664,7 +1663,6 @@ def main(page: ft.Page):
             )
             option_cards.append(card)
 
-        # Show feedback if already answered
         if prev_ans:
             ok = prev_ans["ok"]
             explanation_text = q.get("explanation", "")
@@ -1751,7 +1749,6 @@ def main(page: ft.Page):
                     controls=[
                         top_bar,
                         progress_container,
-                        # Question & Options Card Area
                         ft.Container(
                             expand=True,
                             padding=ft.padding.symmetric(horizontal=24, vertical=16),
@@ -1774,7 +1771,6 @@ def main(page: ft.Page):
                                             expand=True,
                                         ),
                                         feedback_container,
-                                        # Bottom Action Bar
                                         ft.Row(
                                             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                                             controls=[
@@ -1803,7 +1799,6 @@ def main(page: ft.Page):
         state["score"] = score
         pct = (score / total * 100) if total > 0 else 0
 
-        # Save to history automatically once
         now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
         subj_lbl = subject_dirs.get(state["subject"], {}).get("label", state["subject"])
         history_record = {
@@ -1948,12 +1943,10 @@ def main(page: ft.Page):
                     expand=True,
                     spacing=16,
                     controls=[
-                        # Settings Bar
                         ft.Row(
                             alignment=ft.MainAxisAlignment.END,
                             controls=[make_top_settings_bar(show_result)],
                         ),
-                        # Hero Score Banner Card
                         ft.Container(
                             bgcolor=T()["bg_card"],
                             border_radius=18,
@@ -2011,7 +2004,6 @@ def main(page: ft.Page):
                             ),
                         ),
 
-                        # Action Buttons Row
                         ft.Row(
                             alignment=ft.MainAxisAlignment.CENTER,
                             spacing=12,
@@ -2060,7 +2052,6 @@ def main(page: ft.Page):
                             ],
                         ),
 
-                        # Review Header with Filter Chips
                         ft.Row(
                             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                             vertical_alignment=ft.CrossAxisAlignment.CENTER,
@@ -2107,7 +2098,6 @@ def main(page: ft.Page):
                             ],
                         ),
 
-                        # Scrollable Detailed Question Review Area
                         ft.Container(
                             expand=True,
                             bgcolor=T()["bg_card"],
