@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import datetime
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -22,14 +23,6 @@ if not hasattr(ft, "icons"):
 # ============================================================
 
 def _parse_txt(filepath: str) -> tuple[str, list[dict]]:
-    """
-    Đọc file .txt với định dạng:
-        [Tên bộ đề]
-        Câu hỏi đầu tiên?
-        a. Đáp án A
-        b. Đáp án B
-        => a
-    """
     with open(filepath, encoding="utf-8") as f:
         raw = f.read()
 
@@ -234,38 +227,134 @@ def load_questions(dir_path: str) -> tuple[list[dict], list[dict]]:
 
 
 # ============================================================
-# MODERN DESIGN SYSTEM & COLOR PALETTE
+# LỊCH SỬ HỌC TẬP (HISTORY)
 # ============================================================
-BG_MAIN       = "#0B0F19"       # Deep Cosmic Dark
-BG_SURFACE    = "#111827"       # Surface Base
-BG_CARD       = "#162032"       # Glass Card Base
-BG_CARD_HOVER = "#1E2C44"       # Interactive Hover
-BG_CARD_ALT   = "#0F172A"       # Inner Card Base
+HISTORY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "history.json")
 
-BORDER_SUBTLE = "#223147"       # Subtle border
-BORDER_ACTIVE = "#6366F1"       # Indigo border focus
+def load_history() -> list[dict]:
+    if not os.path.isfile(HISTORY_FILE):
+        return []
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
 
-PRIMARY       = "#6366F1"       # Electric Indigo
-PRIMARY_LIGHT = "#818CF8"       # Indigo Light
-PRIMARY_DARK  = "#4F46E5"       # Indigo Dark
-SECONDARY     = "#8B5CF6"       # Vivid Purple
-ACCENT        = "#06B6D4"       # Cyber Cyan
-ACCENT_LIGHT  = "#38BDF8"       # Sky Blue
+def save_history_record(record: dict):
+    history = load_history()
+    history.insert(0, record)
+    history = history[:50]  # Giữ lại 50 lần gần nhất
+    try:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"[WARN] Không lưu được history: {e}")
 
-TEXT_MAIN     = "#F8FAFC"       # Bright White
-TEXT_MUTED    = "#94A3B8"       # Slate Muted
-TEXT_DIM      = "#64748B"       # Slate Dim
+def clear_all_history():
+    try:
+        if os.path.isfile(HISTORY_FILE):
+            os.remove(HISTORY_FILE)
+    except Exception as e:
+        print(f"[WARN] Không xóa được history: {e}")
 
-SUCCESS       = "#10B981"       # Emerald Green
-SUCCESS_BG    = "#064E3B"       # Dark Emerald
-SUCCESS_LIGHT = "#34D399"       # Light Emerald
 
-ERROR         = "#F43F5E"       # Rose Red
-ERROR_BG      = "#881337"       # Dark Rose
-ERROR_LIGHT   = "#FB7185"       # Light Rose
-
-WARNING       = "#F59E0B"       # Amber Orange
-WARNING_LIGHT = "#FBBF24"       # Light Amber
+# ============================================================
+# THEME SYSTEM (4 PRESETS)
+# ============================================================
+THEMES = {
+    "midnight": {
+        "name": "Deep Midnight 🌙",
+        "bg_main": "#0B0F19",
+        "bg_surface": "#111827",
+        "bg_card": "#162032",
+        "bg_card_alt": "#0F172A",
+        "bg_hover": "#1E2C44",
+        "border_subtle": "#223147",
+        "primary": "#6366F1",
+        "primary_light": "#818CF8",
+        "secondary": "#8B5CF6",
+        "accent": "#06B6D4",
+        "text_main": "#F8FAFC",
+        "text_muted": "#94A3B8",
+        "success": "#10B981",
+        "success_bg": "#064E3B",
+        "success_light": "#34D399",
+        "error": "#F43F5E",
+        "error_bg": "#881337",
+        "error_light": "#FB7185",
+        "warning": "#F59E0B",
+        "warning_light": "#FBBF24",
+    },
+    "ocean": {
+        "name": "Ocean Teal 🌊",
+        "bg_main": "#05151D",
+        "bg_surface": "#09222E",
+        "bg_card": "#0E2F3F",
+        "bg_card_alt": "#071B24",
+        "bg_hover": "#154257",
+        "border_subtle": "#1B475D",
+        "primary": "#0EA5E9",
+        "primary_light": "#38BDF8",
+        "secondary": "#06B6D4",
+        "accent": "#2DD4BF",
+        "text_main": "#F0FDF4",
+        "text_muted": "#94A3B8",
+        "success": "#10B981",
+        "success_bg": "#064E3B",
+        "success_light": "#34D399",
+        "error": "#F43F5E",
+        "error_bg": "#881337",
+        "error_light": "#FB7185",
+        "warning": "#F59E0B",
+        "warning_light": "#FBBF24",
+    },
+    "cyberpunk": {
+        "name": "Cyberpunk Neon ⚡",
+        "bg_main": "#0F071A",
+        "bg_surface": "#1A0E2E",
+        "bg_card": "#261342",
+        "bg_card_alt": "#140A24",
+        "bg_hover": "#351B5C",
+        "border_subtle": "#412170",
+        "primary": "#D946EF",
+        "primary_light": "#F0ABFC",
+        "secondary": "#8B5CF6",
+        "accent": "#06B6D4",
+        "text_main": "#FAF5FF",
+        "text_muted": "#A8A29E",
+        "success": "#10B981",
+        "success_bg": "#064E3B",
+        "success_light": "#34D399",
+        "error": "#F43F5E",
+        "error_bg": "#881337",
+        "error_light": "#FB7185",
+        "warning": "#F59E0B",
+        "warning_light": "#FBBF24",
+    },
+    "light": {
+        "name": "Clean Light ☀️",
+        "bg_main": "#F1F5F9",
+        "bg_surface": "#E2E8F0",
+        "bg_card": "#FFFFFF",
+        "bg_card_alt": "#F8FAFC",
+        "bg_hover": "#E2E8F0",
+        "border_subtle": "#CBD5E1",
+        "primary": "#2563EB",
+        "primary_light": "#3B82F6",
+        "secondary": "#7C3AED",
+        "accent": "#0284C7",
+        "text_main": "#0F172A",
+        "text_muted": "#64748B",
+        "success": "#16A34A",
+        "success_bg": "#DCFCE7",
+        "success_light": "#22C55E",
+        "error": "#DC2626",
+        "error_bg": "#FEE2E2",
+        "error_light": "#EF4444",
+        "warning": "#D97706",
+        "warning_light": "#F59E0B",
+    },
+}
 
 OPT_COLORS  = ["#38BDF8", "#34D399", "#FBBF24", "#F472B6"]
 OPT_LETTERS = ["A", "B", "C", "D"]
@@ -276,11 +365,10 @@ OPT_LETTERS = ["A", "B", "C", "D"]
 # ============================================================
 def main(page: ft.Page):
     page.title = "Trắc Nghiệm Ôn Tập & Khảo Sát Kiến Thức"
-    page.bgcolor = BG_MAIN
-    page.window.width = 980
-    page.window.height = 760
-    page.window.min_width = 780
-    page.window.min_height = 580
+    page.window.width = 1000
+    page.window.height = 780
+    page.window.min_width = 820
+    page.window.min_height = 600
     page.padding = 0
 
     def on_window_event(e):
@@ -333,16 +421,84 @@ def main(page: ft.Page):
         "selected": None,
         "answered": False,
         "results": [],
+        "user_answers": {},  # {q_idx: {"chosen": str, "ok": bool, "correct": str, "explanation": str}}
         "mode": "all",
         "num_questions": 20,
         "clo_data": initial_clo,
         "shuffle": True,
         "review_filter": "all",
+        "theme_key": "midnight",
+        "font_scale": 1.0,
+        "welcome_tab": "quiz",  # "quiz" or "history"
     }
+
+    def T():
+        return THEMES[state["theme_key"]]
+
+    def fs(base_size: int) -> int:
+        return max(10, int(base_size * state["font_scale"]))
+
+    # ── TOP BAR COMMON CONTROLS (Theme & Font Scaler) ───────
+    def make_top_settings_bar(on_refresh_callback):
+        theme_options = [ft.dropdown.Option(k, v["name"]) for k, v in THEMES.items()]
+        
+        def on_theme_change(e):
+            state["theme_key"] = e.control.value
+            page.bgcolor = T()["bg_main"]
+            on_refresh_callback()
+
+        def change_font(delta):
+            state["font_scale"] = round(max(0.8, min(1.35, state["font_scale"] + delta)), 2)
+            on_refresh_callback()
+
+        theme_dd = ft.Dropdown(
+            value=state["theme_key"],
+            options=theme_options,
+            on_change=on_theme_change,
+            bgcolor=T()["bg_card_alt"],
+            color=T()["text_main"],
+            border_color=T()["border_subtle"],
+            focused_border_color=T()["primary"],
+            width=180,
+            text_size=12,
+            content_padding=ft.padding.symmetric(horizontal=10, vertical=4),
+        )
+
+        font_minus_btn = ft.IconButton(
+            icon=ft.Icons.TEXT_FIELDS_ROUNDED,
+            icon_size=16,
+            icon_color=T()["text_muted"],
+            tooltip="Giảm cỡ chữ (A-)",
+            on_click=lambda _: change_font(-0.1),
+        )
+        font_plus_btn = ft.IconButton(
+            icon=ft.Icons.FORMAT_SIZE_ROUNDED,
+            icon_size=20,
+            icon_color=T()["text_main"],
+            tooltip="Tăng cỡ chữ (A+)",
+            on_click=lambda _: change_font(0.1),
+        )
+
+        return ft.Row(
+            spacing=8,
+            alignment=ft.MainAxisAlignment.END,
+            vertical_alignment=ft.CrossAxisAlignment.CENTER,
+            controls=[
+                theme_dd,
+                ft.Container(
+                    bgcolor=T()["bg_card_alt"],
+                    border_radius=8,
+                    border=ft.border.all(1, T()["border_subtle"]),
+                    padding=ft.padding.symmetric(horizontal=4),
+                    content=ft.Row(spacing=0, controls=[font_minus_btn, font_plus_btn]),
+                ),
+            ],
+        )
 
     # ── NAVIGATION & VIEWS ──────────────────────────────────
     def show_welcome():
         page.clean()
+        page.bgcolor = T()["bg_main"]
         mode_ref = ft.Ref[ft.RadioGroup]()
         
         def on_subject_change(e):
@@ -359,15 +515,15 @@ def main(page: ft.Page):
         sections_db = state["sections_db"]
         clo_data = state["clo_data"]
 
-        badge_palette = [ACCENT_LIGHT, SUCCESS_LIGHT, WARNING_LIGHT, "#C084FC", "#F472B6", "#38BDF8"]
+        badge_palette = [T()["accent"], T()["success_light"], T()["warning_light"], "#C084FC", "#F472B6", "#38BDF8"]
         BATCH_SEC = 50
         sec_range_rows = {}
 
         radio_col_controls = [
             ft.Container(
-                bgcolor=BG_CARD_ALT,
+                bgcolor=T()["bg_card_alt"],
                 border_radius=12,
-                border=ft.border.all(1, BORDER_SUBTLE),
+                border=ft.border.all(1, T()["border_subtle"]),
                 padding=ft.padding.symmetric(horizontal=16, vertical=10),
                 content=ft.Row(
                     spacing=12,
@@ -375,8 +531,8 @@ def main(page: ft.Page):
                         ft.Radio(
                             value="all",
                             label=f"Toàn bộ kho câu hỏi ({len(questions_db)} câu)",
-                            label_style=ft.TextStyle(color=TEXT_MAIN, size=15, weight=ft.FontWeight.W_500),
-                            fill_color={ft.ControlState.SELECTED: PRIMARY, ft.ControlState.DEFAULT: TEXT_MUTED},
+                            label_style=ft.TextStyle(color=T()["text_main"], size=fs(15), weight=ft.FontWeight.W_500),
+                            fill_color={ft.ControlState.SELECTED: T()["primary"], ft.ControlState.DEFAULT: T()["text_muted"]},
                         ),
                     ],
                 ),
@@ -400,23 +556,23 @@ def main(page: ft.Page):
                         bs["value"] = k
                         for ck, chip in cr.items():
                             chip.style = ft.ButtonStyle(
-                                bgcolor=PRIMARY if ck == k else BG_CARD_ALT,
-                                color=TEXT_MAIN if ck == k else TEXT_MUTED,
+                                bgcolor=T()["primary"] if ck == k else T()["bg_card_alt"],
+                                color=T()["text_main"] if ck == k else T()["text_muted"],
                                 padding=ft.padding.symmetric(horizontal=12, vertical=6),
-                                text_style=ft.TextStyle(size=12, weight=ft.FontWeight.W_500),
+                                text_style=ft.TextStyle(size=fs(12), weight=ft.FontWeight.W_500),
                                 shape=ft.RoundedRectangleBorder(radius=12),
-                                side=ft.BorderSide(1, PRIMARY if ck == k else BORDER_SUBTLE),
+                                side=ft.BorderSide(1, T()["primary"] if ck == k else T()["border_subtle"]),
                             )
                             chip.update()
                     chip = ft.ElevatedButton(
                         rl,
                         style=ft.ButtonStyle(
-                            bgcolor=PRIMARY if rk == "all" else BG_CARD_ALT,
-                            color=TEXT_MAIN if rk == "all" else TEXT_MUTED,
+                            bgcolor=T()["primary"] if rk == "all" else T()["bg_card_alt"],
+                            color=T()["text_main"] if rk == "all" else T()["text_muted"],
                             padding=ft.padding.symmetric(horizontal=12, vertical=6),
-                            text_style=ft.TextStyle(size=12, weight=ft.FontWeight.W_500),
+                            text_style=ft.TextStyle(size=fs(12), weight=ft.FontWeight.W_500),
                             shape=ft.RoundedRectangleBorder(radius=12),
-                            side=ft.BorderSide(1, PRIMARY if rk == "all" else BORDER_SUBTLE),
+                            side=ft.BorderSide(1, T()["primary"] if rk == "all" else T()["border_subtle"]),
                         ),
                         on_click=_on_click,
                     )
@@ -428,7 +584,7 @@ def main(page: ft.Page):
                     visible=False,
                     padding=ft.padding.only(left=28, top=4, bottom=6),
                     content=ft.Column(spacing=4, controls=[
-                        ft.Text("Chọn phạm vi làm bài:", size=12, color=TEXT_MUTED),
+                        ft.Text("Chọn phạm vi làm bài:", size=fs(12), color=T()["text_muted"]),
                         ft.Row(spacing=6, controls=chips, wrap=True),
                     ]),
                 )
@@ -438,8 +594,8 @@ def main(page: ft.Page):
                 ft.Radio(
                     value=sec["key"],
                     label=sec["label"],
-                    label_style=ft.TextStyle(color=TEXT_MAIN, size=14, weight=ft.FontWeight.W_500),
-                    fill_color={ft.ControlState.SELECTED: PRIMARY, ft.ControlState.DEFAULT: TEXT_MUTED},
+                    label_style=ft.TextStyle(color=T()["text_main"], size=fs(14), weight=ft.FontWeight.W_500),
+                    fill_color={ft.ControlState.SELECTED: T()["primary"], ft.ControlState.DEFAULT: T()["text_muted"]},
                 )
             ]
             if range_container:
@@ -447,9 +603,9 @@ def main(page: ft.Page):
 
             radio_col_controls.append(
                 ft.Container(
-                    bgcolor=BG_CARD_ALT,
+                    bgcolor=T()["bg_card_alt"],
                     border_radius=12,
-                    border=ft.border.all(1, BORDER_SUBTLE),
+                    border=ft.border.all(1, T()["border_subtle"]),
                     padding=ft.padding.symmetric(horizontal=16, vertical=10),
                     content=ft.Column(spacing=4, controls=sec_card_content),
                 )
@@ -487,12 +643,12 @@ def main(page: ft.Page):
                 dd = ft.Dropdown(
                     value="all",
                     options=make_batch_options(count),
-                    bgcolor=BG_CARD_ALT,
-                    color=TEXT_MAIN,
-                    border_color=BORDER_SUBTLE,
-                    focused_border_color=PRIMARY,
+                    bgcolor=T()["bg_card_alt"],
+                    color=T()["text_main"],
+                    border_color=T()["border_subtle"],
+                    focused_border_color=T()["primary"],
                     width=170,
-                    text_size=13,
+                    text_size=fs(13),
                     content_padding=ft.padding.symmetric(horizontal=10, vertical=4),
                     disabled=True,
                 )
@@ -502,8 +658,8 @@ def main(page: ft.Page):
                 def make_toggle(ch=ch_num, sr=selected_ref, cr=card_ref, col=color, d=dd):
                     def toggle(e):
                         sr["value"] = not sr["value"]
-                        cr.current.border = ft.border.all(1.5, PRIMARY if sr["value"] else BORDER_SUBTLE)
-                        cr.current.bgcolor = BG_CARD_HOVER if sr["value"] else BG_CARD_ALT
+                        cr.current.border = ft.border.all(1.5, T()["primary"] if sr["value"] else T()["border_subtle"])
+                        cr.current.bgcolor = T()["bg_hover"] if sr["value"] else T()["bg_card_alt"]
                         d.disabled = not sr["value"]
                         cr.current.update()
                         d.update()
@@ -511,9 +667,9 @@ def main(page: ft.Page):
 
                 card = ft.Container(
                     ref=card_ref,
-                    bgcolor=BG_CARD_ALT,
+                    bgcolor=T()["bg_card_alt"],
                     border_radius=14,
-                    border=ft.border.all(1, BORDER_SUBTLE),
+                    border=ft.border.all(1, T()["border_subtle"]),
                     padding=ft.padding.symmetric(horizontal=14, vertical=10),
                     on_click=make_toggle(),
                     ink=True,
@@ -531,8 +687,8 @@ def main(page: ft.Page):
                             ft.Column(
                                 spacing=2, expand=True,
                                 controls=[
-                                    ft.Text(tag, size=15, weight=ft.FontWeight.BOLD, color=color),
-                                    ft.Text(label, size=12, color=TEXT_MUTED, max_lines=1, overflow=ft.TextOverflow.ELLIPSIS),
+                                    ft.Text(tag, size=fs(15), weight=ft.FontWeight.BOLD, color=color),
+                                    ft.Text(label, size=fs(12), color=T()["text_muted"], max_lines=1, overflow=ft.TextOverflow.ELLIPSIS),
                                 ],
                             ),
                             dd,
@@ -567,63 +723,242 @@ def main(page: ft.Page):
                     batch_val = sec_range_rows[radio_val]["state"]["value"]
                 start_quiz(radio_val, 99999, batch_val)
 
+        # ── HISTORY TAB CONTENT ──
+        history_list = load_history()
+        history_cards = []
+
+        total_sessions = len(history_list)
+        avg_score_pct = (sum(h["pct"] for h in history_list) / total_sessions) if total_sessions > 0 else 0
+        total_questions_done = sum(h["total"] for h in history_list)
+
+        for h in history_list:
+            hpct = h.get("pct", 0)
+            hcolor = T()["success"] if hpct >= 80 else (T()["warning"] if hpct >= 60 else T()["error"])
+            hcard = ft.Container(
+                bgcolor=T()["bg_card_alt"],
+                border_radius=12,
+                border=ft.border.all(1, T()["border_subtle"]),
+                padding=ft.padding.symmetric(horizontal=16, vertical=12),
+                content=ft.Row(
+                    alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                    vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                    controls=[
+                        ft.Row(spacing=12, controls=[
+                            ft.Container(
+                                width=36, height=36,
+                                border_radius=10,
+                                bgcolor=f"{hcolor}22",
+                                alignment=ft.Alignment(0, 0),
+                                content=ft.Text(f"{int(hpct)}%", size=fs(12), color=hcolor, weight=ft.FontWeight.BOLD),
+                            ),
+                            ft.Column(spacing=2, controls=[
+                                ft.Text(h.get("subject_label", h.get("subject", "")), size=fs(14), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                ft.Text(f"{h.get('timestamp', '')} • {h.get('mode_label', 'Bộ đề')}", size=fs(11), color=T()["text_muted"]),
+                            ]),
+                        ]),
+                        ft.Container(
+                            padding=ft.padding.symmetric(horizontal=12, vertical=4),
+                            bgcolor=T()["bg_card"],
+                            border_radius=8,
+                            border=ft.border.all(1, T()["border_subtle"]),
+                            content=ft.Text(f"{h.get('score', 0)} / {h.get('total', 0)} câu", size=fs(13), color=T()["text_main"], weight=ft.FontWeight.W_500),
+                        ),
+                    ],
+                ),
+            )
+            history_cards.append(hcard)
+
+        def do_clear_history():
+            clear_all_history()
+            show_welcome()
+
+        history_content_view = ft.Container(
+            width=740,
+            padding=ft.padding.all(20),
+            border_radius=20,
+            bgcolor=T()["bg_card"],
+            border=ft.border.all(1, T()["border_subtle"]),
+            content=ft.Column(
+                spacing=16,
+                controls=[
+                    # Quick stats
+                    ft.Row(
+                        alignment=ft.MainAxisAlignment.SPACE_AROUND,
+                        controls=[
+                            ft.Container(
+                                padding=ft.padding.all(12),
+                                bgcolor=T()["bg_card_alt"],
+                                border_radius=12,
+                                border=ft.border.all(1, T()["border_subtle"]),
+                                width=210,
+                                alignment=ft.Alignment(0, 0),
+                                content=ft.Column(horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2, controls=[
+                                    ft.Text(str(total_sessions), size=fs(22), color=T()["primary_light"], weight=ft.FontWeight.BOLD),
+                                    ft.Text("Lần làm bài", size=fs(12), color=T()["text_muted"]),
+                                ]),
+                            ),
+                            ft.Container(
+                                padding=ft.padding.all(12),
+                                bgcolor=T()["bg_card_alt"],
+                                border_radius=12,
+                                border=ft.border.all(1, T()["border_subtle"]),
+                                width=210,
+                                alignment=ft.Alignment(0, 0),
+                                content=ft.Column(horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2, controls=[
+                                    ft.Text(f"{avg_score_pct:.1f}%", size=fs(22), color=T()["success_light"], weight=ft.FontWeight.BOLD),
+                                    ft.Text("Độ chính xác TB", size=fs(12), color=T()["text_muted"]),
+                                ]),
+                            ),
+                            ft.Container(
+                                padding=ft.padding.all(12),
+                                bgcolor=T()["bg_card_alt"],
+                                border_radius=12,
+                                border=ft.border.all(1, T()["border_subtle"]),
+                                width=210,
+                                alignment=ft.Alignment(0, 0),
+                                content=ft.Column(horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2, controls=[
+                                    ft.Text(str(total_questions_done), size=fs(22), color=T()["accent"], weight=ft.FontWeight.BOLD),
+                                    ft.Text("Tổng số câu đã ôn", size=fs(12), color=T()["text_muted"]),
+                                ]),
+                            ),
+                        ],
+                    ),
+                    ft.Divider(color=T()["border_subtle"], height=1),
+                    ft.Row(
+                        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                        controls=[
+                            ft.Text("Lịch sử làm bài gần đây:", size=fs(15), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                            *(
+                                [
+                                    ft.TextButton(
+                                        "Xóa lịch sử",
+                                        icon=ft.Icons.DELETE_SWEEP_ROUNDED,
+                                        style=ft.ButtonStyle(color=T()["error_light"]),
+                                        on_click=lambda _: do_clear_history(),
+                                    )
+                                ]
+                                if history_list else []
+                            ),
+                        ],
+                    ),
+                    ft.Container(
+                        height=280,
+                        content=ft.Column(
+                            spacing=8,
+                            scroll=ft.ScrollMode.AUTO,
+                            controls=history_cards if history_cards else [
+                                ft.Container(
+                                    padding=ft.padding.all(30),
+                                    alignment=ft.Alignment(0, 0),
+                                    content=ft.Text("Chưa có lịch sử làm bài nào. Hãy bắt đầu ôn tập ngay!", color=T()["text_muted"], size=fs(14)),
+                                )
+                            ],
+                        ),
+                    ),
+                ],
+            ),
+        )
+
         # ── WELCOME SCREEN LAYOUT ──
+        active_tab = state["welcome_tab"]
+
+        def switch_tab(tab_name):
+            state["welcome_tab"] = tab_name
+            show_welcome()
+
         page.add(
             ft.Container(
                 expand=True,
                 gradient=ft.LinearGradient(
                     begin=ft.Alignment(0, -1),
                     end=ft.Alignment(0, 1),
-                    colors=[BG_MAIN, BG_SURFACE],
+                    colors=[T()["bg_main"], T()["bg_surface"]],
                 ),
+                padding=ft.padding.symmetric(horizontal=20, vertical=10),
                 content=ft.Column(
                     horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-                    spacing=20,
+                    spacing=16,
                     scroll=ft.ScrollMode.AUTO,
                     controls=[
-                        ft.Container(height=16),
+                        # Settings & Theme bar
+                        ft.Container(
+                            width=740,
+                            padding=ft.padding.only(top=4),
+                            content=ft.Row(
+                                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                controls=[
+                                    # Tabs
+                                    ft.Row(spacing=6, controls=[
+                                        ft.ElevatedButton(
+                                            "Luyện tập",
+                                            icon=ft.Icons.MENU_BOOK_ROUNDED,
+                                            style=ft.ButtonStyle(
+                                                bgcolor=T()["primary"] if active_tab == "quiz" else T()["bg_card"],
+                                                color=T()["text_main"] if active_tab == "quiz" else T()["text_muted"],
+                                                padding=ft.padding.symmetric(horizontal=16, vertical=8),
+                                                shape=ft.RoundedRectangleBorder(radius=10),
+                                            ),
+                                            on_click=lambda _: switch_tab("quiz"),
+                                        ),
+                                        ft.ElevatedButton(
+                                            f"Lịch sử ({total_sessions})",
+                                            icon=ft.Icons.INSIGHTS_ROUNDED,
+                                            style=ft.ButtonStyle(
+                                                bgcolor=T()["primary"] if active_tab == "history" else T()["bg_card"],
+                                                color=T()["text_main"] if active_tab == "history" else T()["text_muted"],
+                                                padding=ft.padding.symmetric(horizontal=16, vertical=8),
+                                                shape=ft.RoundedRectangleBorder(radius=10),
+                                            ),
+                                            on_click=lambda _: switch_tab("history"),
+                                        ),
+                                    ]),
+                                    make_top_settings_bar(show_welcome),
+                                ],
+                            ),
+                        ),
+
                         # Hero Header
                         ft.Container(
-                            padding=ft.padding.symmetric(horizontal=24, vertical=16),
+                            padding=ft.padding.symmetric(horizontal=24, vertical=10),
                             content=ft.Column(
                                 horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                                 spacing=8,
                                 controls=[
                                     ft.Container(
-                                        width=76, height=76,
-                                        border_radius=22,
+                                        width=68, height=68,
+                                        border_radius=20,
                                         gradient=ft.LinearGradient(
                                             begin=ft.Alignment(-1, -1),
                                             end=ft.Alignment(1, 1),
-                                            colors=[PRIMARY, SECONDARY],
+                                            colors=[T()["primary"], T()["secondary"]],
                                         ),
-                                        content=ft.Icon(ft.Icons.SCHOOL_ROUNDED, size=40, color=TEXT_MAIN),
+                                        content=ft.Icon(ft.Icons.SCHOOL_ROUNDED, size=36, color=T()["text_main"]),
                                         alignment=ft.Alignment(0, 0),
                                         shadow=ft.BoxShadow(
                                             spread_radius=1, blur_radius=20,
-                                            color=f"{PRIMARY}66", offset=ft.Offset(0, 6)
+                                            color=f"{T()['primary']}66", offset=ft.Offset(0, 6)
                                         ),
                                     ),
                                     ft.Text(
                                         "HỆ THỐNG ÔN TẬP TRẮC NGHIỆM",
-                                        size=24,
+                                        size=fs(22),
                                         weight=ft.FontWeight.BOLD,
-                                        color=TEXT_MAIN,
+                                        color=T()["text_main"],
                                         text_align=ft.TextAlign.CENTER,
                                     ),
                                     ft.Container(
-                                        bgcolor=f"{ACCENT}1A",
+                                        bgcolor=f"{T()['accent']}1A",
                                         border_radius=16,
-                                        border=ft.border.all(1, f"{ACCENT}55"),
+                                        border=ft.border.all(1, f"{T()['accent']}55"),
                                         padding=ft.padding.symmetric(horizontal=14, vertical=4),
                                         content=ft.Row(
                                             alignment=ft.MainAxisAlignment.CENTER,
                                             spacing=6,
                                             controls=[
-                                                ft.Icon(ft.Icons.LOCAL_LIBRARY_ROUNDED, size=16, color=ACCENT_LIGHT),
+                                                ft.Icon(ft.Icons.LOCAL_LIBRARY_ROUNDED, size=16, color=T()["primary_light"]),
                                                 ft.Text(
                                                     f"{subject_dirs[state['subject']]['label']} • {len(questions_db)} câu hỏi khả dụng",
-                                                    size=13, color=ACCENT_LIGHT, weight=ft.FontWeight.W_500
+                                                    size=fs(13), color=T()["primary_light"], weight=ft.FontWeight.W_500
                                                 ),
                                             ],
                                         ),
@@ -632,149 +967,153 @@ def main(page: ft.Page):
                             ),
                         ),
 
-                        # Main Settings Card
-                        ft.Container(
-                            width=740,
-                            padding=ft.padding.all(24),
-                            border_radius=20,
-                            bgcolor=BG_CARD,
-                            border=ft.border.all(1, BORDER_SUBTLE),
-                            shadow=ft.BoxShadow(spread_radius=0, blur_radius=24, color="#00000055", offset=ft.Offset(0, 8)),
-                            content=ft.Column(
-                                spacing=18,
-                                controls=[
-                                    # Môn học row
-                                    ft.Row(
-                                        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                                        vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                        # Main Settings Card or History Tab
+                        *(
+                            [
+                                ft.Container(
+                                    width=740,
+                                    padding=ft.padding.all(24),
+                                    border_radius=20,
+                                    bgcolor=T()["bg_card"],
+                                    border=ft.border.all(1, T()["border_subtle"]),
+                                    shadow=ft.BoxShadow(spread_radius=0, blur_radius=24, color="#00000055", offset=ft.Offset(0, 8)),
+                                    content=ft.Column(
+                                        spacing=16,
                                         controls=[
-                                            ft.Row(spacing=8, controls=[
-                                                ft.Icon(ft.Icons.FOLDER_SPECIAL_ROUNDED, color=PRIMARY_LIGHT, size=20),
-                                                ft.Text("Môn học:", size=15, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                                            ]),
-                                            ft.Dropdown(
-                                                value=state["subject"],
-                                                options=subj_options,
-                                                **( {"on_select": on_subject_change} if "on_select" in getattr(ft.Dropdown.__init__, "__code__").co_varnames else {"on_change": on_subject_change} ),
-                                                bgcolor=BG_CARD_ALT,
-                                                color=TEXT_MAIN,
-                                                border_color=BORDER_SUBTLE,
-                                                focused_border_color=PRIMARY,
-                                                width=260,
-                                                text_size=14,
-                                                content_padding=ft.padding.symmetric(horizontal=12, vertical=8),
+                                            ft.Row(
+                                                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                                vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                                                controls=[
+                                                    ft.Row(spacing=8, controls=[
+                                                        ft.Icon(ft.Icons.FOLDER_SPECIAL_ROUNDED, color=T()["primary_light"], size=20),
+                                                        ft.Text("Môn học:", size=fs(15), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                    ]),
+                                                    ft.Dropdown(
+                                                        value=state["subject"],
+                                                        options=subj_options,
+                                                        on_change=on_subject_change,
+                                                        bgcolor=T()["bg_card_alt"],
+                                                        color=T()["text_main"],
+                                                        border_color=T()["border_subtle"],
+                                                        focused_border_color=T()["primary"],
+                                                        width=260,
+                                                        text_size=fs(14),
+                                                        content_padding=ft.padding.symmetric(horizontal=12, vertical=8),
+                                                    ),
+                                                ],
+                                            ),
+                                            ft.Divider(color=T()["border_subtle"], height=1),
+
+                                            *(
+                                                [
+                                                    ft.Row(spacing=8, controls=[
+                                                        ft.Icon(ft.Icons.LIST_ALT_ROUNDED, color=T()["secondary"], size=20),
+                                                        ft.Text("Ôn theo từng chương:", size=fs(15), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                    ]),
+                                                    ft.Column(spacing=8, controls=[r["card"] for r in clo_rows]),
+                                                    ft.Divider(color=T()["border_subtle"], height=1),
+                                                    ft.Row(spacing=8, controls=[
+                                                        ft.Icon(ft.Icons.LAYERS_ROUNDED, color=T()["accent"], size=20),
+                                                        ft.Text("Hoặc chọn theo bộ đề thi:", size=fs(15), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                    ]),
+                                                    ft.Container(
+                                                        height=220,
+                                                        content=ft.RadioGroup(
+                                                            ref=mode_ref,
+                                                            value="all",
+                                                            on_change=_on_radio_change,
+                                                            content=ft.Column(
+                                                                spacing=8,
+                                                                controls=radio_col_controls,
+                                                                scroll=ft.ScrollMode.AUTO,
+                                                            ),
+                                                        ),
+                                                    ),
+                                                ]
+                                                if clo_data else
+                                                [
+                                                    ft.Row(spacing=8, controls=[
+                                                        ft.Icon(ft.Icons.LAYERS_ROUNDED, color=T()["accent"], size=20),
+                                                        ft.Text("Danh sách bộ đề ôn tập:", size=fs(15), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                    ]),
+                                                    ft.Container(
+                                                        height=260,
+                                                        content=ft.RadioGroup(
+                                                            ref=mode_ref,
+                                                            value="all",
+                                                            on_change=_on_radio_change,
+                                                            content=ft.Column(
+                                                                spacing=8,
+                                                                controls=radio_col_controls,
+                                                                scroll=ft.ScrollMode.AUTO,
+                                                            ),
+                                                        ),
+                                                    ),
+                                                ]
                                             ),
                                         ],
                                     ),
-                                    ft.Divider(color=BORDER_SUBTLE, height=1),
+                                ),
 
-                                    # Bộ đề / Chương
-                                    *(
-                                        [
-                                            ft.Row(spacing=8, controls=[
-                                                ft.Icon(ft.Icons.LIST_ALT_ROUNDED, color=SECONDARY, size=20),
-                                                ft.Text("Ôn theo từng chương:", size=15, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                                            ]),
-                                            ft.Column(spacing=8, controls=[r["card"] for r in clo_rows]),
-                                            ft.Divider(color=BORDER_SUBTLE, height=1),
-                                            ft.Row(spacing=8, controls=[
-                                                ft.Icon(ft.Icons.LAYERS_ROUNDED, color=ACCENT_LIGHT, size=20),
-                                                ft.Text("Hoặc chọn theo bộ đề thi:", size=15, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                                            ]),
+                                # Options & Start
+                                ft.Container(
+                                    width=740,
+                                    padding=ft.padding.symmetric(horizontal=12),
+                                    content=ft.Row(
+                                        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                        vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                                        controls=[
                                             ft.Container(
-                                                height=220,
-                                                content=ft.RadioGroup(
-                                                    ref=mode_ref,
-                                                    value="all",
-                                                    on_change=_on_radio_change,
-                                                    content=ft.Column(
-                                                        spacing=8,
-                                                        controls=radio_col_controls,
-                                                        scroll=ft.ScrollMode.AUTO,
-                                                    ),
+                                                bgcolor=T()["bg_card"],
+                                                border_radius=14,
+                                                border=ft.border.all(1, T()["border_subtle"]),
+                                                padding=ft.padding.symmetric(horizontal=14, vertical=6),
+                                                content=ft.Checkbox(
+                                                    label="Xáo trộn câu hỏi ngẫu nhiên",
+                                                    value=state["shuffle"],
+                                                    label_style=ft.TextStyle(color=T()["text_main"], size=fs(14)),
+                                                    fill_color={ft.ControlState.SELECTED: T()["primary"], ft.ControlState.DEFAULT: T()["border_subtle"]},
+                                                    check_color=T()["text_main"],
+                                                    on_change=lambda e: state.update({"shuffle": e.control.value}),
                                                 ),
                                             ),
-                                        ]
-                                        if clo_data else
-                                        [
-                                            ft.Row(spacing=8, controls=[
-                                                ft.Icon(ft.Icons.LAYERS_ROUNDED, color=ACCENT_LIGHT, size=20),
-                                                ft.Text("Danh sách bộ đề ôn tập:", size=15, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                                            ]),
-                                            ft.Container(
-                                                height=280,
-                                                content=ft.RadioGroup(
-                                                    ref=mode_ref,
-                                                    value="all",
-                                                    on_change=_on_radio_change,
-                                                    content=ft.Column(
-                                                        spacing=8,
-                                                        controls=radio_col_controls,
-                                                        scroll=ft.ScrollMode.AUTO,
+                                            ft.Row(spacing=12, controls=[
+                                                ft.OutlinedButton(
+                                                    "Thoát",
+                                                    icon=ft.Icons.CLOSE_ROUNDED,
+                                                    style=ft.ButtonStyle(
+                                                        color=T()["error_light"],
+                                                        side=ft.BorderSide(1, T()["error_bg"]),
+                                                        padding=ft.padding.symmetric(horizontal=20, vertical=16),
+                                                        shape=ft.RoundedRectangleBorder(radius=14),
+                                                        text_style=ft.TextStyle(size=fs(14), weight=ft.FontWeight.W_500),
                                                     ),
+                                                    on_click=lambda _: page.window.close(),
                                                 ),
-                                            ),
-                                        ]
+                                                ft.ElevatedButton(
+                                                    "BẮT ĐẦU ÔN TẬP",
+                                                    icon=ft.Icons.ROCKET_LAUNCH_ROUNDED,
+                                                    disabled=len(questions_db) == 0,
+                                                    style=ft.ButtonStyle(
+                                                        bgcolor={ft.ControlState.DEFAULT: T()["primary"], ft.ControlState.HOVERED: T()["secondary"]},
+                                                        color=T()["text_main"],
+                                                        padding=ft.padding.symmetric(horizontal=36, vertical=16),
+                                                        shape=ft.RoundedRectangleBorder(radius=14),
+                                                        text_style=ft.TextStyle(size=fs(15), weight=ft.FontWeight.BOLD, letter_spacing=0.5),
+                                                        elevation=4,
+                                                        shadow_color=f"{T()['primary']}88",
+                                                    ),
+                                                    on_click=lambda _: handle_start(),
+                                                ),
+                                            ]),
+                                        ],
                                     ),
-                                ],
-                            ),
+                                ),
+                            ]
+                            if active_tab == "quiz" else
+                            [history_content_view]
                         ),
-
-                        # Options & Start
-                        ft.Container(
-                            width=740,
-                            padding=ft.padding.symmetric(horizontal=12),
-                            content=ft.Row(
-                                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                                vertical_alignment=ft.CrossAxisAlignment.CENTER,
-                                controls=[
-                                    ft.Container(
-                                        bgcolor=BG_CARD,
-                                        border_radius=14,
-                                        border=ft.border.all(1, BORDER_SUBTLE),
-                                        padding=ft.padding.symmetric(horizontal=14, vertical=6),
-                                        content=ft.Checkbox(
-                                            label="Xáo trộn câu hỏi ngẫu nhiên",
-                                            value=state["shuffle"],
-                                            label_style=ft.TextStyle(color=TEXT_MAIN, size=14),
-                                            fill_color={ft.ControlState.SELECTED: PRIMARY, ft.ControlState.DEFAULT: BORDER_SUBTLE},
-                                            check_color=TEXT_MAIN,
-                                            on_change=lambda e: state.update({"shuffle": e.control.value}),
-                                        ),
-                                    ),
-                                    ft.Row(spacing=12, controls=[
-                                        ft.OutlinedButton(
-                                            "Thoát",
-                                            icon=ft.Icons.CLOSE_ROUNDED,
-                                            style=ft.ButtonStyle(
-                                                color=ERROR_LIGHT,
-                                                side=ft.BorderSide(1, ERROR_BG),
-                                                padding=ft.padding.symmetric(horizontal=20, vertical=16),
-                                                shape=ft.RoundedRectangleBorder(radius=14),
-                                                text_style=ft.TextStyle(size=14, weight=ft.FontWeight.W_500),
-                                            ),
-                                            on_click=lambda _: page.window.close(),
-                                        ),
-                                        ft.ElevatedButton(
-                                            "BẮT ĐẦU ÔN TẬP",
-                                            icon=ft.Icons.ROCKET_LAUNCH_ROUNDED,
-                                            disabled=len(questions_db) == 0,
-                                            style=ft.ButtonStyle(
-                                                bgcolor={ft.ControlState.DEFAULT: PRIMARY, ft.ControlState.HOVERED: SECONDARY},
-                                                color=TEXT_MAIN,
-                                                padding=ft.padding.symmetric(horizontal=36, vertical=16),
-                                                shape=ft.RoundedRectangleBorder(radius=14),
-                                                text_style=ft.TextStyle(size=15, weight=ft.FontWeight.BOLD, letter_spacing=0.5),
-                                                elevation=4,
-                                                shadow_color=f"{PRIMARY}88",
-                                            ),
-                                            on_click=lambda _: handle_start(),
-                                        ),
-                                    ]),
-                                ],
-                            ),
-                        ),
-                        ft.Container(height=30),
+                        ft.Container(height=20),
                     ],
                 ),
             )
@@ -800,6 +1139,7 @@ def main(page: ft.Page):
         state["selected"] = None
         state["answered"] = False
         state["results"] = []
+        state["user_answers"] = {}
         state["mode"] = mode
         state["num_questions"] = len(chosen)
         show_quiz()
@@ -817,6 +1157,7 @@ def main(page: ft.Page):
         state["selected"] = None
         state["answered"] = False
         state["results"] = []
+        state["user_answers"] = {}
         state["num_questions"] = len(pool)
         show_quiz()
 
@@ -838,6 +1179,7 @@ def main(page: ft.Page):
         state["selected"] = None
         state["answered"] = False
         state["results"] = []
+        state["user_answers"] = {}
         state["mode"] = "chuong"
         state["num_questions"] = len(pool)
         show_quiz()
@@ -845,21 +1187,35 @@ def main(page: ft.Page):
     # ── QUIZ SCREEN ─────────────────────────────────────────
     def show_quiz():
         page.clean()
+        page.bgcolor = T()["bg_main"]
         q_index = state["current"]
         q = state["questions"][q_index]
         total = state["num_questions"]
-        opts = q["options"][:]
-        if state["shuffle"]:
-            random.shuffle(opts)
+        
+        # Options
+        if "shuffled_options" not in q:
+            opts = q["options"][:]
+            if state["shuffle"]:
+                random.shuffle(opts)
+            q["shuffled_options"] = opts
+        else:
+            opts = q["shuffled_options"]
+
         effective_answer = q["answer"]
 
-        state["selected"] = None
-        state["answered"] = False
+        # Check if already answered in user_answers
+        prev_ans = state["user_answers"].get(q_index)
+        if prev_ans:
+            state["answered"] = True
+            state["selected"] = prev_ans["chosen"]
+        else:
+            state["answered"] = False
+            state["selected"] = None
 
         progress_val = (q_index + 1) / total
         
         # Section / Chuong Badge Info
-        badge_palette = [ACCENT_LIGHT, SUCCESS_LIGHT, WARNING_LIGHT, "#C084FC", "#F472B6", "#38BDF8"]
+        badge_palette = [T()["accent"], T()["success_light"], T()["warning_light"], "#C084FC", "#F472B6", "#38BDF8"]
         _ch_num = q.get("chuong")
         if _ch_num is not None and _ch_num in CHUONG_META:
             _badge_label = CHUONG_META[_ch_num][0]
@@ -871,11 +1227,110 @@ def main(page: ft.Page):
             _badge_label = _sec_label
             _badge_color = badge_palette[_idx % len(badge_palette)]
 
+        # ── QUICK JUMP MAP DIALOG (Mục 1) ──
+        def open_map_dialog():
+            grid_buttons = []
+            for i in range(total):
+                ans_info = state["user_answers"].get(i)
+                if i == q_index:
+                    btn_bg = T()["primary"]
+                    btn_color = T()["text_main"]
+                    border_s = ft.BorderSide(2, T()["accent"])
+                elif ans_info:
+                    if ans_info["ok"]:
+                        btn_bg = T()["success_bg"]
+                        btn_color = T()["success_light"]
+                        border_s = ft.BorderSide(1, T()["success"])
+                    else:
+                        btn_bg = T()["error_bg"]
+                        btn_color = T()["error_light"]
+                        border_s = ft.BorderSide(1, T()["error"])
+                else:
+                    btn_bg = T()["bg_card_alt"]
+                    btn_color = T()["text_muted"]
+                    border_s = ft.BorderSide(1, T()["border_subtle"])
+
+                def make_jump(target_i=i):
+                    def _jump(e):
+                        setattr(dlg, "open", False)
+                        page.update()
+                        state["current"] = target_i
+                        show_quiz()
+                    return _jump
+
+                btn = ft.Container(
+                    width=44, height=44,
+                    border_radius=10,
+                    bgcolor=btn_bg,
+                    border=ft.border.all(border_s.width, border_s.color),
+                    alignment=ft.Alignment(0, 0),
+                    ink=True,
+                    on_click=make_jump(),
+                    content=ft.Text(str(i + 1), size=fs(13), color=btn_color, weight=ft.FontWeight.BOLD),
+                )
+                grid_buttons.append(btn)
+
+            dlg = ft.AlertDialog(
+                title=ft.Row(
+                    alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                    controls=[
+                        ft.Row(spacing=8, controls=[
+                            ft.Icon(ft.Icons.GRID_VIEW_ROUNDED, color=T()["primary_light"], size=22),
+                            ft.Text("Bản đồ câu hỏi (Quick-Jump)", size=fs(16), weight=ft.FontWeight.BOLD, color=T()["text_main"]),
+                        ]),
+                        ft.IconButton(ft.Icons.CLOSE, on_click=lambda _: (setattr(dlg, "open", False), page.update())),
+                    ],
+                ),
+                content=ft.Container(
+                    width=540,
+                    height=360,
+                    content=ft.Column(
+                        spacing=12,
+                        controls=[
+                            ft.Row(
+                                spacing=16,
+                                alignment=ft.MainAxisAlignment.CENTER,
+                                controls=[
+                                    ft.Row(spacing=4, controls=[
+                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["success"]),
+                                        ft.Text("Đúng", size=fs(12), color=T()["text_muted"]),
+                                    ]),
+                                    ft.Row(spacing=4, controls=[
+                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["error"]),
+                                        ft.Text("Sai", size=fs(12), color=T()["text_muted"]),
+                                    ]),
+                                    ft.Row(spacing=4, controls=[
+                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["border_subtle"]),
+                                        ft.Text("Chưa làm", size=fs(12), color=T()["text_muted"]),
+                                    ]),
+                                ],
+                            ),
+                            ft.Divider(color=T()["border_subtle"], height=1),
+                            ft.Container(
+                                expand=True,
+                                content=ft.Row(
+                                    wrap=True,
+                                    spacing=8,
+                                    run_spacing=8,
+                                    controls=grid_buttons,
+                                    scroll=ft.ScrollMode.AUTO,
+                                ),
+                            ),
+                        ],
+                    ),
+                ),
+                bgcolor=T()["bg_card"],
+                shape=ft.RoundedRectangleBorder(radius=16),
+            )
+            page.overlay.append(dlg)
+            dlg.open = True
+            page.update()
+
         # Top Bar
         top_bar = ft.Container(
-            padding=ft.padding.symmetric(horizontal=24, vertical=14),
-            bgcolor=BG_SURFACE,
-            border=ft.border.only(bottom=ft.BorderSide(1, BORDER_SUBTLE)),
+            padding=ft.padding.symmetric(horizontal=20, vertical=12),
+            bgcolor=T()["bg_surface"],
+            border=ft.border.only(bottom=ft.BorderSide(1, T()["border_subtle"])),
             content=ft.Row(
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                 vertical_alignment=ft.CrossAxisAlignment.CENTER,
@@ -884,43 +1339,53 @@ def main(page: ft.Page):
                         "Quay về",
                         icon=ft.Icons.ARROW_BACK_ROUNDED,
                         style=ft.ButtonStyle(
-                            bgcolor=BG_CARD,
-                            color=TEXT_MAIN,
-                            padding=ft.padding.symmetric(horizontal=14, vertical=8),
+                            bgcolor=T()["bg_card"],
+                            color=T()["text_main"],
+                            padding=ft.padding.symmetric(horizontal=12, vertical=6),
                             shape=ft.RoundedRectangleBorder(radius=10),
-                            side=ft.BorderSide(1, BORDER_SUBTLE),
+                            side=ft.BorderSide(1, T()["border_subtle"]),
                         ),
                         on_click=lambda _: show_welcome(),
                     ),
-                    ft.Container(
-                        bgcolor=BG_CARD,
-                        border_radius=12,
-                        border=ft.border.all(1, BORDER_SUBTLE),
-                        padding=ft.padding.symmetric(horizontal=16, vertical=8),
-                        content=ft.Row(spacing=8, controls=[
-                            ft.Icon(ft.Icons.FORMAT_LIST_NUMBERED_ROUNDED, size=16, color=PRIMARY_LIGHT),
-                            ft.Text(f"Câu {q_index + 1} / {total}", size=14, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                        ]),
-                    ),
-                    ft.Container(
-                        bgcolor=f"{SUCCESS_BG}88",
-                        border_radius=12,
-                        border=ft.border.all(1, SUCCESS),
-                        padding=ft.padding.symmetric(horizontal=16, vertical=8),
-                        content=ft.Row(spacing=8, controls=[
-                            ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, size=16, color=SUCCESS_LIGHT),
-                            ft.Text(f"Đúng: {state['score']}", size=14, color=SUCCESS_LIGHT, weight=ft.FontWeight.BOLD),
-                        ]),
-                    ),
+                    ft.Row(spacing=8, controls=[
+                        # Bản đồ câu hỏi
+                        ft.ElevatedButton(
+                            "Bản đồ câu hỏi",
+                            icon=ft.Icons.GRID_VIEW_ROUNDED,
+                            style=ft.ButtonStyle(
+                                bgcolor=T()["bg_card"],
+                                color=T()["primary_light"],
+                                padding=ft.padding.symmetric(horizontal=12, vertical=6),
+                                shape=ft.RoundedRectangleBorder(radius=10),
+                                side=ft.BorderSide(1, T()["primary"]),
+                            ),
+                            on_click=lambda _: open_map_dialog(),
+                        ),
+                        ft.Container(
+                            bgcolor=T()["bg_card"],
+                            border_radius=10,
+                            border=ft.border.all(1, T()["border_subtle"]),
+                            padding=ft.padding.symmetric(horizontal=14, vertical=6),
+                            content=ft.Text(f"Câu {q_index + 1} / {total}", size=fs(13), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                        ),
+                        ft.Container(
+                            bgcolor=f"{T()['success_bg']}88",
+                            border_radius=10,
+                            border=ft.border.all(1, T()["success"]),
+                            padding=ft.padding.symmetric(horizontal=14, vertical=6),
+                            content=ft.Text(f"Đúng: {state['score']}", size=fs(13), color=T()["success_light"], weight=ft.FontWeight.BOLD),
+                        ),
+                    ]),
+                    make_top_settings_bar(show_quiz),
                 ],
             ),
         )
 
         progress_container = ft.ProgressBar(
             value=progress_val,
-            bgcolor=BG_CARD_ALT,
-            color=PRIMARY,
-            height=5,
+            bgcolor=T()["bg_card_alt"],
+            color=T()["primary"],
+            height=4,
         )
 
         # Question Title Parsing
@@ -938,13 +1403,13 @@ def main(page: ft.Page):
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                 controls=[
                     ft.Container(
-                        content=ft.Text(_badge_label, size=12, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
+                        content=ft.Text(_badge_label, size=fs(12), color=T()["text_main"], weight=ft.FontWeight.BOLD),
                         bgcolor=f"{_badge_color}33",
                         border=ft.border.all(1, _badge_color),
                         padding=ft.padding.symmetric(horizontal=12, vertical=4),
                         border_radius=12,
                     ),
-                    ft.Text(f"Tiến độ: {int(progress_val * 100)}%", size=12, color=TEXT_MUTED),
+                    ft.Text(f"Tiến độ: {int(progress_val * 100)}%", size=fs(12), color=T()["text_muted"]),
                 ],
             ),
         ]
@@ -952,19 +1417,19 @@ def main(page: ft.Page):
         if q_header_text:
             question_content_controls.append(
                 ft.Container(
-                    bgcolor=f"{PRIMARY}18",
+                    bgcolor=f"{T()['primary']}18",
                     border_radius=10,
-                    border=ft.border.all(1, f"{PRIMARY}44"),
+                    border=ft.border.all(1, f"{T()['primary']}44"),
                     padding=ft.padding.symmetric(horizontal=12, vertical=6),
-                    content=ft.Text(q_header_text, size=14, color=PRIMARY_LIGHT, weight=ft.FontWeight.BOLD),
+                    content=ft.Text(q_header_text, size=fs(14), color=T()["primary_light"], weight=ft.FontWeight.BOLD),
                 )
             )
 
         question_content_controls.append(
             ft.Text(
                 q_body_text,
-                size=18,
-                color=TEXT_MAIN,
+                size=fs(17),
+                color=T()["text_main"],
                 weight=ft.FontWeight.W_500,
             )
         )
@@ -974,13 +1439,13 @@ def main(page: ft.Page):
         next_btn = ft.ElevatedButton(
             "Câu tiếp theo →" if q_index + 1 < total else "Hoàn thành & Xem kết quả 🎉",
             icon=ft.Icons.NAVIGATE_NEXT_ROUNDED if q_index + 1 < total else ft.Icons.TASK_ALT_ROUNDED,
-            visible=False,
+            visible=state["answered"],
             style=ft.ButtonStyle(
-                bgcolor={ft.ControlState.DEFAULT: PRIMARY, ft.ControlState.HOVERED: SECONDARY},
-                color=TEXT_MAIN,
+                bgcolor={ft.ControlState.DEFAULT: T()["primary"], ft.ControlState.HOVERED: T()["secondary"]},
+                color=T()["text_main"],
                 padding=ft.padding.symmetric(horizontal=28, vertical=16),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=15, weight=ft.FontWeight.BOLD),
+                text_style=ft.TextStyle(size=fs(15), weight=ft.FontWeight.BOLD),
                 elevation=4,
             ),
             on_click=lambda _: next_question(),
@@ -990,11 +1455,11 @@ def main(page: ft.Page):
             "Bỏ qua →",
             visible=not state["answered"],
             style=ft.ButtonStyle(
-                color=TEXT_MUTED,
-                side=ft.BorderSide(1, BORDER_SUBTLE),
+                color=T()["text_muted"],
+                side=ft.BorderSide(1, T()["border_subtle"]),
                 padding=ft.padding.symmetric(horizontal=18, vertical=14),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=14),
+                text_style=ft.TextStyle(size=fs(14)),
             ),
             on_click=lambda _: next_question(),
         )
@@ -1003,11 +1468,11 @@ def main(page: ft.Page):
             "← Câu trước",
             visible=q_index > 0,
             style=ft.ButtonStyle(
-                color=TEXT_MUTED,
-                side=ft.BorderSide(1, BORDER_SUBTLE),
+                color=T()["text_muted"],
+                side=ft.BorderSide(1, T()["border_subtle"]),
                 padding=ft.padding.symmetric(horizontal=18, vertical=14),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=14),
+                text_style=ft.TextStyle(size=fs(14)),
             ),
             on_click=lambda _: prev_question(),
         )
@@ -1025,14 +1490,22 @@ def main(page: ft.Page):
             if ok:
                 state["score"] += 1
 
-            state["results"].append({
+            ans_record = {
                 "question": q["question"],
                 "chosen": chosen,
                 "correct": correct,
                 "ok": ok,
                 "explanation": q.get("explanation", "")
-            })
+            }
+            state["user_answers"][q_index] = ans_record
 
+            # Sync results list
+            state["results"] = [state["user_answers"][i] for i in sorted(state["user_answers"].keys())]
+
+            update_option_views(chosen, ok)
+
+        def update_option_views(chosen: str, ok: bool):
+            correct = effective_answer
             for card, opt in zip(option_cards, opts):
                 is_this_correct = (opt.strip().lower() == correct.strip().lower())
                 is_this_chosen = (opt.strip().lower() == chosen.strip().lower())
@@ -1042,27 +1515,27 @@ def main(page: ft.Page):
                 status_icon_container = card.content.controls[2]
 
                 if is_this_correct:
-                    card.bgcolor = SUCCESS_BG
-                    card.border = ft.border.all(2, SUCCESS)
-                    badge_circle.bgcolor = SUCCESS
-                    badge_circle.content.color = TEXT_MAIN
-                    status_icon_container.content = ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=SUCCESS_LIGHT, size=22)
+                    card.bgcolor = T()["success_bg"]
+                    card.border = ft.border.all(2, T()["success"])
+                    badge_circle.bgcolor = T()["success"]
+                    badge_circle.content.color = T()["text_main"]
+                    status_icon_container.content = ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22)
                     status_icon_container.visible = True
-                    label_text.color = TEXT_MAIN
+                    label_text.color = T()["text_main"]
                     label_text.weight = ft.FontWeight.BOLD
                 elif is_this_chosen and not ok:
-                    card.bgcolor = ERROR_BG
-                    card.border = ft.border.all(2, ERROR)
-                    badge_circle.bgcolor = ERROR
-                    badge_circle.content.color = TEXT_MAIN
-                    status_icon_container.content = ft.Icon(ft.Icons.CANCEL_ROUNDED, color=ERROR_LIGHT, size=22)
+                    card.bgcolor = T()["error_bg"]
+                    card.border = ft.border.all(2, T()["error"])
+                    badge_circle.bgcolor = T()["error"]
+                    badge_circle.content.color = T()["text_main"]
+                    status_icon_container.content = ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22)
                     status_icon_container.visible = True
-                    label_text.color = TEXT_MAIN
+                    label_text.color = T()["text_main"]
                 else:
-                    card.bgcolor = BG_CARD_ALT
-                    card.border = ft.border.all(1, BORDER_SUBTLE)
+                    card.bgcolor = T()["bg_card_alt"]
+                    card.border = ft.border.all(1, T()["border_subtle"])
                     card.opacity = 0.5
-                    label_text.color = TEXT_MUTED
+                    label_text.color = T()["text_muted"]
 
                 card.update()
 
@@ -1074,8 +1547,8 @@ def main(page: ft.Page):
                     ft.Row(
                         spacing=8,
                         controls=[
-                            ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=SUCCESS_LIGHT, size=22),
-                            ft.Text("Chính xác! Chúc mừng bạn.", color=SUCCESS_LIGHT, size=16, weight=ft.FontWeight.BOLD),
+                            ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22),
+                            ft.Text("Chính xác! Chúc mừng bạn.", color=T()["success_light"], size=fs(16), weight=ft.FontWeight.BOLD),
                         ],
                     )
                 )
@@ -1087,11 +1560,11 @@ def main(page: ft.Page):
                             ft.Row(
                                 spacing=8,
                                 controls=[
-                                    ft.Icon(ft.Icons.CANCEL_ROUNDED, color=ERROR_LIGHT, size=22),
-                                    ft.Text("Chưa chính xác!", color=ERROR_LIGHT, size=16, weight=ft.FontWeight.BOLD),
+                                    ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22),
+                                    ft.Text("Chưa chính xác!", color=T()["error_light"], size=fs(16), weight=ft.FontWeight.BOLD),
                                 ],
                             ),
-                            ft.Text(f"Đáp án đúng: {correct}", color=WARNING_LIGHT, size=15, weight=ft.FontWeight.W_500),
+                            ft.Text(f"Đáp án đúng: {correct}", color=T()["warning_light"], size=fs(15), weight=ft.FontWeight.W_500),
                         ],
                     )
                 )
@@ -1101,26 +1574,26 @@ def main(page: ft.Page):
                     ft.Container(
                         margin=ft.margin.only(top=6),
                         padding=ft.padding.all(12),
-                        bgcolor=f"{BG_CARD_ALT}AA",
+                        bgcolor=f"{T()['bg_card_alt']}AA",
                         border_radius=8,
-                        border=ft.border.all(1, BORDER_SUBTLE),
+                        border=ft.border.all(1, T()["border_subtle"]),
                         content=ft.Column(
                             spacing=4,
                             controls=[
                                 ft.Row(spacing=6, controls=[
-                                    ft.Icon(ft.Icons.LIGHTBULB_ROUNDED, color=WARNING_LIGHT, size=16),
-                                    ft.Text("Giải thích chi tiết:", size=13, color=WARNING_LIGHT, weight=ft.FontWeight.BOLD),
+                                    ft.Icon(ft.Icons.LIGHTBULB_ROUNDED, color=T()["warning_light"], size=16),
+                                    ft.Text("Giải thích chi tiết:", size=fs(13), color=T()["warning_light"], weight=ft.FontWeight.BOLD),
                                 ]),
-                                ft.Text(explanation_text, size=13, color=TEXT_MUTED),
+                                ft.Text(explanation_text, size=fs(13), color=T()["text_muted"]),
                             ],
                         ),
                     )
                 )
 
             feedback_container.content = ft.Container(
-                bgcolor=f"{SUCCESS_BG}33" if ok else f"{ERROR_BG}33",
+                bgcolor=f"{T()['success_bg']}33" if ok else f"{T()['error_bg']}33",
                 border_radius=12,
-                border=ft.border.all(1, SUCCESS if ok else ERROR),
+                border=ft.border.all(1, T()["success"] if ok else T()["error"]),
                 padding=ft.padding.all(14),
                 content=ft.Column(spacing=6, controls=feedback_controls),
             )
@@ -1142,22 +1615,46 @@ def main(page: ft.Page):
                 bgcolor=f"{letter_color}22",
                 border=ft.border.all(1, letter_color),
                 alignment=ft.Alignment(0, 0),
-                content=ft.Text(letter, size=14, color=letter_color, weight=ft.FontWeight.BOLD),
+                content=ft.Text(letter, size=fs(14), color=letter_color, weight=ft.FontWeight.BOLD),
             )
 
             status_icon = ft.Container(visible=False)
 
+            is_already_chosen = prev_ans and (opt.strip().lower() == prev_ans["chosen"].strip().lower())
+            is_correct_opt = prev_ans and (opt.strip().lower() == effective_answer.strip().lower())
+
+            card_bg = T()["bg_card_alt"]
+            card_border = ft.border.all(1, T()["border_subtle"])
+            card_opacity = 1.0
+            text_col = T()["text_main"]
+
+            if prev_ans:
+                if is_correct_opt:
+                    card_bg = T()["success_bg"]
+                    card_border = ft.border.all(2, T()["success"])
+                    status_icon.content = ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22)
+                    status_icon.visible = True
+                elif is_already_chosen and not prev_ans["ok"]:
+                    card_bg = T()["error_bg"]
+                    card_border = ft.border.all(2, T()["error"])
+                    status_icon.content = ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22)
+                    status_icon.visible = True
+                else:
+                    card_opacity = 0.5
+                    text_col = T()["text_muted"]
+
             card = ft.Container(
-                bgcolor=BG_CARD_ALT,
+                bgcolor=card_bg,
                 border_radius=14,
                 padding=ft.padding.symmetric(horizontal=16, vertical=12),
-                border=ft.border.all(1, BORDER_SUBTLE),
+                border=card_border,
+                opacity=card_opacity,
                 content=ft.Row(
                     spacing=14,
                     vertical_alignment=ft.CrossAxisAlignment.CENTER,
                     controls=[
                         badge_circle,
-                        ft.Text(opt, size=15, color=TEXT_MAIN, expand=True),
+                        ft.Text(opt, size=fs(15), color=text_col, expand=True),
                         status_icon,
                     ],
                 ),
@@ -1166,6 +1663,66 @@ def main(page: ft.Page):
                 animate=ft.Animation(150, ft.AnimationCurve.EASE_OUT) if hasattr(ft, "Animation") else ft.animation.Animation(150, ft.AnimationCurve.EASE_OUT),
             )
             option_cards.append(card)
+
+        # Show feedback if already answered
+        if prev_ans:
+            ok = prev_ans["ok"]
+            explanation_text = q.get("explanation", "")
+            feedback_controls = []
+            if ok:
+                feedback_controls.append(
+                    ft.Row(
+                        spacing=8,
+                        controls=[
+                            ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22),
+                            ft.Text("Chính xác! Chúc mừng bạn.", color=T()["success_light"], size=fs(16), weight=ft.FontWeight.BOLD),
+                        ],
+                    )
+                )
+            else:
+                feedback_controls.append(
+                    ft.Column(
+                        spacing=4,
+                        controls=[
+                            ft.Row(
+                                spacing=8,
+                                controls=[
+                                    ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22),
+                                    ft.Text("Chưa chính xác!", color=T()["error_light"], size=fs(16), weight=ft.FontWeight.BOLD),
+                                ],
+                            ),
+                            ft.Text(f"Đáp án đúng: {effective_answer}", color=T()["warning_light"], size=fs(15), weight=ft.FontWeight.W_500),
+                        ],
+                    )
+                )
+            if explanation_text:
+                feedback_controls.append(
+                    ft.Container(
+                        margin=ft.margin.only(top=6),
+                        padding=ft.padding.all(12),
+                        bgcolor=f"{T()['bg_card_alt']}AA",
+                        border_radius=8,
+                        border=ft.border.all(1, T()["border_subtle"]),
+                        content=ft.Column(
+                            spacing=4,
+                            controls=[
+                                ft.Row(spacing=6, controls=[
+                                    ft.Icon(ft.Icons.LIGHTBULB_ROUNDED, color=T()["warning_light"], size=16),
+                                    ft.Text("Giải thích chi tiết:", size=fs(13), color=T()["warning_light"], weight=ft.FontWeight.BOLD),
+                                ]),
+                                ft.Text(explanation_text, size=fs(13), color=T()["text_muted"]),
+                            ],
+                        ),
+                    )
+                )
+            feedback_container.content = ft.Container(
+                bgcolor=f"{T()['success_bg']}33" if ok else f"{T()['error_bg']}33",
+                border_radius=12,
+                border=ft.border.all(1, T()["success"] if ok else T()["error"]),
+                padding=ft.padding.all(14),
+                content=ft.Column(spacing=6, controls=feedback_controls),
+            )
+            feedback_container.visible = True
 
         def next_question():
             if state["current"] + 1 >= state["num_questions"]:
@@ -1176,10 +1733,6 @@ def main(page: ft.Page):
 
         def prev_question():
             if state["current"] > 0:
-                if state["answered"]:
-                    last = state["results"].pop() if state["results"] else None
-                    if last and last["ok"]:
-                        state["score"] = max(0, state["score"] - 1)
                 state["current"] -= 1
                 show_quiz()
 
@@ -1190,7 +1743,7 @@ def main(page: ft.Page):
                 gradient=ft.LinearGradient(
                     begin=ft.Alignment(0, -1),
                     end=ft.Alignment(0, 1),
-                    colors=[BG_MAIN, BG_SURFACE],
+                    colors=[T()["bg_main"], T()["bg_surface"]],
                 ),
                 content=ft.Column(
                     expand=True,
@@ -1198,22 +1751,22 @@ def main(page: ft.Page):
                     controls=[
                         top_bar,
                         progress_container,
-                        # Question & Options Scrollable Card Area
+                        # Question & Options Card Area
                         ft.Container(
                             expand=True,
                             padding=ft.padding.symmetric(horizontal=24, vertical=16),
                             content=ft.Container(
                                 expand=True,
-                                bgcolor=BG_CARD,
+                                bgcolor=T()["bg_card"],
                                 border_radius=18,
-                                border=ft.border.all(1, BORDER_SUBTLE),
+                                border=ft.border.all(1, T()["border_subtle"]),
                                 padding=ft.padding.all(24),
                                 content=ft.Column(
                                     expand=True,
                                     spacing=16,
                                     controls=[
                                         ft.Column(spacing=12, controls=question_content_controls),
-                                        ft.Divider(color=BORDER_SUBTLE, height=1),
+                                        ft.Divider(color=T()["border_subtle"], height=1),
                                         ft.Column(
                                             spacing=10,
                                             controls=option_cards,
@@ -1242,28 +1795,45 @@ def main(page: ft.Page):
     # ── RESULT SCREEN ────────────────────────────────────────
     def show_result():
         page.clean()
+        page.bgcolor = T()["bg_main"]
         total = state["num_questions"]
-        score = state["score"]
+        results = [state["user_answers"][i] for i in sorted(state["user_answers"].keys())]
+        state["results"] = results
+        score = sum(1 for r in results if r["ok"])
+        state["score"] = score
         pct = (score / total * 100) if total > 0 else 0
-        results = state["results"]
+
+        # Save to history automatically once
+        now_str = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
+        subj_lbl = subject_dirs.get(state["subject"], {}).get("label", state["subject"])
+        history_record = {
+            "subject": state["subject"],
+            "subject_label": subj_lbl,
+            "timestamp": now_str,
+            "score": score,
+            "total": total,
+            "pct": round(pct, 1),
+            "mode_label": "Theo chương" if state["mode"] == "chuong" else "Bộ đề thi",
+        }
+        save_history_record(history_record)
 
         if pct >= 85:
-            grade_color = SUCCESS
+            grade_color = T()["success"]
             grade_title = "XUẤT SẮC! 🎉"
             grade_sub = "Bạn đã nắm rất vững kiến thức phần này."
             grade_icon = ft.Icons.WORKSPACE_PREMIUM_ROUNDED
         elif pct >= 65:
-            grade_color = ACCENT_LIGHT
+            grade_color = T()["accent"]
             grade_title = "KẾT QUẢ KHÁ TỐT! 👍"
             grade_sub = "Bạn đã hiểu hầu hết nội dung, hãy ôn lại câu sai nhé."
             grade_icon = ft.Icons.THUMB_UP_ROUNDED
         elif pct >= 50:
-            grade_color = WARNING
+            grade_color = T()["warning"]
             grade_title = "ĐẠT YÊU CẦU 📝"
             grade_sub = "Cần ôn tập thêm các khái niệm và câu hỏi tình huống."
             grade_icon = ft.Icons.FACT_CHECK_ROUNDED
         else:
-            grade_color = ERROR
+            grade_color = T()["error"]
             grade_title = "CẦN ÔN TẬP THÊM 💡"
             grade_sub = "Hãy đọc lại tài liệu và làm lại các câu bị sai."
             grade_icon = ft.Icons.MENU_BOOK_ROUNDED
@@ -1282,8 +1852,8 @@ def main(page: ft.Page):
         for q_num, r in filtered_results:
             is_ok = r["ok"]
             icon = ft.Icons.CHECK_CIRCLE_ROUNDED if is_ok else ft.Icons.CANCEL_ROUNDED
-            color = SUCCESS if is_ok else ERROR
-            bg_color = f"{SUCCESS_BG}44" if is_ok else f"{ERROR_BG}44"
+            color = T()["success"] if is_ok else T()["error"]
+            bg_color = f"{T()['success_bg']}44" if is_ok else f"{T()['error_bg']}44"
 
             ans_details = []
             if is_ok:
@@ -1291,8 +1861,8 @@ def main(page: ft.Page):
                     ft.Row(
                         spacing=6,
                         controls=[
-                            ft.Text("Đáp án đã chọn:", size=13, color=TEXT_MUTED),
-                            ft.Text(r["chosen"], size=13, color=SUCCESS_LIGHT, weight=ft.FontWeight.BOLD, expand=True),
+                            ft.Text("Đáp án đã chọn:", size=fs(13), color=T()["text_muted"]),
+                            ft.Text(r["chosen"], size=fs(13), color=T()["success_light"], weight=ft.FontWeight.BOLD, expand=True),
                         ],
                     )
                 )
@@ -1301,15 +1871,15 @@ def main(page: ft.Page):
                     ft.Row(
                         spacing=6,
                         controls=[
-                            ft.Text("Bạn đã chọn:", size=13, color=TEXT_MUTED),
-                            ft.Text(r["chosen"], size=13, color=ERROR_LIGHT, weight=ft.FontWeight.BOLD, expand=True),
+                            ft.Text("Bạn đã chọn:", size=fs(13), color=T()["text_muted"]),
+                            ft.Text(r["chosen"], size=fs(13), color=T()["error_light"], weight=ft.FontWeight.BOLD, expand=True),
                         ],
                     ),
                     ft.Row(
                         spacing=6,
                         controls=[
-                            ft.Text("Đáp án đúng:", size=13, color=TEXT_MUTED),
-                            ft.Text(r["correct"], size=13, color=SUCCESS_LIGHT, weight=ft.FontWeight.BOLD, expand=True),
+                            ft.Text("Đáp án đúng:", size=fs(13), color=T()["text_muted"]),
+                            ft.Text(r["correct"], size=fs(13), color=T()["success_light"], weight=ft.FontWeight.BOLD, expand=True),
                         ],
                     ),
                 ])
@@ -1318,12 +1888,12 @@ def main(page: ft.Page):
                 ans_details.append(
                     ft.Container(
                         padding=ft.padding.all(8),
-                        bgcolor=BG_CARD_ALT,
+                        bgcolor=T()["bg_card_alt"],
                         border_radius=8,
                         content=ft.Text(
                             f"💡 {r['explanation']}",
-                            size=12,
-                            color=TEXT_MUTED,
+                            size=fs(12),
+                            color=T()["text_muted"],
                         ),
                     )
                 )
@@ -1343,8 +1913,8 @@ def main(page: ft.Page):
                                 ft.Icon(icon, color=color, size=20),
                                 ft.Text(
                                     f"Câu {q_num}: {r['question']}",
-                                    size=14,
-                                    color=TEXT_MAIN,
+                                    size=fs(14),
+                                    color=T()["text_main"],
                                     weight=ft.FontWeight.W_500,
                                     expand=True,
                                 ),
@@ -1371,18 +1941,23 @@ def main(page: ft.Page):
                 gradient=ft.LinearGradient(
                     begin=ft.Alignment(0, -1),
                     end=ft.Alignment(0, 1),
-                    colors=[BG_MAIN, BG_SURFACE],
+                    colors=[T()["bg_main"], T()["bg_surface"]],
                 ),
                 padding=ft.padding.symmetric(horizontal=24, vertical=20),
                 content=ft.Column(
                     expand=True,
                     spacing=16,
                     controls=[
+                        # Settings Bar
+                        ft.Row(
+                            alignment=ft.MainAxisAlignment.END,
+                            controls=[make_top_settings_bar(show_result)],
+                        ),
                         # Hero Score Banner Card
                         ft.Container(
-                            bgcolor=BG_CARD,
+                            bgcolor=T()["bg_card"],
                             border_radius=18,
-                            border=ft.border.all(1, BORDER_SUBTLE),
+                            border=ft.border.all(1, T()["border_subtle"]),
                             padding=ft.padding.all(20),
                             content=ft.Row(
                                 alignment=ft.MainAxisAlignment.SPACE_AROUND,
@@ -1403,13 +1978,13 @@ def main(page: ft.Page):
                                             ft.Column(
                                                 spacing=4,
                                                 controls=[
-                                                    ft.Text(grade_title, size=20, color=grade_color, weight=ft.FontWeight.BOLD),
-                                                    ft.Text(grade_sub, size=13, color=TEXT_MUTED),
+                                                    ft.Text(grade_title, size=fs(20), color=grade_color, weight=ft.FontWeight.BOLD),
+                                                    ft.Text(grade_sub, size=fs(13), color=T()["text_muted"]),
                                                     ft.Container(
                                                         width=240,
                                                         content=ft.ProgressBar(
                                                             value=pct / 100,
-                                                            bgcolor=BG_CARD_ALT,
+                                                            bgcolor=T()["bg_card_alt"],
                                                             color=grade_color,
                                                             height=6,
                                                         ),
@@ -1420,15 +1995,15 @@ def main(page: ft.Page):
                                     ),
                                     ft.Container(
                                         padding=ft.padding.symmetric(horizontal=24, vertical=12),
-                                        bgcolor=BG_CARD_ALT,
+                                        bgcolor=T()["bg_card_alt"],
                                         border_radius=14,
-                                        border=ft.border.all(1, BORDER_SUBTLE),
+                                        border=ft.border.all(1, T()["border_subtle"]),
                                         content=ft.Column(
                                             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                                             spacing=2,
                                             controls=[
-                                                ft.Text(f"{score} / {total}", size=28, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
-                                                ft.Text(f"Tỷ lệ: {pct:.1f}%", size=14, color=PRIMARY_LIGHT, weight=ft.FontWeight.W_500),
+                                                ft.Text(f"{score} / {total}", size=fs(28), color=T()["text_main"], weight=ft.FontWeight.BOLD),
+                                                ft.Text(f"Tỷ lệ: {pct:.1f}%", size=fs(14), color=T()["primary_light"], weight=ft.FontWeight.W_500),
                                             ],
                                         ),
                                     ),
@@ -1445,11 +2020,11 @@ def main(page: ft.Page):
                                     "Thi lại toàn bộ",
                                     icon=ft.Icons.REFRESH_ROUNDED,
                                     style=ft.ButtonStyle(
-                                        color=PRIMARY_LIGHT,
-                                        side=ft.BorderSide(1, PRIMARY),
+                                        color=T()["primary_light"],
+                                        side=ft.BorderSide(1, T()["primary"]),
                                         padding=ft.padding.symmetric(horizontal=20, vertical=14),
                                         shape=ft.RoundedRectangleBorder(radius=12),
-                                        text_style=ft.TextStyle(size=14, weight=ft.FontWeight.W_500),
+                                        text_style=ft.TextStyle(size=fs(14), weight=ft.FontWeight.W_500),
                                     ),
                                     on_click=lambda _: start_quiz(state["mode"], state["num_questions"]),
                                 ),
@@ -1459,11 +2034,11 @@ def main(page: ft.Page):
                                             f"Làm lại câu sai ({wrong_count})",
                                             icon=ft.Icons.REPLAY_CIRCLE_FILLED_ROUNDED,
                                             style=ft.ButtonStyle(
-                                                bgcolor=ERROR,
-                                                color=TEXT_MAIN,
+                                                bgcolor=T()["error"],
+                                                color=T()["text_main"],
                                                 padding=ft.padding.symmetric(horizontal=24, vertical=14),
                                                 shape=ft.RoundedRectangleBorder(radius=12),
-                                                text_style=ft.TextStyle(size=14, weight=ft.FontWeight.BOLD),
+                                                text_style=ft.TextStyle(size=fs(14), weight=ft.FontWeight.BOLD),
                                             ),
                                             on_click=lambda _: start_retry_wrong(),
                                         )
@@ -1474,11 +2049,11 @@ def main(page: ft.Page):
                                     "Về trang chủ",
                                     icon=ft.Icons.HOME_ROUNDED,
                                     style=ft.ButtonStyle(
-                                        bgcolor=PRIMARY,
-                                        color=TEXT_MAIN,
+                                        bgcolor=T()["primary"],
+                                        color=T()["text_main"],
                                         padding=ft.padding.symmetric(horizontal=24, vertical=14),
                                         shape=ft.RoundedRectangleBorder(radius=12),
-                                        text_style=ft.TextStyle(size=14, weight=ft.FontWeight.BOLD),
+                                        text_style=ft.TextStyle(size=fs(14), weight=ft.FontWeight.BOLD),
                                     ),
                                     on_click=lambda _: show_welcome(),
                                 ),
@@ -1490,17 +2065,17 @@ def main(page: ft.Page):
                             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
                             vertical_alignment=ft.CrossAxisAlignment.CENTER,
                             controls=[
-                                ft.Text("Chi tiết bài làm:", size=16, color=TEXT_MAIN, weight=ft.FontWeight.BOLD),
+                                ft.Text("Chi tiết bài làm:", size=fs(16), color=T()["text_main"], weight=ft.FontWeight.BOLD),
                                 ft.Row(
                                     spacing=6,
                                     controls=[
                                         ft.ElevatedButton(
-                                            f"Tất cả ({total})",
+                                            f"Tất cả ({len(results)})",
                                             style=ft.ButtonStyle(
-                                                bgcolor=PRIMARY if review_filter_val == "all" else BG_CARD,
-                                                color=TEXT_MAIN if review_filter_val == "all" else TEXT_MUTED,
+                                                bgcolor=T()["primary"] if review_filter_val == "all" else T()["bg_card"],
+                                                color=T()["text_main"] if review_filter_val == "all" else T()["text_muted"],
                                                 padding=ft.padding.symmetric(horizontal=12, vertical=4),
-                                                text_style=ft.TextStyle(size=12),
+                                                text_style=ft.TextStyle(size=fs(12)),
                                                 shape=ft.RoundedRectangleBorder(radius=10),
                                             ),
                                             on_click=lambda _: set_filter("all"),
@@ -1508,10 +2083,10 @@ def main(page: ft.Page):
                                         ft.ElevatedButton(
                                             f"Câu sai ({wrong_count})",
                                             style=ft.ButtonStyle(
-                                                bgcolor=ERROR if review_filter_val == "wrong" else BG_CARD,
-                                                color=TEXT_MAIN if review_filter_val == "wrong" else TEXT_MUTED,
+                                                bgcolor=T()["error"] if review_filter_val == "wrong" else T()["bg_card"],
+                                                color=T()["text_main"] if review_filter_val == "wrong" else T()["text_muted"],
                                                 padding=ft.padding.symmetric(horizontal=12, vertical=4),
-                                                text_style=ft.TextStyle(size=12),
+                                                text_style=ft.TextStyle(size=fs(12)),
                                                 shape=ft.RoundedRectangleBorder(radius=10),
                                             ),
                                             on_click=lambda _: set_filter("wrong"),
@@ -1519,10 +2094,10 @@ def main(page: ft.Page):
                                         ft.ElevatedButton(
                                             f"Câu đúng ({score})",
                                             style=ft.ButtonStyle(
-                                                bgcolor=SUCCESS if review_filter_val == "correct" else BG_CARD,
-                                                color=TEXT_MAIN if review_filter_val == "correct" else TEXT_MUTED,
+                                                bgcolor=T()["success"] if review_filter_val == "correct" else T()["bg_card"],
+                                                color=T()["text_main"] if review_filter_val == "correct" else T()["text_muted"],
                                                 padding=ft.padding.symmetric(horizontal=12, vertical=4),
-                                                text_style=ft.TextStyle(size=12),
+                                                text_style=ft.TextStyle(size=fs(12)),
                                                 shape=ft.RoundedRectangleBorder(radius=10),
                                             ),
                                             on_click=lambda _: set_filter("correct"),
@@ -1535,16 +2110,16 @@ def main(page: ft.Page):
                         # Scrollable Detailed Question Review Area
                         ft.Container(
                             expand=True,
-                            bgcolor=BG_CARD,
+                            bgcolor=T()["bg_card"],
                             border_radius=14,
-                            border=ft.border.all(1, BORDER_SUBTLE),
+                            border=ft.border.all(1, T()["border_subtle"]),
                             padding=ft.padding.all(14),
                             content=ft.Column(
                                 controls=review_cards if review_cards else [
                                     ft.Container(
                                         alignment=ft.Alignment(0, 0),
                                         padding=ft.padding.all(30),
-                                        content=ft.Text("Không có câu hỏi nào trong danh mục lọc này.", color=TEXT_MUTED, size=14),
+                                        content=ft.Text("Không có câu hỏi nào trong danh mục lọc này.", color=T()["text_muted"], size=fs(14)),
                                     )
                                 ],
                                 spacing=10,
