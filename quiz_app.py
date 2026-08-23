@@ -378,10 +378,10 @@ OPT_LETTERS = ["A", "B", "C", "D"]
 # ============================================================
 def main(page: ft.Page):
     page.title = "Trắc Nghiệm Ôn Tập & Khảo Sát Kiến Thức"
-    page.window.width = 1000
-    page.window.height = 780
-    page.window.min_width = 820
-    page.window.min_height = 600
+    page.window.width = 1120
+    page.window.height = 790
+    page.window.min_width = 880
+    page.window.min_height = 620
     page.padding = 0
 
     def on_window_event(e):
@@ -1232,104 +1232,7 @@ def main(page: ft.Page):
             _badge_label = _sec_label
             _badge_color = badge_palette[_idx % len(badge_palette)]
 
-        def open_map_dialog():
-            grid_buttons = []
-            for i in range(total):
-                ans_info = state["user_answers"].get(i)
-                if i == q_index:
-                    btn_bg = T()["primary"]
-                    btn_color = T()["text_main"]
-                    border_s = ft.BorderSide(2, T()["accent"])
-                elif ans_info:
-                    if ans_info["ok"]:
-                        btn_bg = T()["success_bg"]
-                        btn_color = T()["success_light"]
-                        border_s = ft.BorderSide(1, T()["success"])
-                    else:
-                        btn_bg = T()["error_bg"]
-                        btn_color = T()["error_light"]
-                        border_s = ft.BorderSide(1, T()["error"])
-                else:
-                    btn_bg = T()["bg_card_alt"]
-                    btn_color = T()["text_muted"]
-                    border_s = ft.BorderSide(1, T()["border_subtle"])
-
-                def make_jump(target_i=i):
-                    def _jump(e):
-                        setattr(dlg, "open", False)
-                        page.update()
-                        state["current"] = target_i
-                        show_quiz()
-                    return _jump
-
-                btn = ft.Container(
-                    width=44, height=44,
-                    border_radius=10,
-                    bgcolor=btn_bg,
-                    border=ft.border.all(border_s.width, border_s.color),
-                    alignment=ft.Alignment(0, 0),
-                    ink=True,
-                    on_click=make_jump(),
-                    content=ft.Text(str(i + 1), size=fs(13), color=btn_color, weight=ft.FontWeight.BOLD),
-                )
-                grid_buttons.append(btn)
-
-            dlg = ft.AlertDialog(
-                title=ft.Row(
-                    alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                    controls=[
-                        ft.Row(spacing=8, controls=[
-                            ft.Icon(ft.Icons.GRID_VIEW_ROUNDED, color=T()["primary_light"], size=22),
-                            ft.Text("Bản đồ câu hỏi (Quick-Jump)", size=fs(16), weight=ft.FontWeight.BOLD, color=T()["text_main"]),
-                        ]),
-                        ft.IconButton(ft.Icons.CLOSE, on_click=lambda _: (setattr(dlg, "open", False), page.update())),
-                    ],
-                ),
-                content=ft.Container(
-                    width=540,
-                    height=360,
-                    content=ft.Column(
-                        spacing=12,
-                        controls=[
-                            ft.Row(
-                                spacing=16,
-                                alignment=ft.MainAxisAlignment.CENTER,
-                                controls=[
-                                    ft.Row(spacing=4, controls=[
-                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["success"]),
-                                        ft.Text("Đúng", size=fs(12), color=T()["text_muted"]),
-                                    ]),
-                                    ft.Row(spacing=4, controls=[
-                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["error"]),
-                                        ft.Text("Sai", size=fs(12), color=T()["text_muted"]),
-                                    ]),
-                                    ft.Row(spacing=4, controls=[
-                                        ft.Container(width=12, height=12, border_radius=4, bgcolor=T()["border_subtle"]),
-                                        ft.Text("Chưa làm", size=fs(12), color=T()["text_muted"]),
-                                    ]),
-                                ],
-                            ),
-                            ft.Divider(color=T()["border_subtle"], height=1),
-                            ft.Container(
-                                expand=True,
-                                content=ft.Row(
-                                    wrap=True,
-                                    spacing=8,
-                                    run_spacing=8,
-                                    controls=grid_buttons,
-                                    scroll=ft.ScrollMode.AUTO,
-                                ),
-                            ),
-                        ],
-                    ),
-                ),
-                bgcolor=T()["bg_card"],
-                shape=ft.RoundedRectangleBorder(radius=16),
-            )
-            page.overlay.append(dlg)
-            dlg.open = True
-            page.update()
-
+        # Top Bar
         top_bar = ft.Container(
             padding=ft.padding.symmetric(horizontal=20, vertical=12),
             bgcolor=T()["bg_surface"],
@@ -1351,18 +1254,6 @@ def main(page: ft.Page):
                         on_click=lambda _: show_welcome(),
                     ),
                     ft.Row(spacing=8, controls=[
-                        ft.ElevatedButton(
-                            "Bản đồ câu hỏi",
-                            icon=ft.Icons.GRID_VIEW_ROUNDED,
-                            style=ft.ButtonStyle(
-                                bgcolor=T()["bg_card"],
-                                color=T()["primary_light"],
-                                padding=ft.padding.symmetric(horizontal=12, vertical=6),
-                                shape=ft.RoundedRectangleBorder(radius=10),
-                                side=ft.BorderSide(1, T()["primary"]),
-                            ),
-                            on_click=lambda _: open_map_dialog(),
-                        ),
                         ft.Container(
                             bgcolor=T()["bg_card"],
                             border_radius=10,
@@ -1444,9 +1335,9 @@ def main(page: ft.Page):
             style=ft.ButtonStyle(
                 bgcolor={ft.ControlState.DEFAULT: T()["primary"], ft.ControlState.HOVERED: T()["secondary"]},
                 color=T()["text_main"],
-                padding=ft.padding.symmetric(horizontal=28, vertical=16),
+                padding=ft.padding.symmetric(horizontal=24, vertical=14),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=fs(15), weight=ft.FontWeight.BOLD),
+                text_style=ft.TextStyle(size=fs(14), weight=ft.FontWeight.BOLD),
                 elevation=4,
             ),
             on_click=lambda _: next_question(),
@@ -1458,9 +1349,9 @@ def main(page: ft.Page):
             style=ft.ButtonStyle(
                 color=T()["text_muted"],
                 side=ft.BorderSide(1, T()["border_subtle"]),
-                padding=ft.padding.symmetric(horizontal=18, vertical=14),
+                padding=ft.padding.symmetric(horizontal=16, vertical=12),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=fs(14)),
+                text_style=ft.TextStyle(size=fs(13)),
             ),
             on_click=lambda _: next_question(),
         )
@@ -1471,9 +1362,9 @@ def main(page: ft.Page):
             style=ft.ButtonStyle(
                 color=T()["text_muted"],
                 side=ft.BorderSide(1, T()["border_subtle"]),
-                padding=ft.padding.symmetric(horizontal=18, vertical=14),
+                padding=ft.padding.symmetric(horizontal=16, vertical=12),
                 shape=ft.RoundedRectangleBorder(radius=12),
-                text_style=ft.TextStyle(size=fs(14)),
+                text_style=ft.TextStyle(size=fs(13)),
             ),
             on_click=lambda _: prev_question(),
         )
@@ -1501,108 +1392,7 @@ def main(page: ft.Page):
             state["user_answers"][q_index] = ans_record
             state["results"] = [state["user_answers"][i] for i in sorted(state["user_answers"].keys())]
 
-            update_option_views(chosen, ok)
-
-        def update_option_views(chosen: str, ok: bool):
-            correct = effective_answer
-            for card, opt in zip(option_cards, opts):
-                is_this_correct = (opt.strip().lower() == correct.strip().lower())
-                is_this_chosen = (opt.strip().lower() == chosen.strip().lower())
-                
-                badge_circle = card.content.controls[0]
-                label_text = card.content.controls[1]
-                status_icon_container = card.content.controls[2]
-
-                if is_this_correct:
-                    card.bgcolor = T()["success_bg"]
-                    card.border = ft.border.all(2, T()["success"])
-                    badge_circle.bgcolor = T()["success"]
-                    badge_circle.content.color = T()["text_main"]
-                    status_icon_container.content = ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22)
-                    status_icon_container.visible = True
-                    label_text.color = T()["text_main"]
-                    label_text.weight = ft.FontWeight.BOLD
-                elif is_this_chosen and not ok:
-                    card.bgcolor = T()["error_bg"]
-                    card.border = ft.border.all(2, T()["error"])
-                    badge_circle.bgcolor = T()["error"]
-                    badge_circle.content.color = T()["text_main"]
-                    status_icon_container.content = ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22)
-                    status_icon_container.visible = True
-                    label_text.color = T()["text_main"]
-                else:
-                    card.bgcolor = T()["bg_card_alt"]
-                    card.border = ft.border.all(1, T()["border_subtle"])
-                    card.opacity = 0.5
-                    label_text.color = T()["text_muted"]
-
-                card.update()
-
-            explanation_text = q.get("explanation", "")
-            feedback_controls = []
-            
-            if ok:
-                feedback_controls.append(
-                    ft.Row(
-                        spacing=8,
-                        controls=[
-                            ft.Icon(ft.Icons.CHECK_CIRCLE_ROUNDED, color=T()["success_light"], size=22),
-                            ft.Text("Chính xác! Chúc mừng bạn.", color=T()["success_light"], size=fs(16), weight=ft.FontWeight.BOLD),
-                        ],
-                    )
-                )
-            else:
-                feedback_controls.append(
-                    ft.Column(
-                        spacing=4,
-                        controls=[
-                            ft.Row(
-                                spacing=8,
-                                controls=[
-                                    ft.Icon(ft.Icons.CANCEL_ROUNDED, color=T()["error_light"], size=22),
-                                    ft.Text("Chưa chính xác!", color=T()["error_light"], size=fs(16), weight=ft.FontWeight.BOLD),
-                                ],
-                            ),
-                            ft.Text(f"Đáp án đúng: {correct}", color=T()["warning_light"], size=fs(15), weight=ft.FontWeight.W_500),
-                        ],
-                    )
-                )
-
-            if explanation_text:
-                feedback_controls.append(
-                    ft.Container(
-                        margin=ft.margin.only(top=6),
-                        padding=ft.padding.all(12),
-                        bgcolor=f"{T()['bg_card_alt']}AA",
-                        border_radius=8,
-                        border=ft.border.all(1, T()["border_subtle"]),
-                        content=ft.Column(
-                            spacing=4,
-                            controls=[
-                                ft.Row(spacing=6, controls=[
-                                    ft.Icon(ft.Icons.LIGHTBULB_ROUNDED, color=T()["warning_light"], size=16),
-                                    ft.Text("Giải thích chi tiết:", size=fs(13), color=T()["warning_light"], weight=ft.FontWeight.BOLD),
-                                ]),
-                                ft.Text(explanation_text, size=fs(13), color=T()["text_muted"]),
-                            ],
-                        ),
-                    )
-                )
-
-            feedback_container.content = ft.Container(
-                bgcolor=f"{T()['success_bg']}33" if ok else f"{T()['error_bg']}33",
-                border_radius=12,
-                border=ft.border.all(1, T()["success"] if ok else T()["error"]),
-                padding=ft.padding.all(14),
-                content=ft.Column(spacing=6, controls=feedback_controls),
-            )
-            feedback_container.visible = True
-            feedback_container.update()
-
-            next_btn.visible = True
-            next_btn.update()
-            skip_btn.visible = False
-            skip_btn.update()
+            show_quiz()
 
         for idx, opt in enumerate(opts):
             letter = OPT_LETTERS[idx % len(OPT_LETTERS)]
@@ -1734,7 +1524,111 @@ def main(page: ft.Page):
                 state["current"] -= 1
                 show_quiz()
 
-        # ── QUIZ SCREEN LAYOUT ──
+        # ── SIDEBAR QUESTION MAP GRID (Hiển thị trực tiếp bên phải) ──
+        grid_buttons = []
+        for i in range(total):
+            ans_info = state["user_answers"].get(i)
+            if i == q_index:
+                btn_bg = T()["primary"]
+                btn_color = T()["text_main"]
+                border_s = ft.BorderSide(2, T()["accent"])
+            elif ans_info:
+                if ans_info["ok"]:
+                    btn_bg = T()["success_bg"]
+                    btn_color = T()["success_light"]
+                    border_s = ft.BorderSide(1, T()["success"])
+                else:
+                    btn_bg = T()["error_bg"]
+                    btn_color = T()["error_light"]
+                    border_s = ft.BorderSide(1, T()["error"])
+            else:
+                btn_bg = T()["bg_card_alt"]
+                btn_color = T()["text_muted"]
+                border_s = ft.BorderSide(1, T()["border_subtle"])
+
+            def make_direct_jump(target_i=i):
+                def _jump(e):
+                    state["current"] = target_i
+                    show_quiz()
+                return _jump
+
+            btn = ft.Container(
+                width=38, height=38,
+                border_radius=9,
+                bgcolor=btn_bg,
+                border=ft.border.all(border_s.width, border_s.color),
+                alignment=ft.Alignment(0, 0),
+                ink=True,
+                on_click=make_direct_jump(),
+                content=ft.Text(str(i + 1), size=fs(12), color=btn_color, weight=ft.FontWeight.BOLD),
+            )
+            grid_buttons.append(btn)
+
+        sidebar_map = ft.Container(
+            width=270,
+            bgcolor=T()["bg_card"],
+            border_radius=18,
+            border=ft.border.all(1, T()["border_subtle"]),
+            padding=ft.padding.all(16),
+            content=ft.Column(
+                spacing=12,
+                controls=[
+                    ft.Row(
+                        spacing=6,
+                        controls=[
+                            ft.Icon(ft.Icons.GRID_VIEW_ROUNDED, color=T()["primary_light"], size=20),
+                            ft.Text("Bản đồ câu hỏi", size=fs(14), weight=ft.FontWeight.BOLD, color=T()["text_main"]),
+                        ],
+                    ),
+                    ft.Row(
+                        spacing=8,
+                        alignment=ft.MainAxisAlignment.START,
+                        controls=[
+                            ft.Row(spacing=3, controls=[
+                                ft.Container(width=10, height=10, border_radius=3, bgcolor=T()["success"]),
+                                ft.Text("Đúng", size=fs(11), color=T()["text_muted"]),
+                            ]),
+                            ft.Row(spacing=3, controls=[
+                                ft.Container(width=10, height=10, border_radius=3, bgcolor=T()["error"]),
+                                ft.Text("Sai", size=fs(11), color=T()["text_muted"]),
+                            ]),
+                            ft.Row(spacing=3, controls=[
+                                ft.Container(width=10, height=10, border_radius=3, bgcolor=T()["border_subtle"]),
+                                ft.Text("Chưa làm", size=fs(11), color=T()["text_muted"]),
+                            ]),
+                        ],
+                    ),
+                    ft.Divider(color=T()["border_subtle"], height=1),
+                    # Scrollable questions grid
+                    ft.Container(
+                        expand=True,
+                        content=ft.Column(
+                            spacing=0,
+                            scroll=ft.ScrollMode.AUTO,
+                            controls=[
+                                ft.Row(
+                                    wrap=True,
+                                    spacing=6,
+                                    run_spacing=6,
+                                    controls=grid_buttons,
+                                )
+                            ],
+                        ),
+                    ),
+                    ft.Divider(color=T()["border_subtle"], height=1),
+                    # Bottom summary
+                    ft.Row(
+                        alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                        controls=[
+                            ft.Text(f"Đã làm: {len(state['user_answers'])} / {total}", size=fs(11), color=T()["text_muted"]),
+                            ft.Text(f"Tỷ lệ: {(state['score'] / max(1, len(state['user_answers'])) * 100):.0f}%", size=fs(11), color=T()["primary_light"], weight=ft.FontWeight.BOLD),
+                        ],
+                    ),
+                ],
+            ),
+        )
+
+        # ── QUIZ SCREEN LAYOUT (2-Column Layout) ──
         page.add(
             ft.Container(
                 expand=True,
@@ -1751,35 +1645,44 @@ def main(page: ft.Page):
                         progress_container,
                         ft.Container(
                             expand=True,
-                            padding=ft.padding.symmetric(horizontal=24, vertical=16),
-                            content=ft.Container(
+                            padding=ft.padding.symmetric(horizontal=20, vertical=14),
+                            content=ft.Row(
                                 expand=True,
-                                bgcolor=T()["bg_card"],
-                                border_radius=18,
-                                border=ft.border.all(1, T()["border_subtle"]),
-                                padding=ft.padding.all(24),
-                                content=ft.Column(
-                                    expand=True,
-                                    spacing=16,
-                                    controls=[
-                                        ft.Column(spacing=12, controls=question_content_controls),
-                                        ft.Divider(color=T()["border_subtle"], height=1),
-                                        ft.Column(
-                                            spacing=10,
-                                            controls=option_cards,
-                                            scroll=ft.ScrollMode.AUTO,
+                                spacing=16,
+                                controls=[
+                                    # Main Quiz Arena (Left Column)
+                                    ft.Container(
+                                        expand=True,
+                                        bgcolor=T()["bg_card"],
+                                        border_radius=18,
+                                        border=ft.border.all(1, T()["border_subtle"]),
+                                        padding=ft.padding.all(20),
+                                        content=ft.Column(
                                             expand=True,
-                                        ),
-                                        feedback_container,
-                                        ft.Row(
-                                            alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                            spacing=14,
                                             controls=[
-                                                prev_btn,
-                                                ft.Row(spacing=10, controls=[skip_btn, next_btn]),
+                                                ft.Column(spacing=10, controls=question_content_controls),
+                                                ft.Divider(color=T()["border_subtle"], height=1),
+                                                ft.Column(
+                                                    spacing=10,
+                                                    controls=option_cards,
+                                                    scroll=ft.ScrollMode.AUTO,
+                                                    expand=True,
+                                                ),
+                                                feedback_container,
+                                                ft.Row(
+                                                    alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                                                    controls=[
+                                                        prev_btn,
+                                                        ft.Row(spacing=10, controls=[skip_btn, next_btn]),
+                                                    ],
+                                                ),
                                             ],
                                         ),
-                                    ],
-                                ),
+                                    ),
+                                    # Question Map Sidebar (Right Column)
+                                    sidebar_map,
+                                ],
                             ),
                         ),
                     ],
